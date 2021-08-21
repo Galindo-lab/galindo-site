@@ -2,6 +2,10 @@
 #+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
 #+EXPORT_FILE_NAME: ../publish/not_found.org
 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/style.css" />
+#+HTML_HEAD: <link rel="shortcut icon" type="image/jpg" href="https://galindosoft.neocities.org/favicon.png"/>
+#+HTML_HEAD: <script defer type="text/javascript" src="https://galindosoft.neocities.org/script.js"></script>
+
 #+OPTIONS: html-postamble:nil
 #+OPTIONS: title:nil
 
