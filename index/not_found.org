@@ -10,7 +10,7 @@
 #+OPTIONS: title:nil
 
 #+HTML_LINK_UP: javascript: history.go(-1)
-#+HTML_LINK_HOME: ./index.html
+#+HTML_LINK_HOME: https://galindosoft.neocities.org
 
 #+TITLE: Pagina no disponible
 

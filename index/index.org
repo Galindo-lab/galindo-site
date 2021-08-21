@@ -22,70 +22,14 @@ En esta página pongo todas las cosas que pienso y todas las cosas que voy apren
 
 Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, puedea acceder desde [[https://galindosoft.neocities.org/chat.html][aquí]].
 
-* Apuntes
-Aquí guardo texodos los apuntes he hecho desde que empecé la carrera, los actualizo conforme aprendo cosas nuevas:
 
-- Completos :: 
-  - [[./apuntes/vectores.html][Vectores]]
-
-- En progreso ::
-  - [[./apuntes/calculo-multivariable.html][Cálculo multivariable]] (2021-2)
-  - [[./apuntes/matematicas-discretas.html][Matemáticas discretas]]
-  - [[./apuntes/matrices.html][Matrices]]
-  - [[./apuntes/circuitos-electricos.html][Circuitos Eléctricos]]
-  - [[./apuntes/ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
-
-- Versiones en pdf ::
-  - [[./apuntes/pdf/calculo-multivariable.pdf][Cálculo Multivariable]]
-  - [[./apuntes/pdf/matematicas-discretas.pdf][Matemáticas discretas]]
-  - [[./apuntes/pdf/circuitos-electricos.pdf][Circuitos Eléctricos]]
-  - [[./apuntes/pdf/vectores.pdf][Vectores]]
-
-- Antiguos ::
-  - [[https://www.mediafire.com/file/jfptx6v0ituoj65/ecuaciones-diferenciales.pdf/file][Ecuaciones diferenciales]] (2021-1)
-  - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
-  - [[https://www.mediafire.com/file/6wyaz8r17h55qe0/calculo-multivariable.pdf/file][Cálculo Multivariable]] (2021-1)
-
-* Calculadoras
-Calculadoras que hago para trabajar menos, estas calculadoras son posibles gracias a [[https://nerdamer.com/][Nerdamer]] un sistema de cálculo simbolico client-side:
-
-- [[./calculadoras/calculo-recta.html][Parametrización de la recta]]
-- [[./calculadoras/campo-magnetico-solenoide.html][Campo Magnético de un Solenoide]]
-
-* Colecciónes
-Cosas que encuentro en internet que me parecen interesantes:
-
-- [[./colections/software.html][Software]]
-- [[./colections/libros.html][Libros]]
-- [[./colections/paginas.html][Páginas]]
-- [[./colections/imagenes.html][Imágenes]]
-- [[./colections/musica.html][Música]]
-
-* Emacs
-Uno de los mejores editores de texto, que al mismo tiempo puede ser tu sistema operativo y mucho más...
-- [[./emacs/blog-en-org-mode.html][Como hacer un blog con ORG mode]].
-- [[./emacs/tutorial-emacs.html][Tutorial de emacs]] (En progreso).
-- [[./emacs/init.html][Mi init.org]]
-
-* Journal
-Cosas que me pasan día a día, me ayuda a recordar la cosas que me pasan.
-
-- [[./blog/2021.html][2021]]
-
-* Logs
-Contenido extra que no sé donde poner.
-
-- [[./logs/ideas.html][Ideas y cosas tontas]]
-- [[./logs/programacion.html][Mi historia con la programación]]
-
-* Programación
-Tutórales de programación ó temas relacionados con tecnología y software.
-
-- [[https://github.com/Galindo-lab/calculator][Programas y scripts para mi calculadora]]
-- [[./programacion/preview-html-externo.html][Preview html desde otro dispositivo conectado a la misma red]]
-- [[./programacion/google-translate.html][Añadir el plugin de google translate]]
-- [[./programacion/tema-obscuro.html][Implementar tema obscuro]]
-  
++ [[./apuntes/index.html][Apuntes]] 
++ [[./calculadoras/index.html][Calculadoras]] 
++ [[./colections/index.html][Colecciónes]] 
++ [[./emacs/index.html][Emacs]]
++ [[./blog/index.html][Journal]]
++ [[./logs/index.html][Logs]]
++ [[./programacion/index.html][Programación]]
 
 
 #+BEGIN_EXPORT html

@@ -37,16 +37,10 @@ blockquote {
     font-family:'Fira Code'; 
 }
 
-dt {
-    font-size: 1em;
-    font-style: italic;
-    font-weight: bold;
-    padding: 0;
-    font-family:'Fira Code'; 
-}
+ul  {
+    
+    list-style-type: "|> ";
 
-ul {
-    list-style-type: square;
 }
 
 p, dd {
@@ -55,12 +49,12 @@ p, dd {
 }
 
 img[align=center] { 
-     display: block; */
-     margin-left: auto; */
-     margin-right: auto; */
+    display: block; */
+                    margin-left: auto; */
+                                       margin-right: auto; */
 } 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* ------------------- TOC ------------------- */
@@ -92,7 +86,7 @@ table[align=righn]{
     margin-top: 1em;
     text-align: left;
     font-weight: light;
-text-align: center;
+    text-align: center;
 }
 
 
@@ -112,7 +106,7 @@ input, button, select {
     overflow: auto;
     padding: 0.5em;
     font-size: 16px;
-         font-family:'Fira Code';
+    font-family:'Fira Code';
 }
 
 select {
@@ -134,7 +128,7 @@ input[type=text] {
 .submit:active, input[type=button]:active, input[type=reset]:active {
     -webkit-filter: brightness(70%);
     transition: 150ms;
-         font-family:'Fira Code';
+    font-family:'Fira Code';
 }
 
 /*--------------------- URL --------------------------*/
