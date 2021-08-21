@@ -3,28 +3,17 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-20 vie 16:23 -->
+<!-- 2021-08-21 sáb 01:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Aprendiendo A Usar Emacs</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Galindo" />
 <link rel="stylesheet" type="text/css" href="../style.css" />
-<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
 <script defer type="text/javascript" src="../script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<div id="google_translate_element"></div>
-<script defer type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement(
-{pageLanguage: 'en'},
-'google_translate_element'
-);
-}
-</script>
-<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-</script>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -37,18 +26,18 @@ cb=googleTranslateElementInit">
 <span class="subtitle">Emacs</span>
 </h1>
 
-<div id="outline-container-org7204660" class="outline-2">
-<h2 id="org7204660">Introduccion</h2>
-<div class="outline-text-2" id="text-org7204660">
+<div id="outline-container-org20237fd" class="outline-2">
+<h2 id="org20237fd">Introduccion</h2>
+<div class="outline-text-2" id="text-org20237fd">
 <p>
 No me voy a molestar contando otra vez la historia y dando los detalles técnicos de Emacs, sí deseas conocer la historia de emacs recomiendo leer el articulo de <a href="https://es.wikipedia.org/wiki/Emacs">wikipedia</a> es lo suficientemente bueno para que poder entender que hace tan especial este editor. Mi objetivo con este tutorial es que cualquier persona que este interesada en aprender a usar emacs no se quede completamente atorada con las cosas básicas, este tutorial <b>NO</b> abarca a profundidad sobre todo sobre emacs, es solo una introducción para poder utilizar esta herramienta y modificarla a tu gusto.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc530aa2" class="outline-2">
-<h2 id="orgc530aa2">Glosario (Lectura obligada)</h2>
-<div class="outline-text-2" id="text-orgc530aa2">
+<div id="outline-container-org56c06b8" class="outline-2">
+<h2 id="org56c06b8">Glosario (Lectura obligada)</h2>
+<div class="outline-text-2" id="text-org56c06b8">
 <p>
 Al ser un editor con tanta historia Emacs tiene algunos términos que ya son muy anticuados y muchas personas encuentran problemas al no entender a que se refieren, así que me voy a tomar un tempo para explicarlas con mis palabras, sí quieres aprender mas terminología de emacs puedes encontrarla <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Glossary.html">aquí</a>.
 </p>
@@ -90,9 +79,9 @@ Al ser un editor con tanta historia Emacs tiene algunos términos que ya son muy
 </div>
 </div>
 
-<div id="outline-container-org080e498" class="outline-2">
-<h2 id="org080e498">Nemotécnicos de emacs (Lectura obligada)</h2>
-<div class="outline-text-2" id="text-org080e498">
+<div id="outline-container-org29e2404" class="outline-2">
+<h2 id="org29e2404">Nemotécnicos de emacs (Lectura obligada)</h2>
+<div class="outline-text-2" id="text-org29e2404">
 <p>
 Emacs para describir sus keybinds, tiene un sistema de abreviaturas 
 </p>
@@ -146,9 +135,9 @@ Emacs para describir sus keybinds, tiene un sistema de abreviaturas
 </div>
 </div>
 
-<div id="outline-container-org3bbadd4" class="outline-2">
-<h2 id="org3bbadd4">Key Binding indispensables</h2>
-<div class="outline-text-2" id="text-org3bbadd4">
+<div id="outline-container-org5a2cb01" class="outline-2">
+<h2 id="org5a2cb01">Key Binding indispensables</h2>
+<div class="outline-text-2" id="text-org5a2cb01">
 <p>
 No me voy a detener tanto en este apartado, muchos de los tutoriales que he leído siempre cometen el error de bombardear a los nuevos usuarios con un montón de combos de teclas, los cuales realmente nadie usa por que son para casos muy específicos, solo me voy a enfocar en los que yo uso diario, osea los más comunes e indispensables.
 </p>
@@ -242,21 +231,15 @@ No me voy a detener tanto en este apartado, muchos de los tutoriales que he leí
 </div>
 </div>
 
-<div id="outline-container-orgb8acad6" class="outline-2">
-<h2 id="orgb8acad6">Tutorial Básico De Elisp</h2>
-<div class="outline-text-2" id="text-orgb8acad6">
+<div id="outline-container-org97d86c6" class="outline-2">
+<h2 id="org97d86c6">Tutorial Básico De Elisp</h2>
+<div class="outline-text-2" id="text-org97d86c6">
 <p>
 Quería escribir un tutorial muy basico de elisp, pero la verdad ya existe un mejor tutorial por parte de los chicos de <a href="https://learnxinyminutes.com/docs/es-es/elisp-es/">learnxinyminutes</a>, así que sí deseas extender tu conocimiento en Elisp, ese es un buen lugar para empezar, recomiendo leer los ejemplos para poder entender como funciona superficialmente el lenguaje.
 Sí el sitio no esta disponible dejo una copia <a href="./backups/learn-emacs-lisp-es.txt">aquí.</a>
 </p>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Fecha: 2021-08-04 mié 16:48</p>
-<p class="author">Autor: Galindo</p>
-<p class="date">Created: 2021-08-20 vie 16:23</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

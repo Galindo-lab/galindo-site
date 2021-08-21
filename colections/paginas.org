@@ -18,10 +18,9 @@
 - [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][Simbolos matematicos en latex]]
 
 * Paginas Interesantes
-
 - [[http://www.cmkosemen.com/][Sitio web del creador de "All Tomorrows"]]
 - [[https://bellard.org/][Bellard es el autor de TinyEMU, tiene un montón de proyectos en su sitio]].
 - [[https://gigamonkeys.com/book/][Pagina oficial de "Practical Common Lisp"]]
 - [[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Canal de programación ATS]]
 - [[https://learnxinyminutes.com/][Guías rápidas para cualquier tema]]
-
+- [[https://infolibros.org/libros-para-aprender-chino-mandarin-gratis-pdf/][Libros de chino mandarin]]

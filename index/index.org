@@ -5,6 +5,14 @@
 #+TITLE: Galindosoft
 #+SUBTITLE: Bienvenido
 
+#+BEGIN_EXPORT html
+<style>
+#google_translate_element{
+    display:block;
+}
+</style>
+#+END_EXPORT
+
 #+ATTR_HTML: :height 256px :align center
 [[./image.jpg]]
 
@@ -79,3 +87,16 @@ Tutórales de programación ó temas relacionados con tecnología y software.
 - [[./programacion/tema-obscuro.html][Implementar tema obscuro]]
   
 
+
+#+BEGIN_EXPORT html
+ <div id="google_translate_element"></div>
+ <script defer> 
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({
+ pageLanguage: 'es'
+ }, 'google_translate_element');
+ }
+ </script>
+ <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+ </script>
+#+END_EXPORT
