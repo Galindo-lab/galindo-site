@@ -1,0 +1,3 @@
+
+upload:
+	neocities push publish/

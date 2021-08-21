@@ -1,34 +1,14 @@
-#+TITLE: Galindosoft
-#+SUBTITLE: Bienvenido
-#+LANGUAGE: es
 
-#+Options: html-style:nil html-scripts:nil num:nil toc:nil
-#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
-#+HTML_HEAD: <script defer type="text/javascript" src="script.js"></script>
+#+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
+#+EXPORT_FILE_NAME: ../publish/not_found.org
 
-#+BEGIN_EXPORT html
+#+OPTIONS: html-postamble:nil
+#+OPTIONS: title:nil
 
-<div id="google_translate_element"></div>
-<script defer> 
-function googleTranslateElementInit() {
+#+HTML_LINK_UP: "javascript: history.go(-1)"
+#+HTML_LINK_HOME: ./index.html
 
-new google.translate.TranslateElement({
-
-pageLanguage: 'es'
-
-}, 'google_translate_element');
-
-}
-</script>
-
-#+END_EXPORT
-
-#+BEGIN_nav
-- [[[./index.html][Index]]]
-- [[[./settings.html][Settings]]]
-- [[[./about.html][About]]]
-#+END_nav
+#+TITLE: Pagina no disponible
 
 * Pagina no disponible
 la pagina que estas buscando no esta disponible.
