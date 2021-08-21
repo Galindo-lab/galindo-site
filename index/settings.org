@@ -1,0 +1,86 @@
+#+TITLE: Settings
+
+#+OPTIONS: html-style:nil 
+#+OPTIONS: html-scripts:nil
+#+OPTIONS: num:nil 
+#+OPTIONS: toc:nil
+
+#+HTML_HEAD:<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="./style.css" />
+#+HTML_HEAD: <script defer type="text/javascript" src="script.js"></script>
+
+#+BEGIN_EXPORT html
+<style>
+#google_translate_element { 
+    display: block; 
+margin: 0 1em 1em 0;
+}
+
+body {
+   max-hei
+}
+</style>
+
+<script>
+window.onload = () => {
+    document.getElementById("theme").value = localStorage.getItem("theme");
+    //document.getElementById(localStorage.getItem("theme")).checked = true ;
+}
+</script>
+#+END_EXPORT
+
+* Theme
+#+BEGIN_EXPORT html
+
+<!--div onclick="switchTheme()">
+
+<input type="radio" value="light" name="theme" id="light" checked>
+<label for="light"> light</label>
+<br>
+
+<input type="radio" value="dark" name="theme" id="dark">
+<label for="dark"> dark</label>
+<br>
+
+</div-->
+
+<select id="theme" onChange="switchTheme()">
+<option value="light">light</option>
+<option value="dark">dark</option>
+<option value="minke-light">Minke light</option>
+<option value="minke-dark">Minke dark</option>
+<option value="space">space</option>
+</select>
+
+<script>
+
+
+function switchTheme() {
+     e = document.getElementById("theme").value;
+     //e = document.querySelector('input[name="theme"]:checked').value;
+     localStorage.setItem("theme", e)
+     document.body.classList.value = localStorage.getItem("theme");
+ }
+
+</script>
+
+#+END_EXPORT
+
+* Language
+#+BEGIN_EXPORT html
+<div id="google_translate_element"></div>
+<script defer> 
+function googleTranslateElementInit() {
+
+new google.translate.TranslateElement({
+
+pageLanguage: 'es'
+
+}, 'google_translate_element');
+
+}
+</script>
+
+<script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+#+END_EXPORT

@@ -1,0 +1,59 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/apuntes/ecuaciones-diferenciales.html
+#+OPTIONS: num:t
+
+#+TITLE:    Ecuaciones Diferenciales
+#+SUBTITLE: Apuntes
+#+DATE:     [2021-08-19 jue]
+
+#+TOC: headlines 2
+
+* Definicion
+Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y que contiene una derivada de una o mas variables dependientes con respecto a dos o mas variables independientementes.
+
+* Variables dependientes e independientes 
+- Variable dependiente :: Es aquella cuyos valores dependen de los que tomen otra variable. Usualmente se suele representar como *y* en el eje de las ordenadas.
+
+- Independientes :: Un símbolo que representa una entrada de datos arbitraria se denomina variable independiente,
+
+#+BEGIN_DEMONSTRATION
+En esta ecuacion diferencial podemos saber cual es la variable independiente con solo mirar el denominador, en este caso \(x\), entonces como \(x\) es independiente \(y\) es la variable independiente[fn:nota-notacion].
+
+\[\frac{dy}{dx} = 0.2 \cdot x \cdot y\]
+
+#+END_DEMONSTRATION
+
+[[https://es.wikipedia.org/wiki/Variables_dependientes_e_independientes][Más informacion]]
+
+[fn:nota-notacion] recuerda que \( \frac{dy}{dx} = y' \).
+
+* Orden de una ecuacion
+Se dice que una ecuacion es del grado de su derivada mas alta[fn:nota-exp]
+
+#+BEGIN_DEMONSTRATION
+Ecuaciones de primer orden: 
+
+\[\frac{dy}{dx} = \frac{1}{2} xy \]
+
+\[(y')^2 + xy'-y = 0 \]
+
+#+END_DEMONSTRATION
+
+Mientras mas comillas tiene una derivada eso significa que es de mayor grado:
+
+#+BEGIN_DEMONSTRATION
+
+Ecuaciones de segundo orden:
+
+\[y'' + a(x)y' + b(x)y = f(x)  \]
+
+\[y'' + \frac{a(x)}{a_0(x)}) y' + \frac{b(y)}{a_0(x)}y = 0  \]
+
+#+END_DEMONSTRATION
+
+[fn:nota-exp] Ojo, el exponente en la ecuacion no afecta el grado de la derivada.
+
+* Campos de pendientes o direccioens
+https://www.youtube.com/watch?v=xu_HLUShvws
+https://www.geogebra.org/m/R36YDrma

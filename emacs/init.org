@@ -1,0 +1,359 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/emacs/init.org
+
+
+#+TITLE:    init.org
+#+SUBTITLE: Emacs
+#+DATE:     [2021-06-03 jue]
+
+* Paquetes
+** Fuentes
+#+BEGIN_SRC 
+
+  ;; Fuetes
+  (setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                           ("org"   . "https://orgmode.org/elpa/")
+                           ("elpa"  . "https://elpa.gnu.org/packages/")))
+
+  (package-initialize)
+  (unless package-archive-contents
+    (package-refresh-contents))
+
+  ;; Inicializar 'use-package' para plataformas no unix
+  (unless (package-installed-p 'use-package)
+    (package-install 'use-package))
+
+  (require 'use-package)
+
+#+END_SRC
+
+** Configuraciónes
+*** recentf
+Mantiene una lista con los archivos abiertos recientemente, es necesario que este activado para mantener los registros.
+#+BEGIN_SRC  
+
+  (require 'recentf)
+  (recentf-mode 1)
+
+#+END_SRC
+
+*** ivy
+Autocompletado en el minibufer.
+#+BEGIN_SRC 
+
+  (use-package ivy
+    :ensure t
+    :config
+    (ivy-mode 1))
+
+#+END_SRC
+
+*** rainbow-mode
+Colorear los valores RGB.
+#+BEGIN_SRC 
+
+  (use-package rainbow-mode
+    :ensure t)
+
+#+END_SRC
+
+*** magit
+Getor de git para emacs.
+#+BEGIN_SRC 
+
+  (use-package magit
+    :ensure t)
+
+#+END_SRC
+
+*** crux
+Collection of Ridiculously Useful eXtensions for Emacs.
+#+BEGIN_SRC 
+
+  (use-package crux
+    :ensure t)
+
+#+END_SRC
+
+*** highlight todo
+Resalta palabras como "TODO, NOTE, FIXME...".
+#+BEGIN_SRC 
+
+  (use-package hl-todo
+    :ensure t
+    :custom-face
+    (hl-todo ((t (:inherit hl-todo :italic t))))
+    :hook ((prog-mode . hl-todo-mode)
+           (yaml-mode . hl-todo-mode)
+           (org-mode . hl-todo-mode))
+    :config
+    (hl-todo-mode 1))
+
+#+END_SRC
+
+*** htmlize
+Convierte source blocks a html.
+#+BEGIN_SRC 
+
+  (use-package htmlize
+    :ensure t)
+
+#+END_SRC
+
+*** neotree
+Muestra los folders en la sidebar.
+#+BEGIN_SRC 
+
+  ;; explorador de archivos 
+  (use-package neotree
+    :ensure t
+    :config
+    (setq neo-theme 'ascii
+          neo-smart-open t
+          neo-window-width 25
+          neo-window-fixed-size -1) )
+
+  ;; desactivar los numeros y el warp de texto 
+  (add-hook 'neo-after-create-hook
+            (lambda (&rest _) 
+              (display-line-numbers-mode -1)
+              (visual-line-mode -1)))
+
+#+END_SRC
+
+*** company
+Marco de autocompletado de texto para Emacs.
+#+BEGIN_SRC 
+
+  (use-package company
+   :ensure t
+   :init (global-company-mode)
+   :config
+   (setq company-idle-delay 0
+         company-minimum-prefix-length 2
+         company-show-numbers t
+         company-tooltip-limit 10
+         company-tooltip-align-annotations t
+         company-tooltip-flip-when-above t)
+
+   ;; (global-company-mode t)
+   )
+
+  (use-package company-quickhelp
+    :ensure t
+    :config
+    (company-quickhelp-mode))
+
+#+END_SRC
+
+*** csv-mode
+#+BEGIN_SRC 
+  (use-package csv-mode
+    :ensure t)
+#+END_SRC
+
+*** dashboard
+#+BEGIN_SRC 
+(use-package dashboard
+    :ensure t
+    :diminish dashboard-mode
+    :config
+    (setq dashboard-startup-banner 1)
+    (setq dashboard-center-content t)
+    ;; (setq dashboard-banner-logo-title "your custom text")
+    ;; (setq dashboard-startup-banner "/path/to/image")
+    (setq dashboard-items '((recents  . 10)
+                            (bookmarks . 10)))
+    (dashboard-setup-startup-hook))
+
+#+END_SRC
+
+** Modos y Herramientas de Programación
+*** Web
+#+BEGIN_SRC 
+
+  ;; para editar codigo html, css y js en el mismo archivo
+  (use-package web-mode
+    :ensure t)
+
+  ;; para hacer html más rapidos
+  (use-package emmet-mode
+    :ensure t)
+
+#+END_SRC
+
+*** Lua
+#+BEGIN_SRC 
+
+  (use-package lua-mode
+    :ensure t)
+
+#+END_SRC
+
+*** Python (anaconda)
+#+BEGIN_SRC 
+
+  (use-package anaconda-mode
+    :ensure t
+    :config
+    (add-hook 'python-mode-hook 'anaconda-mode)
+    ;;(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+    )
+
+  (use-package company-anaconda
+    :ensure t
+    :init (require 'rx)
+    :after (company)
+    :config
+    (add-to-list 'company-backends 'company-anaconda)
+    )
+
+#+END_SRC
+
+* Configuración
+** Tipografia
+#+BEGIN_SRC 
+
+  (set-face-attribute 'default nil
+                      :font "Fira Code"
+                      :height 98 )
+
+#+END_SRC
+
+** Apariencia
+#+BEGIN_SRC 
+
+  (setq inhibit-startup-message t)        ;Pantalla de inicio de emacs
+  (global-display-line-numbers-mode t)    ;numeros de linea 
+  (set-fringe-mode 10)                    ;espacio entre el frame y el buffer
+  (global-visual-line-mode 1)             ;separar lineas 
+  (setq-default cursor-type 'bar)         ;tipo del cursor
+  (setq-default tab-width 4)              ;tamaño del tab
+  (tool-bar-mode -1)                      ;barra de herramientas visisles
+  (menu-bar-mode -1)                      ;menu de herramientas visible
+  (setq column-number-mode t)             ;numero de columna en el modeline
+  (line-number-mode t)                    ;numero de fila en el modeline
+  (scroll-bar-mode -1)                    ;scroll bars visibles
+
+#+END_SRC
+
+#+BEGIN_SRC  
+
+  (display-time-mode -1)                  ;mostrar la hora
+  (display-battery-mode -1)               ;mostrar batteria
+
+#+END_SRC
+
+** Frame
+#+BEGIN_SRC 
+
+  (set-frame-parameter                    ;frame visible
+   (selected-frame) 'undecorated t) 
+
+  (set-frame-parameter                    ;fondo trasparente
+   (selected-frame) 'alpha '(95 95))
+
+  (add-to-list                            ;transparencia del borde
+   'default-frame-alist '(alpha 85 85)) 
+
+#+END_SRC
+
+** Tema
+#+BEGIN_SRC 
+
+    (use-package doom-themes 
+      :ensure t
+      :init (load-theme 'doom-one t))
+
+#+END_SRC
+
+** Comportamiento
+#+BEGIN_SRC 
+
+  ;; eliminar elemento seleccionado   
+  (delete-selection-mode 1)	
+  (setq-default indent-tabs-mode nil)	
+  (setq custom-file "~/.emacs.d/custom.el")
+  (load custom-file)
+
+#+END_SRC
+
+** Eshell
+#+BEGIN_SRC 
+
+  (add-hook 'eshell-mode-hook
+            (lambda (&rest _) 
+              (display-line-numbers-mode -1)
+              (visual-line-mode -1)))
+
+#+END_SRC
+
+** Keybinds
+#+BEGIN_SRC 
+
+  ;; incluidas
+  (global-set-key (kbd "C-x t") 'eshell)                                    
+  (global-set-key (kbd "C-x j") 'neotree-toggle)                            
+  (global-set-key (kbd "C-x <") 'ido-switch-buffer)                         
+  (global-set-key (kbd "C-M-z") 'toggle-80-editting-columns-balanced)      
+
+  ;; Crux
+  (global-set-key (kbd "C-c f") 'crux-recentf-find-file)
+  (global-set-key (kbd "C-,") 'crux-find-user-init-file)
+  (global-set-key (kbd "C-x C-u") 'crux-upcase-region)
+  (global-set-key (kbd "C-x C-l") 'crux-downcase-region)
+  (global-set-key (kbd "C-x M-c") 'crux-capitalize-region)
+  (global-set-key (kbd "C-c k") 'crux-kill-other-buffers)
+
+#+END_SRC
+
+** Org
+fuentes: [[https://emacs.stackexchange.com/questions/19880/font-size-control-of-latex-previews-in-org-files][Tamaño del la preview de latex]], [[https://ivanaf.com/tikz_snippet_preview_in_orgmode.html][Preview tikz]], [[https://stackoverflow.com/questions/15773354/indent-code-in-org-babel-src-blocks][Indentar src blocks]].
+#+BEGIN_SRC 
+
+  (use-package org
+    :bind
+    (:map org-mode-map
+          ("<M-return>" . org-toggle-latex-fragment))
+    :config
+    (setq org-support-shift-select t)
+    (setq org-preview-latex-default-process 'dvisvgm)	;preview tikz
+    (setq org-src-tab-acts-natively t)	;indentar src_blocks
+    (setq org-format-latex-options
+          (plist-put org-format-latex-options :scale 1.5))) ;tamaño de preview
+
+
+  (add-hook 'org-mode-hook
+            (lambda ()
+              (org-indent-mode t)
+              (org-content 2)
+              (display-line-numbers-mode -1)))
+
+  ;; Babel
+  (org-babel-do-load-languages 'org-babel-load-languages '( (python . t) ) )
+  (setq org-babel-python-command "python3")
+
+#+END_SRC
+
+** Backups
+Extraido de [[https://www.gnu.org/software/emacs/manual/html_node/tramp/Auto_002dsave-and-Backup.html][www.gnu.org]].
+#+BEGIN_SRC 
+
+  (add-to-list 'backup-directory-alist
+               (cons "." "~/.emacs.d/backups/"))
+
+  (customize-set-variable
+   'tramp-backup-directory-alist backup-directory-alist)
+
+#+END_SRC
+
+* Modificaciones de Prueba
+
+** scolling suave
+#+BEGIN_SRC 
+
+  (setq scroll-step            1
+        scroll-conservatively  10000)
+
+#+END_SRC

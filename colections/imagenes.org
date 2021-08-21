@@ -1,0 +1,25 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/colections/imagenes.org
+
+#+TITLE: Fotografias
+#+SUBTITLE: Colección
+
+* Mis perritas
+- [[https://i.ibb.co/6JC8czq/e.jpg][lun 19 jul 2021 17:10:31 - Frida y Fionna]]
+- [[https://i.ibb.co/7N2pYtw/w.jpg][vie 23 jul 2021 12:36:75 - Mi perrita Frida]]
+
+* Other
+- [[https://i.ibb.co/mHTyb1B/q.jpg][jue 19 sep 2018 00:00:00 - Patio tracero de mi antigua casa durante una lluvia]]
+
+
+
+
+
+# [[./gatos/img/cat1.jpg]]
+# [[./gatos/img/cat2.jpg]]
+# [[./gatos/img/cat3.jpg]]
+# [[./gatos/img/cat4.jpg]]
+# [[./gatos/img/cat5.jpg]]
+# [[./gatos/img/cat6.jpg]]
+# [[./gatos/img/cat7.jpg]]

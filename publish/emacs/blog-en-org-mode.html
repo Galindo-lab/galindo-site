@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-20 vie 16:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog con ORG-mode</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div>
+<script defer type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Blog con ORG-mode
+<br />
+<span class="subtitle">Emacs</span>
+</h1>
+
+<div id="outline-container-org224c4d4" class="outline-2">
+<h2 id="org224c4d4">Introducción</h2>
+<div class="outline-text-2" id="text-org224c4d4">
+<p>
+Org mode es sin ninguna duda una de las "killer features" de emacs, permite hacer básicamente todas mis labores relacionadas con hacer notas, pero hoy no estoy aquí para hablar de las bondades de ORG-mode, Voy a explicarte como hacer tu propio blog con paginas estáticas con org mode. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgddb2881" class="outline-2">
+<h2 id="orgddb2881">Opciones Para Org</h2>
+<div class="outline-text-2" id="text-orgddb2881">
+<p>
+Mi configuración para mis archivos de org es muy breve:
+</p>
+
+<pre class="example">
+#+OPTIONS: html-style:nil html-scripts:nil num:nil html-postamble:nil
+</pre>
+
+<dl class="org-dl">
+<dt>html-style</dt><dd>desactiva todo el css generado por org mode, de todos modos prefiero hacer mis propias hojas de estilo.</dd>
+<dt>html-scripts</dt><dd>con esta opción desactivo el javascript generado por ORG-mode.</dd>
+<dt>num</dt><dd>los números en los títulos.</dd>
+<dt>html-postamble</dt><dd>el postamble es texto que se añade al final de cada documento yo prefiero desactivarlo.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org4c016f7" class="outline-2">
+<h2 id="org4c016f7">HTML HEAD</h2>
+<div class="outline-text-2" id="text-org4c016f7">
+<p>
+HTML HEAD nos permite insertar html en la sección head del css generado por ORG:
+</p>
+
+<pre class="example">
+#+HTML_HEAD: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /&gt;
+#+HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="../style.css" /&gt;
+</pre>
+
+<p>
+siempre ajusto el viewport de la pagina para que sea mas fácil de ver en los móviles, en la segunda linea estamos incluyendo el css personalizado de nuestro sitio.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org399b344" class="outline-2">
+<h2 id="org399b344">Insertar seccion en html</h2>
+<div class="outline-text-2" id="text-org399b344">
+<p>
+Para insertar un div con un nombre de clase personalizado simplemente tenemos que insertar un bloque de código con el nombre que deseamos poner a nuestro bloque:
+</p>
+
+<pre class="example">
+#+BEGIN_juan
+
+#+END_juan
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org241000c" class="outline-2">
+<h2 id="org241000c">Conclusión</h2>
+<div class="outline-text-2" id="text-org241000c">
+<p>
+Como vez es muy fácil hace sitios web en Org-mode, en esta entrada yo no explique ni la mitad de las cosas que puede hacer ORG-mode, pero con la información anterior ya deberías poder hacer un sitio a tu gusto sin tener que preocuparte por los defaults de ORG.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Fecha: 2021-08-04 mié 00:00</p>
+<p class="author">Autor: Galindo</p>
+<p class="date">Created: 2021-08-20 vie 16:18</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

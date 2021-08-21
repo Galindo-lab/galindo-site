@@ -1,0 +1,160 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/calculadoras/campo-magnetico-solenoide.org
+
+#+OPTIONS: html-postamble:nil
+
+#+TITLE: Campo Magnético
+#+SUBTITLE: Solenóide
+
+#+OPTIONS: html-style:nil html-scripts:nil num:nil toc:nil
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+# Framework de calculo simbolico
+#+HTML_HEAD: <script type="text/javascript" src="tools.js"></script>
+#+HTML_HEAD: <script async src="nerdamer/all.min.js"></script> 
+
+# Preview latex 
+#+HTML_HEAD: <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+#+BEGIN_EXPORT html
+<div id="google_translate_element"></div><script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');}</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<style>
+img{display:block;margin-left:auto;margin-right:auto}
+legend{margin-left:0;margin-right:0}
+.param{padding:.5em 0 .5em 0; }
+
+label{ font-family:  'Montserrat';}
+label > input { width: auto; }
+
+fieldset{margin:1em 0 1em 0}
+#resultado{
+background-color:#fff;
+padding:.3em;
+overflow-x:scroll;
+}
+
+@media (max-width:500px){input{width:100%}}   
+</style>
+#+END_EXPORT
+
+* Campo Magnético
+# #+attr_html: :height 225vh :align center
+# [[./diagrams/sol4.png]]
+
+#+BEGIN_EXPORT html
+
+
+<fieldset>
+<legend>Variables</legend> 
+
+\[ B = \frac{ \mu_r \cdot \mu_0 \cdot I \cdot N }{ L } \]
+
+<form>
+
+<div class="param">
+<label>Longitud [L:metros]:</label>
+<input type="text" id="longitud">
+</div>
+
+<div class="param">
+<label>Numero de espiras [N]:</label>
+<input type="text" id="espiras">
+</div>
+
+<div class="param" >
+<label>Corriente [I:Amperios]:</label>
+<input type="text" id="corriente">
+</div>
+
+<div class="param" >
+<label>Permeabilidad Magnética [\(\mu_0\)]:</label> 
+<input id="magnetica" value="(pi*4)*10^(-7)">
+</div>
+
+<div class="param" >
+<label>Permeabilidad Relativa [\(\mu_r\)]:</label> 
+<input id="relativa" value="1">
+</div>
+
+<div class="param" >
+<label>
+  <input type="radio" name="format" value="decimal" checked> Decimal
+</label> 
+<br>
+<label>
+  <input type="radio" name="format" value="fraccion"> Fracción
+</label> 
+</div>
+
+<div class="param" >
+<input type="button" onclick="calcular()" value="Campo Magnético de un Solenóide">
+<input type="reset" value="Limpiar los datos"> 
+</div>
+
+</form>
+</fieldset>
+#+END_EXPORT
+
+** Resultado (Tesla):
+#+BEGIN_EXPORT html
+<div id="resultado">
+$${ \text{  } }$$
+</div>
+#+END_EXPORT
+
+
+
+
+
+
+
+
+
+
+#+BEGIN_EXPORT html
+<script>
+function calcular(){
+    l = document.getElementById("longitud").value;
+    n = document.getElementById("espiras").value;
+    i = document.getElementById("corriente").value;
+    mu0 = document.getElementById("magnetica").value;
+    mur = document.getElementById("relativa").value;
+
+    formato = document.querySelector('input[name="format"]:checked').value;
+
+switch(formato){
+  case 'decimal':
+    resultado = nerdamer(' (muo*mur*i*n)/(l) ', {
+        muo: mu0,
+        mur: mur,
+        i: i,
+        n: n,
+        l: l,
+       pi: Math.PI
+      });
+    document.getElementById('resultado').innerHTML = resultado.toDecimal();
+  break;
+
+  case 'fraccion':
+    resultado = nerdamer(' (muo*mur*i*n)/(l) ', {
+        muo: mu0,
+        mur: mur,
+        i: i,
+        n: n,
+        l: l
+      });
+    document.getElementById('resultado').innerHTML = "$${ " + resultado.toString() + "}$$ ";
+  break;
+}
+
+    MathJax.typeset()
+    nerdamer.clearVars();
+}
+
+</script>
+#+END_EXPORT

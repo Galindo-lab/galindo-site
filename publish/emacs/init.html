@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-20 vie 16:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>init.org</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div>
+<script defer type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">init.org
+<br />
+<span class="subtitle">Emacs</span>
+</h1>
+
+<div id="outline-container-org6bd8c36" class="outline-2">
+<h2 id="org6bd8c36">Paquetes</h2>
+<div class="outline-text-2" id="text-org6bd8c36">
+</div>
+<div id="outline-container-org907eb7b" class="outline-3">
+<h3 id="org907eb7b">Fuentes</h3>
+<div class="outline-text-3" id="text-org907eb7b">
+<pre class="example">
+
+;; Fuetes
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org"   . "https://orgmode.org/elpa/")
+                         ("elpa"  . "https://elpa.gnu.org/packages/")))
+
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; Inicializar 'use-package' para plataformas no unix
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org51ceefc" class="outline-3">
+<h3 id="org51ceefc">Configuraciónes</h3>
+<div class="outline-text-3" id="text-org51ceefc">
+</div>
+<div id="outline-container-org57b2ac8" class="outline-4">
+<h4 id="org57b2ac8">recentf</h4>
+<div class="outline-text-4" id="text-org57b2ac8">
+<p>
+Mantiene una lista con los archivos abiertos recientemente, es necesario que este activado para mantener los registros.
+</p>
+<pre class="example">
+
+(require 'recentf)
+(recentf-mode 1)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org2da5e30" class="outline-4">
+<h4 id="org2da5e30">ivy</h4>
+<div class="outline-text-4" id="text-org2da5e30">
+<p>
+Autocompletado en el minibufer.
+</p>
+<pre class="example">
+
+(use-package ivy
+  :ensure t
+  :config
+  (ivy-mode 1))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org6b123f2" class="outline-4">
+<h4 id="org6b123f2">rainbow-mode</h4>
+<div class="outline-text-4" id="text-org6b123f2">
+<p>
+Colorear los valores RGB.
+</p>
+<pre class="example">
+
+(use-package rainbow-mode
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge329171" class="outline-4">
+<h4 id="orge329171">magit</h4>
+<div class="outline-text-4" id="text-orge329171">
+<p>
+Getor de git para emacs.
+</p>
+<pre class="example">
+
+(use-package magit
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd48a078" class="outline-4">
+<h4 id="orgd48a078">crux</h4>
+<div class="outline-text-4" id="text-orgd48a078">
+<p>
+Collection of Ridiculously Useful eXtensions for Emacs.
+</p>
+<pre class="example">
+
+(use-package crux
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org4cf6a76" class="outline-4">
+<h4 id="org4cf6a76">highlight todo</h4>
+<div class="outline-text-4" id="text-org4cf6a76">
+<p>
+Resalta palabras como "TODO, NOTE, FIXME&#x2026;".
+</p>
+<pre class="example">
+
+(use-package hl-todo
+  :ensure t
+  :custom-face
+  (hl-todo ((t (:inherit hl-todo :italic t))))
+  :hook ((prog-mode . hl-todo-mode)
+         (yaml-mode . hl-todo-mode)
+         (org-mode . hl-todo-mode))
+  :config
+  (hl-todo-mode 1))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb9632c6" class="outline-4">
+<h4 id="orgb9632c6">htmlize</h4>
+<div class="outline-text-4" id="text-orgb9632c6">
+<p>
+Convierte source blocks a html.
+</p>
+<pre class="example">
+
+(use-package htmlize
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgabcbe95" class="outline-4">
+<h4 id="orgabcbe95">neotree</h4>
+<div class="outline-text-4" id="text-orgabcbe95">
+<p>
+Muestra los folders en la sidebar.
+</p>
+<pre class="example">
+
+;; explorador de archivos 
+(use-package neotree
+  :ensure t
+  :config
+  (setq neo-theme 'ascii
+        neo-smart-open t
+        neo-window-width 25
+        neo-window-fixed-size -1) )
+
+;; desactivar los numeros y el warp de texto 
+(add-hook 'neo-after-create-hook
+          (lambda (&amp;rest _) 
+            (display-line-numbers-mode -1)
+            (visual-line-mode -1)))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0d7673a" class="outline-4">
+<h4 id="org0d7673a">company</h4>
+<div class="outline-text-4" id="text-org0d7673a">
+<p>
+Marco de autocompletado de texto para Emacs.
+</p>
+<pre class="example">
+
+(use-package company
+ :ensure t
+ :init (global-company-mode)
+ :config
+ (setq company-idle-delay 0
+       company-minimum-prefix-length 2
+       company-show-numbers t
+       company-tooltip-limit 10
+       company-tooltip-align-annotations t
+       company-tooltip-flip-when-above t)
+
+ ;; (global-company-mode t)
+ )
+
+(use-package company-quickhelp
+  :ensure t
+  :config
+  (company-quickhelp-mode))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc83083c" class="outline-4">
+<h4 id="orgc83083c">csv-mode</h4>
+<div class="outline-text-4" id="text-orgc83083c">
+<pre class="example">
+(use-package csv-mode
+  :ensure t)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org08a540d" class="outline-4">
+<h4 id="org08a540d">dashboard</h4>
+<div class="outline-text-4" id="text-org08a540d">
+<pre class="example">
+(use-package dashboard
+    :ensure t
+    :diminish dashboard-mode
+    :config
+    (setq dashboard-startup-banner 1)
+    (setq dashboard-center-content t)
+    ;; (setq dashboard-banner-logo-title "your custom text")
+    ;; (setq dashboard-startup-banner "/path/to/image")
+    (setq dashboard-items '((recents  . 10)
+                            (bookmarks . 10)))
+    (dashboard-setup-startup-hook))
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4685ce8" class="outline-3">
+<h3 id="org4685ce8">Modos y Herramientas de Programación</h3>
+<div class="outline-text-3" id="text-org4685ce8">
+</div>
+<div id="outline-container-org00b86a7" class="outline-4">
+<h4 id="org00b86a7">Web</h4>
+<div class="outline-text-4" id="text-org00b86a7">
+<pre class="example">
+
+;; para editar codigo html, css y js en el mismo archivo
+(use-package web-mode
+  :ensure t)
+
+;; para hacer html más rapidos
+(use-package emmet-mode
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org17327d1" class="outline-4">
+<h4 id="org17327d1">Lua</h4>
+<div class="outline-text-4" id="text-org17327d1">
+<pre class="example">
+
+(use-package lua-mode
+  :ensure t)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc4f648e" class="outline-4">
+<h4 id="orgc4f648e">Python (anaconda)</h4>
+<div class="outline-text-4" id="text-orgc4f648e">
+<pre class="example">
+
+(use-package anaconda-mode
+  :ensure t
+  :config
+  (add-hook 'python-mode-hook 'anaconda-mode)
+  ;;(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+  )
+
+(use-package company-anaconda
+  :ensure t
+  :init (require 'rx)
+  :after (company)
+  :config
+  (add-to-list 'company-backends 'company-anaconda)
+  )
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org02a6f14" class="outline-2">
+<h2 id="org02a6f14">Configuración</h2>
+<div class="outline-text-2" id="text-org02a6f14">
+</div>
+<div id="outline-container-org9cf163f" class="outline-3">
+<h3 id="org9cf163f">Tipografia</h3>
+<div class="outline-text-3" id="text-org9cf163f">
+<pre class="example">
+
+(set-face-attribute 'default nil
+                    :font "Fira Code"
+                    :height 98 )
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orga81a705" class="outline-3">
+<h3 id="orga81a705">Apariencia</h3>
+<div class="outline-text-3" id="text-orga81a705">
+<pre class="example">
+
+(setq inhibit-startup-message t)        ;Pantalla de inicio de emacs
+(global-display-line-numbers-mode t)    ;numeros de linea 
+(set-fringe-mode 10)                    ;espacio entre el frame y el buffer
+(global-visual-line-mode 1)             ;separar lineas 
+(setq-default cursor-type 'bar)         ;tipo del cursor
+(setq-default tab-width 4)              ;tamaño del tab
+(tool-bar-mode -1)                      ;barra de herramientas visisles
+(menu-bar-mode -1)                      ;menu de herramientas visible
+(setq column-number-mode t)             ;numero de columna en el modeline
+(line-number-mode t)                    ;numero de fila en el modeline
+(scroll-bar-mode -1)                    ;scroll bars visibles
+
+</pre>
+
+<pre class="example">
+
+(display-time-mode -1)                  ;mostrar la hora
+(display-battery-mode -1)               ;mostrar batteria
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org6d8355f" class="outline-3">
+<h3 id="org6d8355f">Frame</h3>
+<div class="outline-text-3" id="text-org6d8355f">
+<pre class="example">
+
+(set-frame-parameter                    ;frame visible
+ (selected-frame) 'undecorated t) 
+
+(set-frame-parameter                    ;fondo trasparente
+ (selected-frame) 'alpha '(95 95))
+
+(add-to-list                            ;transparencia del borde
+ 'default-frame-alist '(alpha 85 85)) 
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org6ed18e0" class="outline-3">
+<h3 id="org6ed18e0">Tema</h3>
+<div class="outline-text-3" id="text-org6ed18e0">
+<pre class="example">
+
+(use-package doom-themes 
+  :ensure t
+  :init (load-theme 'doom-one t))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org16bb2b3" class="outline-3">
+<h3 id="org16bb2b3">Comportamiento</h3>
+<div class="outline-text-3" id="text-org16bb2b3">
+<pre class="example">
+
+;; eliminar elemento seleccionado   
+(delete-selection-mode 1)	
+(setq-default indent-tabs-mode nil)	
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgf03739f" class="outline-3">
+<h3 id="orgf03739f">Eshell</h3>
+<div class="outline-text-3" id="text-orgf03739f">
+<pre class="example">
+
+(add-hook 'eshell-mode-hook
+          (lambda (&amp;rest _) 
+            (display-line-numbers-mode -1)
+            (visual-line-mode -1)))
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org71e4be0" class="outline-3">
+<h3 id="org71e4be0">Keybinds</h3>
+<div class="outline-text-3" id="text-org71e4be0">
+<pre class="example">
+
+;; incluidas
+(global-set-key (kbd "C-x t") 'eshell)                                    
+(global-set-key (kbd "C-x j") 'neotree-toggle)                            
+(global-set-key (kbd "C-x &lt;") 'ido-switch-buffer)                         
+(global-set-key (kbd "C-M-z") 'toggle-80-editting-columns-balanced)      
+
+;; Crux
+(global-set-key (kbd "C-c f") 'crux-recentf-find-file)
+(global-set-key (kbd "C-,") 'crux-find-user-init-file)
+(global-set-key (kbd "C-x C-u") 'crux-upcase-region)
+(global-set-key (kbd "C-x C-l") 'crux-downcase-region)
+(global-set-key (kbd "C-x M-c") 'crux-capitalize-region)
+(global-set-key (kbd "C-c k") 'crux-kill-other-buffers)
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgff6bd04" class="outline-3">
+<h3 id="orgff6bd04">Org</h3>
+<div class="outline-text-3" id="text-orgff6bd04">
+<p>
+fuentes: <a href="https://emacs.stackexchange.com/questions/19880/font-size-control-of-latex-previews-in-org-files">Tamaño del la preview de latex</a>, <a href="https://ivanaf.com/tikz_snippet_preview_in_orgmode.html">Preview tikz</a>, <a href="https://stackoverflow.com/questions/15773354/indent-code-in-org-babel-src-blocks">Indentar src blocks</a>.
+</p>
+<pre class="example">
+
+(use-package org
+  :bind
+  (:map org-mode-map
+        ("&lt;M-return&gt;" . org-toggle-latex-fragment))
+  :config
+  (setq org-support-shift-select t)
+  (setq org-preview-latex-default-process 'dvisvgm)	;preview tikz
+  (setq org-src-tab-acts-natively t)	;indentar src_blocks
+  (setq org-format-latex-options
+        (plist-put org-format-latex-options :scale 1.5))) ;tamaño de preview
+
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (org-indent-mode t)
+            (org-content 2)
+            (display-line-numbers-mode -1)))
+
+;; Babel
+(org-babel-do-load-languages 'org-babel-load-languages '( (python . t) ) )
+(setq org-babel-python-command "python3")
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgf3e0ca9" class="outline-3">
+<h3 id="orgf3e0ca9">Backups</h3>
+<div class="outline-text-3" id="text-orgf3e0ca9">
+<p>
+Extraido de <a href="https://www.gnu.org/software/emacs/manual/html_node/tramp/Auto_002dsave-and-Backup.html">www.gnu.org</a>.
+</p>
+<pre class="example">
+
+(add-to-list 'backup-directory-alist
+             (cons "." "~/.emacs.d/backups/"))
+
+(customize-set-variable
+ 'tramp-backup-directory-alist backup-directory-alist)
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgac512c4" class="outline-2">
+<h2 id="orgac512c4">Modificaciones de Prueba</h2>
+<div class="outline-text-2" id="text-orgac512c4">
+</div>
+<div id="outline-container-orgbfe5be7" class="outline-3">
+<h3 id="orgbfe5be7">scolling suave</h3>
+<div class="outline-text-3" id="text-orgbfe5be7">
+<pre class="example">
+
+(setq scroll-step            1
+      scroll-conservatively  10000)
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Fecha: 2021-06-03 jue 00:00</p>
+<p class="author">Autor: Galindo</p>
+<p class="date">Created: 2021-08-20 vie 16:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

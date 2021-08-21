@@ -1,0 +1,27 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/colections/paginas.org
+
+#+TITLE: Paginas
+#+SUBTITLE: Colección
+
+* Paginas de amigos
+
+- [[https://maogani.blogspot.com/?m=1][Aquí mi amiga Itzel sube sus escritos, revisen su sitio!!! ♡]]
+
+* Herramientas
+
+- [[https://regex-generator.olafneumann.org/][Generador de expresiones regex]]
+- [[http://hyperphysics.phy-astr.gsu.edu/hbasees/magnetic/solenoid.html][Hyperhysics es uno de las paginas que me inspiro a hacer este blog]]
+- [[https://app.contrast-finder.org/?lang=es][calcular el contraste entre dos colores]]
+- [[https://www.cemetech.net/forum/viewtopic.php?t=14888][Sistema de algebra simbolico para Casio CG-50]]
+- [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][Simbolos matematicos en latex]]
+
+* Paginas Interesantes
+
+- [[http://www.cmkosemen.com/][Sitio web del creador de "All Tomorrows"]]
+- [[https://bellard.org/][Bellard es el autor de TinyEMU, tiene un montón de proyectos en su sitio]].
+- [[https://gigamonkeys.com/book/][Pagina oficial de "Practical Common Lisp"]]
+- [[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Canal de programación ATS]]
+- [[https://learnxinyminutes.com/][Guías rápidas para cualquier tema]]
+

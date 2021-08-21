@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-20 vie 14:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Matemáticas Discretas</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div>
+<script defer>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'es'
+}, 'google_translate_element');
+}
+<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Matemáticas Discretas
+<br />
+<span class="subtitle">Apuntes</span>
+</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org741428e">1. Definicion de lenguaje natural y lenguaje formal</a>
+<ul>
+<li><a href="#orgec321eb">1.1. Lenguaje formal</a></li>
+<li><a href="#orgcecb772">1.2. Lenguaje natural</a></li>
+</ul>
+</li>
+<li><a href="#orgffc2473">2. Variables proposiciones</a></li>
+<li><a href="#orgbd3857e">3. Conectivas proposicionales</a></li>
+<li><a href="#orgb8997ee">4. Conceptos</a>
+<ul>
+<li><a href="#org917c487">4.1. Tautología</a></li>
+<li><a href="#orge4b61b6">4.2. Contradicción</a></li>
+</ul>
+</li>
+<li><a href="#org2a2c4a8">5. Tablas de verdad</a></li>
+<li><a href="#orgf74d72e">6. Equivalencia lógica</a>
+<ul>
+<li><a href="#orgfd0fe4d">6.1. Leyes commutativas</a></li>
+<li><a href="#org6c12f91">6.2. Leyes asociativas</a></li>
+<li><a href="#org696ce4f">6.3. Leyes distributivas</a></li>
+<li><a href="#orgba456fb">6.4. Leyes de la identidad</a></li>
+<li><a href="#orgc9db114">6.5. Leyes de negacion</a></li>
+<li><a href="#orgcb09096">6.6. Ley de la doble negacion</a></li>
+<li><a href="#orge46fbdd">6.7. Leyes de idempotencia</a></li>
+<li><a href="#orgb0cef5a">6.8. Leyes universales acortadas</a></li>
+<li><a href="#orgf3d0c4d">6.9. Leyes de morgan</a></li>
+<li><a href="#orgc09caef">6.10. Leyes de absorción</a></li>
+<li><a href="#org389b92e">6.11. Negaciones de <b>t</b> y <b>c</b></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org741428e" class="outline-2">
+<h2 id="org741428e"><span class="section-number-2">1</span> Definicion de lenguaje natural y lenguaje formal</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgec321eb" class="outline-3">
+<h3 id="orgec321eb"><span class="section-number-3">1.1</span> Lenguaje formal</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+El lenguaje formal es un lenguaje artificial, convencional, elegido de manera consciente y cuidadosa para expresarse precisa,
+sistemática, rigurosa y unívocamente, por lo común dentro de
+un cierto campo del saber y con determinados fines.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcecb772" class="outline-3">
+<h3 id="orgcecb772"><span class="section-number-3">1.2</span> Lenguaje natural</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+El lenguaje natural es aquel que utilizamos cotidianamente. Surge históricamente dentro de la sociedad y es aprendido sin que
+exista necesariamente en el individuo un acto reflexivo.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgffc2473" class="outline-2">
+<h2 id="orgffc2473"><span class="section-number-2">2</span> Variables proposiciones</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+conjunto de <span class="underline">enunciados declarativos</span> que formalizan la expresión, usualmente se les denota con las letras (p, q, r, s&#x2026;).
+</p>
+
+<dl class="org-dl">
+<dt>Enunciado declarativo</dt><dd>es aquella proposición de lenguaje objeto de la caal podemos predicar su verdad o su falsedad.</dd>
+</dl>
+
+<div class="DEMONSTRATION">
+<p>
+<i>"Hay un automóvil blanco en el aparcamento"</i>.
+</p>
+
+</div>
+
+<dl class="org-dl">
+<dt>Enunciado NO declarativo</dt><dd>es un enunciado que no puede ser convertido a lenguaje formal.</dd>
+</dl>
+
+<div class="DEMONSTRATION">
+<p>
+<i>"¿Dónde esta mi automóvil?"</i>. <br />
+<i>"¡Guarda silencio!"</i>. <br />
+</p>
+
+</div>
+
+<dl class="org-dl">
+<dt>Enunciado atómico</dt><dd>es aquél enunciado único, que en su expresión no incluye ningún conectivo lógico, es decir, no une dos o más enunciados.</dd>
+</dl>
+
+<div class="DEMONSTRATION">
+<p>
+<i>"Hoy es miércoles."</i> <br />
+<i>"Vivo en el distrito Federeal."</i> <br />
+<i>"Pablo es matematico"</i> <br />
+</p>
+
+</div>
+
+<p>
+<a href="http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf">Extraido</a> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd3857e" class="outline-2">
+<h2 id="orgbd3857e"><span class="section-number-2">3</span> Conectivas proposicionales</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Relacion</th>
+<th scope="col" class="org-left">Notación</th>
+<th scope="col" class="org-left">Lectura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Negacion</td>
+<td class="org-left">¬</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">Conjunción</td>
+<td class="org-left">&or;</td>
+<td class="org-left">o</td>
+</tr>
+
+<tr>
+<td class="org-left">Disyunción</td>
+<td class="org-left">&and;</td>
+<td class="org-left">y<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></td>
+</tr>
+
+<tr>
+<td class="org-left">Implicación</td>
+<td class="org-left">&rarr;</td>
+<td class="org-left">entonces</td>
+</tr>
+
+<tr>
+<td class="org-left">Equivalencia</td>
+<td class="org-left">&equiv;</td>
+<td class="org-left">equivalente a</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/List_of_logic_symbols">Lista de simbolos completa</a> <br />
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+<b>Ejemplo 1</b>: <br />
+\[  \begin{aligned}
+p &\equiv \text{"Hago ejercicio diariamente."} \\
+q &\equiv \text{"Me alimento sanamente."} \\
+r &\equiv \text{"Tengo buena salud."}
+\end{aligned} \] <br />
+</p>
+
+
+<p>
+<i>"Hago ejercicio diariamente y me alimento sanamente"</i>
+\[ p \land q \]
+</p>
+
+<p>
+<i>"No tengo buena salud y no hago ejercicio  diariamente"</i>
+\[ ¬r \land ¬p \] 
+</p>
+
+<p>
+<i>"Si me alimento sanamente y hago ejercicio diariamente, entonces tengo buena salud"</i>
+\[ (p \land q) \implies r \]
+</p>
+
+</div>
+
+<div class="DEMONSTRATION">
+<p>
+<b>Ejemplo 2</b>: <br />
+\[  \begin{aligned}
+p &\equiv \text{"Viene Julia"} \\
+q &\equiv \text{"Viene María"} \\
+r &\equiv \text{"Viene Javier"} 
+\end{aligned} \] <br />
+</p>
+
+<p>
+<i>"Viene Julia, María y Javier"</i>
+\[ p \land q \land r \]
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb8997ee" class="outline-2">
+<h2 id="orgb8997ee"><span class="section-number-2">4</span> Conceptos</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org917c487" class="outline-3">
+<h3 id="org917c487"><span class="section-number-3">4.1</span> Tautología</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+es un forma de enunciado que siempre es verdadera, independientemente de los valores de verdad de los enunciados individuales sustituidos por sus enunciados variables. Un enunciado cuya forma es una tautología es un <b>enunciado tautológico</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge4b61b6" class="outline-3">
+<h3 id="orge4b61b6"><span class="section-number-3">4.2</span> Contradicción</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+es una forma de enunciado que siempre es falso, independientemente de los valors de verdad de los enunciados individuales de los enunciados sustituidos. Un enunciado cuya forma es una contradicción es un <b>enunciado contradictorio</b>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2a2c4a8" class="outline-2">
+<h2 id="org2a2c4a8"><span class="section-number-2">5</span> Tablas de verdad</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Son tablas que nos sirven para conocer los valores de verdad de las proposiciones compuestas
+</p>
+
+<pre class="example">
+Ejemplo:
+ p: /"salió electo Presidente de la República"/
+ q: /"el crecimiento anual fue del 7%"/
+
+ No salió electo Presidente de la 
+ República o el crecimiento anual no 
+ fue del 7%
+
+Su tabla de verdad sería asi:
+
+</pre>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">p</th>
+<th scope="col" class="org-left">q</th>
+<th scope="col" class="org-left">¬p</th>
+<th scope="col" class="org-left">¬q</th>
+<th scope="col" class="org-left">p∧q</th>
+<th scope="col" class="org-left">¬p∧q</th>
+<th scope="col" class="org-left">p∧¬q</th>
+<th scope="col" class="org-left">¬p∧¬q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F</td>
+<td class="org-left">V</td>
+<td class="org-left">V</td>
+<td class="org-left">F</td>
+<td class="org-left">V</td>
+<td class="org-left">V</td>
+<td class="org-left">V</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf74d72e" class="outline-2">
+<h2 id="orgf74d72e"><span class="section-number-2">6</span> Equivalencia lógica</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Dos formas de enunciado se llaman lógicamente equivalents si y sólo si, tienen los mismos valores de verdad para cada posible sustitución de enunciados por sus enunciados de variables. La equivalencia lógica de las formas de enunciado P y Q se denota escribiendo P ≡ Q.
+</p>
+</div>
+
+<div id="outline-container-orgfd0fe4d" class="outline-3">
+<h3 id="orgfd0fe4d"><span class="section-number-3">6.1</span> Leyes commutativas</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Establecen que el orden en el cual sume o multiplique dos números reales no afecta el resultado.
+</p>
+
+<p>
+\[ \begin{aligned}
+ p \land q &\equiv q \land p &
+ p \lor q &\equiv q \lor p
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c12f91" class="outline-3">
+<h3 id="org6c12f91"><span class="section-number-3">6.2</span> Leyes asociativas</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Establecen que cuando suma o multiplica cualesquiera tres números reales, el grupo (o asociación) de los números no afecta el resultado.
+</p>
+
+<p>
+\[ \begin{aligned}
+ (p \land q) \land r &\equiv p \land (q \land r) \\
+ (p \lor q) \lor r &\equiv p \lor (q \lor r)
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org696ce4f" class="outline-3">
+<h3 id="org696ce4f"><span class="section-number-3">6.3</span> Leyes distributivas</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de números por otro número que cuando se hace cada multiplicación por separado
+</p>
+
+<p>
+\[ \begin{aligned}
+ p \land (q \lor r) &\equiv (p \land q) \lor (p \land r) \\
+ p \lor (q \land r) &\equiv (p \lor q) \land (p \lor r)
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba456fb" class="outline-3">
+<h3 id="orgba456fb"><span class="section-number-3">6.4</span> Leyes de la identidad</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Es la constatación de que dos objetos que matemáticamente se escriben diferente, son de hecho el mismo objeto.
+</p>
+
+<p>
+\[ \begin{aligned}
+ p \land t &\equiv p &
+ p \lor c &\equiv p
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc9db114" class="outline-3">
+<h3 id="orgc9db114"><span class="section-number-3">6.5</span> Leyes de negacion</h3>
+<div class="outline-text-3" id="text-6-5">
+<p>
+Dada una proposición p su contraria no p es verdadera.
+</p>
+
+<p>
+\[ \begin{aligned}
+p \land \lnot p &\equiv t & p \lor \lnot p &\equiv c
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb09096" class="outline-3">
+<h3 id="orgcb09096"><span class="section-number-3">6.6</span> Ley de la doble negacion</h3>
+<div class="outline-text-3" id="text-6-6">
+<p>
+se produce cuando se combina el adverbio no con la presencia de otros elementos que tienen también sentido negativo.
+</p>
+
+<p>
+\[ \begin{aligned}
+\lnot(\lnot p) \equiv p
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge46fbdd" class="outline-3">
+<h3 id="orge46fbdd"><span class="section-number-3">6.7</span> Leyes de idempotencia</h3>
+<div class="outline-text-3" id="text-6-7">
+<p>
+es la propiedad para realizar una acción determinada varias veces y aun así conseguir el mismo resultado que se obtendría si se realizase una sola vez.
+</p>
+
+<p>
+\[ \begin{aligned}
+p \land p &\equiv p & p \lor p &\equiv p 
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0cef5a" class="outline-3">
+<h3 id="orgb0cef5a"><span class="section-number-3">6.8</span> Leyes universales acortadas</h3>
+<div class="outline-text-3" id="text-6-8">
+<p>
+\[ \begin{aligned}
+p \lor t &\equiv t & p \land c &\equiv c
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3d0c4d" class="outline-3">
+<h3 id="orgf3d0c4d"><span class="section-number-3">6.9</span> Leyes de morgan</h3>
+<div class="outline-text-3" id="text-6-9">
+<p>
+son un par de reglas de transformación que son ambas reglas de inferencia válidas. Las normas permiten la expresión de las conjunciones y disyunciones puramente en términos de vía negación.
+</p>
+
+<p>
+\[ \begin{aligned}
+\lnot ( p \land q ) &\equiv \lnot p \lor \lnot q & 
+\lnot ( p \lor q ) &\equiv \lnot p \land \lnot q
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc09caef" class="outline-3">
+<h3 id="orgc09caef"><span class="section-number-3">6.10</span> Leyes de absorción</h3>
+<div class="outline-text-3" id="text-6-10">
+<p>
+\[ \begin{aligned}
+p \lor (p \land q) &\equiv p & p \land (p \lor q) &\equiv p
+\end{aligned} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org389b92e" class="outline-3">
+<h3 id="org389b92e"><span class="section-number-3">6.11</span> Negaciones de <b>t</b> y <b>c</b></h3>
+<div class="outline-text-3" id="text-6-11">
+<p>
+El negativo de una tautología es una contradicción y el opuesto de una contradicción es una tautología.
+</p>
+
+<p>
+\[ \begin{aligned}
+\lnot t &\equiv c & \lnot c &\equiv t
+\end{aligned} \]
+</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Nota al pie de p&aacute;gina: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Una forma para identificar cual simbolo es "y" es recordar que ambas tienen forma de "v", osea ambas apuntan hacia abajo.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Fecha: 2021-08-10 mar 00:00</p>
+<p class="author">Autor: Galindo</p>
+<p class="date">Created: 2021-08-20 vie 14:17</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
