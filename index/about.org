@@ -1,41 +1,10 @@
-#+TITLE: About
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
+#+EXPORT_FILE_NAME: ../publish/about.html
+
+#+TITLE:    About
 #+SUBTITLE: me & my site
-
-#+LANGUAGE: es
-
-#+Options: html-style:nil
-#+Options: html-scripts:nil
-#+Options: num:nil toc:nil
-
-#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
-
-#+HTML_HEAD: <script defer type="text/javascript" src="script.js"></script>
-
-#+BEGIN_EXPORT html
-<div id="google_translate_element"></div>
-<script defer> 
-function googleTranslateElementInit() {
-
-new google.translate.TranslateElement({
-
-pageLanguage: 'es'
-
-}, 'google_translate_element');
-
-}
-</script>
-
-<script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
-#+END_EXPORT
-
-#+BEGIN_nav
-- [[[./index.html][Index]]]
-- [[[./settings.html][Settings]]]
-- [[[./about.html][About]]]
-#+END_nav
-
+#+DATE:    [2021-08-06 vie]
 
 # #+attr_html: :align right
 # [[./galeria/pain200.gif]]
@@ -47,4 +16,5 @@ Mi nombre es Galindo, soy de México y este es mi sitio. Mis hobbies son la prog
 
 + Github :: [[https://github.com/Galindo-lab]]
 + Discord :: galindo-lab#6063
-+ guestbook :: https://galindosoft.123guestbook.com/
++ guestbook (no longer available.) :: +[[https://galindosoft.123guestbook.com/][galindosoft.123guestbook.com]]+
++ chat directo :: [[https://minnit.chat/galindosoft?embed&&nickname=][Minnit.chat/galindosoft]]

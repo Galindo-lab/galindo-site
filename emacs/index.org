@@ -1,0 +1,11 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/emacs/index.org
+
+#+TITLE:    Emacs
+#+SUBTITLE: index
+
+Uno de los mejores editores de texto, que al mismo tiempo puede ser tu sistema operativo y mucho más...
+- [[./emacs/blog-en-org-mode.html][Como hacer un blog con ORG mode]].
+- [[./emacs/tutorial-emacs.html][Tutorial de emacs]] (En progreso).
+- [[./emacs/init.html][Mi init.org]]

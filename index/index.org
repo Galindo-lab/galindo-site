@@ -13,7 +13,7 @@
 </style>
 #+END_EXPORT
 
-#+ATTR_HTML: :height 256px :align center
+#+ATTR_HTML: :height 150px :align center
 [[./image.jpg]]
 
 * ¡Saludos!
@@ -31,6 +31,8 @@ Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, pu
 + [[./logs/index.html][Logs]]
 + [[./programacion/index.html][Programación]]
 
+
+[[./about.html][About]]
 
 #+BEGIN_EXPORT html
  <div id="google_translate_element"></div>
