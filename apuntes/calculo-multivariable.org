@@ -29,6 +29,10 @@ Funciones Discontinuas Más Comunes:
 # https://youtu.be/8bhelXiPWew
 # https://youtu.be/KrPYYW_504U
 # https://app.diagrams.net
+# https://youtu.be/IddgDEBUsHs
+# https://www.youtube.com/watch?v=qEVrSjLyOdU
+# http://es.onlinemschool.com/math/assistance/cartesian_coordinate/plane_angl/
+
 
 ** Representación del plano 
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuacion es la siguiente:

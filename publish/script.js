@@ -8,3 +8,6 @@ if( theme ) {
     localStorage.setItem('theme', 'light');
     body.classList.value =  'light' 
 }
+
+localStorage.setItem('theme', 'light');
+body.classList.value =  'light' ;

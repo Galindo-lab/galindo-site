@@ -8,6 +8,11 @@
     margin-right: auto;
 }
 
+#org-div-home-and-up {
+    position: absolute;
+    z-index: 2;
+}
+
 body {
     margin-top: 0;
     background-color: var(--background0);
@@ -38,13 +43,10 @@ blockquote {
 }
 
 /* ul  { */
-    
 /*     list-style-type: "|> "; */
-
 /* } */
 
 /* li { */
-
 /* } */
 
 p, dd {
@@ -87,15 +89,18 @@ table[align=righn]{
 
 .title {
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     text-align: left;
     font-weight: light;
     text-align: center;
 }
 
-
 .subtitle {
     font-size: 0.7em;
+}
+
+h2 {
+    margin-top:  2em;
 }
 
 /* -------------- form ------------------------*/
