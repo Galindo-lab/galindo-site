@@ -6,6 +6,6 @@
 #+SUBTITLE: index
 
 Uno de los mejores editores de texto, que al mismo tiempo puede ser tu sistema operativo y mucho más...
-- [[./emacs/blog-en-org-mode.html][Como hacer un blog con ORG mode]].
-- [[./emacs/tutorial-emacs.html][Tutorial de emacs]] (En progreso).
-- [[./emacs/init.html][Mi init.org]]
+- [[./blog-en-org-mode.html][Como hacer un blog con ORG mode]].
+- [[./tutorial-emacs.html][Tutorial de emacs]] (En progreso).
+- [[./init.html][Mi init.org]]

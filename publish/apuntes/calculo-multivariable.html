@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-21 sáb 01:42 -->
+<!-- 2021-08-21 sáb 17:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cálculo Multivariable</title>
@@ -30,63 +30,72 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc945828">1. Funciones discontinuas más comunes</a></li>
-<li><a href="#org83d58ce">2. Planos</a>
+<li><a href="#orgf56e8bd">1. Funciones discontinuas más comunes</a></li>
+<li><a href="#orgd6832b2">2. Planos</a>
 <ul>
-<li><a href="#org49b72a6">2.1. Representación del plano</a></li>
-<li><a href="#orgc100eac">2.2. Plano Entre Tres Puntos</a></li>
+<li><a href="#org5b3c6ea">2.1. Representación del plano</a></li>
+<li><a href="#orgddeaba8">2.2. Plano Entre Tres Puntos</a></li>
+<li><a href="#orgd8ab768">2.3. Ángulo Entre Planos</a></li>
 </ul>
 </li>
-<li><a href="#orgf526cf8">3. Rectas</a>
+<li><a href="#orgfa3a59f">3. Rectas</a>
 <ul>
-<li><a href="#org449134d">3.1. Parametrizacion de una recta con dos puntos</a></li>
-<li><a href="#orge526009">3.2. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
+<li><a href="#org02edb60">3.1. Parametrizacion de una recta con dos puntos</a></li>
+<li><a href="#org5814bcb">3.2. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
 </ul>
 </li>
-<li><a href="#org3eb0d54">4. Alcance de la funcion</a>
+<li><a href="#org5084bf9">4. Alcance de la funcion</a>
 <ul>
-<li><a href="#org5bcf650">4.1. Dominio de una función</a></li>
-<li><a href="#org6e4309b">4.2. Imagen de una función (Rango)</a></li>
+<li><a href="#orgace4fd5">4.1. Dominio de una función</a></li>
+<li><a href="#orge4d5d53">4.2. Imagen de una función (Rango)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc945828" class="outline-2">
-<h2 id="orgc945828"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
+<div id="outline-container-orgf56e8bd" class="outline-2">
+<h2 id="orgf56e8bd"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Funciones Discontinuas Más Comunes:
 </p>
 <ul class="org-ul">
 <li>Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.</li>
+
 <li>A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.</li>
-<li>Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \) .</li>
-<li>Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \) .</li>
+
+<li>Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).</li>
+
+<li>Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).</li>
+
 <li>Cosecante, en los puntos \(\pi k\).</li>
+
 <li>logartimo de 10 en \( x \leq 0  \)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org83d58ce" class="outline-2">
-<h2 id="org83d58ce"><span class="section-number-2">2</span> Planos</h2>
+<div id="outline-container-orgd6832b2" class="outline-2">
+<h2 id="orgd6832b2"><span class="section-number-2">2</span> Planos</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 
-<div id="outline-container-org49b72a6" class="outline-3">
-<h3 id="org49b72a6"><span class="section-number-3">2.1</span> Representación del plano</h3>
+<div id="outline-container-org5b3c6ea" class="outline-3">
+<h3 id="org5b3c6ea"><span class="section-number-3">2.1</span> Representación del plano</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuacion es la siguiente:
 </p>
 
+<div class="DEMONSTRATION">
 <p>
 \[
 ax + by + cz + d = 0
 \]
 </p>
+
+</div>
 
 <p>
 otras formas de representar el plano también podrian ser las siguiente:
@@ -95,32 +104,37 @@ otras formas de representar el plano también podrian ser las siguiente:
 <dl class="org-dl">
 <dt>Ecuación vectorial del plano</dt><dd></dd>
 </dl>
-
+<div class="DEMONSTRATION">
 <p>
 \[
 \boldsymbol{a} \cdot \boldsymbol{r} = \boldsymbol{n} \cdot \boldsymbol{r}_0
 \]
 </p>
 
+</div>
+
 <dl class="org-dl">
 <dt>Ecuación escalar</dt><dd></dd>
 </dl>
-
+<div class="DEMONSTRATION">
 <p>
 \[
 a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 \]
 </p>
+
+</div>
 </div>
 </div>
 
-<div id="outline-container-orgc100eac" class="outline-3">
-<h3 id="orgc100eac"><span class="section-number-3">2.2</span> Plano Entre Tres Puntos</h3>
+<div id="outline-container-orgddeaba8" class="outline-3">
+<h3 id="orgddeaba8"><span class="section-number-3">2.2</span> Plano Entre Tres Puntos</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Para determinar la funcion que se forma con tres punttos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 </p>
 
+<div class="DEMONSTRATION">
 <p>
 \[ \begin{pmatrix}
    x-a_x   & y-a_y   & z-a_z   \\
@@ -129,30 +143,61 @@ Para determinar la funcion que se forma con tres punttos en el espacio, sustitui
 \end{pmatrix} \]
 </p>
 
+</div>
+
 <p>
 <a href="https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos">eigenmath</a> | <a href="https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas">KhiCas</a> 
 </p>
 </div>
 </div>
+
+
+<div id="outline-container-orgd8ab768" class="outline-3">
+<h3 id="orgd8ab768"><span class="section-number-3">2.3</span> Ángulo Entre Planos</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+para calcular el angulo entre dos planos usamos la siguiente ecuacion:
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+\[
+\cos \theta = \frac{\vec{u} \cdot \vec{v}}{\left|\vec{u}\right|\left|\vec{v}\right|}
+\]
+</p>
+
 </div>
 
+<p>
+donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arcocoseno (\(cos^{-1}(\theta)\)) de nuestra divicion, ojo que el resultado esta en radianes.
+</p>
 
-<div id="outline-container-orgf526cf8" class="outline-2">
-<h2 id="orgf526cf8"><span class="section-number-2">3</span> Rectas</h2>
+<p>
+<a href="https://github.com/Galindo-lab/calculator/blob/main/eigenmath/angulo-entre-dos-planos">eigenmath</a> | <a href="https://youtu.be/qEVrSjLyOdU">Video</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfa3a59f" class="outline-2">
+<h2 id="orgfa3a59f"><span class="section-number-2">3</span> Rectas</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org449134d" class="outline-3">
-<h3 id="org449134d"><span class="section-number-3">3.1</span> Parametrizacion de una recta con dos puntos</h3>
+<div id="outline-container-org02edb60" class="outline-3">
+<h3 id="org02edb60"><span class="section-number-3">3.1</span> Parametrizacion de una recta con dos puntos</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Sustituimos los valores en la siguiente formula, P<sub>1</sub> es el punto de origen, P<sub>2</sub> punto final y t es un valor entre 0 y 1
 </p>
 
+<div class="DEMONSTRATION">
 <p>
 \[
 P_1 + t \cdot (P_2 - P_1)
 \]
 </p>
+
+</div>
 
 <p>
 <a href="../calculadoras/calculo-recta.html">Calculadora</a>
@@ -160,23 +205,21 @@ P_1 + t \cdot (P_2 - P_1)
 </div>
 </div>
 
-<div id="outline-container-orge526009" class="outline-3">
-<h3 id="orge526009"><span class="section-number-3">3.2</span> Ecuación paramétrica de la recta a una ecuación simétrica</h3>
+<div id="outline-container-org5814bcb" class="outline-3">
+<h3 id="org5814bcb"><span class="section-number-3">3.2</span> Ecuación paramétrica de la recta a una ecuación simétrica</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> simplemente resolviendo la ecuacion en los terminos que necesitemos. Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la siguiente formula:
 </p>
 
-
+<div class="DEMONSTRATION">
 <p>
 \[
 L: \frac{x-x_0}{a_1} = \frac{y-y_0}{a_2} = \frac{z-z_0}{a_3}
 \]
 </p>
 
-<p>
-Ejemplo:
-</p>
+</div>
 
 <div class="DEMONSTRATION">
 <p>
@@ -227,20 +270,24 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 </div>
 </div>
 
-<div id="outline-container-org3eb0d54" class="outline-2">
-<h2 id="org3eb0d54"><span class="section-number-2">4</span> Alcance de la funcion</h2>
+
+<div id="outline-container-org5084bf9" class="outline-2">
+<h2 id="org5084bf9"><span class="section-number-2">4</span> Alcance de la funcion</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org5bcf650" class="outline-3">
-<h3 id="org5bcf650"><span class="section-number-3">4.1</span> Dominio de una función</h3>
+<div id="outline-container-orgace4fd5" class="outline-3">
+<h3 id="orgace4fd5"><span class="section-number-3">4.1</span> Dominio de una función</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
-El dominio son los valores de X que puede tomar una función, Ejemplo: 
+El dominio son los valores de X que puede tomar una función:
 </p>
 
+<div class="DEMONSTRATION">
 <p>
 \[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
 </p>
+
+</div>
 
 <p>
 La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
@@ -258,6 +305,7 @@ Como los números negativos no tienen raíces, no hay números reales que multip
 Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
 </p>
 
+<div class="DEMONSTRATION">
 <p>
 \[ \begin{Bmatrix}
   \begin{pmatrix} 
@@ -267,14 +315,16 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 \end{Bmatrix}  \]
 </p>
 
+</div>
+
 <p>
 <a href="https://youtu.be/qDr0R7hIjts">Video</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6e4309b" class="outline-3">
-<h3 id="org6e4309b"><span class="section-number-3">4.2</span> Imagen de una función (Rango)</h3>
+<div id="outline-container-orge4d5d53" class="outline-3">
+<h3 id="orge4d5d53"><span class="section-number-3">4.2</span> Imagen de una función (Rango)</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
@@ -289,16 +339,15 @@ El rango o imagen de una función es todo valor de Y que puede tomar nuestra fun
 <li>Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).</li>
 </ul>
 
-<p>
-<b>Ejemplo:</b>
-</p>
-
+<div class="DEMONSTRATION">
 <p>
 \[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
 </p>
 
+</div>
+
 <p>
-Para encontrar el rango es muy recomendable encontrar primero el <a href="#org5bcf650">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
+Para encontrar el rango es muy recomendable encontrar primero el <a href="#orgace4fd5">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
 </p>
 
 <p>

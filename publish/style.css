@@ -37,11 +37,15 @@ blockquote {
     font-family:'Fira Code'; 
 }
 
-ul  {
+/* ul  { */
     
-    list-style-type: "|> ";
+/*     list-style-type: "|> "; */
 
-}
+/* } */
+
+/* li { */
+
+/* } */
 
 p, dd {
     margin:1em;
@@ -146,6 +150,13 @@ a:hover {
 
 #google_translate_element{
     display:none;
+}
+
+/* Google Translate Overrides */
+html, body{
+    min-height: 0!important;
+    height: auto!important;
+    position: inherit!important;
 }
 
 /*-------------------- Postamble ------------------------*/

@@ -16,5 +16,5 @@ Mi nombre es Galindo, soy de México y este es mi sitio. Mis hobbies son la prog
 
 + Github :: [[https://github.com/Galindo-lab]]
 + Discord :: galindo-lab#6063
-+ guestbook (no longer available.) :: +[[https://galindosoft.123guestbook.com/][galindosoft.123guestbook.com]]+
+# + guestbook (no longer available.) :: +[[https://galindosoft.123guestbook.com/][galindosoft.123guestbook.com]]+
 + chat directo :: [[https://minnit.chat/galindosoft?embed&&nickname=][Minnit.chat/galindosoft]]

@@ -9,6 +9,8 @@
 
 #+TOC: headlines 2
 
+-----
+
 * Definicion de lenguaje natural y lenguaje formal
 ** Lenguaje formal
 El lenguaje formal es un lenguaje artificial, convencional, elegido de manera consciente y cuidadosa para expresarse precisa,
@@ -18,6 +20,8 @@ un cierto campo del saber y con determinados fines.
 ** Lenguaje natural
 El lenguaje natural es aquel que utilizamos cotidianamente. Surge históricamente dentro de la sociedad y es aprendido sin que
 exista necesariamente en el individuo un acto reflexivo.
+
+-----
 
 * Variables proposiciones 
 conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente se les denota con las letras (p, q, r, s...).
@@ -44,6 +48,8 @@ conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente s
 #+END_DEMONSTRATION 
 
 [[http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf][Extraido]] 
+
+-----
 
 * Conectivas proposicionales
 son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
@@ -91,6 +97,8 @@ r &\equiv \text{"Viene Javier"}
 \[ p \land q \land r \]
 
 #+END_DEMONSTRATION
+
+-----
 
 [fn:tip-and] Una forma para identificar cual simbolo es "y" es recordar que ambas tienen forma de "v", osea ambas apuntan hacia abajo.
 

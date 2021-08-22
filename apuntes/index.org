@@ -10,20 +10,12 @@
 Aquí guardo texodos los apuntes he hecho desde que empecé la carrera, los actualizo conforme aprendo cosas nuevas:
 
 * Completos
-  - [[./vectores.html][Vectores]]
-
-* En progreso
-  - [[./calculo-multivariable.html][Cálculo multivariable]] (2021-2)
-  - [[./matematicas-discretas.html][Matemáticas discretas]]
+  - [[./vectores.html][Vectores]] ([[./pdf/vectores.pdf][pdf]])
+  - [[./calculo-multivariable.html][Cálculo multivariable]] ([[./pdf/calculo-multivariable.pdf][pdf]])
+  - [[./matematicas-discretas.html][Matemáticas discretas]] ([[./pdf/matematicas-discretas.pdf][pdf]])
   - [[./matrices.html][Matrices]]
-  - [[./circuitos-electricos.html][Circuitos Eléctricos]]
+  - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./pdf/circuitos-electricos.pdf][pdf]])
   - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
-
-* Versiones en pdf
-  - [[./pdf/calculo-multivariable.pdf][Cálculo Multivariable]]
-  - [[./pdf/matematicas-discretas.pdf][Matemáticas discretas]]
-  - [[./pdf/circuitos-electricos.pdf][Circuitos Eléctricos]]
-  - [[./pdf/vectores.pdf][Vectores]]
 
 * Antiguos
   - [[https://www.mediafire.com/file/jfptx6v0ituoj65/ecuaciones-diferenciales.pdf/file][Ecuaciones diferenciales]] (2021-1)

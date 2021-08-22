@@ -12,10 +12,15 @@
 * Funciones discontinuas más comunes
 Funciones Discontinuas Más Comunes:
 - Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.
+
 - A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.
-- Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \) .
-- Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \) .
+
+- Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+
+- Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+
 - Cosecante, en los puntos \(\pi k\).
+
 - logartimo de 10 en \( x \leq 0  \)
 
 * Planos
@@ -28,55 +33,77 @@ Funciones Discontinuas Más Comunes:
 ** Representación del plano 
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuacion es la siguiente:
 
+#+BEGIN_DEMONSTRATION
 \[
 ax + by + cz + d = 0
 \]
+#+END_DEMONSTRATION
 
 otras formas de representar el plano también podrian ser las siguiente:
 
 + Ecuación vectorial del plano ::
-
+#+BEGIN_DEMONSTRATION
 \[
 \boldsymbol{a} \cdot \boldsymbol{r} = \boldsymbol{n} \cdot \boldsymbol{r}_0
 \]
+#+END_DEMONSTRATION
 
 + Ecuación escalar ::
-
+#+BEGIN_DEMONSTRATION
 \[
 a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 \]
+#+END_DEMONSTRATION
 
 ** Plano Entre Tres Puntos
 Para determinar la funcion que se forma con tres punttos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{pmatrix}
    x-a_x   & y-a_y   & z-a_z   \\
    b_x-a_x & b_y-a_y & b_z-a_z \\
    c_x-a_x & c_y-a_y & c_x-a_z \\
 \end{pmatrix} \]
+#+END_DEMONSTRATION
 
 [[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos][eigenmath]] | [[https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas][KhiCas]] 
 
+
+** Ángulo Entre Planos 
+para calcular el angulo entre dos planos usamos la siguiente ecuacion:
+
+#+BEGIN_DEMONSTRATION
+\[
+\cos \theta = \frac{\vec{u} \cdot \vec{v}}{\left|\vec{u}\right|\left|\vec{v}\right|}
+\]
+#+END_DEMONSTRATION
+
+donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arcocoseno (\(cos^{-1}(\theta)\)) de nuestra divicion, ojo que el resultado esta en radianes.
+
+[[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/angulo-entre-dos-planos][eigenmath]] | [[https://youtu.be/qEVrSjLyOdU][Video]]
+
+[fn:normal] formula de la normal \( \sqrt{ x^2 + y^2 + z^2 } \)
 
 * Rectas 
 ** Parametrizacion de una recta con dos puntos
 Sustituimos los valores en la siguiente formula, P_1 es el punto de origen, P_2 punto final y t es un valor entre 0 y 1
 
+#+BEGIN_DEMONSTRATION
 \[
 P_1 + t \cdot (P_2 - P_1)
 \]
+#+END_DEMONSTRATION
 
 [[../calculadoras/calculo-recta.html][Calculadora]]
 
 ** Ecuación paramétrica de la recta a una ecuación simétrica
 La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los terminos que necesitemos. Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la siguiente formula:
 
-
+#+BEGIN_DEMONSTRATION
 \[
 L: \frac{x-x_0}{a_1} = \frac{y-y_0}{a_2} = \frac{z-z_0}{a_3}
 \]
-
-Ejemplo:
+#+END_DEMONSTRATION
 
 #+BEGIN_DEMONSTRATION
 Identificamos nuestro punto de paso y nuestro vector de dirección:
@@ -111,11 +138,14 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 [fn:ecuacion-continua-recta] 
 \[ \frac{x-x_1}{v_1} = \frac{y-y_1}{v_2} \]
 
+
 * Alcance de la funcion
 ** Dominio de una función
-El dominio son los valores de X que puede tomar una función, Ejemplo: 
+El dominio son los valores de X que puede tomar una función:
 
+#+BEGIN_DEMONSTRATION
 \[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
+#+END_DEMONSTRATION
 
  La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
 
@@ -125,12 +155,14 @@ Como los números negativos no tienen raíces, no hay números reales que multip
 
 Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{Bmatrix}
   \begin{pmatrix} 
   x \\ y \\ 
   \end{pmatrix} \in \mathbb R^2: 
   x + y + 1 \geq 0 \wedge x \not = 1
 \end{Bmatrix}  \]
+#+END_DEMONSTRATION
 
 [[https://youtu.be/qDr0R7hIjts][Video]]
 
@@ -142,9 +174,9 @@ El rango o imagen de una función es todo valor de Y que puede tomar nuestra fun
 
 - Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).
 
-*Ejemplo:*
-
+#+BEGIN_DEMONSTRATION
 \[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
+#+END_DEMONSTRATION
 
 Para encontrar el rango es muy recomendable encontrar primero el [[Dominio de una función][dominio]] de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
 

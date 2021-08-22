@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-21 sáb 01:42 -->
+<!-- 2021-08-21 sáb 21:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Matemáticas Discretas</title>
@@ -30,46 +30,48 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgfb82071">1. Definicion de lenguaje natural y lenguaje formal</a>
+<li><a href="#org3b862ea">1. Definicion de lenguaje natural y lenguaje formal</a>
 <ul>
-<li><a href="#org584fdab">1.1. Lenguaje formal</a></li>
-<li><a href="#org3d0c0e2">1.2. Lenguaje natural</a></li>
+<li><a href="#orge9b8a98">1.1. Lenguaje formal</a></li>
+<li><a href="#org3017d4f">1.2. Lenguaje natural</a></li>
 </ul>
 </li>
-<li><a href="#orgd27563a">2. Variables proposiciones</a></li>
-<li><a href="#org82f245b">3. Conectivas proposicionales</a></li>
-<li><a href="#org8d2208f">4. Conceptos</a>
+<li><a href="#org4a68e8e">2. Variables proposiciones</a></li>
+<li><a href="#org91922ab">3. Conectivas proposicionales</a></li>
+<li><a href="#orgf3c7426">4. Conceptos</a>
 <ul>
-<li><a href="#org35faba7">4.1. Tautología</a></li>
-<li><a href="#org1361488">4.2. Contradicción</a></li>
+<li><a href="#orge225ec4">4.1. Tautología</a></li>
+<li><a href="#org45464a2">4.2. Contradicción</a></li>
 </ul>
 </li>
-<li><a href="#org2fdb56c">5. Tablas de verdad</a></li>
-<li><a href="#orgeaab812">6. Equivalencia lógica</a>
+<li><a href="#orga4ee2eb">5. Tablas de verdad</a></li>
+<li><a href="#org8f97f83">6. Equivalencia lógica</a>
 <ul>
-<li><a href="#org6325ae4">6.1. Leyes commutativas</a></li>
-<li><a href="#org27b8bd7">6.2. Leyes asociativas</a></li>
-<li><a href="#org3173427">6.3. Leyes distributivas</a></li>
-<li><a href="#org4be3bb3">6.4. Leyes de la identidad</a></li>
-<li><a href="#org83c14ea">6.5. Leyes de negacion</a></li>
-<li><a href="#org9623497">6.6. Ley de la doble negacion</a></li>
-<li><a href="#orgcac6555">6.7. Leyes de idempotencia</a></li>
-<li><a href="#org4f8dd1a">6.8. Leyes universales acortadas</a></li>
-<li><a href="#orgff8e774">6.9. Leyes de morgan</a></li>
-<li><a href="#orgd96b55a">6.10. Leyes de absorción</a></li>
-<li><a href="#orgc3fdd9d">6.11. Negaciones de <b>t</b> y <b>c</b></a></li>
+<li><a href="#org0fe88e5">6.1. Leyes commutativas</a></li>
+<li><a href="#org152564c">6.2. Leyes asociativas</a></li>
+<li><a href="#org0dec497">6.3. Leyes distributivas</a></li>
+<li><a href="#org24863ca">6.4. Leyes de la identidad</a></li>
+<li><a href="#org22b6114">6.5. Leyes de negacion</a></li>
+<li><a href="#orgcd1b491">6.6. Ley de la doble negacion</a></li>
+<li><a href="#orge0da347">6.7. Leyes de idempotencia</a></li>
+<li><a href="#org40a76c5">6.8. Leyes universales acortadas</a></li>
+<li><a href="#org7d12b80">6.9. Leyes de morgan</a></li>
+<li><a href="#orga778ff4">6.10. Leyes de absorción</a></li>
+<li><a href="#orga6191dd">6.11. Negaciones de <b>t</b> y <b>c</b></a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgfb82071" class="outline-2">
-<h2 id="orgfb82071"><span class="section-number-2">1</span> Definicion de lenguaje natural y lenguaje formal</h2>
+<hr />
+
+<div id="outline-container-org3b862ea" class="outline-2">
+<h2 id="org3b862ea"><span class="section-number-2">1</span> Definicion de lenguaje natural y lenguaje formal</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org584fdab" class="outline-3">
-<h3 id="org584fdab"><span class="section-number-3">1.1</span> Lenguaje formal</h3>
+<div id="outline-container-orge9b8a98" class="outline-3">
+<h3 id="orge9b8a98"><span class="section-number-3">1.1</span> Lenguaje formal</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 El lenguaje formal es un lenguaje artificial, convencional, elegido de manera consciente y cuidadosa para expresarse precisa,
@@ -79,19 +81,21 @@ un cierto campo del saber y con determinados fines.
 </div>
 </div>
 
-<div id="outline-container-org3d0c0e2" class="outline-3">
-<h3 id="org3d0c0e2"><span class="section-number-3">1.2</span> Lenguaje natural</h3>
+<div id="outline-container-org3017d4f" class="outline-3">
+<h3 id="org3017d4f"><span class="section-number-3">1.2</span> Lenguaje natural</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 El lenguaje natural es aquel que utilizamos cotidianamente. Surge históricamente dentro de la sociedad y es aprendido sin que
 exista necesariamente en el individuo un acto reflexivo.
 </p>
+
+<hr />
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd27563a" class="outline-2">
-<h2 id="orgd27563a"><span class="section-number-2">2</span> Variables proposiciones</h2>
+<div id="outline-container-org4a68e8e" class="outline-2">
+<h2 id="org4a68e8e"><span class="section-number-2">2</span> Variables proposiciones</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 conjunto de <span class="underline">enunciados declarativos</span> que formalizan la expresión, usualmente se les denota con las letras (p, q, r, s&#x2026;).
@@ -136,11 +140,13 @@ conjunto de <span class="underline">enunciados declarativos</span> que formaliza
 <p>
 <a href="http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf">Extraido</a> 
 </p>
+
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org82f245b" class="outline-2">
-<h2 id="org82f245b"><span class="section-number-2">3</span> Conectivas proposicionales</h2>
+<div id="outline-container-org91922ab" class="outline-2">
+<h2 id="org91922ab"><span class="section-number-2">3</span> Conectivas proposicionales</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
@@ -244,15 +250,17 @@ r &\equiv \text{"Viene Javier"}
 </p>
 
 </div>
+
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org8d2208f" class="outline-2">
-<h2 id="org8d2208f"><span class="section-number-2">4</span> Conceptos</h2>
+<div id="outline-container-orgf3c7426" class="outline-2">
+<h2 id="orgf3c7426"><span class="section-number-2">4</span> Conceptos</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org35faba7" class="outline-3">
-<h3 id="org35faba7"><span class="section-number-3">4.1</span> Tautología</h3>
+<div id="outline-container-orge225ec4" class="outline-3">
+<h3 id="orge225ec4"><span class="section-number-3">4.1</span> Tautología</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 es un forma de enunciado que siempre es verdadera, independientemente de los valores de verdad de los enunciados individuales sustituidos por sus enunciados variables. Un enunciado cuya forma es una tautología es un <b>enunciado tautológico</b>.
@@ -260,8 +268,8 @@ es un forma de enunciado que siempre es verdadera, independientemente de los val
 </div>
 </div>
 
-<div id="outline-container-org1361488" class="outline-3">
-<h3 id="org1361488"><span class="section-number-3">4.2</span> Contradicción</h3>
+<div id="outline-container-org45464a2" class="outline-3">
+<h3 id="org45464a2"><span class="section-number-3">4.2</span> Contradicción</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 es una forma de enunciado que siempre es falso, independientemente de los valors de verdad de los enunciados individuales de los enunciados sustituidos. Un enunciado cuya forma es una contradicción es un <b>enunciado contradictorio</b>.
@@ -270,8 +278,8 @@ es una forma de enunciado que siempre es falso, independientemente de los valors
 </div>
 </div>
 
-<div id="outline-container-org2fdb56c" class="outline-2">
-<h2 id="org2fdb56c"><span class="section-number-2">5</span> Tablas de verdad</h2>
+<div id="outline-container-orga4ee2eb" class="outline-2">
+<h2 id="orga4ee2eb"><span class="section-number-2">5</span> Tablas de verdad</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Son tablas que nos sirven para conocer los valores de verdad de las proposiciones compuestas
@@ -338,16 +346,16 @@ Su tabla de verdad sería asi:
 </div>
 </div>
 
-<div id="outline-container-orgeaab812" class="outline-2">
-<h2 id="orgeaab812"><span class="section-number-2">6</span> Equivalencia lógica</h2>
+<div id="outline-container-org8f97f83" class="outline-2">
+<h2 id="org8f97f83"><span class="section-number-2">6</span> Equivalencia lógica</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Dos formas de enunciado se llaman lógicamente equivalents si y sólo si, tienen los mismos valores de verdad para cada posible sustitución de enunciados por sus enunciados de variables. La equivalencia lógica de las formas de enunciado P y Q se denota escribiendo P ≡ Q.
 </p>
 </div>
 
-<div id="outline-container-org6325ae4" class="outline-3">
-<h3 id="org6325ae4"><span class="section-number-3">6.1</span> Leyes commutativas</h3>
+<div id="outline-container-org0fe88e5" class="outline-3">
+<h3 id="org0fe88e5"><span class="section-number-3">6.1</span> Leyes commutativas</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Establecen que el orden en el cual sume o multiplique dos números reales no afecta el resultado.
@@ -362,8 +370,8 @@ Establecen que el orden en el cual sume o multiplique dos números reales no afe
 </div>
 </div>
 
-<div id="outline-container-org27b8bd7" class="outline-3">
-<h3 id="org27b8bd7"><span class="section-number-3">6.2</span> Leyes asociativas</h3>
+<div id="outline-container-org152564c" class="outline-3">
+<h3 id="org152564c"><span class="section-number-3">6.2</span> Leyes asociativas</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Establecen que cuando suma o multiplica cualesquiera tres números reales, el grupo (o asociación) de los números no afecta el resultado.
@@ -378,8 +386,8 @@ Establecen que cuando suma o multiplica cualesquiera tres números reales, el gr
 </div>
 </div>
 
-<div id="outline-container-org3173427" class="outline-3">
-<h3 id="org3173427"><span class="section-number-3">6.3</span> Leyes distributivas</h3>
+<div id="outline-container-org0dec497" class="outline-3">
+<h3 id="org0dec497"><span class="section-number-3">6.3</span> Leyes distributivas</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de números por otro número que cuando se hace cada multiplicación por separado
@@ -394,8 +402,8 @@ Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de núm
 </div>
 </div>
 
-<div id="outline-container-org4be3bb3" class="outline-3">
-<h3 id="org4be3bb3"><span class="section-number-3">6.4</span> Leyes de la identidad</h3>
+<div id="outline-container-org24863ca" class="outline-3">
+<h3 id="org24863ca"><span class="section-number-3">6.4</span> Leyes de la identidad</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 Es la constatación de que dos objetos que matemáticamente se escriben diferente, son de hecho el mismo objeto.
@@ -410,8 +418,8 @@ Es la constatación de que dos objetos que matemáticamente se escriben diferent
 </div>
 </div>
 
-<div id="outline-container-org83c14ea" class="outline-3">
-<h3 id="org83c14ea"><span class="section-number-3">6.5</span> Leyes de negacion</h3>
+<div id="outline-container-org22b6114" class="outline-3">
+<h3 id="org22b6114"><span class="section-number-3">6.5</span> Leyes de negacion</h3>
 <div class="outline-text-3" id="text-6-5">
 <p>
 Dada una proposición p su contraria no p es verdadera.
@@ -425,8 +433,8 @@ p \land \lnot p &\equiv t & p \lor \lnot p &\equiv c
 </div>
 </div>
 
-<div id="outline-container-org9623497" class="outline-3">
-<h3 id="org9623497"><span class="section-number-3">6.6</span> Ley de la doble negacion</h3>
+<div id="outline-container-orgcd1b491" class="outline-3">
+<h3 id="orgcd1b491"><span class="section-number-3">6.6</span> Ley de la doble negacion</h3>
 <div class="outline-text-3" id="text-6-6">
 <p>
 se produce cuando se combina el adverbio no con la presencia de otros elementos que tienen también sentido negativo.
@@ -440,8 +448,8 @@ se produce cuando se combina el adverbio no con la presencia de otros elementos 
 </div>
 </div>
 
-<div id="outline-container-orgcac6555" class="outline-3">
-<h3 id="orgcac6555"><span class="section-number-3">6.7</span> Leyes de idempotencia</h3>
+<div id="outline-container-orge0da347" class="outline-3">
+<h3 id="orge0da347"><span class="section-number-3">6.7</span> Leyes de idempotencia</h3>
 <div class="outline-text-3" id="text-6-7">
 <p>
 es la propiedad para realizar una acción determinada varias veces y aun así conseguir el mismo resultado que se obtendría si se realizase una sola vez.
@@ -455,8 +463,8 @@ p \land p &\equiv p & p \lor p &\equiv p
 </div>
 </div>
 
-<div id="outline-container-org4f8dd1a" class="outline-3">
-<h3 id="org4f8dd1a"><span class="section-number-3">6.8</span> Leyes universales acortadas</h3>
+<div id="outline-container-org40a76c5" class="outline-3">
+<h3 id="org40a76c5"><span class="section-number-3">6.8</span> Leyes universales acortadas</h3>
 <div class="outline-text-3" id="text-6-8">
 <p>
 \[ \begin{aligned}
@@ -466,8 +474,8 @@ p \lor t &\equiv t & p \land c &\equiv c
 </div>
 </div>
 
-<div id="outline-container-orgff8e774" class="outline-3">
-<h3 id="orgff8e774"><span class="section-number-3">6.9</span> Leyes de morgan</h3>
+<div id="outline-container-org7d12b80" class="outline-3">
+<h3 id="org7d12b80"><span class="section-number-3">6.9</span> Leyes de morgan</h3>
 <div class="outline-text-3" id="text-6-9">
 <p>
 son un par de reglas de transformación que son ambas reglas de inferencia válidas. Las normas permiten la expresión de las conjunciones y disyunciones puramente en términos de vía negación.
@@ -482,8 +490,8 @@ son un par de reglas de transformación que son ambas reglas de inferencia váli
 </div>
 </div>
 
-<div id="outline-container-orgd96b55a" class="outline-3">
-<h3 id="orgd96b55a"><span class="section-number-3">6.10</span> Leyes de absorción</h3>
+<div id="outline-container-orga778ff4" class="outline-3">
+<h3 id="orga778ff4"><span class="section-number-3">6.10</span> Leyes de absorción</h3>
 <div class="outline-text-3" id="text-6-10">
 <p>
 \[ \begin{aligned}
@@ -493,8 +501,8 @@ p \lor (p \land q) &\equiv p & p \land (p \lor q) &\equiv p
 </div>
 </div>
 
-<div id="outline-container-orgc3fdd9d" class="outline-3">
-<h3 id="orgc3fdd9d"><span class="section-number-3">6.11</span> Negaciones de <b>t</b> y <b>c</b></h3>
+<div id="outline-container-orga6191dd" class="outline-3">
+<h3 id="orga6191dd"><span class="section-number-3">6.11</span> Negaciones de <b>t</b> y <b>c</b></h3>
 <div class="outline-text-3" id="text-6-11">
 <p>
 El negativo de una tautología es una contradicción y el opuesto de una contradicción es una tautología.

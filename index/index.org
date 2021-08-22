@@ -13,8 +13,13 @@
 </style>
 #+END_EXPORT
 
-#+ATTR_HTML: :height 150px :align center
-[[./image.jpg]]
+# https://galindosoft.neocities.org/index.html
+# shorturl.at/zJSY7
+# http://tiny.cc/d66iuz
+# https://n9.cl/tc0uu
+
+# #+ATTR_HTML: :height 150px :align center
+# [[./image.jpg]]
 
 * ¡Saludos!
 En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos]].
@@ -32,7 +37,7 @@ Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, pu
 + [[./programacion/index.html][Programación]]
 
 
-[[./about.html][About]]
+[[./about.html][About]] | [[./not_found.html][Dark mode]]
 
 #+BEGIN_EXPORT html
  <div id="google_translate_element"></div>
@@ -45,4 +50,10 @@ Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, pu
  </script>
  <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
  </script>
+
+<script>
+window.onload = () => {
+document.getElementById(".goog-te-menu-frame:first").value = 'bg';
+};
+</script>
 #+END_EXPORT

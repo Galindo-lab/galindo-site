@@ -8,7 +8,7 @@
 Tutórales de programación ó temas relacionados con tecnología y software.
 
 - [[https://github.com/Galindo-lab/calculator][Programas y scripts para mi calculadora]]
-- [[./programacion/preview-html-externo.html][Preview html desde otro dispositivo conectado a la misma red]]
-- [[./programacion/google-translate.html][Añadir el plugin de google translate]]
-- [[./programacion/tema-obscuro.html][Implementar tema obscuro]]
+- [[./preview-html-externo.html][Preview html desde otro dispositivo conectado a la misma red]]
+- [[./google-translate.html][Añadir el plugin de google translate]]
+- [[./tema-obscuro.html][Implementar tema obscuro]]
   
