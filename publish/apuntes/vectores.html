@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-21 sáb 01:42 -->
+<!-- 2021-08-23 lun 00:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vectores</title>
@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="../style.css" />
 <link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
 <script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
 <script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
@@ -30,56 +31,56 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6585277">1. Definiciones</a>
+<li><a href="#orga44b911">1. Definiciones</a>
 <ul>
-<li><a href="#org708bd29">1.1. Magnitud</a></li>
-<li><a href="#orgdeae71e">1.2. Escalares</a></li>
-<li><a href="#orge2883f8">1.3. Vectores</a></li>
+<li><a href="#orgba9f4c8">1.1. Magnitud</a></li>
+<li><a href="#orgb778299">1.2. Escalares</a></li>
+<li><a href="#org7ab6ff1">1.3. Vectores</a></li>
 </ul>
 </li>
-<li><a href="#orgcb4c346">2. Notacion</a>
+<li><a href="#org89bb810">2. Notacion</a>
 <ul>
-<li><a href="#org42534f1">2.1. Representación</a></li>
-<li><a href="#org5f2c35a">2.2. Magnitud</a></li>
+<li><a href="#org057ebdc">2.1. Representación</a></li>
+<li><a href="#org97249d3">2.2. Magnitud</a></li>
 </ul>
 </li>
-<li><a href="#orgdb04877">3. Sistemas de coordenadas</a>
+<li><a href="#orgee5c390">3. Sistemas de coordenadas</a>
 <ul>
-<li><a href="#orge7db102">3.1. Rectangulares</a></li>
-<li><a href="#org756d3f4">3.2. Polares</a></li>
+<li><a href="#org47629b6">3.1. Rectangulares</a></li>
+<li><a href="#orgea25f00">3.2. Polares</a></li>
 </ul>
 </li>
-<li><a href="#org5988680">4. Vectores notables</a>
+<li><a href="#orge4d01dd">4. Vectores notables</a>
 <ul>
-<li><a href="#org2fa9859">4.1. Vector unitario</a></li>
-<li><a href="#orgba84acf">4.2. Vectores deslizantes</a></li>
-<li><a href="#org24e4a74">4.3. Negativo de un vector</a></li>
+<li><a href="#orgd4193d5">4.1. Vector unitario</a></li>
+<li><a href="#org33d4828">4.2. Vectores deslizantes</a></li>
+<li><a href="#org084231c">4.3. Negativo de un vector</a></li>
 </ul>
 </li>
-<li><a href="#org7f35bb9">5. Convercion de sistemas de cordenadas</a>
+<li><a href="#org4d2dc27">5. Convercion de sistemas de cordenadas</a>
 <ul>
-<li><a href="#org0cb5bcd">5.1. Polares a rectangulares</a></li>
-<li><a href="#org0a869c4">5.2. Rectangulares a Polares</a></li>
+<li><a href="#orga61ea00">5.1. Polares a rectangulares</a></li>
+<li><a href="#orgc7177ba">5.2. Rectangulares a Polares</a></li>
 </ul>
 </li>
-<li><a href="#orgfacf643">6. Operaciones con vectores</a>
+<li><a href="#org0d9dfeb">6. Operaciones con vectores</a>
 <ul>
-<li><a href="#org42236e0">6.1. Producto punto</a></li>
-<li><a href="#orgd6a7a86">6.2. Producto cruz</a></li>
-<li><a href="#org12c2bad">6.3. Suma de vectores</a></li>
-<li><a href="#org1f2e6ca">6.4. Resta de vectores</a></li>
+<li><a href="#orgfc7d0a0">6.1. Producto punto</a></li>
+<li><a href="#orgb37144b">6.2. Producto cruz</a></li>
+<li><a href="#org5d65035">6.3. Suma de vectores</a></li>
+<li><a href="#org6464577">6.4. Resta de vectores</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6585277" class="outline-2">
-<h2 id="org6585277"><span class="section-number-2">1</span> Definiciones</h2>
+<div id="outline-container-orga44b911" class="outline-2">
+<h2 id="orga44b911"><span class="section-number-2">1</span> Definiciones</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org708bd29" class="outline-3">
-<h3 id="org708bd29"><span class="section-number-3">1.1</span> Magnitud</h3>
+<div id="outline-container-orgba9f4c8" class="outline-3">
+<h3 id="orgba9f4c8"><span class="section-number-3">1.1</span> Magnitud</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Atributo de un fenómeno, cuerpo o sustancia que puede ser distinguido cualitativamente y determinado cuantitativamente. También se entiende como cantidad física formada por un número y la unidad de medida respectiva.
@@ -87,8 +88,8 @@ Atributo de un fenómeno, cuerpo o sustancia que puede ser distinguido cualitati
 </div>
 </div>
 
-<div id="outline-container-orgdeae71e" class="outline-3">
-<h3 id="orgdeae71e"><span class="section-number-3">1.2</span> Escalares</h3>
+<div id="outline-container-orgb778299" class="outline-3">
+<h3 id="orgb778299"><span class="section-number-3">1.2</span> Escalares</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Cantidad física que solo tiene magnitud. Son ejemplo de escalares: distancia, masa, tiempo, rapidez, temperatura, área, volumen, densidad, trabajo, energía, potencia y frecuencia. Los escalares pueden ser manipulados por las reglas del álgebra ordinaria.
@@ -102,8 +103,8 @@ Ejemplos:
 </div>
 </div>
 
-<div id="outline-container-orge2883f8" class="outline-3">
-<h3 id="orge2883f8"><span class="section-number-3">1.3</span> Vectores</h3>
+<div id="outline-container-org7ab6ff1" class="outline-3">
+<h3 id="org7ab6ff1"><span class="section-number-3">1.3</span> Vectores</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Cantidad física que tiene magnitud, dirección y sentido. Son ejemplo de vectores: la velocidad, la aceleración, la fuerza, el peso, la cantidad de movimiento, el desplazamiento, campo eléctrico y el campo magnético.(la palabra vector  significa portador en latín).
@@ -122,12 +123,12 @@ Ejemplos:
 </div>
 </div>
 
-<div id="outline-container-orgcb4c346" class="outline-2">
-<h2 id="orgcb4c346"><span class="section-number-2">2</span> Notacion</h2>
+<div id="outline-container-org89bb810" class="outline-2">
+<h2 id="org89bb810"><span class="section-number-2">2</span> Notacion</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org42534f1" class="outline-3">
-<h3 id="org42534f1"><span class="section-number-3">2.1</span> Representación</h3>
+<div id="outline-container-org057ebdc" class="outline-3">
+<h3 id="org057ebdc"><span class="section-number-3">2.1</span> Representación</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Para representar un vector usamos la notación \(\vec{A}\) o también podemos usar negritas <b>A</b>.
@@ -135,8 +136,8 @@ Para representar un vector usamos la notación \(\vec{A}\) o también podemos us
 </div>
 </div>
 
-<div id="outline-container-org5f2c35a" class="outline-3">
-<h3 id="org5f2c35a"><span class="section-number-3">2.2</span> Magnitud</h3>
+<div id="outline-container-org97249d3" class="outline-3">
+<h3 id="org97249d3"><span class="section-number-3">2.2</span> Magnitud</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es como se le llama a la <b>longitud</b> del vector, para representar la magnitud del vector usamos dos líneas paralelas \(|\vec{A}|\), posee unidades y siempre es positiva. Cuando dos vectores tienen la misma magnitud y la misma longitud se dice que son iguales independientemente si el punto de origen es otro.
@@ -151,12 +152,12 @@ V_{r} = \sqrt{x^2+y^2+z^2}
 </div>
 </div>
 
-<div id="outline-container-orgdb04877" class="outline-2">
-<h2 id="orgdb04877"><span class="section-number-2">3</span> Sistemas de coordenadas</h2>
+<div id="outline-container-orgee5c390" class="outline-2">
+<h2 id="orgee5c390"><span class="section-number-2">3</span> Sistemas de coordenadas</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orge7db102" class="outline-3">
-<h3 id="orge7db102"><span class="section-number-3">3.1</span> Rectangulares</h3>
+<div id="outline-container-org47629b6" class="outline-3">
+<h3 id="org47629b6"><span class="section-number-3">3.1</span> Rectangulares</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Es el sistema de coordenadas con el que estamos más familiarizados, donde un punto en el espacio se representa con un número en su respectivo eje, por ejemplo \( (1,43,5) \) corresponde a un punto ubicado en X:1, Y:43 y Z:5. Esta representación es muy fácil de operar debido a que sus componentes se pueden manipular individualmente.
@@ -164,8 +165,8 @@ Es el sistema de coordenadas con el que estamos más familiarizados, donde un pu
 </div>
 </div>
 
-<div id="outline-container-org756d3f4" class="outline-3">
-<h3 id="org756d3f4"><span class="section-number-3">3.2</span> Polares</h3>
+<div id="outline-container-orgea25f00" class="outline-3">
+<h3 id="orgea25f00"><span class="section-number-3">3.2</span> Polares</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 La representación que más se asemeja a la definición matemática de vector, ya que cuenta con un valor escalar que representa su magnitud o longitud y con un ángulo que representa su inclinación, ejemplo \( (10, 160°) \) corresponde a una línea de radio 10 a 160° grados respecto al origen. Una característica muy importante de esta representación es que <b>NO</b> se pueden sumar directamente, requiere algún tipo de manipulación algebraica.
@@ -174,12 +175,12 @@ La representación que más se asemeja a la definición matemática de vector, y
 </div>
 </div>
 
-<div id="outline-container-org5988680" class="outline-2">
-<h2 id="org5988680"><span class="section-number-2">4</span> Vectores notables</h2>
+<div id="outline-container-orge4d01dd" class="outline-2">
+<h2 id="orge4d01dd"><span class="section-number-2">4</span> Vectores notables</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org2fa9859" class="outline-3">
-<h3 id="org2fa9859"><span class="section-number-3">4.1</span> Vector unitario</h3>
+<div id="outline-container-orgd4193d5" class="outline-3">
+<h3 id="orgd4193d5"><span class="section-number-3">4.1</span> Vector unitario</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Es un vector cuya magnitud es igual a uno, pero con la misma dirección que un vector dado, se denota frecuentemente con un acento circunflejo \(\hat{r}\). Para determinar el vector tenemos que dividir nuestro vector entre el valor de su módulo (o magnitud).
@@ -198,8 +199,8 @@ Resultado: &lt;0.51,0.68,0.51&gt;
 </div>
 </div>
 
-<div id="outline-container-orgba84acf" class="outline-3">
-<h3 id="orgba84acf"><span class="section-number-3">4.2</span> Vectores deslizantes</h3>
+<div id="outline-container-org33d4828" class="outline-3">
+<h3 id="org33d4828"><span class="section-number-3">4.2</span> Vectores deslizantes</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Son aquellos vectores que pueden moverse sobre su línea de acción sin cambiar su magnitud y dirección.
@@ -207,8 +208,8 @@ Son aquellos vectores que pueden moverse sobre su línea de acción sin cambiar 
 </div>
 </div>
 
-<div id="outline-container-org24e4a74" class="outline-3">
-<h3 id="org24e4a74"><span class="section-number-3">4.3</span> Negativo de un vector</h3>
+<div id="outline-container-org084231c" class="outline-3">
+<h3 id="org084231c"><span class="section-number-3">4.3</span> Negativo de un vector</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 Se define el negativo de un vector como aquel que sumado con el vector original, da como resultante cero. El negativo de un vector posee la misma magnitud que el vector original, pero apunta en dirección opuesta (+180°).
@@ -221,12 +222,12 @@ Se define el negativo de un vector como aquel que sumado con el vector original,
 </div>
 </div>
 
-<div id="outline-container-org7f35bb9" class="outline-2">
-<h2 id="org7f35bb9"><span class="section-number-2">5</span> Convercion de sistemas de cordenadas</h2>
+<div id="outline-container-org4d2dc27" class="outline-2">
+<h2 id="org4d2dc27"><span class="section-number-2">5</span> Convercion de sistemas de cordenadas</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org0cb5bcd" class="outline-3">
-<h3 id="org0cb5bcd"><span class="section-number-3">5.1</span> Polares a rectangulares</h3>
+<div id="outline-container-orga61ea00" class="outline-3">
+<h3 id="orga61ea00"><span class="section-number-3">5.1</span> Polares a rectangulares</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 No hay mucho misterio para la conversión de polares a rectangulares, simplemente sustituimos nuestros valores en las fórmulas <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
@@ -240,8 +241,8 @@ V_{x} &= r \sin{(\theta)} & V_{y} &= r \cos{(\theta)} & V_{z} &= z \\
 </div>
 </div>
 
-<div id="outline-container-org0a869c4" class="outline-3">
-<h3 id="org0a869c4"><span class="section-number-3">5.2</span> Rectangulares a Polares</h3>
+<div id="outline-container-orgc7177ba" class="outline-3">
+<h3 id="orgc7177ba"><span class="section-number-3">5.2</span> Rectangulares a Polares</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Primero para obtener el radio de nuestra coordenada:
@@ -328,12 +329,12 @@ Sí X=0 y Y&gt;0 eso nos indica que el radio se encuentra exactamente sobre el e
 </div>
 </div>
 
-<div id="outline-container-orgfacf643" class="outline-2">
-<h2 id="orgfacf643"><span class="section-number-2">6</span> Operaciones con vectores</h2>
+<div id="outline-container-org0d9dfeb" class="outline-2">
+<h2 id="org0d9dfeb"><span class="section-number-2">6</span> Operaciones con vectores</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org42236e0" class="outline-3">
-<h3 id="org42236e0"><span class="section-number-3">6.1</span> Producto punto</h3>
+<div id="outline-container-orgfc7d0a0" class="outline-3">
+<h3 id="orgfc7d0a0"><span class="section-number-3">6.1</span> Producto punto</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 También conocido como producto escalar o producto interno, es una operación que convierte dos vectores de igual dimensión y retorna un solo número:
@@ -357,8 +358,8 @@ También conocido como producto escalar o producto interno, es una operación qu
 </p>
 </div>
 
-<div id="outline-container-org54daea5" class="outline-4">
-<h4 id="org54daea5"><span class="section-number-4">6.1.1</span> Propiedades</h4>
+<div id="outline-container-orgc37db70" class="outline-4">
+<h4 id="orgc37db70"><span class="section-number-4">6.1.1</span> Propiedades</h4>
 <div class="outline-text-4" id="text-6-1-1">
 <p>
 \[ \begin{aligned}
@@ -372,8 +373,8 @@ También conocido como producto escalar o producto interno, es una operación qu
 </div>
 </div>
 
-<div id="outline-container-org8863caf" class="outline-4">
-<h4 id="org8863caf"><span class="section-number-4">6.1.2</span> Aplicaciones</h4>
+<div id="outline-container-orgf322cb9" class="outline-4">
+<h4 id="orgf322cb9"><span class="section-number-4">6.1.2</span> Aplicaciones</h4>
 <div class="outline-text-4" id="text-6-1-2">
 <p>
 Una de las propiedades del producto punto es ayudarnos a calcular los ángulos directores; Los cosenos directores son aquellos ángulos que forma el vector con los ejes coordenados. Partiendo de que \( \boldsymbol{a} \cdot \boldsymbol{b} = \big|a\big| \big|b\big| \cos (\theta) \) eso significa que podemos despejar el ángulo entre dos vectores:
@@ -423,8 +424,8 @@ cos(\beta)  &= \frac{a_y}{| a |} \\
 </div>
 </div>
 
-<div id="outline-container-orgd6a7a86" class="outline-3">
-<h3 id="orgd6a7a86"><span class="section-number-3">6.2</span> Producto cruz</h3>
+<div id="outline-container-orgb37144b" class="outline-3">
+<h3 id="orgb37144b"><span class="section-number-3">6.2</span> Producto cruz</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Producto vectorial o producto vectorial de Gibbs, Es una operación entre dos vectores y da como resultado un vector perpendicular a los vectores que se multiplican:
@@ -443,8 +444,8 @@ Producto vectorial o producto vectorial de Gibbs, Es una operación entre dos ve
 </p>
 </div>
 
-<div id="outline-container-org8cb1ed8" class="outline-4">
-<h4 id="org8cb1ed8"><span class="section-number-4">6.2.1</span> Aplicaciones</h4>
+<div id="outline-container-orgb116ef7" class="outline-4">
+<h4 id="orgb116ef7"><span class="section-number-4">6.2.1</span> Aplicaciones</h4>
 <div class="outline-text-4" id="text-6-2-1">
 <p>
 <b>Área de un paralelogramo</b>: La extensión del producto cruz es igual al área del paralelogramo determinado por <b>a</b> y <b>b</b>.
@@ -482,8 +483,8 @@ V = \vert a \cdot ( b \times c ) \vert
 </div>
 </div>
 
-<div id="outline-container-org12c2bad" class="outline-3">
-<h3 id="org12c2bad"><span class="section-number-3">6.3</span> Suma de vectores</h3>
+<div id="outline-container-org5d65035" class="outline-3">
+<h3 id="org5d65035"><span class="section-number-3">6.3</span> Suma de vectores</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 La forma más sencilla de sumar vectores es sin duda aprovecharnos de las propiedades del sistema de coordenadas rectangulares, hay que recordar que las coordenadas polares <b>NO</b> se pueden sumar directamente pero las rectangulares si.
@@ -527,8 +528,8 @@ por último podemos cambiar su representación nuevamente a polar, sí el ejerci
 </div>
 </div>
 
-<div id="outline-container-org1f2e6ca" class="outline-3">
-<h3 id="org1f2e6ca"><span class="section-number-3">6.4</span> Resta de vectores</h3>
+<div id="outline-container-org6464577" class="outline-3">
+<h3 id="org6464577"><span class="section-number-3">6.4</span> Resta de vectores</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 La resta de vectores es simplemente la suma de un vector más otro vector opuesto \(A+(-B)\).x

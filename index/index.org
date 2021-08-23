@@ -48,9 +48,4 @@ Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, pu
  <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
  </script>
 
-<script>
-window.onload = () => {
-document.getElementById(".goog-te-menu-frame:first").value = 'bg';
-};
-</script>
 #+END_EXPORT

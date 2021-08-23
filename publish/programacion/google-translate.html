@@ -3,28 +3,18 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-20 vie 16:33 -->
+<!-- 2021-08-23 lun 00:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Plugin de Google translate</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Galindo" />
 <link rel="stylesheet" type="text/css" href="../style.css" />
-<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
 <script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<div id="google_translate_element"></div>
-<script defer type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement(
-{pageLanguage: 'en'},
-'google_translate_element'
-);
-}
-</script>
-<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-</script>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -37,9 +27,9 @@ cb=googleTranslateElementInit">
 <span class="subtitle">Programación</span>
 </h1>
 
-<div id="outline-container-org54a1600" class="outline-2">
-<h2 id="org54a1600">Añadir el plugin traduccion</h2>
-<div class="outline-text-2" id="text-org54a1600">
+<div id="outline-container-org48518db" class="outline-2">
+<h2 id="org48518db">Añadir el plugin traduccion</h2>
+<div class="outline-text-2" id="text-org48518db">
 <p>
 Añadir el plugin es muy sencillo de installar, simplemente tenmos que añadir el siguiente código en nuestra pagina.
 NOTA: tenemos que añadir este script en <b>todas las paginas en las que queramos traducir</b>.
@@ -69,22 +59,22 @@ pageLanguage: 'es' // &lt;- idioma default, aquí esta en español
 
 
 
-<div id="outline-container-orga05ea05" class="outline-2">
-<h2 id="orga05ea05">Ajustes personales</h2>
-<div class="outline-text-2" id="text-orga05ea05">
+<div id="outline-container-org3931817" class="outline-2">
+<h2 id="org3931817">Ajustes personales</h2>
+<div class="outline-text-2" id="text-org3931817">
 </div>
-<div id="outline-container-org0eb2c8c" class="outline-3">
-<h3 id="org0eb2c8c">añadir "defer" en el tag script</h3>
-<div class="outline-text-3" id="text-org0eb2c8c">
+<div id="outline-container-orgcb9bdba" class="outline-3">
+<h3 id="orgcb9bdba">añadir "defer" en el tag script</h3>
+<div class="outline-text-3" id="text-orgcb9bdba">
 <p>
 Esto para hacer la carga del plugin sea asincrona y poder cargar nuestros propios scripts sin preocuparnos de que el plugin haya terminado de cargar.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8990e05" class="outline-3">
-<h3 id="org8990e05">ocultar la lista de idiomas</h3>
-<div class="outline-text-3" id="text-org8990e05">
+<div id="outline-container-org02164cb" class="outline-3">
+<h3 id="org02164cb">ocultar la lista de idiomas</h3>
+<div class="outline-text-3" id="text-org02164cb">
 <p>
 Para traducir todas las paginas de nuestro sitio tenemos que agregar este script en todas las paginas, podemos integrar este componente con nuestro diseño ó podemos ocultarlo con css:
 </p>
@@ -99,12 +89,6 @@ Para traducir todas las paginas de nuestro sitio tenemos que agregar este script
 </div>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Fecha: 2021-08-05 jue 00:00</p>
-<p class="author">Autor: Galindo</p>
-<p class="date">Created: 2021-08-20 vie 16:33</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
