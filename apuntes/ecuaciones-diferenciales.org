@@ -59,3 +59,6 @@ Un campo de pendientes es un tipo de grafico que funciona como una solucion graf
 Para dibujar un campo de pendientes solo tenemos que evaluar la funcion en cada punto, Sí el numero resultante es positivo dibujamos una linea en diagonal hacia abajo ⟍ pero sí la linea es negativa dibujamos una lina diagonal hacia arriba ⟋.
 
 [[https://youtu.be/xu_HLUShvws][Video]] | [[https://www.geogebra.org/m/R36YDrma][Graficador]]
+
+# * Transformada de Laplace
+# ** Integral Propia 

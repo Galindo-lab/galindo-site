@@ -9,8 +9,6 @@
 
 #+TOC: headlines 2
 
------
-
 * Definicion de lenguaje natural y lenguaje formal
 ** Lenguaje formal
 El lenguaje formal es un lenguaje artificial, convencional, elegido de manera consciente y cuidadosa para expresarse precisa,
@@ -234,3 +232,10 @@ El negativo de una tautología es una contradicción y el opuesto de una contrad
 #+END_DEMONSTRATION
 * Validación de argumentos (Demostración)
 Un argumento es valido (lógico) sí la conclusion  es verdadera siempre y cuando todas las premisas sean verdaderas
+
+#+BEGIN_DEMONSTRATION
+Un argumento valido seria algo como: \\
+
+\[ ((\lnot p \implies q) \land (p \implies (\lnot r \lor s))) \implies ( \lnot s \land \lnot q \land \lnot r ) \implies p\]
+
+#+END_DEMONSTRATION

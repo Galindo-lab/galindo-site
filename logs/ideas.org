@@ -18,13 +18,13 @@ Nunca pensé que estaría de acuerdo con Bezos en algo, aun así lo mas probable
 ** [2021-08-17 mar]
 El color blanco es uno de los colores que personalmente no me gusta, pero como en estos días he tenido que añadir diagramas para poder explicar algunos temas... Aun así no me doy por vencido, una de las cosas que más me gustan de mi sitio es la capacidad de poder cambiar el color del tema, me aburro muy rápido de un color así que cambiar el tema de color es de las pocas cosas que puedo hacer sin cargarme todo el sitio cada vez que quiera hacer un cambio, entonces he estado pensando que hacer para solucionarlo:
 
-** El problema con los diagramas
+*** El problema con los diagramas
 Mi plan original para el sitio era usar SVG para los diagramas y cambiarlos a voluntad con CSS puro, pero al estar haciendo experimentos con SVG me di cuenta de que es muy tardado hacer los diagramas de la manera que estaba pensando (además no los puedo agregar a LaTeX sin tener que exportar el SVG por separado) entonces no tengo mas alternativas que usar imágenes.
 
-** -webkit-filter: invert(100%);
+*** -webkit-filter: invert(100%);
 Una solución que pensé es utilizar filtros de CSS esta solución me agrada mucho porque solo tengo modificar un poco mi código actual, sin embargo tiene unas limitaciones, solo puedo cambiar los colores por sus inversos por lo que tendría que limitar la cantidad de temas disponibles...
 
-** Pantalla de inicio
+*** Pantalla de inicio
 El tema del diseño de mi página es lo nuevo y lo viejo, me gustan mucho como los libro antiguos tienes muy pocas imágenes y solo se enfocan en explicar los procedimientos y yo quiero reflejar eso en mi página, aun así no quiero hacer una página que solo esté en blanco y negro, la idea que tengo es hacer una portada con las opciones del sitio que sirva como portada al sitio (sin contar que tiene el beneficio añadido de eliminar la necesidad de la página de "settings" que es un dolor en el trasero de mantener).
 
 * Mi semstre
