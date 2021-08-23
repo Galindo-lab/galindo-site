@@ -15,7 +15,7 @@ Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y qu
 * Variables dependientes e independientes 
 - Variable dependiente :: Es aquella cuyos valores dependen de los que tomen otra variable. Usualmente se suele representar como *y* en el eje de las ordenadas.
 
-- Independientes :: Un símbolo que representa una entrada de datos arbitraria se denomina variable independiente,
+- Variable independiente :: Un símbolo que representa una entrada de datos arbitraria se denomina variable independiente,
 
 #+BEGIN_DEMONSTRATION
 En esta ecuacion diferencial podemos saber cual es la variable independiente con solo mirar el denominador, en este caso \(x\), entonces como \(x\) es independiente \(y\) es la variable independiente[fn:nota-notacion].
@@ -54,6 +54,8 @@ Ecuaciones de segundo orden:
 
 [fn:nota-exp] Ojo, el exponente en la ecuacion no afecta el grado de la derivada.
 
-* Campos de pendientes o direccioens
-https://www.youtube.com/watch?v=xu_HLUShvws
-https://www.geogebra.org/m/R36YDrma
+* Campos de pendientes o direcciones
+Un campo de pendientes es un tipo de grafico que funciona como una solucion grafica para ecuaciones diferenciales de primer orden. \\
+Para dibujar un campo de pendientes solo tenemos que evaluar la funcion en cada punto, Sí el numero resultante es positivo dibujamos una linea en diagonal hacia abajo ⟍ pero sí la linea es negativa dibujamos una lina diagonal hacia arriba ⟋.
+
+[[https://youtu.be/xu_HLUShvws][Video]] | [[https://www.geogebra.org/m/R36YDrma][Graficador]]

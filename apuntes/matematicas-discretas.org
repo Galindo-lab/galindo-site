@@ -21,8 +21,6 @@ un cierto campo del saber y con determinados fines.
 El lenguaje natural es aquel que utilizamos cotidianamente. Surge históricamente dentro de la sociedad y es aprendido sin que
 exista necesariamente en el individuo un acto reflexivo.
 
------
-
 * Variables proposiciones 
 conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente se les denota con las letras (p, q, r, s...).
 
@@ -48,8 +46,6 @@ conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente s
 #+END_DEMONSTRATION 
 
 [[http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf][Extraido]] 
-
------
 
 * Conectivas proposicionales
 son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
@@ -98,8 +94,6 @@ r &\equiv \text{"Viene Javier"}
 
 #+END_DEMONSTRATION
 
------
-
 [fn:tip-and] Una forma para identificar cual simbolo es "y" es recordar que ambas tienen forma de "v", osea ambas apuntan hacia abajo.
 
 * Conceptos
@@ -132,85 +126,111 @@ Su tabla de verdad sería asi:
 | F | F | V  | V  | F   | V    | V    | V     |
 |---+---+----+----+-----+------+------+-------|
 
+[[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]] |
+
 * Equivalencia lógica
 Dos formas de enunciado se llaman lógicamente equivalents si y sólo si, tienen los mismos valores de verdad para cada posible sustitución de enunciados por sus enunciados de variables. La equivalencia lógica de las formas de enunciado P y Q se denota escribiendo P ≡ Q.
 
 ** Leyes commutativas
 Establecen que el orden en el cual sume o multiplique dos números reales no afecta el resultado.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
  p \land q &\equiv q \land p &
  p \lor q &\equiv q \lor p
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes asociativas 
 Establecen que cuando suma o multiplica cualesquiera tres números reales, el grupo (o asociación) de los números no afecta el resultado.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
  (p \land q) \land r &\equiv p \land (q \land r) \\
  (p \lor q) \lor r &\equiv p \lor (q \lor r)
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes distributivas
 Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de números por otro número que cuando se hace cada multiplicación por separado
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
  p \land (q \lor r) &\equiv (p \land q) \lor (p \land r) \\
  p \lor (q \land r) &\equiv (p \lor q) \land (p \lor r)
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes de la identidad
 Es la constatación de que dos objetos que matemáticamente se escriben diferente, son de hecho el mismo objeto.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
  p \land t &\equiv p &
  p \lor c &\equiv p
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes de negacion
 Dada una proposición p su contraria no p es verdadera.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 p \land \lnot p &\equiv t & p \lor \lnot p &\equiv c
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Ley de la doble negacion
 se produce cuando se combina el adverbio no con la presencia de otros elementos que tienen también sentido negativo.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 \lnot(\lnot p) \equiv p
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes de idempotencia
 es la propiedad para realizar una acción determinada varias veces y aun así conseguir el mismo resultado que se obtendría si se realizase una sola vez.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 p \land p &\equiv p & p \lor p &\equiv p 
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes universales acortadas
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 p \lor t &\equiv t & p \land c &\equiv c
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes de morgan
 son un par de reglas de transformación que son ambas reglas de inferencia válidas. Las normas permiten la expresión de las conjunciones y disyunciones puramente en términos de vía negación.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 \lnot ( p \land q ) &\equiv \lnot p \lor \lnot q & 
 \lnot ( p \lor q ) &\equiv \lnot p \land \lnot q
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Leyes de absorción
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 p \lor (p \land q) &\equiv p & p \land (p \lor q) &\equiv p
 \end{aligned} \]
+#+END_DEMONSTRATION
 
 ** Negaciones de *t* y *c*
 El negativo de una tautología es una contradicción y el opuesto de una contradicción es una tautología.
 
+#+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
 \lnot t &\equiv c & \lnot c &\equiv t
 \end{aligned} \]
+#+END_DEMONSTRATION
+* Validación de argumentos (Demostración)
+Un argumento es valido (lógico) sí la conclusion  es verdadera siempre y cuando todas las premisas sean verdaderas

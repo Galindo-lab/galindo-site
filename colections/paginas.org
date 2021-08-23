@@ -16,6 +16,7 @@
 - [[https://www.cemetech.net/forum/viewtopic.php?t=14888][Sistema de algebra simbolico para Casio CG-50]]
 - [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][Simbolos matematicos en latex]]
 - [[https://n9.cl/es/s/tc0uu][Acortador de urls]]
+- [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]]
 
 * Paginas Interesantes
 - [[http://www.cmkosemen.com/][Sitio web del creador de "All Tomorrows"]]
