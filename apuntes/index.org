@@ -10,11 +10,11 @@
 Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actualizo ~conforme aprendo cosas nuevas~:
 
 * Completos
-  - [[./vectores.html][Vectores]] ([[./pdf/vectores.pdf][pdf]])
-  - [[./calculo-multivariable.html][Cálculo multivariable]] ([[./pdf/calculo-multivariable.pdf][pdf]])
-  - [[./matematicas-discretas.html][Matemáticas discretas]] ([[./pdf/matematicas-discretas.pdf][pdf]])
+  - [[./vectores.html][Vectores]] ([[./vectores.pdf][pdf]])
+  - [[./calculo-multivariable.html][Cálculo multivariable]] ([[./calculo-multivariable.pdf][pdf]])
+  - [[./matematicas-discretas.html][Matemáticas discretas]] ([[./matematicas-discretas.pdf][pdf]])
   - [[./matrices.html][Matrices]]
-  - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./pdf/circuitos-electricos.pdf][pdf]])
+  - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./circuitos-electricos.pdf][pdf]])
   - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
 
 * Antiguos
