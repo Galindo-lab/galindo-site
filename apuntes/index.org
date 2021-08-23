@@ -7,7 +7,7 @@
 #+SUBTITLE: index
 #+DATE:     [2021-08-21 sáb]
 
-Aquí guardo texodos los apuntes he hecho desde que empecé la carrera, los actualizo ~conforme aprendo cosas nuevas~:
+Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actualizo ~conforme aprendo cosas nuevas~:
 
 * Completos
   - [[./vectores.html][Vectores]] ([[./pdf/vectores.pdf][pdf]])

@@ -42,12 +42,14 @@ blockquote {
     font-family:'Fira Code'; 
 }
 
-/* ul  { */
-/*     list-style-type: "|> "; */
-/* } */
+ ul  { 
+     list-style-type: "· ";
+     margin: 3px;
+ } 
 
-/* li { */
-/* } */
+ li { 
+   margin: 2px;
+ } 
 
 p, dd {
     margin:1em;
@@ -55,9 +57,9 @@ p, dd {
 }
 
 img[align=center] { 
-    display: block; */
-                    margin-left: auto; */
-                                       margin-right: auto; */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
 } 
 .underline {
     text-decoration: underline;
@@ -91,7 +93,7 @@ table[align=righn]{
     margin-bottom: 1em;
     margin-top: 1.5em;
     text-align: left;
-    font-weight: light;
+    
     text-align: center;
 }
 
@@ -99,8 +101,9 @@ table[align=righn]{
     font-size: 0.7em;
 }
 
-h2 {
+h2, h3, h1 {
     margin-top:  2em;
+        font-weight: 400;
 }
 
 /* -------------- form ------------------------*/

@@ -2,7 +2,7 @@
 #+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
 #+EXPORT_FILE_NAME: ../publish/index.html
 
-#+TITLE: Galindosoft
+#+TITLE: Galindosoft HQ
 #+SUBTITLE: Bienvenido
 
 #+BEGIN_EXPORT html
@@ -22,11 +22,8 @@
 # [[./image.jpg]]
 
 * ¡Saludos!
-En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos]].
-
-
+En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos]].\\
 Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, puedea acceder desde [[https://galindosoft.neocities.org/chat.html][aquí]].
-
 
 + [[./apuntes/index.html][Apuntes]] 
 + [[./calculadoras/index.html][Calculadoras]] 
