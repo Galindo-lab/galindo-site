@@ -12,9 +12,13 @@
 * Hola
 # Mi nombre es Galindo soy de México, me encanta programar y para eso tengo este sitio aquí esta la informacion para que puedas contactarme sí es necesario, tambien puedes escribir algo bonito en mi [[https://galindosoft.123guestbook.com/][guestbook]], solamente respondo mensajes en español e Inglés (ó minimo hago mi mejor intento).
 
-Mi nombre es Galindo, soy de México y este es mi sitio. Mis hobbies son la programación, navegar en internet y escuchar musica, este sitio esta dedicado a todas las cosa que apasionan ó me interesan. Siéntete libre de explorar todo el sitio. Anexo mi contacto solamente respondo mensajes en español e Inglés porque son los únicos idiomas que puedo entender (ó mínimo hago mi mejor intento).
+# Mi nombre es Galindo, soy de México y este es mi sitio. Mis hobbies son la programación, navegar en internet y escuchar musica, este sitio esta dedicado a todas las cosa que apasionan ó me interesan. Siéntete libre de explorar todo el sitio. Anexo mi contacto solamente respondo mensajes en español e Inglés porque son los únicos idiomas que puedo entender (ó mínimo hago mi mejor intento).
 
-+ Github :: [[https://github.com/Galindo-lab]]
-+ Discord :: galindo-lab#6063
+Soy Galindo y mi pasion son todas las cosas relacionadas con las computadoras asi como las matematicas y las ciencias, este sitio esta dedicado a todas las cosas que me gustan. Anexo mi informacion de contacto por si quieres enviarme un mensaje (Solo entiendo ingles y español pero hare mi mejora esfuerzo por contestarte). \\
+
++ [[https://github.com/Galindo-lab][Github]] 
++ [[https://minnit.chat/galindosoft?embed&&nickname=][Chat directo]] 
++ Discord: galindo-lab#6063
+
 # + guestbook (no longer available.) :: +[[https://galindosoft.123guestbook.com/][galindosoft.123guestbook.com]]+
-+ chat directo :: [[https://minnit.chat/galindosoft?embed&&nickname=][Minnit.chat/galindosoft]]
+

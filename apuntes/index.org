@@ -7,17 +7,16 @@
 #+SUBTITLE: index
 #+DATE:     [2021-08-21 sáb]
 
-Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actualizo ~conforme aprendo cosas nuevas~:
+Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actualizo conforme aprendo cosas nuevas:
 
-* Completos
-  - [[./vectores.html][Vectores]] ([[./vectores.pdf][pdf]])
-  - [[./calculo-multivariable.html][Cálculo multivariable]] ([[./calculo-multivariable.pdf][pdf]])
-  - [[./matematicas-discretas.html][Matemáticas discretas]] ([[./matematicas-discretas.pdf][pdf]])
-  - [[./matrices.html][Matrices]]
-  - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./circuitos-electricos.pdf][pdf]])
-  - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
+- [[./vectores.html][Vectores]] ([[./vectores.pdf][pdf]])
+- [[./calculo-multivariable.html][Cálculo multivariable]] ([[./calculo-multivariable.pdf][pdf]])
+- [[./matematicas-discretas.html][Matemáticas discretas]] ([[./matematicas-discretas.pdf][pdf]])
+- [[./matrices.html][Matrices]]
+- [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./circuitos-electricos.pdf][pdf]])
+- [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
 
-* Antiguos
-  - [[https://www.mediafire.com/file/jfptx6v0ituoj65/ecuaciones-diferenciales.pdf/file][Ecuaciones diferenciales]] (2021-1)
-  - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
-  - [[https://www.mediafire.com/file/6wyaz8r17h55qe0/calculo-multivariable.pdf/file][Cálculo Multivariable]] (2021-1)
+- [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
+
+[[./old.html][Antiguos]]
+
