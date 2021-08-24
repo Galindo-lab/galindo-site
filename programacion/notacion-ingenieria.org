@@ -1,0 +1,81 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/programacion/notacion-ingenieria.org
+
+#+TITLE:    Notacion de ingenieria en python
+#+SUBTITLE: Programación
+#+DATE:     [2021-08-24 mar]
+
+* Introducción
+Sí has estado leyendo mi blog sabrás que actualmente me encuentro estudiando ingeniería y que me gustan las calculadoras mi favorita la [[https://www.casio-intl.com/latin/es/calc/products/fx-CG50/][CASIO fx-CG50]], esta calculadora cuenta con un intérprete de micro-python bastante limitado, pero con un poco de cabeza podemos explotar su máximo potencial.
+
+[[https://github.com/Galindo-lab/calculator/blob/main/python/Sresiste.py][Código]]
+
+* Antecedente
+La [[../apuntes/notacion-ingenieria.html][notación de ingeniería]] es una forma de abreviar números muy grandes, es parecida a la notación científica, pero su característica más notable es que usa letras para representar valores.
+
+* Mi solucion
+** Lookup table
+La solucion más sencilla para los problemas es por lo general la mejor solucion y en este caso no fue la exepcion, una lookup-table para almacenar los exponentes es mas que suficiente:
+
+#+BEGIN_EXAMPLE
+_suffix_lookup = {
+    'T': 1e12,
+    'G': 1e9,
+    'M': 1e6,
+    'k': 1e3,
+     '': 1e0,
+    'm': 1e-3,
+    'u': 1e-6,
+    'n': 1e-9,
+    'p': 1e-12,
+    'f': 1e-15,
+    'a': 1e-18,
+}
+#+END_EXAMPLE
+
+** Captura del numero
+La solución más sencilla para los problemas es por lo general la mejor solución y en este caso no fue la excepción, una lookup-table para almacenar los exponentes es más que suficiente:
+
+*** Sencilla 
+Solución con redundancia mínima, es más sencilla pero menos robusta:
+
+#+BEGIN_SRC
+
+def input_ing2():
+    x = input().split();
+    if len(x) > 0:
+        if len(x) > 1 and x[1] in _suffix_lookup:
+            return float(x[0]) * _suffix_lookup[x[1]]
+        else:
+            return float(x[0])
+    else:
+        return None
+
+#+END_SRC
+
+*** óptima
+Solución óptima (en mi opinión), más compleja pero es más robusta
+
+#+BEGIN_EXAMPLE
+
+def input_ing(message=""):
+    x = input(message).split();
+    try:
+        if len(x) > 0:
+            if len(x) > 1 and x[1] in _suffix_lookup:
+                return float(x[0]) * _suffix_lookup[x[1]]
+            else:
+                return float(x[0])
+    except ValueError:
+        print((
+            "El valor ingresado\n"
+            "no es valido, ej:\n"
+            "       10 M \n"
+            "debe llevar espacio"
+        ))
+        input()
+    return None
+
+#+END_EXAMPLE
+

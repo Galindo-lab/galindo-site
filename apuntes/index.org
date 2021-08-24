@@ -15,6 +15,7 @@ Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actua
 - [[./matrices.html][Matrices]]
 - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./circuitos-electricos.pdf][pdf]])
 - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
+- [[./notacion-ingenieria.html][Notacion ingenieria]]
 
 - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
 
