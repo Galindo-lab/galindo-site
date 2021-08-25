@@ -2,7 +2,7 @@
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/programacion/notacion-ingenieria.org
 
-#+TITLE:    Notacion de ingenieria en python
+#+TITLE:    Notación de ingeniería en python
 #+SUBTITLE: Programación
 #+DATE:     [2021-08-24 mar]
 

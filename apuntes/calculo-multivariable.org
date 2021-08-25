@@ -2,6 +2,8 @@
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/apuntes/calculo-multivariable.html
 #+OPTIONS: num:t
+#+HTML_CONTAINER: div
+
 
 #+TITLE:    Cálculo Multivariable
 #+SUBTITLE: Apuntes
@@ -23,7 +25,7 @@ Funciones Discontinuas Más Comunes:
 
 - logartimo de 10 en \( x \leq 0  \)
 
-* Planos
+* Plano
 
 # En progreso 
 # https://youtu.be/8bhelXiPWew
@@ -45,20 +47,21 @@ ax + by + cz + d = 0
 
 otras formas de representar el plano también podrian ser las siguiente:
 
-+ Ecuación vectorial del plano ::
+** Ecuación vectorial del plano
 #+BEGIN_DEMONSTRATION
 \[
 \boldsymbol{a} \cdot \boldsymbol{r} = \boldsymbol{n} \cdot \boldsymbol{r}_0
 \]
 #+END_DEMONSTRATION
 
-+ Ecuación escalar ::
+** Ecuación escalar
 #+BEGIN_DEMONSTRATION
 \[
 a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 \]
 #+END_DEMONSTRATION
 
+* Ejercicios con planos
 ** Plano Entre Tres Puntos
 Para determinar la funcion que se forma con tres punttos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 
@@ -72,8 +75,7 @@ Para determinar la funcion que se forma con tres punttos en el espacio, sustitui
 
 [[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos][eigenmath]] | [[https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas][KhiCas]] 
 
-
-** Ángulo Entre Planos 
+** Ángulo Entre Planos
 para calcular el angulo entre dos planos usamos la siguiente ecuacion:
 
 #+BEGIN_DEMONSTRATION
@@ -88,7 +90,59 @@ donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absolut
 
 [fn:normal] formula de la normal \( \sqrt{ x^2 + y^2 + z^2 } \)
 
+** Plano que pasa por un punto y es perpendicular a otro
+Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el [[Vector de una recta o función][vector de la función]]. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuacion [[Ecuación escalar][escalar del plano]]:
+
+#+BEGIN_DEMONSTRATION
+Punto por el que queremos que pasase la función:
+\[
+A = (2,3,4)
+\]
+
+Función y su forma de vector:
+\[ 
+3x+2y+z-6=0 \rightarrow B = (3,2,1)
+\]
+
+producto cruz (C):
+\[
+Det \begin{vmatrix}
+x & y & z\\
+3 & 2 & 1\\
+2 & 3 & 4
+\end{vmatrix} = (5, -10, 5)
+\]
+
+por ultimo sustituimos en la ecuacion del plano:
+\[
+(5)(x-2)+(-10)(y-3)+(5)(z-4) = 0
+\]
+
+\[
+5x-10y+5z = 20+10-30 
+\]
+
+\[
+\boxed{5x-10y+5z = 0}
+\]
+
+#+END_DEMONSTRATION
+
+[[https://www.youtube.com/watch?v=RkMxfogdWJ0][Video]] 
+
 * Rectas 
+** Vector de una recta o función 
+Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
+
+#+BEGIN_DEMONSTRATION
+función:
+\[ \frac{1}{2} x + 7y - 4z - 6 = 0 \]
+
+su vector:
+\[ (\frac{1}{2}, 7, -4) \]
+
+#+END_DEMONSTRATION
+
 ** Parametrizacion de una recta con dos puntos
 Sustituimos los valores en la siguiente formula, P_1 es el punto de origen, P_2 punto final y t es un valor entre 0 y 1
 
@@ -101,13 +155,15 @@ P_1 + t \cdot (P_2 - P_1)
 [[../calculadoras/calculo-recta.html][Calculadora]]
 
 ** Ecuación paramétrica de la recta a una ecuación simétrica
-La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los terminos que necesitemos. Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la siguiente formula:
+La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los terminos que necesitemos. 
 
 #+BEGIN_DEMONSTRATION
 \[
 L: \frac{x-x_0}{a_1} = \frac{y-y_0}{a_2} = \frac{z-z_0}{a_3}
 \]
 #+END_DEMONSTRATION
+
+Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la formula:
 
 #+BEGIN_DEMONSTRATION
 Identificamos nuestro punto de paso y nuestro vector de dirección:
