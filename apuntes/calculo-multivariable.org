@@ -90,7 +90,7 @@ donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absolut
 
 [fn:normal] formula de la normal \( \sqrt{ x^2 + y^2 + z^2 } \)
 
-** Plano que pasa por un punto y es perpendicular a otro
+** Plano que pasa por un punto y es perpendicular a otro plano
 Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el [[Vector de una recta o función][vector de la función]]. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuacion [[Ecuación escalar][escalar del plano]]:
 
 #+BEGIN_DEMONSTRATION
