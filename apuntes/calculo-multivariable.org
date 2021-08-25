@@ -9,7 +9,7 @@
 #+SUBTITLE: Apuntes
 #+DATE:     [2021-08-06 vie]
 
-#+TOC: headlines 2
+#+TOC: headlines 1
 
 * Funciones discontinuas más comunes
 Funciones Discontinuas Más Comunes:
@@ -24,6 +24,55 @@ Funciones Discontinuas Más Comunes:
 - Cosecante, en los puntos \(\pi k\).
 
 - logartimo de 10 en \( x \leq 0  \)
+
+* Alcance de la funcion
+** Dominio de una función
+El dominio son los valores de X que puede tomar una función:
+
+#+BEGIN_DEMONSTRATION
+\[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
+#+END_DEMONSTRATION
+
+ La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
+
+En el denominador no puede haber un número cero, entonces solo basta con resolver la ecuación \( x-1 = 0 \) para encontrar la discontinuidad. \( x = 1 \)
+
+Como los números negativos no tienen raíces, no hay números reales que multiplicados sean negativos, se puede inferir que la función no existe en ningún punto que donde \( x+y+1 < 0 \).
+
+Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
+
+#+BEGIN_DEMONSTRATION
+\[ \begin{Bmatrix}
+  \begin{pmatrix} 
+  x \\ y \\ 
+  \end{pmatrix} \in \mathbb R^2: 
+  x + y + 1 \geq 0 \wedge x \not = 1
+\end{Bmatrix}  \]
+#+END_DEMONSTRATION
+
+[[https://youtu.be/qDr0R7hIjts][Video]]
+
+** Imagen de una función (Rango)
+El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
+
+- Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).
+
+
+- Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).
+
+#+BEGIN_DEMONSTRATION
+\[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
+#+END_DEMONSTRATION
+
+Para encontrar el rango es muy recomendable encontrar primero el [[Dominio de una función][dominio]] de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
+
+La primera cosa que podemos notar en la función es que es una raíz, eso significa que no puede ser un valor negativo, por lo tanto el valor mas pequeño al que podemos calcular la raíz en el dominio de los reales es el número 0, este sería el valor mínimo de la imagen.
+
+También podemos notar que los valores están elevados al cuadrado (los valores de X^2 y y^2 siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen. 
+
+El resultado que obtenemos es que el dominio de la función se extiende continuamente desde \( [0, 3] \).
+
+[[https://youtu.be/qDr0R7hIjts][Video]]
 
 * Plano
 
@@ -197,55 +246,5 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 
 [fn:ecuacion-continua-recta] 
 \[ \frac{x-x_1}{v_1} = \frac{y-y_1}{v_2} \]
-
-
-* Alcance de la funcion
-** Dominio de una función
-El dominio son los valores de X que puede tomar una función:
-
-#+BEGIN_DEMONSTRATION
-\[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
-#+END_DEMONSTRATION
-
- La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
-
-En el denominador no puede haber un número cero, entonces solo basta con resolver la ecuación \( x-1 = 0 \) para encontrar la discontinuidad. \( x = 1 \)
-
-Como los números negativos no tienen raíces, no hay números reales que multiplicados sean negativos, se puede inferir que la función no existe en ningún punto que donde \( x+y+1 < 0 \).
-
-Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
-
-#+BEGIN_DEMONSTRATION
-\[ \begin{Bmatrix}
-  \begin{pmatrix} 
-  x \\ y \\ 
-  \end{pmatrix} \in \mathbb R^2: 
-  x + y + 1 \geq 0 \wedge x \not = 1
-\end{Bmatrix}  \]
-#+END_DEMONSTRATION
-
-[[https://youtu.be/qDr0R7hIjts][Video]]
-
-** Imagen de una función (Rango)
-El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
-
-- Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).
-
-
-- Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).
-
-#+BEGIN_DEMONSTRATION
-\[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
-#+END_DEMONSTRATION
-
-Para encontrar el rango es muy recomendable encontrar primero el [[Dominio de una función][dominio]] de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
-
-La primera cosa que podemos notar en la función es que es una raíz, eso significa que no puede ser un valor negativo, por lo tanto el valor mas pequeño al que podemos calcular la raíz en el dominio de los reales es el número 0, este sería el valor mínimo de la imagen.
-
-También podemos notar que los valores están elevados al cuadrado (los valores de X^2 y y^2 siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen. 
-
-El resultado que obtenemos es que el dominio de la función se extiende continuamente desde \( [0, 3] \).
-
-[[https://youtu.be/qDr0R7hIjts][Video]]
 
 
