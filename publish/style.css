@@ -53,10 +53,14 @@ blockquote {
    /* margin: 2px; */
  } 
 
- p, dd {
-    margin:1em;
+ p, dd, dt {
     font-weight: lighter;
-}
+         margin:24px;
+ }
+
+ dt {
+     font-weight: 600;
+ }
 
 img[align=center] { 
     display: block; 
@@ -92,20 +96,26 @@ table[align=righn]{
 /* -------------- Titles --------------------- */
 
 .title {
+    /* margin-left: 0.5em; */
+    /* margin-right: 0.5em; */
+    /* padding: 0.5em; */
     margin-bottom: 1em;
     margin-top: 1.5em;
     text-align: left;
+
+    /* border-left: 3px solid black; */
     
-    text-align: center;
+    /* text-align: left; */
 }
 
 .subtitle {
     font-size: 0.7em;
 }
 
-h2, h3, h1 {
+h2, h3, h1{
     margin-top:  2em;
-        font-weight: 400;
+    font-weight: 400;
+     margin:24px;
 }
 
 /* -------------- form ------------------------*/
@@ -178,3 +188,8 @@ html, body{
 .status > .validation {
     display:none;
 }
+
+.footdef > sup > a {
+    float: left;
+}
+

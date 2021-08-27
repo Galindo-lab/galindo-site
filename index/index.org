@@ -9,7 +9,7 @@
 <style>
 #google_translate_element{
     display:block;
-    padding-left:1em;
+    padding-left:14px;
 }
 </style>
 #+END_EXPORT
@@ -40,7 +40,6 @@ Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aqu
 [[./about.html][About]] | [[./not_found.html][Dark mode]]
 
 #+BEGIN_EXPORT html
-
  <script defer> 
  function googleTranslateElementInit() {
  new google.translate.TranslateElement({
@@ -52,5 +51,4 @@ Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aqu
  </script>
 
  <div id="google_translate_element"></div>
-
 #+END_EXPORT
