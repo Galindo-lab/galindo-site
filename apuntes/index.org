@@ -18,6 +18,7 @@ Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actua
 - [[./notacion-ingenieria.html][Notacion ingenieria]]
 
 - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
+- [[https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file][Formulario de transformada de Laplace]]
 
 [[./old.html][Antiguos]]
 

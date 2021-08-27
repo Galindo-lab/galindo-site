@@ -5,7 +5,7 @@
 
 #+TITLE:    Vectores
 #+SUBTITLE: Apuntes
-#+DATE:     [2021-08-11 mié]
+#+DATE:     2021-08-11 mié
 
 #+TOC: headlines 1
 
@@ -101,22 +101,23 @@ La segunda parte es más complicada, ya que debemos encontrar el ángulo que for
 
 #+BEGIN_DEMONSTRATION
 \[
-V_{r} = \sqrt{x^2+y^2+z^2}
+tan^{-1}\left(\frac{y}{x}\right)
 \]
 #+END_DEMONSTRATION
 
 Pero esta función solo funciona para números mayores a 0 en el primer cuadrante del plano, sin embargo podemos manipular la ecuación para ajustarla a nuestro cuadrante adecuado. Otra cosa importante es que la función es discontinua eso significa que sí \(x = 0\) no podemos realizar la evolución de la función, sin embargo en estos casos podemos utilizar la lógica para encontrar el ángulo [fn:calc-note-0].
 
+
 #+BEGIN_DEMONSTRATION
 # #:frame border
 #+ATTR_HTML: :align center :rules all :border 1 :rules all 
-| Condición  | Grados               | Radianes             |
-| <10>       | <20>                 | <20>                 |
-|------------+----------------------+----------------------|
+| Condición  | Grados     | Radianes   |
+| <10>       | <10>       | <10>       |
+|------------+------------+------------|
 | \(x>0,y\geq0\) | \(tan^{-1}(\frac{y}{x})\) | \(tan^{-1}(\frac{y}{x})\) |
-| \(x=0,y>0\) | \(90°\)              | \(\frac{\pi}{2}\)    |
+| \(x=0,y>0\) | \(90°\)    | \(\frac{\pi}{2}\) |
 | \(x<0\)    | \(tan^{-1}(\frac{y}{x}) + 180°\) | \(tan^{-1}(\frac{y}{x}) + \pi\) |
-| \(x=0,y<0\) | \(270°\)             | \(3 \frac{\pi}{2}\)  |
+| \(x=0,y<0\) | \(270°\)   | \(3 \frac{\pi}{2}\) |
 | \(x>0,y<0\) | \(tan^{-1}(\frac{y}{x}) + 360\) | \(tan^{-1}(\frac{y}{x}) + 2\pi\) |
 #+END_DEMONSTRATION
 

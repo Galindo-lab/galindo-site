@@ -25,24 +25,36 @@ La unidad de medida de la carga es Coulomb[fn:coulomb] (C), que se define en té
 * Tensión ó voltage
 Para mover el electrón en un conductor en una dirección particular es necesario realizar algo de trabajo o transferir energía. Este trabajo lo lleva a cabo una fuerza electromotriz externa (fem) también conocida como tensión, diferencia de potencial o voltage[fn:voltage].
 
-[fn:voltage] 1 Volt = \(1 \frac{J}{C}\)
+[fn:voltage]  \( Volt = \frac{Joule}{Coulomb}\)
 
 * Potencia (watts)
 es la variación respecto del tiempo de gasto o absorción de energía, medida en watts (W). Si un Joule de energía se gasta en transferir un Coulomb de carga a través del dispositivo en un segundo, la tasa de transferencia de energía es un watt.
 
-La potencia absorbida o suministrada por un elemento es el producto de la tensión entre los extremos del elemento y la corriente a través de él. Si la potencia tiene signo +, se está suministrando o la está absorbiendo el elemento. Si, por el contrarió, tiene signo -, está suministrada por el elemento.
+La potencia absorbida o suministrada por un elemento es el producto de la tensión entre los extremos del elemento y la corriente a través de él. _Si la potencia tiene signo +, se está suministrando o la está absorbiendo el elemento. Si, por el contrarió, tiene signo -, está suministrada por el elemento_.
+
+#+BEGIN_DEMONSTRATION
 
 \[
 p = vi
 \]
 
+#+END_DEMONSTRATION
+
 La ley de conservación de la energía debe cumplirse en cualquier circuito. Por esta razón, la suma algebraica de la potencia en un circuito, en cualquier instante, debe ser cero.
 
+#+BEGIN_DEMONSTRATION
 \[
 \sum p = 0
 \]
+#+END_DEMONSTRATION
+
+* Corriente (Amperes)
+flujo de partículas cargadas, como electrones o iones, que se mueven a través de un conductor eléctrico o un espacio. Se mide como la tasa neta de flujo de carga eléctrica a través de una superficie o en un volumen de control[fn:definicion-real]
+
+[fn:definicion-real]  \( Amperio = \frac{Coulombs}{segundos}  \)
 
 * Relacion entre carga, tensión, corriente y potencia
+Usualmente a este [[https://es.wikipedia.org/wiki/C%C3%B3digo_mnemot%C3%A9cnico][mnemotécnico]] se le conoce como ley de ohm, pero es siemplemente formula de resistencia. La ley de 
 
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px :align center
@@ -67,3 +79,18 @@ Un circuito eléctrico es simplemente una interconexión de los elementos. El an
 
 
 
+* Fuentes dependientes
+La fuente dependiente o controlada, donde la cantidad de la fuente esta
+determinada por una tensión o por una corriente existente en algún otro lugar
+del sistema que se analiza.
+
+#+attr_latex: :width 256px
+#+ATTR_HTML: :width 256px :align center
+[[./img/5.png]]
+
+- *a)* fuente de corriente (amp) determinada por corriente (amp)
+- *b)* fuente de corriente (amp) determinada por tensión (volts)
+- *c)* fuente de tensión (volts) determinada por tensión (volts)
+- *d)* fuente de tensión (volts) determinada por corriente (amps)
+
+Las fuentes de voltajes tiene polaridad +/- mientras que las de corrientes son flechas.

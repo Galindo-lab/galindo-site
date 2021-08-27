@@ -47,8 +47,10 @@ blockquote {
      margin: 3px;
  } 
 
- li { 
-   margin: 2px;
+ li {
+     font-weight: lighter;
+     margin-top: 0.5em ;
+   /* margin: 2px; */
  } 
 
  p, dd {
