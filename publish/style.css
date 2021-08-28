@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap'); 
 
 @import "themes.css";
@@ -9,8 +8,14 @@
 }
 
 #org-div-home-and-up {
-    position: absolute;
+    position: relative;
+    top: 1em;
+    left: 24px;
     z-index: 2;
+    width: 50%;
+    height: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 body {
@@ -19,7 +24,7 @@ body {
     color: var(--color);
     max-width: 40em;
     min-height: 0;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     font-family:'Fira Code';
 }
 
@@ -96,16 +101,9 @@ table[align=righn]{
 /* -------------- Titles --------------------- */
 
 .title {
-    /* margin-left: 0.5em; */
-    /* margin-right: 0.5em; */
-    /* padding: 0.5em; */
     margin-bottom: 1em;
     margin-top: 1.5em;
     text-align: left;
-
-    /* border-left: 3px solid black; */
-    
-    /* text-align: left; */
 }
 
 .subtitle {
@@ -192,4 +190,3 @@ html, body{
 .footdef > sup > a {
     float: left;
 }
-
