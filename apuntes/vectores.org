@@ -108,18 +108,20 @@ tan^{-1}\left(\frac{y}{x}\right)
 Pero esta función solo funciona para números mayores a 0 en el primer cuadrante del plano, sin embargo podemos manipular la ecuación para ajustarla a nuestro cuadrante adecuado. Otra cosa importante es que la función es discontinua eso significa que sí \(x = 0\) no podemos realizar la evolución de la función, sin embargo en estos casos podemos utilizar la lógica para encontrar el ángulo [fn:calc-note-0].
 
 
-#+BEGIN_DEMONSTRATION
-# #:frame border
-#+ATTR_HTML: :align center :rules all :border 1 :rules all 
-| Condición  | Grados     | Radianes   |
-| <10>       | <10>       | <10>       |
-|------------+------------+------------|
-| \(x>0,y\geq0\) | \(tan^{-1}(\frac{y}{x})\) | \(tan^{-1}(\frac{y}{x})\) |
-| \(x=0,y>0\) | \(90°\)    | \(\frac{\pi}{2}\) |
-| \(x<0\)    | \(tan^{-1}(\frac{y}{x}) + 180°\) | \(tan^{-1}(\frac{y}{x}) + \pi\) |
-| \(x=0,y<0\) | \(270°\)   | \(3 \frac{\pi}{2}\) |
-| \(x>0,y<0\) | \(tan^{-1}(\frac{y}{x}) + 360\) | \(tan^{-1}(\frac{y}{x}) + 2\pi\) |
-#+END_DEMONSTRATION
+#+ATTR_HTML: :width 100%
+[[file:img/9.png]]
+
+
+# # #:frame border
+# #+ATTR_HTML: :align center :rules all :border 1 :frame 1
+# | Condición  | Grados     | Radianes   |
+# | <10>       | <10>       | <10>       |
+# |------------+------------+------------|
+# | \(x>0,y\geq0\) | \(tan^{-1}(\frac{y}{x})\) | \(tan^{-1}(\frac{y}{x})\) |
+# | \(x=0,y>0\) | \(90°\)    | \(\frac{\pi}{2}\) |
+# | \(x<0\)    | \(tan^{-1}(\frac{y}{x}) + 180°\) | \(tan^{-1}(\frac{y}{x}) + \pi\) |
+# | \(x=0,y<0\) | \(270°\)   | \(3 \frac{\pi}{2}\) |
+# | \(x>0,y<0\) | \(tan^{-1}(\frac{y}{x}) + 360\) | \(tan^{-1}(\frac{y}{x}) + 2\pi\) |
 
 
 Sí X=0 y Y>0 eso nos indica que el radio se encuentra exactamente sobre el eje Y apuntando hacia arriba (90°); Sí X=0 y Y<0 eso significa que el radio se encuentra exactamente sobre el eje Y pero apuntando hacia abajo (270°).
@@ -128,8 +130,7 @@ Sí X=0 y Y>0 eso nos indica que el radio se encuentra exactamente sobre el eje 
 
 [fn:calc-note-0] Para convertir polares a rectangulares con la fx-82MS puedes utilizar la función "rec" así "rec( 10, 10 ):f" y de polares a rectangulares "pol( 10, 10 ):f".
 
-* Operaciones con vectores
-** Producto punto
+* Producto punto
 También conocido como producto escalar o producto interno, es una operación que convierte dos vectores de igual dimensión y retorna un solo número:
 
 #+BEGIN_DEMONSTRATION
@@ -145,7 +146,7 @@ También conocido como producto escalar o producto interno, es una operación qu
 
 [[https://es.wikipedia.org/wiki/Producto_escalar#cite_note-1][Más Información]]
 
-*** Propiedades
+** Propiedades
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
  a \cdot b &= |a|^2 \\
@@ -156,7 +157,7 @@ También conocido como producto escalar o producto interno, es una operación qu
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-*** Aplicaciones
+** Aplicaciones
 Una de las propiedades del producto punto es ayudarnos a calcular los ángulos directores; Los cosenos directores son aquellos ángulos que forma el vector con los ejes coordenados. Partiendo de que \( \boldsymbol{a} \cdot \boldsymbol{b} = \big|a\big| \big|b\big| \cos (\theta) \) eso significa que podemos despejar el ángulo entre dos vectores:
 
 #+BEGIN_DEMONSTRATION
@@ -179,7 +180,7 @@ Sí sustituimos \(i\) con un vector unitario sobre uno de los ejes coordenados p
 
 [[https://www.superprof.es/diccionario/matematicas/analitica/cosenos-directores.html][Más información]]
 
-** Producto cruz
+* Producto cruz
 Producto vectorial o producto vectorial de Gibbs, Es una operación entre dos vectores y da como resultado un vector perpendicular a los vectores que se multiplican:
 
 #+BEGIN_DEMONSTRATION
@@ -192,7 +193,7 @@ Producto vectorial o producto vectorial de Gibbs, Es una operación entre dos ve
 
 [[https://es.wikipedia.org/wiki/Producto_vectorial][Más información]]
 
-*** Aplicaciones
+** Aplicaciones
 *Área de un paralelogramo*: La extensión del producto cruz es igual al área del paralelogramo determinado por *a* y *b*.
 
 #+BEGIN_DEMONSTRATION
@@ -218,22 +219,22 @@ V = \vert a \cdot ( b \times c ) \vert
 #+ATTR_HTML: :width 256px :align center
 [[file:./img/3.png]]
 
-** Suma de vectores
+* Suma de vectores
 La forma más sencilla de sumar vectores es sin duda aprovecharnos de las propiedades del sistema de coordenadas rectangulares, hay que recordar que las coordenadas polares *NO* se pueden sumar directamente pero las rectangulares si.
 
 #+BEGIN_DEMONSTRATION
 Pasamos nuestros vectores de _polares a rectangulares_ y sumamos sus cordenadas polares: 
 
-#+ATTR_HTML: :align center
+#+ATTR_HTML: :align center :rules all :border 1 :frame 1
 | Polar        |  Eje x | Eje  y |
 |--------------+--------+--------|
-| /            |      < |      > |
-| (100, 50°)   | 64.28, |  76.60 |
+| (100, 50°)   |  64.28 |  76.60 |
 | (70, 0°)     |     70 |      0 |
 | (50, 120°)   | -25.00 |  43.30 |
 | (35, 200°)   | -32.89 | -11.97 |
 |--------------+--------+--------|
 | *Suma total* |  77.28 | 107.93 |
+
 
 El vector resultante seria
 \[

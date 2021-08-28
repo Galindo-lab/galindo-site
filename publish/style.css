@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap'); 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 @import "themes.css";
 
 * {
@@ -24,7 +26,6 @@ body {
     color: var(--color);
     max-width: 40em;
     min-height: 0;
-    /* padding: 0.5em; */
     font-family:'Fira Code';
 }
 
@@ -60,7 +61,8 @@ blockquote {
 
  p, dd, dt {
     font-weight: lighter;
-         margin:24px;
+     margin:24px;
+
  }
 
  dt {
@@ -101,19 +103,20 @@ table[align=righn]{
 /* -------------- Titles --------------------- */
 
 .title {
-    margin-bottom: 1em;
-    margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 3em;
     text-align: left;
 }
 
 .subtitle {
-    font-size: 0.7em;
+    font-size: 75%;
 }
 
 h2, h3, h1{
     margin-top:  2em;
     font-weight: 400;
-     margin:24px;
+    margin:24px;
+    font-family:'Roboto Slab';
 }
 
 /* -------------- form ------------------------*/
@@ -189,4 +192,11 @@ html, body{
 
 .footdef > sup > a {
     float: left;
+    margin-left: 24px ;
+    margin-right: 5px;
+}
+
+.underline {
+    background: yellow;
+    text-decoration: none;
 }
