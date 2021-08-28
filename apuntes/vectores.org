@@ -133,16 +133,16 @@ Sí X=0 y Y>0 eso nos indica que el radio se encuentra exactamente sobre el eje 
 * Producto punto
 También conocido como producto escalar o producto interno, es una operación que convierte dos vectores de igual dimensión y retorna un solo número:
 
+#+attr_latex: :width 256px
+#+ATTR_HTML: :width 256px :align center
+[[file:./img/0.png]]
+
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
     \boldsymbol{a} \cdot \boldsymbol{b} &= a_1 b_1 + a_2 b_2 + a_3 b_3 \\
     \boldsymbol{a} \cdot \boldsymbol{b} &= \big|a\big| \big|b\big| \cos (\theta) 
 \end{aligned} \]
 #+END_DEMONSTRATION
-
-#+attr_latex: :width 256px
-#+ATTR_HTML: :width 256px :align center
-[[file:./img/0.png]]
 
 [[https://es.wikipedia.org/wiki/Producto_escalar#cite_note-1][Más Información]]
 
@@ -168,15 +168,19 @@ cos(\alpha) = \frac{a \cdot i}{|a| |i|}
 
 Sí sustituimos \(i\) con un vector unitario sobre uno de los ejes coordenados podemos determinar los ángulos con respecto a cada uno de los ejes:
 
-#+BEGIN_DEMONSTRATION
-\[ \begin{aligned}
- cos(\alpha) &= \frac{a_x}{|a|} & cos(\beta)  &= \frac{a_y}{|a|} &  cos(\gamma) &= \frac{a_z}{|a|} \\
-\end{aligned} \]
-#+END_DEMONSTRATION
-
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px :align center
 [[file:./img/1.png]]
+
+#+BEGIN_DEMONSTRATION
+\[ \begin{aligned}
+ cos(\alpha) &= \frac{a_x}{|a|} & cos(\beta)  &= \frac{a_y}{|a|}
+\end{aligned} \]
+
+\[
+ cos(\gamma) = \frac{a_z}{|a|}
+\]
+#+END_DEMONSTRATION
 
 [[https://www.superprof.es/diccionario/matematicas/analitica/cosenos-directores.html][Más información]]
 
@@ -196,28 +200,27 @@ Producto vectorial o producto vectorial de Gibbs, Es una operación entre dos ve
 ** Aplicaciones
 *Área de un paralelogramo*: La extensión del producto cruz es igual al área del paralelogramo determinado por *a* y *b*.
 
+#+attr_latex: :width 256px
+#+ATTR_HTML: :width 256px :align center
+[[file:./img/2.png]]
+
 #+BEGIN_DEMONSTRATION
 \[
 \vert a \vert(\vert b \vert sen(\theta)) = \vert a \times b \vert
 \]
 #+END_DEMONSTRATION
 
+*Volumen de un paralelepípedo*: Se puede determinar el volumen de un paralelepípedo calculando la magnitud de su triple producto escalar:
+
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px :align center
-[[file:./img/2.png]]
-
-
-*Volumen de un paralelepípedo*: Se puede determinar el volumen de un paralelepípedo calculando la magnitud de su triple producto escalar:
+[[file:./img/3.png]]
 
 #+BEGIN_DEMONSTRATION
 \[
 V = \vert a \cdot ( b \times c ) \vert
 \]
 #+END_DEMONSTRATION
-
-#+attr_latex: :width 256px
-#+ATTR_HTML: :width 256px :align center
-[[file:./img/3.png]]
 
 * Suma de vectores
 La forma más sencilla de sumar vectores es sin duda aprovecharnos de las propiedades del sistema de coordenadas rectangulares, hay que recordar que las coordenadas polares *NO* se pueden sumar directamente pero las rectangulares si.
@@ -233,7 +236,7 @@ Pasamos nuestros vectores de _polares a rectangulares_ y sumamos sus cordenadas 
 | (50, 120°)   | -25.00 |  43.30 |
 | (35, 200°)   | -32.89 | -11.97 |
 |--------------+--------+--------|
-| *Suma total* |  77.28 | 107.93 |
+| *Suma total* |  76.38 | 107.93 |
 
 
 El vector resultante seria
