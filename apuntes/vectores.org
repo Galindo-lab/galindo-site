@@ -9,18 +9,17 @@
 
 #+TOC: headlines 1
 
-* Definiciones
-** Magnitud
+* Definicion de magnitud
 Atributo de un fenómeno, cuerpo o sustancia que puede ser distinguido cualitativamente y determinado cuantitativamente. También se entiende como cantidad física formada por un número y la unidad de medida respectiva.
 
-** Escalares
+* Definicion de valor escalar
 Cantidad física que solo tiene magnitud. Son ejemplo de escalares: distancia, masa, tiempo, rapidez, temperatura, área, volumen, densidad, trabajo, energía, potencia y frecuencia. Los escalares pueden ser manipulados por las reglas del álgebra ordinaria. Ejemplos de estas serían:
 
 #+BEGIN_DEMONSTRATION
 4 m, 5 kg, 60 s, 20 m/s, 37 °C...
 #+END_DEMONSTRATION
 
-** Vectores
+* Definicion de vector
 Cantidad física que tiene magnitud, dirección y sentido. Son ejemplo de vectores: la velocidad, la aceleración, la fuerza, el peso, la cantidad de movimiento, el desplazamiento, campo eléctrico y el campo magnético.(la palabra vector  significa portador en latín). Ejemplos:
 
 #+BEGIN_DEMONSTRATION
@@ -29,11 +28,11 @@ Cantidad física que tiene magnitud, dirección y sentido. Son ejemplo de vector
 
 [[https://tecdigital.tec.ac.cr/revista-fisica/Archivo/N8/Materiales/Esc-Vec/teoria/vector1.htm][Origen]] | [[http://depa.fquim.unam.mx/amyd/archivero/Repaso-vectores_22618.pdf][Más información]]
 
-* Notacion
-** Representación
+
+* Representación de un vector
 Para representar un vector usamos la notación \(\vec{A}\) o también podemos usar negritas *A*.
 
-** Magnitud
+* Magnitud de un vector
 Es como se le llama a la *longitud* del vector, para representar la magnitud del vector usamos dos líneas paralelas \(|\vec{A}|\), posee unidades y siempre es positiva. Cuando dos vectores tienen la misma magnitud y la misma longitud se dice que son iguales independientemente si el punto de origen es otro.
 
 #+BEGIN_DEMONSTRATION
@@ -42,41 +41,11 @@ V_{r} = \sqrt{x^2+y^2+z^2}
 \]
 #+END_DEMONSTRATION
 
-* Sistemas de coordenadas
-** Rectangulares
+* Sistema de coordenadas rectangulares
 Es el sistema de coordenadas con el que estamos más familiarizados, donde un punto en el espacio se representa con un número en su respectivo eje, por ejemplo \( (1,43,5) \) corresponde a un punto ubicado en X:1, Y:43 y Z:5. Esta representación es muy fácil de operar debido a que sus componentes se pueden manipular individualmente.
 
-** Polares
+* Sistema de coordenadas polares
 La representación que más se asemeja a la definición matemática de vector, ya que cuenta con un valor escalar que representa su magnitud o longitud y con un ángulo que representa su inclinación, ejemplo \( (10, 160°) \) corresponde a una línea de radio 10 a 160° grados respecto al origen. Una característica muy importante de esta representación es que *NO* se pueden sumar directamente, requiere algún tipo de manipulación algebraica.
-
-* Vectores notables
-** Vector unitario
-Es un vector cuya magnitud es igual a uno, pero con la misma dirección que un vector dado, se denota frecuentemente con un acento circunflejo \(\hat{r}\). Para determinar el vector tenemos que dividir nuestro vector entre el valor de su módulo[fn:vuno] (o magnitud). Ejemplo:
-
-#+BEGIN_DEMONSTRATION
-
-\[ A = (32, 43, 32) \]
-\[|A| = 62.43 \]
-\[(\frac{32}{62.43}, \frac{43}{62.43}, \frac{32}{62.43})\]
-
-\[
-\boxed{ \hat{A} = ( 0.51, 0.68, 0.51) }
-\] 
-
-#+END_DEMONSTRATION
-
-[fn:vuno] Ninguno de los valores es mayor a 1, así podemos verificar que sea un vector unitario.
-
-** Vectores deslizantes
-Son aquellos vectores que pueden moverse sobre su línea de acción sin cambiar su magnitud y dirección.
-
-** Negativo de un vector
-Se define el negativo de un vector como aquel que sumado con el vector original, da como resultante cero. El negativo de un vector posee la misma magnitud que el vector original, pero apunta en dirección opuesta (+180°).
-
-#+BEGIN_DEMONSTRATION
-\[ A = (10, 50°) \]
-\[ -A = (10, 180°) \]
-#+END_DEMONSTRATION
 
 * Convercion de sistemas de cordenadas
 ** Polares a rectangulares
@@ -129,6 +98,36 @@ Sí X=0 y Y>0 eso nos indica que el radio se encuentra exactamente sobre el eje 
 [[https://www.superprof.es/apuntes/escolar/matematicas/aritmetica/complejos/coordenadas-cartesianas-a-polares.html#tema_conversion-de-coordenadas-cartesianas-a-polares][Más Información]]
 
 [fn:calc-note-0] Para convertir polares a rectangulares con la fx-82MS puedes utilizar la función "rec" así "rec( 10, 10 ):f" y de polares a rectangulares "pol( 10, 10 ):f".
+
+* Vectores notables
+** Vector unitario
+Es un vector cuya magnitud es igual a uno, pero con la misma dirección que un vector dado, se denota frecuentemente con un acento circunflejo \(\hat{r}\). Para determinar el vector tenemos que dividir nuestro vector entre el valor de su módulo[fn:vuno] (o magnitud). Ejemplo:
+
+#+BEGIN_DEMONSTRATION
+
+\[ A = (32, 43, 32) \]
+\[|A| = 62.43 \]
+\[(\frac{32}{62.43}, \frac{43}{62.43}, \frac{32}{62.43})\]
+
+\[
+\boxed{ \hat{A} = ( 0.51, 0.68, 0.51) }
+\] 
+
+#+END_DEMONSTRATION
+
+[fn:vuno] Ninguno de los valores es mayor a 1, así podemos verificar que sea un vector unitario.
+
+** Vectores deslizantes
+Son aquellos vectores que pueden moverse sobre su línea de acción sin cambiar su magnitud y dirección.
+
+** Negativo de un vector
+Se define el negativo de un vector como aquel que sumado con el vector original, da como resultante cero. El negativo de un vector posee la misma magnitud que el vector original, pero apunta en dirección opuesta (+180°).
+
+#+BEGIN_DEMONSTRATION
+\[ A = (10, 50°) \]
+\[ -A = (10, 180°) \]
+#+END_DEMONSTRATION
+
 
 * Producto punto
 También conocido como producto escalar o producto interno, es una operación que convierte dos vectores de igual dimensión y retorna un solo número:
