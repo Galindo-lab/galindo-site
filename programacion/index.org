@@ -13,3 +13,4 @@ Tutórales de programación ó temas relacionados con tecnología y software.
 - [[./tema-obscuro.html][Implementar tema obscuro]]
 - [[./cambiar-theme-color.html][Cambiar el color de las pestañas de chrome]]
 - [[./notacion-ingenieria.html][Ingresar notacion de ingenieria en Python]]
+- [[./optimizar-fotos.html][Optimizar fotos para pdfs]]
