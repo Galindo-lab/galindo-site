@@ -99,8 +99,7 @@ Sí X=0 y Y>0 eso nos indica que el radio se encuentra exactamente sobre el eje 
 
 [fn:calc-note-0] Para convertir polares a rectangulares con la fx-82MS puedes utilizar la función "rec" así "rec( 10, 10 ):f" y de polares a rectangulares "pol( 10, 10 ):f".
 
-* Vectores notables
-** Vector unitario
+* Vector unitario
 Es un vector cuya magnitud es igual a uno, pero con la misma dirección que un vector dado, se denota frecuentemente con un acento circunflejo \(\hat{r}\). Para determinar el vector tenemos que dividir nuestro vector entre el valor de su módulo[fn:vuno] (o magnitud). Ejemplo:
 
 #+BEGIN_DEMONSTRATION
@@ -117,10 +116,10 @@ Es un vector cuya magnitud es igual a uno, pero con la misma dirección que un v
 
 [fn:vuno] Ninguno de los valores es mayor a 1, así podemos verificar que sea un vector unitario.
 
-** Vectores deslizantes
+* Vectores deslizantes
 Son aquellos vectores que pueden moverse sobre su línea de acción sin cambiar su magnitud y dirección.
 
-** Negativo de un vector
+* Negativo de un vector
 Se define el negativo de un vector como aquel que sumado con el vector original, da como resultante cero. El negativo de un vector posee la misma magnitud que el vector original, pero apunta en dirección opuesta (+180°).
 
 #+BEGIN_DEMONSTRATION
@@ -248,5 +247,5 @@ por último podemos cambiar su representación nuevamente a polar, sí el ejerci
 
 [[https://matematicasmodernas.com/suma-de-vectores-por-componentes/][Más información]]
 
-** Resta de vectores
+* Resta de vectores
 La resta de vectores es simplemente la suma de un vector más otro vector opuesto \(A+(-B)\).

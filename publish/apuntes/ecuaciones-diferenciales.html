@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-23 lun 13:45 -->
+<!-- 2021-08-30 lun 17:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ecuaciones Diferenciales</title>
@@ -31,16 +31,18 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org340a2a3">1. Definicion</a></li>
-<li><a href="#orgf858a95">2. Variables dependientes e independientes</a></li>
-<li><a href="#org824ea90">3. Orden de una ecuacion</a></li>
-<li><a href="#org19cd2fd">4. Campos de pendientes o direcciones</a></li>
+<li><a href="#orgb08d096">1. Definicion</a></li>
+<li><a href="#org0754863">2. Variables dependientes e independientes</a></li>
+<li><a href="#org8e5ef74">3. Orden de una ecuacion</a></li>
+<li><a href="#orga2c811b">4. Campos de pendientes o direcciones</a></li>
+<li><a href="#org7694da1">5. Transformada de Laplace</a></li>
+<li><a href="#org962ab23">6. Aplicaciones de transformada de laplace</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org340a2a3" class="outline-2">
-<h2 id="org340a2a3"><span class="section-number-2">1</span> Definicion</h2>
+<div id="outline-container-orgb08d096" class="outline-2">
+<h2 id="orgb08d096"><span class="section-number-2">1</span> Definicion</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y que contiene una derivada de una o mas variables dependientes con respecto a dos o mas variables independientementes.
@@ -48,8 +50,8 @@ Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y qu
 </div>
 </div>
 
-<div id="outline-container-orgf858a95" class="outline-2">
-<h2 id="orgf858a95"><span class="section-number-2">2</span> Variables dependientes e independientes</h2>
+<div id="outline-container-org0754863" class="outline-2">
+<h2 id="org0754863"><span class="section-number-2">2</span> Variables dependientes e independientes</h2>
 <div class="outline-text-2" id="text-2">
 <dl class="org-dl">
 <dt>Variable dependiente</dt><dd>Es aquella cuyos valores dependen de los que tomen otra variable. Usualmente se suele representar como <b>y</b> en el eje de las ordenadas.</dd>
@@ -74,8 +76,8 @@ En esta ecuacion diferencial podemos saber cual es la variable independiente con
 </div>
 </div>
 
-<div id="outline-container-org824ea90" class="outline-2">
-<h2 id="org824ea90"><span class="section-number-2">3</span> Orden de una ecuacion</h2>
+<div id="outline-container-org8e5ef74" class="outline-2">
+<h2 id="org8e5ef74"><span class="section-number-2">3</span> Orden de una ecuacion</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Se dice que una ecuacion es del grado de su derivada mas alta<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
@@ -121,8 +123,8 @@ Ecuaciones de segundo orden:
 </div>
 </div>
 
-<div id="outline-container-org19cd2fd" class="outline-2">
-<h2 id="org19cd2fd"><span class="section-number-2">4</span> Campos de pendientes o direcciones</h2>
+<div id="outline-container-orga2c811b" class="outline-2">
+<h2 id="orga2c811b"><span class="section-number-2">4</span> Campos de pendientes o direcciones</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Un campo de pendientes es un tipo de grafico que funciona como una solucion grafica para ecuaciones diferenciales de primer orden. <br />
@@ -131,6 +133,64 @@ Para dibujar un campo de pendientes solo tenemos que evaluar la funcion en cada 
 
 <p>
 <a href="https://youtu.be/xu_HLUShvws">Video</a> | <a href="https://www.geogebra.org/m/R36YDrma">Graficador</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7694da1" class="outline-2">
+<h2 id="org7694da1"><span class="section-number-2">5</span> Transformada de Laplace</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+En matemáticas, la transformada de Laplace es una transformada integral que convierte una función de variable real {\displaystyle t}t (normalmente el tiempo) a una función de variable compleja {\displaystyle s}s. Tiene muchas aplicaciones en ciencia e ingeniería porque es una herramienta para resolver ecuaciones diferenciales. En particular, transforma ecuaciones diferenciales en ecuaciones algebraicas.
+</p>
+
+<p>
+Para resolver una transformada de laplace susituimos \(f(t)\) con nuestra funcion en base a t:
+</p>
+
+<p>
+\[ 
+L \{f(t)\} = \int_0^\infty e^{-s~t} f(t)~dt
+\] 
+</p>
+
+<p>
+<a href="https://es.wikipedia.org/wiki/Transformada_de_Laplace">Fuente</a> | <a href="https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file">Formulario</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org962ab23" class="outline-2">
+<h2 id="org962ab23"><span class="section-number-2">6</span> Aplicaciones de transformada de laplace</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Raramente te van a pedir que desarolloes las integrales para llegar a una transformada, por lo general simplemente usamos sus aplicaciones, las aplicaciones de tranformada de Laplace simplemente son sustituciones de funciones comunes, En el <a href="https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file">formulario</a> puedes encontrar la mayoria de sustituciones.
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<p>
+\[ \begin{aligned}
+                 f(t) &= 2t^4 \\
+\mathcal{L}\{ f(t) \} &= 2\mathcal{L}\{ t^4 \}\\
+                      &= 2 \frac{4!}{s^{4+1}}\\
+                      &= \frac{24}{s^{5}}
+\end{aligned} \]
+</p>
+
+<p>
+\[ 
+\boxed{\mathcal{L}\{ f(t) \} = \frac{24}{s^{5}}}
+\]
+</p>
+
+</div>
+
+<p>
+Como se ve en el ejemplo, simplemente tenemos que desarollar la exprecion y aplicar la <a href="https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file">formula</a> que se nos indica.
 </p>
 </div>
 </div>
