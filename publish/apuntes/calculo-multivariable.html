@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-08-25 mié 17:49 -->
+<!-- 2021-08-30 lun 13:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cálculo Multivariable</title>
@@ -31,17 +31,25 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1ae33cd">1. Funciones discontinuas más comunes</a></li>
-<li><a href="#org72159f0">2. Alcance de la funcion</a></li>
-<li><a href="#org94b78f8">3. Plano</a></li>
-<li><a href="#orgde54dcd">4. Ejercicios con planos</a></li>
-<li><a href="#orgd1819c2">5. Rectas</a></li>
+<li><a href="#org8b8f7a4">1. Funciones discontinuas más comunes</a></li>
+<li><a href="#org370ddfa">2. Dominio de una función</a></li>
+<li><a href="#org2490a49">3. Imagen de una función (Rango)</a></li>
+<li><a href="#org3662645">4. Representación del plano</a></li>
+<li><a href="#org24e995f">5. Ecuación vectorial del plano</a></li>
+<li><a href="#org7dc3ff2">6. Ecuación escalar</a></li>
+<li><a href="#orgf5f2bc4">7. Plano Entre Tres Puntos</a></li>
+<li><a href="#org53fc971">8. Ángulo Entre Planos</a></li>
+<li><a href="#org599fa36">9. Plano que pasa por un punto y es perpendicular a otro plano</a></li>
+<li><a href="#org555dd4d">10. Vector de una recta o función</a></li>
+<li><a href="#org49d9887">11. Parametrizacion de una recta con dos puntos</a></li>
+<li><a href="#org8a2f4f2">12. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
+<li><a href="#orgf0cd89c">13. Coordenadas rectangulares, cilíndricas y esféricas</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1ae33cd" class="outline-2">
-<h2 id="org1ae33cd"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
+<div id="outline-container-org8b8f7a4" class="outline-2">
+<h2 id="org8b8f7a4"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Funciones Discontinuas Más Comunes:
@@ -57,18 +65,14 @@ Funciones Discontinuas Más Comunes:
 
 <li>Cosecante, en los puntos \(\pi k\).</li>
 
-<li>logartimo de 10 en \( x \leq 0  \)</li>
+<li>logaritmo de 10 en \( x \leq 0  \)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org72159f0" class="outline-2">
-<h2 id="org72159f0"><span class="section-number-2">2</span> Alcance de la funcion</h2>
+<div id="outline-container-org370ddfa" class="outline-2">
+<h2 id="org370ddfa"><span class="section-number-2">2</span> Dominio de una función</h2>
 <div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-org3baabf5" class="outline-3">
-<h3 id="org3baabf5"><span class="section-number-3">2.1</span> Dominio de una función</h3>
-<div class="outline-text-3" id="text-2-1">
 <p>
 El dominio son los valores de X que puede tomar una función:
 </p>
@@ -114,9 +118,9 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 </div>
 </div>
 
-<div id="outline-container-orgbe45dad" class="outline-3">
-<h3 id="orgbe45dad"><span class="section-number-3">2.2</span> Imagen de una función (Rango)</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org2490a49" class="outline-2">
+<h2 id="org2490a49"><span class="section-number-2">3</span> Imagen de una función (Rango)</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
 </p>
@@ -138,7 +142,7 @@ El rango o imagen de una función es todo valor de Y que puede tomar nuestra fun
 </div>
 
 <p>
-Para encontrar el rango es muy recomendable encontrar primero el <a href="#org3baabf5">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
+Para encontrar el rango es muy recomendable encontrar primero el <a href="#org370ddfa">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
 </p>
 
 <p>
@@ -158,19 +162,12 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
 </p>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org94b78f8" class="outline-2">
-<h2 id="org94b78f8"><span class="section-number-2">3</span> Plano</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-
-
-<div id="outline-container-orgf32956c" class="outline-3">
-<h3 id="orgf32956c"><span class="section-number-3">3.1</span> Representación del plano</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org3662645" class="outline-2">
+<h2 id="org3662645"><span class="section-number-2">4</span> Representación del plano</h2>
+<div class="outline-text-2" id="text-4">
 <p>
-un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuacion es la siguiente:
+un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:
 </p>
 
 <div class="DEMONSTRATION">
@@ -183,14 +180,14 @@ ax + by + cz + d = 0
 </div>
 
 <p>
-otras formas de representar el plano también podrian ser las siguiente:
+otras formas de representar el plano también podrían ser las siguiente:
 </p>
 </div>
 </div>
 
-<div id="outline-container-org577c20a" class="outline-3">
-<h3 id="org577c20a"><span class="section-number-3">3.2</span> Ecuación vectorial del plano</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org24e995f" class="outline-2">
+<h2 id="org24e995f"><span class="section-number-2">5</span> Ecuación vectorial del plano</h2>
+<div class="outline-text-2" id="text-5">
 <div class="DEMONSTRATION">
 <p>
 \[
@@ -202,9 +199,9 @@ otras formas de representar el plano también podrian ser las siguiente:
 </div>
 </div>
 
-<div id="outline-container-orgeab0814" class="outline-3">
-<h3 id="orgeab0814"><span class="section-number-3">3.3</span> Ecuación escalar</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org7dc3ff2" class="outline-2">
+<h2 id="org7dc3ff2"><span class="section-number-2">6</span> Ecuación escalar</h2>
+<div class="outline-text-2" id="text-6">
 <div class="DEMONSTRATION">
 <p>
 \[
@@ -215,17 +212,12 @@ a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 </div>
 </div>
 </div>
-</div>
 
-<div id="outline-container-orgde54dcd" class="outline-2">
-<h2 id="orgde54dcd"><span class="section-number-2">4</span> Ejercicios con planos</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-<div id="outline-container-org4dcc93b" class="outline-3">
-<h3 id="org4dcc93b"><span class="section-number-3">4.1</span> Plano Entre Tres Puntos</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-orgf5f2bc4" class="outline-2">
+<h2 id="orgf5f2bc4"><span class="section-number-2">7</span> Plano Entre Tres Puntos</h2>
+<div class="outline-text-2" id="text-7">
 <p>
-Para determinar la funcion que se forma con tres punttos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
+Para determinar la funcion que se forma con tres puntos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 </p>
 
 <div class="DEMONSTRATION">
@@ -245,11 +237,11 @@ Para determinar la funcion que se forma con tres punttos en el espacio, sustitui
 </div>
 </div>
 
-<div id="outline-container-orgc54d78f" class="outline-3">
-<h3 id="orgc54d78f"><span class="section-number-3">4.2</span> Ángulo Entre Planos</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org53fc971" class="outline-2">
+<h2 id="org53fc971"><span class="section-number-2">8</span> Ángulo Entre Planos</h2>
+<div class="outline-text-2" id="text-8">
 <p>
-para calcular el angulo entre dos planos usamos la siguiente ecuacion:
+para calcular el angulo entre dos planos usamos la siguiente ecuación:
 </p>
 
 <div class="DEMONSTRATION">
@@ -262,7 +254,7 @@ para calcular el angulo entre dos planos usamos la siguiente ecuacion:
 </div>
 
 <p>
-donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arcocoseno (\(cos^{-1}(\theta)\)) de nuestra divicion, ojo que el resultado esta en radianes.
+donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arco coseno (\(cos^{-1}(\theta)\)) de nuestra división, ojo que el resultado esta en radianes.
 </p>
 
 <p>
@@ -271,11 +263,11 @@ donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absolut
 </div>
 </div>
 
-<div id="outline-container-org8232d8b" class="outline-3">
-<h3 id="org8232d8b"><span class="section-number-3">4.3</span> Plano que pasa por un punto y es perpendicular a otro plano</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-org599fa36" class="outline-2">
+<h2 id="org599fa36"><span class="section-number-2">9</span> Plano que pasa por un punto y es perpendicular a otro plano</h2>
+<div class="outline-text-2" id="text-9">
 <p>
-Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#org77cbfe9">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuacion <a href="#orgeab0814">escalar del plano</a>:
+Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#org555dd4d">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación <a href="#org7dc3ff2">escalar del plano</a>:
 </p>
 
 <div class="DEMONSTRATION">
@@ -305,9 +297,9 @@ x & y & z\\
 </p>
 
 <p>
-por ultimo sustituimos en la ecuacion del plano:
+por ultimo sustituimos en la ecuación del plano:
 \[
-(5)(x-2)+(-10)(y-3)+(5)(z-4) = 0
+5(x-2)-10(y-3)+5(z-4) = 0
 \]
 </p>
 
@@ -330,15 +322,10 @@ por ultimo sustituimos en la ecuacion del plano:
 </p>
 </div>
 </div>
-</div>
 
-<div id="outline-container-orgd1819c2" class="outline-2">
-<h2 id="orgd1819c2"><span class="section-number-2">5</span> Rectas</h2>
-<div class="outline-text-2" id="text-5">
-</div>
-<div id="outline-container-org77cbfe9" class="outline-3">
-<h3 id="org77cbfe9"><span class="section-number-3">5.1</span> Vector de una recta o función</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org555dd4d" class="outline-2">
+<h2 id="org555dd4d"><span class="section-number-2">10</span> Vector de una recta o función</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
 </p>
@@ -358,9 +345,9 @@ su vector:
 </div>
 </div>
 
-<div id="outline-container-org9097d2f" class="outline-3">
-<h3 id="org9097d2f"><span class="section-number-3">5.2</span> Parametrizacion de una recta con dos puntos</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-org49d9887" class="outline-2">
+<h2 id="org49d9887"><span class="section-number-2">11</span> Parametrizacion de una recta con dos puntos</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Sustituimos los valores en la siguiente formula, P<sub>1</sub> es el punto de origen, P<sub>2</sub> punto final y t es un valor entre 0 y 1
 </p>
@@ -380,11 +367,11 @@ P_1 + t \cdot (P_2 - P_1)
 </div>
 </div>
 
-<div id="outline-container-org8f2ace9" class="outline-3">
-<h3 id="org8f2ace9"><span class="section-number-3">5.3</span> Ecuación paramétrica de la recta a una ecuación simétrica</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-org8a2f4f2" class="outline-2">
+<h2 id="org8a2f4f2"><span class="section-number-2">12</span> Ecuación paramétrica de la recta a una ecuación simétrica</h2>
+<div class="outline-text-2" id="text-12">
 <p>
-La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> simplemente resolviendo la ecuacion en los terminos que necesitemos. 
+La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> simplemente resolviendo la ecuacion en los términos que necesitemos. 
 </p>
 
 <div class="DEMONSTRATION">
@@ -397,7 +384,7 @@ L: \frac{x-x_0}{a_1} = \frac{y-y_0}{a_2} = \frac{z-z_0}{a_3}
 </div>
 
 <p>
-Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la formula:
+Para calculara simplemente tenemos que sustituir nuestro punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la formula:
 </p>
 
 <div class="DEMONSTRATION">
@@ -445,6 +432,82 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 <p>
 <a href="https://youtu.be/JMVEYTqdh6c">Video</a>
 </p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf0cd89c" class="outline-2">
+<h2 id="orgf0cd89c"><span class="section-number-2">13</span> Coordenadas rectangulares, cilíndricas y esféricas</h2>
+<div class="outline-text-2" id="text-13">
+<div class="OVERFLOW">
+<table border="1" cellspacing="0" cellpadding="6" rules="all" frame="1" align="center" mode="inline-math">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Rect.</th>
+<th scope="col" class="org-left">Polares</th>
+<th scope="col" class="org-left">Esféricas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(r \cos(\theta)\)</td>
+<td class="org-left">\(\rho \sin(\varphi)\cos(\theta)\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(r \sin(\theta)\)</td>
+<td class="org-left">\(\rho \sin(\varphi)\sin(\theta)\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(\rho \cos(\varphi) \)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(x^2+y^2\)</td>
+<td class="org-left">\(r^2\)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(x^2+y^2+z^2\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(\rho^2\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(y/x\)</td>
+<td class="org-left">\(\tan(\theta)\)</td>
+<td class="org-left">\(\tan(\theta)\)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(r\)</td>
+<td class="org-left">\(\rho \sin(\varphi)\)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(\theta\)</td>
+<td class="org-left">\(\theta\)</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
 </div>

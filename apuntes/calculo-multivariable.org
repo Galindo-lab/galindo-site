@@ -7,9 +7,17 @@
 
 #+TITLE:    Cálculo Multivariable
 #+SUBTITLE: Apuntes
-#+DATE:     [2021-08-06 vie]
+#+DATE:     2021-08-06 vie
 
 #+TOC: headlines 1
+
+# En progreso 
+# https://youtu.be/8bhelXiPWew
+# https://youtu.be/KrPYYW_504U
+# https://app.diagrams.net
+# https://youtu.be/IddgDEBUsHs
+# https://www.youtube.com/watch?v=qEVrSjLyOdU
+# http://es.onlinemschool.com/math/assistance/cartesian_coordinate/plane_angl/
 
 * Funciones discontinuas más comunes
 Funciones Discontinuas Más Comunes:
@@ -23,10 +31,9 @@ Funciones Discontinuas Más Comunes:
 
 - Cosecante, en los puntos \(\pi k\).
 
-- logartimo de 10 en \( x \leq 0  \)
+- logaritmo de 10 en \( x \leq 0  \)
 
-* Alcance de la funcion
-** Dominio de una función
+* Dominio de una función
 El dominio son los valores de X que puede tomar una función:
 
 #+BEGIN_DEMONSTRATION
@@ -52,7 +59,7 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 
 [[https://youtu.be/qDr0R7hIjts][Video]]
 
-** Imagen de una función (Rango)
+* Imagen de una función (Rango)
 El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
 
 - Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).
@@ -74,19 +81,8 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
 
 [[https://youtu.be/qDr0R7hIjts][Video]]
 
-* Plano
-
-# En progreso 
-# https://youtu.be/8bhelXiPWew
-# https://youtu.be/KrPYYW_504U
-# https://app.diagrams.net
-# https://youtu.be/IddgDEBUsHs
-# https://www.youtube.com/watch?v=qEVrSjLyOdU
-# http://es.onlinemschool.com/math/assistance/cartesian_coordinate/plane_angl/
-
-
-** Representación del plano 
-un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuacion es la siguiente:
+* Representación del plano 
+un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:
 
 #+BEGIN_DEMONSTRATION
 \[
@@ -94,25 +90,24 @@ ax + by + cz + d = 0
 \]
 #+END_DEMONSTRATION
 
-otras formas de representar el plano también podrian ser las siguiente:
+otras formas de representar el plano también podrían ser las siguiente:
 
-** Ecuación vectorial del plano
+* Ecuación vectorial del plano
 #+BEGIN_DEMONSTRATION
 \[
 \boldsymbol{a} \cdot \boldsymbol{r} = \boldsymbol{n} \cdot \boldsymbol{r}_0
 \]
 #+END_DEMONSTRATION
 
-** Ecuación escalar
+* Ecuación escalar
 #+BEGIN_DEMONSTRATION
 \[
 a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 \]
 #+END_DEMONSTRATION
 
-* Ejercicios con planos
-** Plano Entre Tres Puntos
-Para determinar la funcion que se forma con tres punttos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
+* Plano Entre Tres Puntos
+Para determinar la funcion que se forma con tres puntos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{pmatrix}
@@ -124,8 +119,8 @@ Para determinar la funcion que se forma con tres punttos en el espacio, sustitui
 
 [[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos][eigenmath]] | [[https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas][KhiCas]] 
 
-** Ángulo Entre Planos
-para calcular el angulo entre dos planos usamos la siguiente ecuacion:
+* Ángulo Entre Planos
+para calcular el angulo entre dos planos usamos la siguiente ecuación:
 
 #+BEGIN_DEMONSTRATION
 \[
@@ -133,14 +128,14 @@ para calcular el angulo entre dos planos usamos la siguiente ecuacion:
 \]
 #+END_DEMONSTRATION
 
-donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arcocoseno (\(cos^{-1}(\theta)\)) de nuestra divicion, ojo que el resultado esta en radianes.
+donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absoluto de la normal de \(n_1\) y de \(n_2\) y los multiplicamos, ese sera nuestro divisor; Para el denominador calculamos el producto cruz entre \(n_1\) y \(n_2\) y obtenemos su valor de la normal; Y por ultimo calculamos el arco coseno (\(cos^{-1}(\theta)\)) de nuestra división, ojo que el resultado esta en radianes.
 
 [[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/angulo-entre-dos-planos][eigenmath]] | [[https://youtu.be/qEVrSjLyOdU][Video]]
 
 [fn:normal] formula de la normal \( \sqrt{ x^2 + y^2 + z^2 } \)
 
-** Plano que pasa por un punto y es perpendicular a otro plano
-Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el [[Vector de una recta o función][vector de la función]]. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuacion [[Ecuación escalar][escalar del plano]]:
+* Plano que pasa por un punto y es perpendicular a otro plano
+Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el [[Vector de una recta o función][vector de la función]]. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación [[Ecuación escalar][escalar del plano]]:
 
 #+BEGIN_DEMONSTRATION
 Punto por el que queremos que pasase la función:
@@ -162,9 +157,9 @@ x & y & z\\
 \end{vmatrix} = (5, -10, 5)
 \]
 
-por ultimo sustituimos en la ecuacion del plano:
+por ultimo sustituimos en la ecuación del plano:
 \[
-(5)(x-2)+(-10)(y-3)+(5)(z-4) = 0
+5(x-2)-10(y-3)+5(z-4) = 0
 \]
 
 \[
@@ -179,8 +174,7 @@ por ultimo sustituimos en la ecuacion del plano:
 
 [[https://www.youtube.com/watch?v=RkMxfogdWJ0][Video]] 
 
-* Rectas 
-** Vector de una recta o función 
+* Vector de una recta o función
 Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
 
 #+BEGIN_DEMONSTRATION
@@ -192,7 +186,7 @@ su vector:
 
 #+END_DEMONSTRATION
 
-** Parametrizacion de una recta con dos puntos
+* Parametrizacion de una recta con dos puntos
 Sustituimos los valores en la siguiente formula, P_1 es el punto de origen, P_2 punto final y t es un valor entre 0 y 1
 
 #+BEGIN_DEMONSTRATION
@@ -203,8 +197,8 @@ P_1 + t \cdot (P_2 - P_1)
 
 [[../calculadoras/calculo-recta.html][Calculadora]]
 
-** Ecuación paramétrica de la recta a una ecuación simétrica
-La ecuacion siemetrica de la recta nos permite encontrar la ecuacion continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los terminos que necesitemos. 
+* Ecuación paramétrica de la recta a una ecuación simétrica
+La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los términos que necesitemos. 
 
 #+BEGIN_DEMONSTRATION
 \[
@@ -212,7 +206,7 @@ L: \frac{x-x_0}{a_1} = \frac{y-y_0}{a_2} = \frac{z-z_0}{a_3}
 \]
 #+END_DEMONSTRATION
 
-Para calculara simplemente tenemos que sustituir nuesto punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la formula:
+Para calculara simplemente tenemos que sustituir nuestro punto de paso \(P_0\) y nuestro vector de dirección \(\vec{a}\) en los valores en la formula:
 
 #+BEGIN_DEMONSTRATION
 Identificamos nuestro punto de paso y nuestro vector de dirección:
@@ -247,4 +241,21 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 [fn:ecuacion-continua-recta] 
 \[ \frac{x-x_1}{v_1} = \frac{y-y_1}{v_2} \]
 
+
+* Coordenadas rectangulares, cilíndricas y esféricas
+
+#+BEGIN_OVERFLOW
+#+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
+| Rect.      | Polares    | Esféricas  |
+| <10>       | <10>       | <10>       |
+|------------+------------+------------|
+| \(x\)      | \(r \cos(\theta)\) | \(\rho \sin(\varphi)\cos(\theta)\) |
+| \(y\)      | \(r \sin(\theta)\) | \(\rho \sin(\varphi)\sin(\theta)\) |
+| \(z\)      | \(z\)      | \(\rho \cos(\varphi) \) |
+| \(x^2+y^2\) | \(r^2\)    |            |
+| \(x^2+y^2+z^2\) |            | \(\rho^2\) |
+| \(y/x\)    | \(\tan(\theta)\) | \(\tan(\theta)\) |
+|            | \(r\)      | \(\rho \sin(\varphi)\) |
+|            | \(\theta\) | \(\theta\) |
+#+END_OVERFLOW
 

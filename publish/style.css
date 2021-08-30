@@ -9,6 +9,11 @@
     margin-right: auto;
 }
 
+.OVERFLOW {
+    overflow: auto;
+}
+
+
 #org-div-home-and-up {
     position: relative;
     top: 1em;
