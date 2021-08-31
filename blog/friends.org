@@ -7,34 +7,37 @@
 #+SUBTITLE: Blog
 #+DATE: [2021-08-05 jue]
 
+#+BEGIN_EXPORT html
+<style>
+img{
+width:100%;
+}
+</style>
+#+END_EXPORT
+
 * misswannabe
-#+attr_html: :width 200px :alt misswannabe :align center
 [[https://misswannabe.neocities.org/][file:https://neocities.org/site_screenshots/39/74/misswannabe/index.html.540x405.jpg]]
 
 * vinizinho
-#+attr_html: :width 200px :align center
 [[https://vinizinho.neocities.org/][file:https://neocities.org/site_screenshots/25/71/vinizinho/index.html.540x405.jpg]]
 
 * jorgepinto
-#+attr_html: :width 200px :align center
 [[https://jorgepinto.neocities.org/][file:https://neocities.org/site_screenshots/89/15/jorgepinto/index.html.540x405.jpg]]
 
 * utsushimi
-#+attr_html: :width 200px :align center
 [[https://utsushimi.neocities.org/][file:https://neocities.org/site_screenshots/29/48/utsushimi/index.html.540x405.jpg]]
 
-* indieflowerdeveloper.neocities.org
-#+attr_html: :width 200px :align center
-file:https://neocities.org/site_screenshots/19/75/indieflowerdeveloper/index.html.540x405.jpg
+* indieflowerdeveloper
+[[https://neocities.org/site/indieflowerdeveloper][file:https://neocities.org/site_screenshots/19/75/indieflowerdeveloper/index.html.540x405.jpg]]
 
 * jamep-site
-#+attr_html: :width 200px :align center
 [[https://jamep-site.neocities.org/][file:https://neocities.org/site_screenshots/22/52/jamep-site/index.html.540x405.jpg]]
 
 * Kenome
-#+attr_html: :width 200px :align center
-file:https://neocities.org/site_screenshots/41/58/kenome/index.html.540x405.jpg
+[[https://neocities.org/site/kenome][file:https://neocities.org/site_screenshots/41/58/kenome/index.html.540x405.jpg]]
 
 * Niicha's Website
-#+attr_html: :width 200px :align center
-file:https://neocities.org/site_screenshots/21/16/niichawebsite/index.html.540x405.jpg
+[[https://niichawebsite.neocities.org/][file:https://neocities.org/site_screenshots/21/16/niichawebsite/index.html.540x405.jpg]]
+
+* the everlasting contrast
+[[https://theeverlastingcontrast.neocities.org/][https://neocities.org/site_screenshots/10/20/theeverlastingcontrast/index.html.540x405.jpg]]

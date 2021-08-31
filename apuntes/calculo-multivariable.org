@@ -7,7 +7,7 @@
 
 #+TITLE:    Cálculo Multivariable
 #+SUBTITLE: Apuntes
-#+DATE:     2021-08-06 vie
+#+DATE:     [2021-08-06 vie]
 
 #+TOC: headlines 1
 
@@ -258,4 +258,16 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 |            | \(r\)      | \(\rho \sin(\varphi)\) |
 |            | \(\theta\) | \(\theta\) |
 #+END_OVERFLOW
+
+* Coordenadas rectangulares a esfericas
+Las coordenadas esféricas requieren dos ángulos, por lo que se parecen mucho a las coordenadas polares. \theta funciona exactamente como en coordenadas polares, sí \(x=0\) y \(y > 0\) el ángulo es 90°; sí \(x=0\) y \(y < 0\) el ángulo es 270°.
+
+#+BEGIN_DEMONSTRATION
+\[ \begin{aligned} 
+r &= \sqrt{x^2+y^2+z^2} & \varphi &= cos^{-1}\left( \frac{z}{r} \right) \\
+\end{aligned} 
+\]
+
+\[\theta = tan^{-1}\left( \frac{y}{x} \right)\]
+#+END_DEMONSTRATION
 
