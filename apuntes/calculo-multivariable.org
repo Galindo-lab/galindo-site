@@ -270,4 +270,6 @@ r &= \sqrt{x^2+y^2+z^2} & \varphi &= cos^{-1}\left( \frac{z}{r} \right) \\
 
 \[\theta = tan^{-1}\left( \frac{y}{x} \right)\]
 #+END_DEMONSTRATION
+[[http://www.learningaboutelectronics.com/Articulos/Calculadora-de-conversion-de-coordenadas-cartesianas-a-esfericas.php#respuesta][Calculadora]]
+
 
