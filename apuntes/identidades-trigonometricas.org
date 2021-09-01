@@ -8,6 +8,13 @@
 
 #+OPTIONS: \n:t
 
+#+BEGIN_EXPORT html
+<style>
+.DEMONSTRATION > p {
+    white-space: nowrap;
+}
+</style>
+#+END_EXPORT
 * Identidades
 
 #+BEGIN_CENTER
@@ -16,44 +23,45 @@
 [[file:img/10.png]]
 #+END_CENTER
 
+#+BEGIN_DEMONSTRATION
 sen(theta) = a / c                           
 csc(theta) = 1 / sen(theta) = c / a          
 cos(theta) = b / c                           
 sec(theta) = 1 / cos(theta) = c / b          
 tan(theta) = sen(theta) / cos(theta) = a / b 
 cot(theta) = 1/ tan(theta) = b / a           
+#+END_DEMONSTRATION
 
------
+#+BEGIN_DEMONSTRATION
+sen(-x) = -sen(x) 
+csc(-x) = -csc(x) 
+cos(-x) = cos(x) 
+sec(-x) = sec(x) 
+tan(-x) = -tan(x) 
+cot(-x) = -cot(x) 
+#+END_DEMONSTRATION
 
-sen(-x) = -sen(x) \\
-csc(-x) = -csc(x) \\
-cos(-x) = cos(x) \\
-sec(-x) = sec(x) \\
-tan(-x) = -tan(x) \\
-cot(-x) = -cot(x) \\
-
------
-
+#+BEGIN_DEMONSTRATION
 sen^2(x) + cos^2(x) = 1  
 tan^2(x) + 1 = sec^2(x) 
 cot^2(x) + 1 = csc^2(x) 
-sen(x \pm y) = sen x cos y \pm cos x sen y 
-cos(x y) = cos x cosy \pm sen x sen y      
+sen(x \pm y) = sen(x)cos(y) \pm cos(x)sen(y) 
+cos(x \pm y) = cos(x)cos(y) \pm sen(x)sen(y)      
+#+END_DEMONSTRATION
 
------ 
-
-tan(x \pm y) = (tan x \pm tan y) / (1 \pm tan x tan y)
-sen(2x) = 2 sen x cos x
-cos(2x) = cos^2(x) - sen^2(x) = 2 cos^2(x) - 1 = 1 - 2 sen^2(x)
-tan(2x) = 2 tan(x) / (1 - tan^2(x))
-sen^2(x) = 1/2 - 1/2 cos(2x)
-cos^2(x) = 1/2 + 1/2 cos(2x)
-sen x - sen y = 2 sen( (x - y)/2 ) cos( (x + y)/2 )
-cos x - cos y = -2 sen( (x-y)/2 ) sen( (x + y)/2 )
-
------
+#+BEGIN_DEMONSTRATION
+tan(x \pm y) = (tan(x)\pm tan(y)) / (1 \pm tan(x)tan(y)) 
+sen(2x) = 2 sen(x)cos(x) 
+cos(2x) = cos^2(x) - sen^2(x) = 2 cos^2(x) - 1 = 1 - 2 sen^2(x) 
+tan(2x) = 2 tan(x) / (1 - tan^2(x)) 
+sen^2(x) = 1/2 - 1/2 cos(2x) 
+cos^2(x) = 1/2 + 1/2 cos(2x) 
+sen x - sen y = 2 sen( (x - y)/2 ) cos( (x + y)/2 ) 
+cos x - cos y = -2 sen( (x-y)/2 ) sen( (x + y)/2 ) 
+#+END_DEMONSTRATION
 
 * Tabla Trig de Ángulos Ordinarios
+#+BEGIN_DEMONSTRATION
 #+BEGIN_CENTER
 #+ATTR_HTML: :align center :rules all :border 1 :frame 1
 | ángulo   | 0   | 30  | 45  | 60  | 90  |
@@ -62,20 +70,28 @@ cos x - cos y = -2 sen( (x-y)/2 ) sen( (x + y)/2 )
 | cos^2(a) | 4/4 | 3/4 | 2/4 | 1/4 | 0/4 |
 | tan^2(a) | 0/4 | 1/3 | 2/2 | 3/1 | 4/0 |
 #+END_CENTER
+#+END_DEMONSTRATION
 
 * Leyes trigonometricas
 
 Dado un triángulo abc, con ángulos A,B,C; a está opuesto a A; b opuesto a B; c opuesto a C,
 
 ** La Ley del Seno
+#+BEGIN_DEMONSTRATION
 a/sen(A) = b/sen(B) = c/sen(C) 
+#+END_DEMONSTRATION
+
 
 ** La Ley del Coseno
+#+BEGIN_DEMONSTRATION
 c^2 = a^2 + b^2 - 2ab cos(C)
 b^2 = a^2 + c^2 - 2ac cos(B)
 a^2 = b^2 + c^2 - 2bc cos(A)
+#+END_DEMONSTRATION
 
 ** La Ley de la Tangente 
+#+BEGIN_DEMONSTRATION
 (a - b)/(a + b) = tan 1/2(A-B) / tan 1/2(A+B) 
+#+END_DEMONSTRATION
 
 [[http://math2.org/math/trig/es-identities.htm][Origen]]
