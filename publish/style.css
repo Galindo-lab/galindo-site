@@ -1,170 +1,111 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap'); 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-@import "themes.css";
-
-* {
+body {
+    color: #454545;
+    margin: 0em auto;
+    margin-bottom: 0;
+    max-width: 40rem;
+    padding: 16px;
+    line-height: 1.4;
+    font-family:'Fira Code';
     margin-left: auto;
     margin-right: auto;
 }
 
-.OVERFLOW {
-    overflow: auto;
+.todo, .TODO {
+    color: red;
 }
 
-
-#org-div-home-and-up {
-    position: relative;
-    top: 1em;
-    left: 24px;
-    z-index: 2;
-    width: 50%;
-    height: 0;
-    margin-left: 0;
-    margin-right: 0;
+.done, .DONE {
+    color: green;
 }
 
-body {
-    margin-top: 0;
-    background-color: var(--background0);
-    color: var(--color);
-    max-width: 40em;
-    min-height: 0;
-    font-family:'Fira Code';
-}
-
-blockquote {
+p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    font-style: italic;
 }
 
-.example, .DEMONSTRATION {
-    background-color: var(--background1);
-    border-radius: 6px;
-    line-height: 1.45;
-    overflow: auto;
-    margin:1em;
-    padding: 0.8em;
-    font-family:'Fira Code'; 
-}
-
- ul  { 
-     list-style-type: "· ";
-     margin: 3px;
- } 
-
- li {
-     font-weight: lighter;
-     margin-top: 0.5em ;
-   /* margin: 2px; */
- } 
-
- p, dd, dt {
-    font-weight: lighter;
-     margin:24px;
-
- }
-
- dt {
-     font-weight: 600;
- }
-
-img[align=center] { 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-} 
 .underline {
     text-decoration: underline;
 }
 
-/* ------------------- TOC ------------------- */
-
-/* ------------------------------------------- */
-
-table {
-    margin:1em;
-    width: calc(100% - 2em);
+.footpara {
+    display: inline;
+    margin: 0;
 }
 
-table[align=center]{
-    text-align: center;
+.footdef {
+    margin-bottom: 1em;
 }
 
-table[align=left]{
-    text-align: left;
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Roboto Slab';
+    font-weight: 400;
 }
 
-table[align=righn]{
+.outline-2 {
+    margin-top: 3em;
+}
+
+#org-div-home-and-up {
     text-align: right;
 }
 
+.src, .DEMONSTRATION, .example {
+    border: 1px solid #ccc;
+    margin-top: 16px ;
+    margin-bottom: 16px ;
+    padding: 8px;
+    overflow: auto;
+    box-shadow: 3px 3px 3px #eee;
+}
 
-/* -------------- Titles --------------------- */
+.org-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+ul  { 
+    /* list-style-type: "|> "; */
+    margin: 3px;
+} 
+
+li {
+    margin-top: 0.5em ;
+}
 
 .title {
-    margin-bottom: 2em;
-    margin-top: 3em;
-    text-align: left;
+    text-align: center;
+    margin-bottom: .2em;
 }
 
 .subtitle {
-    font-size: 75%;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 0;
 }
-
-h2, h3, h1{
-    margin-top:  2em;
-    font-weight: 400;
-    margin:24px;
-    font-family:'Roboto Slab';
-}
-
-/* -------------- form ------------------------*/
-
-input, button, select {
-    background-color: var(--background1);
-    color: var(--color);
-    border: 0px;
-    
-    border-radius: 6px;
-    line-height: 1.45;
-    overflow: auto;
-    padding: 0.5em;
-    font-size: 16px;
-    font-family:'Fira Code';
-}
-
-select {
-    font-size: 16px;
-    padding: 0;
-
-}
-
-input[type=text] {
-    width: calc(100% - 1em);
-}
-
-.submit {
-    background-color:var(--nav-background);
-    color:var(--nav-color);
-    transition: 150ms;
-}
-
-.submit:active, input[type=button]:active, input[type=reset]:active {
-    -webkit-filter: brightness(70%);
-    transition: 150ms;
-    font-family:'Fira Code';
-}
-
-/*--------------------- URL --------------------------*/
 
 a {
-    color: var(--link-color);
+    color: #0068E0;
     text-decoration: none;
 }
 
@@ -172,7 +113,28 @@ a:hover {
     text-decoration: underline;    
 }
 
-/*-------------- Translate plugin --------------------*/
+/* blockquote::first-letter { */
+/*     font-size: 3em; */
+/* } */
+
+blockquote:before {
+    content: open-quote;
+    float: left;
+    font-size: 2em;
+}
+
+blockquote {
+margin: 0;
+}
+
+blockquote > p {
+    font-family: Times New Roman,Times,Arial;
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em;
+}
 
 #google_translate_element{
     display:none;
@@ -183,25 +145,4 @@ html, body{
     min-height: 0!important;
     height: auto!important;
     position: inherit!important;
-}
-
-/*-------------------- Postamble ------------------------*/
-
-.status > p{
-    margin: 0;
-}
-
-.status > .validation {
-    display:none;
-}
-
-.footdef > sup > a {
-    float: left;
-    margin-left: 24px ;
-    margin-right: 5px;
-}
-
-.underline {
-    background: yellow;
-    text-decoration: none;
 }

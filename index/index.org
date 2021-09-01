@@ -5,6 +5,8 @@
 #+TITLE: Galindosoft HQ
 #+SUBTITLE: Contenido
 
+#+OPTIONS: \n:t
+
 #+BEGIN_EXPORT html
 <style>
 #google_translate_element{
@@ -26,16 +28,15 @@
 # En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos].\\
 # Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, puedea acceder desde [[https://galindosoft.neocities.org/chat.html][aquí]].
 
-Bienvenido a mi HQ, aquí guado todas las cosa que aprendiendo y las cosas en las que estoy trabajando. 
-Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aquí]].
+Bienvenido a mi HQ, aquí guado todas las cosa que aprendiendo y las cosas en las que estoy trabajando. Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aquí]].
 
-+ [[./apuntes/index.html][Apuntes]] 
-+ [[./calculadoras/index.html][Calculadoras]] 
-+ [[./colections/index.html][Colecciónes]] 
-+ [[./emacs/index.html][Emacs]]
-+ [[./blog/index.html][Journal]]
-+ [[./logs/index.html][Logs]]
-+ [[./programacion/index.html][Programación]]
+[[./apuntes/index.html][Apuntes]] 
+[[./calculadoras/index.html][Calculadoras]] 
+[[./colections/index.html][Colecciónes]] 
+[[./emacs/index.html][Emacs]]
+[[./blog/index.html][Journal]]
+[[./logs/index.html][Logs]]
+[[./programacion/index.html][Programación]]
 
 [[./about.html][About]] | [[./not_found.html][Dark mode]]
 
