@@ -7,15 +7,14 @@
 #+SUBTITLE: Apuntes
 #+DATE:     [2021-08-10 mar]
 
-#+TOC: headlines 2
+#+TOC: headlines 1
 
-* Definicion de lenguaje natural y lenguaje formal
-** Lenguaje formal
+* Lenguaje formal
 El lenguaje formal es un lenguaje artificial, convencional, elegido de manera consciente y cuidadosa para expresarse precisa,
 sistemática, rigurosa y unívocamente, por lo común dentro de
 un cierto campo del saber y con determinados fines.
 
-** Lenguaje natural
+* Lenguaje natural
 El lenguaje natural es aquel que utilizamos cotidianamente. Surge históricamente dentro de la sociedad y es aprendido sin que
 exista necesariamente en el individuo un acto reflexivo.
 
@@ -25,22 +24,28 @@ conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente s
 + Enunciado declarativo :: es aquella proposición de lenguaje objeto de la caal podemos predicar su verdad o su falsedad.
 
 #+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
 /"Hay un automóvil blanco en el aparcamento"/.
+#+END_CENTER
 #+END_DEMONSTRATION
 
 + Enunciado NO declarativo :: es un enunciado que no puede ser convertido a lenguaje formal.
 
 #+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
 /"¿Dónde esta mi automóvil?"/. \\
 /"¡Guarda silencio!"/. \\
+#+END_CENTER
 #+END_DEMONSTRATION
 
 + Enunciado atómico :: es aquél enunciado único, que en su expresión no incluye ningún conectivo lógico, es decir, no une dos o más enunciados.
      
 #+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
 /"Hoy es miércoles."/ \\
 /"Vivo en el distrito Federeal."/ \\
 /"Pablo es matematico"/ \\
+#+END_CENTER
 #+END_DEMONSTRATION 
 
 [[http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf][Extraido]] 
@@ -48,88 +53,93 @@ conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente s
 * Conectivas proposicionales
 son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
 
-#+ATTR_HTML: :align center
-| Relacion     | Notación    | Lectura       |
-|--------------+-------------+---------------|
-| Negacion     | ¬           | no            |
-| Conjunción   | \lor        | o             |
-| Disyunción   | \land       | y[fn:tip-and] |
-| Implicación  | \rightarrow | entonces      |
-| Equivalencia | \equiv      | equivalente a |
+#+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
+#+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
+| Relacion        | Notación     | Lectura              |
+| <15>            | <12>         | <20>                 |
+|-----------------+--------------+----------------------|
+| Negacion        | \(\lnot\)    | no                   |
+| Conjunción      | \(\lor   \)  | o                    |
+| Disyunción      | \(\land\)    | y[fn:tip-and]        |
+| Implicación     | \(\rightarrow\) | entonces             |
+| Equivalencia    | \(\equiv  \) | equivalente a        |
+| Por lo tanto    | \(\vdash\)   | deduce que, conclusion |
+#+END_CENTER
+#+END_DEMONSTRATION
 
 [[https://en.wikipedia.org/wiki/List_of_logic_symbols][Lista de simbolos completa]] \\
 
 #+BEGIN_DEMONSTRATION
-*Ejemplo 1*: \\
-\[  \begin{aligned}
-p &\equiv \text{"Hago ejercicio diariamente."} \\
-q &\equiv \text{"Me alimento sanamente."} \\
-r &\equiv \text{"Tengo buena salud."}
-\end{aligned} \] \\
+#+BEGIN_CENTER
 
+p \equiv "Hago ejercicio diariamente." \\
+q \equiv "Me alimento sanamente." \\
+r \equiv "Tengo buena salud." \\
 
-/"Hago ejercicio diariamente y me alimento sanamente"/
-\[ p \land q \]
+/"Hago ejercicio diariamente y me alimento sanamente"/ \\
 
-/"No tengo buena salud y no hago ejercicio  diariamente"/
-\[ ¬r \land ¬p \] 
+\( p \land q \)
 
-/"Si me alimento sanamente y hago ejercicio diariamente, entonces tengo buena salud"/
-\[ (p \land q) \implies r \]
+/"No tengo buena salud y no hago ejercicio  diariamente"/ \\
 
+\( ¬r \land ¬p \)
+
+/"Si me alimento sanamente y hago ejercicio diariamente, entonces tengo buena salud"/ \\
+
+\( (p \land q) \implies r \)
+
+#+END_CENTER
 #+END_DEMONSTRATION
 
 #+BEGIN_DEMONSTRATION
-*Ejemplo 2*: \\
-\[  \begin{aligned}
-p &\equiv \text{"Viene Julia"} \\
-q &\equiv \text{"Viene María"} \\
-r &\equiv \text{"Viene Javier"} 
-\end{aligned} \] \\
+#+BEGIN_CENTER
 
-/"Viene Julia, María y Javier"/
-\[ p \land q \land r \]
+p \equiv "Viene Julia" \\
+q \equiv "Viene María" \\
+r \equiv "Viene Javier" \\
 
+/"Viene Julia, María y Javier"/ \\
+
+\( p \land q \land r \)
+
+#+END_CENTER
 #+END_DEMONSTRATION
 
 [fn:tip-and] Una forma para identificar cual simbolo es "y" es recordar que ambas tienen forma de "v", osea ambas apuntan hacia abajo.
 
-* Conceptos
-** Tautología
+* Tautología
 es un forma de enunciado que siempre es verdadera, independientemente de los valores de verdad de los enunciados individuales sustituidos por sus enunciados variables. Un enunciado cuya forma es una tautología es un *enunciado tautológico*.
 
-** Contradicción
+* Contradicción
 es una forma de enunciado que siempre es falso, independientemente de los valors de verdad de los enunciados individuales de los enunciados sustituidos. Un enunciado cuya forma es una contradicción es un *enunciado contradictorio*.
 
 * Tablas de verdad
-Son tablas que nos sirven para conocer los valores de verdad de las proposiciones compuestas
+Son tablas que nos sirven para conocer los valores de verdad de las proposiciones compuestas.
 
-#+BEGIN_EXAMPLE
-Ejemplo:
- p: /"salió electo Presidente de la República"/
- q: /"el crecimiento anual fue del 7%"/
+#+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
 
- No salió electo Presidente de la 
- República o el crecimiento anual no 
- fue del 7%
+ p \equiv /"salió electo Presidente de la República"/ \\
+ q \equiv /"el crecimiento anual fue del 7%"/ \\
 
-Su tabla de verdad sería asi:
+ /"No salió electo Presidente de la República o el crecimiento anual no fue del 7%"/ \\
 
-#+END_EXAMPLE
-
-#+ATTR_HTML: :align center
+#+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
 |---+---+----+----+-----+------+------+-------|
 | p | q | ¬p | ¬q | p∧q | ¬p∧q | p∧¬q | ¬p∧¬q |
 |---+---+----+----+-----+------+------+-------|
 | F | F | V  | V  | F   | V    | V    | V     |
 |---+---+----+----+-----+------+------+-------|
+#+END_CENTER
+#+END_DEMONSTRATION
 
-[[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]] |
+[[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]] 
 
 * Equivalencia lógica
 Dos formas de enunciado se llaman lógicamente equivalents si y sólo si, tienen los mismos valores de verdad para cada posible sustitución de enunciados por sus enunciados de variables. La equivalencia lógica de las formas de enunciado P y Q se denota escribiendo P ≡ Q.
 
-** Leyes commutativas
+* Leyes commutativas
 Establecen que el orden en el cual sume o multiplique dos números reales no afecta el resultado.
 
 #+BEGIN_DEMONSTRATION
@@ -139,7 +149,7 @@ Establecen que el orden en el cual sume o multiplique dos números reales no afe
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes asociativas 
+* Leyes asociativas 
 Establecen que cuando suma o multiplica cualesquiera tres números reales, el grupo (o asociación) de los números no afecta el resultado.
 
 #+BEGIN_DEMONSTRATION
@@ -149,7 +159,7 @@ Establecen que cuando suma o multiplica cualesquiera tres números reales, el gr
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes distributivas
+* Leyes distributivas
 Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de números por otro número que cuando se hace cada multiplicación por separado
 
 #+BEGIN_DEMONSTRATION
@@ -159,7 +169,7 @@ Expresa que se obtiene la misma respuesta cuando multiplicas un conjunto de núm
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes de la identidad
+* Leyes de la identidad
 Es la constatación de que dos objetos que matemáticamente se escriben diferente, son de hecho el mismo objeto.
 
 #+BEGIN_DEMONSTRATION
@@ -169,7 +179,7 @@ Es la constatación de que dos objetos que matemáticamente se escriben diferent
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes de negacion
+* Leyes de negacion
 Dada una proposición p su contraria no p es verdadera.
 
 #+BEGIN_DEMONSTRATION
@@ -178,7 +188,7 @@ p \land \lnot p &\equiv t & p \lor \lnot p &\equiv c
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Ley de la doble negacion
+* Ley de la doble negacion
 se produce cuando se combina el adverbio no con la presencia de otros elementos que tienen también sentido negativo.
 
 #+BEGIN_DEMONSTRATION
@@ -187,7 +197,7 @@ se produce cuando se combina el adverbio no con la presencia de otros elementos 
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes de idempotencia
+* Leyes de idempotencia
 es la propiedad para realizar una acción determinada varias veces y aun así conseguir el mismo resultado que se obtendría si se realizase una sola vez.
 
 #+BEGIN_DEMONSTRATION
@@ -196,7 +206,7 @@ p \land p &\equiv p & p \lor p &\equiv p
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes universales acortadas
+* Leyes universales acortadas
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
@@ -204,7 +214,7 @@ p \lor t &\equiv t & p \land c &\equiv c
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes de morgan
+* Leyes de morgan
 son un par de reglas de transformación que son ambas reglas de inferencia válidas. Las normas permiten la expresión de las conjunciones y disyunciones puramente en términos de vía negación.
 
 #+BEGIN_DEMONSTRATION
@@ -214,7 +224,7 @@ son un par de reglas de transformación que son ambas reglas de inferencia váli
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Leyes de absorción
+* Leyes de absorción
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
@@ -222,7 +232,7 @@ p \lor (p \land q) &\equiv p & p \land (p \lor q) &\equiv p
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-** Negaciones de *t* y *c*
+* Negaciones de *t* y *c*
 El negativo de una tautología es una contradicción y el opuesto de una contradicción es una tautología.
 
 #+BEGIN_DEMONSTRATION
@@ -230,6 +240,18 @@ El negativo de una tautología es una contradicción y el opuesto de una contrad
 \lnot t &\equiv c & \lnot c &\equiv t
 \end{aligned} \]
 #+END_DEMONSTRATION
+* Implicación
+La implicación logica se emplea para representar una afirmacion no hipotetica, es decir: A es verdadero por lo tanto B es verdadero.
+
+#+BEGIN_DEMONSTRATION
+#+BEGIN_CENTER
+
+"Sí llueve, el suelo esta mojado" \\
+"llueve. por tanto, el suelo esta mojado"\\
+
+#+END_CENTER
+#+END_DEMONSTRATION
+
 * Validación de argumentos (Demostración)
 Un argumento es valido (lógico) sí la conclusion  es verdadera siempre y cuando todas las premisas sean verdaderas
 
