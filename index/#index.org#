@@ -1,0 +1,60 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
+#+EXPORT_FILE_NAME: ../publish/index.html
+
+#+TITLE: Galindosoft HQ
+#+SUBTITLE: Bienvenido
+
+#+OPTIONS: \n:t
+
+#+BEGIN_EXPORT html
+<style>
+#google_translate_element{
+    display:block;
+/*    padding-left:14px;*/
+}
+
+.figure-number {
+    display: none;
+}
+</style>
+#+END_EXPORT
+
+# https://galindosoft.neocities.org/index.html
+# shorturl.at/zJSY7
+# http://tiny.cc/d66iuz
+# https://n9.cl/tc0uu
+
+# #+ATTR_HTML: :height 150px :align center
+# [[./image.jpg]]
+
+# * ¡Saludos!
+# En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos].\\
+# Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, puedea acceder desde [[https://galindosoft.neocities.org/chat.html][aquí]].
+
+# Bienvenido a mi HQ, aquí guado todas las cosa que aprendiendo y las cosas en las que estoy trabajando. Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aquí]].
+
+#+BEGIN_CENTER
+#+attr_latex: :width 256px
+#+ATTR_HTML: :width 256px
+#+CAPTION: Sample text
+[[file:./status.jpg]]
+
+[[./apuntes/index.html][Apuntes]] | [[./calculadoras/index.html][Calculadoras]] | [[./colections/index.html][Colecciónes]] | [[./emacs/index.html][Emacs]] | [[./blog/index.html][Journal]] | [[./logs/index.html][Logs]] | [[./programacion/index.html][Programación]] | [[./about.html][About]] | [[./not_found.html][Dark mode]]
+
+#+BEGIN_EXPORT html
+ <script defer> 
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({
+ pageLanguage: 'es'
+ }, 'google_translate_element');
+ }
+ </script>
+ <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+ </script>
+
+ <div id="google_translate_element"></div>
+#+END_EXPORT
+
+#+END_CENTER
+

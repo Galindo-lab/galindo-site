@@ -61,14 +61,15 @@ son los simbolos que formalizan los elementos del lenguaje que sirven para su fu
 |-----------------+--------------+----------------------|
 | Negacion        | \(\lnot\)    | no                   |
 | Conjunción      | \(\lor   \)  | o                    |
-| Disyunción      | \(\land\)    | y[fn:tip-and]        |
+| Disyunción      | \(\land\)    | y                    |
 | Implicación     | \(\rightarrow\) | entonces             |
 | Equivalencia    | \(\equiv  \) | equivalente a        |
 | Por lo tanto    | \(\vdash\)   | deduce que, conclusion |
+| Doble implicación | \(\leftrightarrow\) | Sí y solo sí         |
 #+END_CENTER
 #+END_DEMONSTRATION
 
-[[https://en.wikipedia.org/wiki/List_of_logic_symbols][Lista de simbolos completa]] \\
+[[https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_l%C3%B3gicos][Lista de simbolos completa]] 
 
 #+BEGIN_DEMONSTRATION
 #+BEGIN_CENTER
@@ -105,8 +106,6 @@ r \equiv "Viene Javier" \\
 
 #+END_CENTER
 #+END_DEMONSTRATION
-
-[fn:tip-and] Una forma para identificar cual simbolo es "y" es recordar que ambas tienen forma de "v", osea ambas apuntan hacia abajo.
 
 * Tautología
 es un forma de enunciado que siempre es verdadera, independientemente de los valores de verdad de los enunciados individuales sustituidos por sus enunciados variables. Un enunciado cuya forma es una tautología es un *enunciado tautológico*.

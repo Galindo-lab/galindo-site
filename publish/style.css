@@ -114,10 +114,6 @@ a:hover {
     text-decoration: underline;    
 }
 
-/* blockquote::first-letter { */
-/*     font-size: 3em; */
-/* } */
-
 blockquote:before {
     content: open-quote;
     float: left;
