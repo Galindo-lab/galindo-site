@@ -1,10 +1,15 @@
 
+@import "themes.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap'); 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+
+
 body {
-    color: #454545;
+    background-color: var(--bg) ;
+    color: var(--font);
     margin: 0em auto;
     margin-bottom: 0;
     max-width: 40rem;
@@ -17,11 +22,11 @@ body {
 }
 
 .todo, .TODO {
-    color: red;
+    color: var(--todo);
 }
 
 .done, .DONE {
-    color: green;
+    color: var(--done);
 }
 
 p {
@@ -55,12 +60,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .src, .DEMONSTRATION, .example {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color0);
     margin-top: 16px ;
     margin-bottom: 16px ;
     padding: 8px;
     overflow: auto;
-    box-shadow: 3px 3px 3px #eee;
+    box-shadow: 3px 3px 3px var(--color1);
 }
 
 .org-center {
@@ -106,13 +111,17 @@ li {
 }
 
 a {
-    color: #0068E0;
+    color: var(--url);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;    
 }
+
+/* blockquote::first-letter { */
+/*     font-size: 3em; */
+/* } */
 
 blockquote:before {
     content: open-quote;

@@ -9,11 +9,22 @@ if( theme ) {
     body.classList.value =  'light' 
 }
 
-localStorage.setItem('theme', 'light');
-body.classList.value =  'light' ;
+// localStorage.setItem('theme', 'light');
+// body.classList.value =  'light' ;
 
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
 metaThemeColor.setAttribute("content", "#eeeeee");
+
+
+function switchTheme() {
+   if( localStorage.getItem("theme") == 'dark' ){
+      localStorage.setItem("theme", 'light')
+   } else {
+      localStorage.setItem("theme", 'dark')
+   }
+
+   body.classList.value =  localStorage.getItem("theme");
+}
 
 
 // function getRandomRGBValue() {
