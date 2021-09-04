@@ -42,10 +42,10 @@ transition: 500ms;
 #+BEGIN_CENTER
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px
-#+CAPTION: Sample text
+#+CAPTION: I may be ugly, but i'm scared.
 [[file:./status.jpg]]
 
-[[./apuntes/index.html][Apuntes]] | [[./calculadoras/index.html][Calculadoras]] | [[./colections/index.html][Colecciónes]] | [[./emacs/index.html][Emacs]] | [[./blog/index.html][Journal]] | [[./logs/index.html][Logs]] | [[./programacion/index.html][Programación]] | [[./about.html][About me]]
+[[./apuntes/index.html][Apuntes]] | [[./calculadoras/index.html][Calculadoras]] | [[./colections/index.html][Colecciónes]] | [[./emacs/index.html][Emacs]] | [[./blog/index.html][Journal]] | [[./logs/index.html][Logs]] | [[./programacion/index.html][Programación]] | [[./amigos.html][Amigos]] | [[./about.html][About me]]
 
 
 @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@

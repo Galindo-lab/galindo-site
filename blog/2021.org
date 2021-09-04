@@ -7,6 +7,14 @@
 #+SUBTITLE: Blog 
 #+DATE:     [2021-06-02 mié]
 
+* Septiembre
+** [2021-09-03 vie]
+Me siento muy cansado, esta semana solo ha estado lleno de malas noticias, no puedo iniciar mi servicio social por que mi universidad agrego un tramite extra que no me avisaron, están amenazando que volveremos a presenciales siento que mi cabeza no deja de dar vueltas.
+
+#+BEGIN_COMMENT
+Además industrias pecuarias va a dejar de rentar el local, esto me esta poniendo muy tenso ya que solo tenemos tres locales rentados
+#+END_COMMENT
+
 * Agosto
 ** [2021-08-29 dom]
 # lun 30 ago 2021 00:43:19
