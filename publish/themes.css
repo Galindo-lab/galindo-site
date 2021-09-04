@@ -11,14 +11,14 @@
 }
 
 .dark {
-    --bg: #000;             /*background color*/
+    --bg: #252528;             /*background color*/
     --url: #00AFF4;
-    --font: #fff;          /*font color*/
+    --font: #D8D8D8;          /*font color*/
     --todo: red;
     --done: green;
     
-    --color0: #000;
-    --color1: #000;
+    --color0: #444444;
+    --color1: var(--bg);
 }
 
 

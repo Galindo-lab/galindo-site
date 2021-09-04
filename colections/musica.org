@@ -5,7 +5,7 @@
 #+TITLE: Música
 #+SUBTITLE: Colección
 
-#+OPTIONS: ^:nil
+#+OPTIONS: ^:nil \n:t
 
 * Álbums completos
 - [[https://youtu.be/alXMGadyDmQ][Las Ultrasonicas - Yo fui una adolescente terrosatánica]]
@@ -19,6 +19,7 @@
 - [[https://youtu.be/rAInsld6iJM][La URSS - Maravillas del mundo]]
 - [[https://youtu.be/1mgT2ZA6eqQ][La URSS - Nuevo testamento]]
 - [[https://youtu.be/01QYQB8MEZs][KGB - Treblinka/Inéditos y Rarezas]]
+- [[https://youtu.be/3L3nlfsWtO8][CUTIE - S/T 7'']]
 
 * Canciones
 - [[https://youtu.be/5n_GBRSAtew][Cosas Ilegales - Dame Tu Cuero]]
