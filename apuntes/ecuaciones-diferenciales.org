@@ -11,7 +11,7 @@ TODO list:
 
 - [ ] Propiedades de transformada de laplace
   
-#+TOC: headlines 2
+#+TOC: headlineses 2
 
 * Definicion
 Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y que contiene una derivada de una o mas variables dependientes con respecto a dos o mas variables independientementes.
@@ -73,7 +73,7 @@ Para resolver una transformada de laplace susituimos \(f(t)\) con nuestra funcio
 L \{f(t)\} = \int_0^\infty e^{-s~t} f(t)~dt
 \] 
 
-[[https://es.wikipedia.org/wiki/Transformada_de_Laplace][Fuente]] | [[https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file][Formulario]] | [[https://ecuacionesdiferencia1es.files.wordpress.com/2015/06/formulario-laplace.pdf][formulario completo]]
+[[https://es.wikipedia.org/wiki/Transformada_de_Laplace][Fuente]] | [[https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file][Formulario]] | [[https://www.mediafire.com/file/8sdh1iioan8pafk/formulario-laplace-completo.pdf/file][formulario completo]]
 
 * Propiedades de laplace
 https://www.uv.mx/personal/aherrera/files/2014/04/18.-PROPIEDADES-DE-LA-TRANSFORMADA-DE-LAPLACE1.pdf
@@ -87,7 +87,7 @@ Raramente te van a pedir que desarolloes las integrales para llegar a una transf
                  f(t) &= 2t^4 \\
 \mathcal{L}\{ f(t) \} &= 2\mathcal{L}\{ t^4 \}\\
                       &= 2 \frac{4!}{s^{4+1}}\\
-                      &= \frac{24}{s^{5}}
+                      &= \frac{48}{s^{5}}
 \end{aligned} \]
 
 \[ 
