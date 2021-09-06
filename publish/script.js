@@ -13,14 +13,16 @@ if( theme ) {
 // body.classList.value =  'light' ;
 
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
-metaThemeColor.setAttribute("content", "#eeeeee");
+metaThemeColor.setAttribute("content", (theme==="dark" ? "#333333" : "#eeeeee") );
 
 
 function switchTheme() {
    if( localStorage.getItem("theme") == 'dark' ){
-      localStorage.setItem("theme", 'light')
+       localStorage.setItem("theme", 'light')
+       metaThemeColor.setAttribute("content", "#eeeeee");
    } else {
-      localStorage.setItem("theme", 'dark')
+       localStorage.setItem("theme", 'dark')
+       metaThemeColor.setAttribute("content", "#333333");
    }
 
    body.classList.value =  localStorage.getItem("theme");

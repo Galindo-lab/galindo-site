@@ -11,7 +11,7 @@ TODO list:
 
 - [ ] Propiedades de transformada de laplace
   
-#+TOC: headlineses 2
+#+TOC: headlines 1
 
 * Definicion
 Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y que contiene una derivada de una o mas variables dependientes con respecto a dos o mas variables independientementes.

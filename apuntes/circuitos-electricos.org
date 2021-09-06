@@ -187,9 +187,15 @@ R_C &= \frac{R_1R_2 + R_2R_3 + R_3R_1}{R_3} \\
 
 ** Delta a estrella
 
-\[
+#+BEGIN_DEMONSTRATION
+\[ \begin{aligned}
+R_1 &= \frac{R_CR_B}{R_a+R_b+R_c} & R_2 &= \frac{R_CR_A}{R_a+R_b+R_c} \\
+\end{aligned} \]
 
+\[
+R_3 = \frac{R_AR_B}{R_a+R_b+R_c}
 \]
+#+END_DEMONSTRATION
 
 #+BEGIN_SRC python :export code
 
