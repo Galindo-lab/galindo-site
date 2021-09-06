@@ -79,7 +79,6 @@ Pero esta función solo funciona para números mayores a 0 en el primer cuadrant
 # #+ATTR_HTML: :width 100%
 # [[file:img/9.png]]
 
-#+BEGIN_DEMONSTRATION
 #+BEGIN_CENTER
 #+ATTR_HTML: :align center :rules all :border 1 :frame 1
 | Condición  | Grados     | Radianes   |
@@ -93,8 +92,6 @@ Pero esta función solo funciona para números mayores a 0 en el primer cuadrant
 #+END_CENTER
 
 Sí \(x=0\) y \(Y>0\) eso nos indica que el radio se encuentra exactamente sobre el eje Y apuntando hacia arriba (90°); Sí X=0 y Y<0 eso significa que el radio se encuentra exactamente sobre el eje Y pero apuntando hacia abajo (270°).
-
-#+END_DEMONSTRATION
 
 [[https://www.superprof.es/apuntes/escolar/matematicas/aritmetica/complejos/coordenadas-cartesianas-a-polares.html#tema_conversion-de-coordenadas-cartesianas-a-polares][Más Información]]
 

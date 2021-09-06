@@ -74,10 +74,23 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+
+
+table, tr, td {
+
+    border: 1px inset var(--color0);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 table {
+    /* width: 100%; */
+   display: block;
+    overflow-x: auto;
+    white-space: nowrap;
     width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /* border: 0 solid var(--font); */
+        border: 0;
 }
 
 dt{

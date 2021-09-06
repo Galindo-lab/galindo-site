@@ -51,79 +51,116 @@ conjunto de _enunciados declarativos_ que formalizan la expresión, usualmente s
 [[http://objetos.unam.mx/logica/formasLogicas/pdf/forma.logica.de.enunciados.pdf][Extraido]] 
 
 * Conectivas proposicionales
+** resumen
 son los simbolos que formalizan los elementos del lenguaje que sirven para su funcion argumentativa.
 
-#+BEGIN_DEMONSTRATION
 #+BEGIN_CENTER
-#+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
-| Relacion        | Notación     | Lectura              |
-| <15>            | <12>         | <20>                 |
-|-----------------+--------------+----------------------|
-| Negacion        | \(\lnot\)    | no                   |
-| Conjunción      | \(\lor   \)  | o                    |
-| Disyunción      | \(\land\)    | y                    |
-| Implicación     | \(\rightarrow\) | entonces             |
-| Equivalencia    | \(\equiv  \) | equivalente a        |
-| Por lo tanto    | \(\vdash\)   | deduce que, conclusion |
-| Doble implicación | \(\leftrightarrow\) | Sí y solo sí         |
+#+ATTR_HTML: :align center :rules all :border 1  :mode inline-math
+| <10>       | <15>       | <10>       |
+| Relacion   | Notación   | Lectura    |
+|------------+------------+------------|
+| Negacion   | \(\lnot\)  | no         |
+| Conjunción | \(\lor\)   | o          |
+| Disyunción | \(\land\)  | y          |
+| Implicación | \(\rightarrow\) | entonces   |
+| Equivalencia | \(\equiv  \) | equivalente a |
+| Por lo tanto | \(\vdash\) | deduce que, conclusion |
+| Doble implicación | \(\leftrightarrow\) | Sí y solo sí |
+| Tautología | \(\top ~ T\) | Verdadero  |
+| Contradicción | \(\bot ~ F\) | Falso      |
+| pertenece  | \(\in\)    | sí x pertenece a un conjunto |
+| Cuantificador universal | \(\forall\) | para todo x hay y |
+| Cuantificador existencial | \(\exists\) | existe;hay por lo menos un |
 #+END_CENTER
-#+END_DEMONSTRATION
 
-[[https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_l%C3%B3gicos][Lista de simbolos completa]] 
+[[https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_l%C3%B3gicos][Lista de simbolos]] | [[https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_matem%C3%A1ticos][Lista de Simbolos completa]] 
 
-#+BEGIN_DEMONSTRATION
-#+BEGIN_CENTER
+** Conjucion 
+Solo una de las variables preposicionales tiene que ser verdadera para que el predicado sea verdadero
 
-p \equiv "Hago ejercicio diariamente." \\
-q \equiv "Me alimento sanamente." \\
-r \equiv "Tengo buena salud." \\
+** Disyunción
+Lo opuesto a la conjunción, ambas tienen que ser verdaderas para que la expresión sea verdadera.
 
-/"Hago ejercicio diariamente y me alimento sanamente"/ \\
-
-\( p \land q \)
-
-/"No tengo buena salud y no hago ejercicio  diariamente"/ \\
-
-\( ¬r \land ¬p \)
-
-/"Si me alimento sanamente y hago ejercicio diariamente, entonces tengo buena salud"/ \\
-
-\( (p \land q) \implies r \)
-
-#+END_CENTER
-#+END_DEMONSTRATION
+** Implicación
+Sí un enunciado es verdadero el otro tambien es verdadero
 
 #+BEGIN_DEMONSTRATION
-#+BEGIN_CENTER
 
-p \equiv "Viene Julia" \\
-q \equiv "Viene María" \\
-r \equiv "Viene Javier" \\
 
-/"Viene Julia, María y Javier"/ \\
+P \equiv /"Hace frio"/ 
+q \equiv /"Usare sueter"/ 
 
-\( p \land q \land r \)
 
-#+END_CENTER
+\[
+p \rightarrow q
+\]
+
 #+END_DEMONSTRATION
 
-* Tautología
+** Por lo tanto
+Se usa para denotar la conclusion de un argumento, si es verdadero entonces el argumento es valido; sí es falso entonces no es valido.
+#+BEGIN_DEMONSTRATION
+/"Juan es francés si nació el 23 de febrero. Si es bretón, entonces es más bien bajo. Ahora bien, nació el 23 de febrero o es bretón. Por consiguiente, es francés o es más bien bajo."/ \\
+
+Convenciones simbólicas:
+ - p \equiv Juan es francés
+ - q \equiv Juan nació el 23 de febrero
+ - r \equiv Juan es bretón
+ - s \equiv Juan es más bien bajo
+
+Formalización:
+\[q \rightarrow p, r \rightarrow s, q \lor r \vdash p \lor s\]
+
+#+END_DEMONSTRATION
+
+** Doble implicación
+Se lee como "sí y solo sí", eso significa que para que sea verdadera ambos valores tienen que ser iguales (ambos verdaderos o ambos falsos).
+
+** Tautología
 es un forma de enunciado que siempre es verdadera, independientemente de los valores de verdad de los enunciados individuales sustituidos por sus enunciados variables. Un enunciado cuya forma es una tautología es un *enunciado tautológico*.
 
-* Contradicción
+** Contradicción
 es una forma de enunciado que siempre es falso, independientemente de los valors de verdad de los enunciados individuales de los enunciados sustituidos. Un enunciado cuya forma es una contradicción es un *enunciado contradictorio*.
+
+** Cuantificador universal
+para todos los elementos de un dominio siempre se cumple una funcion proposicional.
+
+** Cuantificador existencial
+De todos los elementos del dominio existe por lo menos un elemento que cumple la funcion propocional.
+
+** Ejemplo de cuantificador universal y existencial
+#+BEGIN_DEMONSTRATION
+
+/"Todos los artistas son ricos. Algunos políticos son corruptos. En conclusión no todos los artistas y no todos los políticos son ricos y corruptos"/
+
+Convenciones simbólicas:
+
++ A = { a | a es un politico } \\
++ B = { b | b es un artista } \\
++ p(a): Los políticos que son ricos
++ p(b): Los artistas que son ricos
++ q(a): Los políticos que son corruptos
++ q(b): Los artisas que son corruptos
+
+Formalización:
+
+\[ [(\forall b \in B) p(b), (\exists a \in A) q(a)] \vdash (\exists a \in A) p(a) \land (\exists a \in A) q(a) \land  (\exists b \in B) p(b) \land (\exists b \in B) q(b) \]
+
+#+END_DEMONSTRATION
 
 * Tablas de verdad
 Son tablas que nos sirven para conocer los valores de verdad de las proposiciones compuestas.
 
 #+BEGIN_DEMONSTRATION
+
+/"No salió electo Presidente de la República o el crecimiento anual no fue del 7%"/ \\
+
+Convenciones simbólicas: \\
+ - p \equiv /"salió electo Presidente de la República"/ 
+ - q \equiv /"el crecimiento anual fue del 7%"/  
+
+Tabla de verdad: 
 #+BEGIN_CENTER
-
- p \equiv /"salió electo Presidente de la República"/ \\
- q \equiv /"el crecimiento anual fue del 7%"/ \\
-
- /"No salió electo Presidente de la República o el crecimiento anual no fue del 7%"/ \\
-
 #+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
 |---+---+----+----+-----+------+------+-------|
 | p | q | ¬p | ¬q | p∧q | ¬p∧q | p∧¬q | ¬p∧¬q |
@@ -134,6 +171,7 @@ Son tablas que nos sirven para conocer los valores de verdad de las proposicione
 #+END_DEMONSTRATION
 
 [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]] 
+
 
 * Equivalencia lógica
 Dos formas de enunciado se llaman lógicamente equivalents si y sólo si, tienen los mismos valores de verdad para cada posible sustitución de enunciados por sus enunciados de variables. La equivalencia lógica de las formas de enunciado P y Q se denota escribiendo P ≡ Q.
@@ -260,3 +298,12 @@ Un argumento valido seria algo como: \\
 \[ ((\lnot p \implies q) \land (p \implies (\lnot r \lor s))) \implies ( \lnot s \land \lnot q \land \lnot r ) \implies p\]
 
 #+END_DEMONSTRATION
+
+* Ejercicios
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos1.pdf][ejercicios resueltos 1]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos2.pdf][ejercicios resueltos 2]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos3.pdf][ejercicios resueltos 3]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos4.pdf][ejercicios resueltos 4]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos5.pdf][ejercicios resueltos 5]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos6.pdf][ejercicios resueltos 6]]
++ [[https://www.um.es/docencia/jcleon/logica1/logica1_ejercicios_resueltos7.pdf][ejercicios resueltos 7]]
