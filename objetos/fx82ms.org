@@ -1,0 +1,8 @@
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/objetos/fx82ms.org
+
+#+TITLE:    Calculadora casio fx-82MS
+#+SUBTITLE: Objetos
+
+* [2021-09-07 mar]
+Esta calculadora tiene un lugar especial en mi corazón, mi mamá me la compro en mi primer año de preparatoria, me acuerdo que ella me dijo que la cuidara, todavía la tengo con todo y [[https://i.ibb.co/Vm0f5Cs/IMG-20210907-004932743.jpg][manual]]. Esta calculadora me ha acompañado por los últimos 4 años y todavía funciona, también puedo decir con orgullo que se para qué sirven el 80% de las teclas de la calculadora.

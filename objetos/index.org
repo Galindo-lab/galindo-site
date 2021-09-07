@@ -1,0 +1,23 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/objetos/index.org
+
+#+TITLE:    Objetos
+#+SUBTITLE: index
+
+#+BEGIN_EXPORT html
+<style>
+img {
+  width: 49%;
+  float: left;
+}
+</style>
+#+END_EXPORT
+
+
+Informacion acerca de los objetos que tengo en mi escritorio ó cosas que suelo usar.
+
+#+BEGIN_CENTER
+[[./fx82ms.html][file:https://i.ibb.co/XyDwPV1/IMG-20210907-005008721.jpg]]
+#+END_CENTER
+
