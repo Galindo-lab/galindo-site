@@ -158,7 +158,7 @@ Entonces esta resistencia es de 154k\Omega con tolerancia de \pm2%.
 [[file:img/11.png]]
 #+END_CENTER
 
-** Estrella a delta
+** Convertir estrella a delta
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}
@@ -185,7 +185,7 @@ R_C &= \frac{R_1R_2 + R_2R_3 + R_3R_1}{R_3} \\
 | RB |          10.82615 |
 | RC | 7.359596199928621 |
 
-** Delta a estrella
+** Convertir delta a estrella
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{aligned}

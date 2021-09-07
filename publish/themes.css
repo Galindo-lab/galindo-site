@@ -12,7 +12,7 @@
 
 .dark {
     --bg: #252528;             /*background color*/
-    --url: #00AFF4;
+    --url: #A0A0A0;
     --font: #D8D8D8;          /*font color*/
     --todo: red;
     --done: green;
