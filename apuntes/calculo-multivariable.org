@@ -34,6 +34,10 @@ Funciones Discontinuas Más Comunes:
 - logaritmo de 10 en \( x \leq 0  \)
 
 * Dominio de una función
+#+BEGIN_QUOTE
+Los valores para los cuales la función está definida. Variable independiente
+#+END_QUOTE
+
 El dominio son los valores de X que puede tomar una función:
 
 #+BEGIN_DEMONSTRATION
@@ -60,6 +64,11 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 [[https://youtu.be/qDr0R7hIjts][Video]]
 
 * Imagen de una función (Rango)
+#+BEGIN_QUOTE
+Conjunto de valores que puede tomar la función.
+Variable dependiente.
+#+END_QUOTE
+
 El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
 
 - Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).
@@ -110,7 +119,7 @@ a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 Para determinar la funcion que se forma con tres puntos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 
 #+BEGIN_DEMONSTRATION
-\[ \begin{pmatrix}
+\[ Det \begin{pmatrix}
    x-a_x   & y-a_y   & z-a_z   \\
    b_x-a_x & b_y-a_y & b_z-a_z \\
    c_x-a_x & c_y-a_y & c_x-a_z \\

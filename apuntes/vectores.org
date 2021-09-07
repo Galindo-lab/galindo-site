@@ -170,6 +170,7 @@ Sí sustituimos \(i\) con un vector unitario sobre uno de los ejes coordenados p
 #+BEGIN_DEMONSTRATION
 
 #+BEGIN_CENTER
+#+caption: Ángulos directores del vector
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px
 [[file:./img/1.png]]
