@@ -6,6 +6,9 @@
 #+SUBTITLE: Apuntes
 #+DATE:     [2021-08-24 mar]
 
+#+OPTIONS: author:nil date:nil title:nil
+
+
 \\
 
 \[ \begin{matrix}
@@ -33,3 +36,4 @@
 \\
 
 [[https://blogfisicadecimoa.files.wordpress.com/2013/07/notacion-cientifica-lizerindex_thumb4.jpg][Imagen]]
+

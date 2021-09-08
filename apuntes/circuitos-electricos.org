@@ -168,7 +168,7 @@ R_C &= \frac{R_1R_2 + R_2R_3 + R_3R_1}{R_3} \\
 \end{aligned} \]
 #+END_DEMONSTRATION
 
-#+BEGIN_SRC python :export code
+#+BEGIN_SRC python :export none
   def estrella_delta(r1,r2,r3):
       a = r1*r2 + r2*r3 + r3*r1
       return ((" a", a),
@@ -197,7 +197,7 @@ R_3 = \frac{R_AR_B}{R_a+R_b+R_c}
 \]
 #+END_DEMONSTRATION
 
-#+BEGIN_SRC python :export code
+#+BEGIN_SRC python :export none
 
   def delta_estrella(ra,rb,rc):
       a = ra + rb + rc
