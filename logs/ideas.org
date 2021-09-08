@@ -5,6 +5,10 @@
 #+TITLE:    Ideas y cosas tontas
 #+SUBTITLE: Logs
 
+* La mejor forma de escuchar musica
+** [2021-09-08 mié]
+con los comentarios desactivados.
+
 * Space Dandy 
 ** [2021-09-07 mar]
 Tengo varios dias escuchando la musica de Space Dandy, realmente es muy buena.

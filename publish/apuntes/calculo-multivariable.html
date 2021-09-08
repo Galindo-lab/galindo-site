@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-09-07 mar 09:42 -->
+<!-- 2021-09-08 mié 11:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cálculo Multivariable</title>
@@ -31,26 +31,27 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgcf061d9">1. Funciones discontinuas más comunes</a></li>
-<li><a href="#orgc812e02">2. Dominio de una función</a></li>
-<li><a href="#orga90f2b8">3. Imagen de una función (Rango)</a></li>
-<li><a href="#org57a08d9">4. Representación del plano</a></li>
-<li><a href="#org85b9cde">5. Ecuación vectorial del plano</a></li>
-<li><a href="#org15d8f6b">6. Ecuación escalar</a></li>
-<li><a href="#org9b282b5">7. Plano Entre Tres Puntos</a></li>
-<li><a href="#orgbe97a5c">8. Ángulo Entre Planos</a></li>
-<li><a href="#org61d5a19">9. Plano que pasa por un punto y es perpendicular a otro plano</a></li>
-<li><a href="#orgef55015">10. Vector de una recta o función</a></li>
-<li><a href="#orgb1ea192">11. Parametrizacion de una recta con dos puntos</a></li>
-<li><a href="#orgb7c6429">12. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
-<li><a href="#org896780c">13. Coordenadas rectangulares, cilíndricas y esféricas</a></li>
-<li><a href="#orgfd18df4">14. Coordenadas rectangulares a esfericas</a></li>
+<li><a href="#org97560f4">1. Funciones discontinuas más comunes</a></li>
+<li><a href="#orgde1382b">2. Representación del plano</a></li>
+<li><a href="#org8ff70df">3. Ecuación vectorial del plano</a></li>
+<li><a href="#orgbf308f5">4. Ecuación escalar</a></li>
+<li><a href="#orgd334ac0">5. Plano Entre Tres Puntos</a></li>
+<li><a href="#org73b929a">6. Ángulo Entre Planos</a></li>
+<li><a href="#orgeeeb16c">7. Plano que pasa por un punto y es perpendicular a otro plano</a></li>
+<li><a href="#orge4bd933">8. Vector de una recta o función</a></li>
+<li><a href="#orgbc6c57c">9. Parametrizacion de una recta con dos puntos</a></li>
+<li><a href="#orgeca2593">10. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
+<li><a href="#org008a184">11. Coordenadas rectangulares, cilíndricas y esféricas</a></li>
+<li><a href="#org25d5771">12. Coordenadas rectangulares a esfericas</a></li>
+<li><a href="#org22cf300">13. Dominio de una función</a></li>
+<li><a href="#orge394720">14. Imagen de una función (Rango)</a></li>
+<li><a href="#org7d8a968">15. Curvas de nivel</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcf061d9" class="outline-2">
-<h2 id="orgcf061d9"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
+<div id="outline-container-org97560f4" class="outline-2">
+<h2 id="org97560f4"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Funciones Discontinuas Más Comunes:
@@ -71,115 +72,9 @@ Funciones Discontinuas Más Comunes:
 </div>
 </div>
 
-<div id="outline-container-orgc812e02" class="outline-2">
-<h2 id="orgc812e02"><span class="section-number-2">2</span> Dominio de una función</h2>
+<div id="outline-container-orgde1382b" class="outline-2">
+<h2 id="orgde1382b"><span class="section-number-2">2</span> Representación del plano</h2>
 <div class="outline-text-2" id="text-2">
-<blockquote>
-<p>
-Los valores para los cuales la función está definida. Variable independiente
-</p>
-</blockquote>
-
-<p>
-El dominio son los valores de X que puede tomar una función:
-</p>
-
-<div class="DEMONSTRATION">
-<p>
-\[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
-</p>
-
-</div>
-
-<p>
-La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
-</p>
-
-<p>
-En el denominador no puede haber un número cero, entonces solo basta con resolver la ecuación \( x-1 = 0 \) para encontrar la discontinuidad. \( x = 1 \)
-</p>
-
-<p>
-Como los números negativos no tienen raíces, no hay números reales que multiplicados sean negativos, se puede inferir que la función no existe en ningún punto que donde \( x+y+1 < 0 \).
-</p>
-
-<p>
-Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
-</p>
-
-<div class="DEMONSTRATION">
-<p>
-\[ \begin{Bmatrix}
-  \begin{pmatrix} 
-  x \\ y \\ 
-  \end{pmatrix} \in \mathbb R^2: 
-  x + y + 1 \geq 0 \wedge x \not = 1
-\end{Bmatrix}  \]
-</p>
-
-</div>
-
-<p>
-<a href="https://youtu.be/qDr0R7hIjts">Video</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-orga90f2b8" class="outline-2">
-<h2 id="orga90f2b8"><span class="section-number-2">3</span> Imagen de una función (Rango)</h2>
-<div class="outline-text-2" id="text-3">
-<blockquote>
-<p>
-Conjunto de valores que puede tomar la función.
-Variable dependiente.
-</p>
-</blockquote>
-
-<p>
-El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
-</p>
-
-<ul class="org-ul">
-<li>Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).</li>
-</ul>
-
-
-<ul class="org-ul">
-<li>Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).</li>
-</ul>
-
-<div class="DEMONSTRATION">
-<p>
-\[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
-</p>
-
-</div>
-
-<p>
-Para encontrar el rango es muy recomendable encontrar primero el <a href="#orgc812e02">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
-</p>
-
-<p>
-La primera cosa que podemos notar en la función es que es una raíz, eso significa que no puede ser un valor negativo, por lo tanto el valor mas pequeño al que podemos calcular la raíz en el dominio de los reales es el número 0, este sería el valor mínimo de la imagen.
-</p>
-
-<p>
-También podemos notar que los valores están elevados al cuadrado (los valores de X<sup>2</sup> y y<sup>2</sup> siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen. 
-</p>
-
-<p>
-El resultado que obtenemos es que el dominio de la función se extiende continuamente desde \( [0, 3] \).
-</p>
-
-<p>
-<a href="https://youtu.be/qDr0R7hIjts">Video</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-org57a08d9" class="outline-2">
-<h2 id="org57a08d9"><span class="section-number-2">4</span> Representación del plano</h2>
-<div class="outline-text-2" id="text-4">
 <p>
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:
 </p>
@@ -199,9 +94,9 @@ otras formas de representar el plano también podrían ser las siguiente:
 </div>
 </div>
 
-<div id="outline-container-org85b9cde" class="outline-2">
-<h2 id="org85b9cde"><span class="section-number-2">5</span> Ecuación vectorial del plano</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org8ff70df" class="outline-2">
+<h2 id="org8ff70df"><span class="section-number-2">3</span> Ecuación vectorial del plano</h2>
+<div class="outline-text-2" id="text-3">
 <div class="DEMONSTRATION">
 <p>
 \[
@@ -213,9 +108,9 @@ otras formas de representar el plano también podrían ser las siguiente:
 </div>
 </div>
 
-<div id="outline-container-org15d8f6b" class="outline-2">
-<h2 id="org15d8f6b"><span class="section-number-2">6</span> Ecuación escalar</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgbf308f5" class="outline-2">
+<h2 id="orgbf308f5"><span class="section-number-2">4</span> Ecuación escalar</h2>
+<div class="outline-text-2" id="text-4">
 <div class="DEMONSTRATION">
 <p>
 \[
@@ -227,9 +122,9 @@ a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 </div>
 </div>
 
-<div id="outline-container-org9b282b5" class="outline-2">
-<h2 id="org9b282b5"><span class="section-number-2">7</span> Plano Entre Tres Puntos</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgd334ac0" class="outline-2">
+<h2 id="orgd334ac0"><span class="section-number-2">5</span> Plano Entre Tres Puntos</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Para determinar la funcion que se forma con tres puntos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
 </p>
@@ -251,9 +146,9 @@ Para determinar la funcion que se forma con tres puntos en el espacio, sustituim
 </div>
 </div>
 
-<div id="outline-container-orgbe97a5c" class="outline-2">
-<h2 id="orgbe97a5c"><span class="section-number-2">8</span> Ángulo Entre Planos</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org73b929a" class="outline-2">
+<h2 id="org73b929a"><span class="section-number-2">6</span> Ángulo Entre Planos</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 para calcular el angulo entre dos planos usamos la siguiente ecuación:
 </p>
@@ -277,11 +172,11 @@ donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absolut
 </div>
 </div>
 
-<div id="outline-container-org61d5a19" class="outline-2">
-<h2 id="org61d5a19"><span class="section-number-2">9</span> Plano que pasa por un punto y es perpendicular a otro plano</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-orgeeeb16c" class="outline-2">
+<h2 id="orgeeeb16c"><span class="section-number-2">7</span> Plano que pasa por un punto y es perpendicular a otro plano</h2>
+<div class="outline-text-2" id="text-7">
 <p>
-Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#orgef55015">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación <a href="#org15d8f6b">escalar del plano</a>:
+Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#orge4bd933">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación <a href="#orgbf308f5">escalar del plano</a>:
 </p>
 
 <div class="DEMONSTRATION">
@@ -337,9 +232,9 @@ por ultimo sustituimos en la ecuación del plano:
 </div>
 </div>
 
-<div id="outline-container-orgef55015" class="outline-2">
-<h2 id="orgef55015"><span class="section-number-2">10</span> Vector de una recta o función</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-orge4bd933" class="outline-2">
+<h2 id="orge4bd933"><span class="section-number-2">8</span> Vector de una recta o función</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
 </p>
@@ -359,9 +254,9 @@ su vector:
 </div>
 </div>
 
-<div id="outline-container-orgb1ea192" class="outline-2">
-<h2 id="orgb1ea192"><span class="section-number-2">11</span> Parametrizacion de una recta con dos puntos</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-orgbc6c57c" class="outline-2">
+<h2 id="orgbc6c57c"><span class="section-number-2">9</span> Parametrizacion de una recta con dos puntos</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 Sustituimos los valores en la siguiente formula, P<sub>1</sub> es el punto de origen, P<sub>2</sub> punto final y t es un valor entre 0 y 1
 </p>
@@ -381,9 +276,9 @@ P_1 + t \cdot (P_2 - P_1)
 </div>
 </div>
 
-<div id="outline-container-orgb7c6429" class="outline-2">
-<h2 id="orgb7c6429"><span class="section-number-2">12</span> Ecuación paramétrica de la recta a una ecuación simétrica</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-orgeca2593" class="outline-2">
+<h2 id="orgeca2593"><span class="section-number-2">10</span> Ecuación paramétrica de la recta a una ecuación simétrica</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> simplemente resolviendo la ecuacion en los términos que necesitemos. 
 </p>
@@ -450,9 +345,9 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 </div>
 
 
-<div id="outline-container-org896780c" class="outline-2">
-<h2 id="org896780c"><span class="section-number-2">13</span> Coordenadas rectangulares, cilíndricas y esféricas</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-org008a184" class="outline-2">
+<h2 id="org008a184"><span class="section-number-2">11</span> Coordenadas rectangulares, cilíndricas y esféricas</h2>
+<div class="outline-text-2" id="text-11">
 <div class="OVERFLOW">
 <table border="1" cellspacing="0" cellpadding="6" rules="all" frame="1" align="center" mode="inline-math">
 
@@ -526,9 +421,9 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 </div>
 </div>
 
-<div id="outline-container-orgfd18df4" class="outline-2">
-<h2 id="orgfd18df4"><span class="section-number-2">14</span> Coordenadas rectangulares a esfericas</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-org25d5771" class="outline-2">
+<h2 id="org25d5771"><span class="section-number-2">12</span> Coordenadas rectangulares a esfericas</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 Las coordenadas esféricas requieren dos ángulos, por lo que se parecen mucho a las coordenadas polares. &theta; funciona exactamente como en coordenadas polares, sí \(x=0\) y \(y > 0\) el ángulo es 90°; sí \(x=0\) y \(y < 0\) el ángulo es 270°.
 </p>
@@ -549,6 +444,129 @@ r &= \sqrt{x^2+y^2+z^2} & \varphi &= cos^{-1}\left( \frac{z}{r} \right) \\
 <p>
 <a href="http://www.learningaboutelectronics.com/Articulos/Calculadora-de-conversion-de-coordenadas-cartesianas-a-esfericas.php#respuesta">Calculadora</a>
 </p>
+</div>
+</div>
+
+
+<div id="outline-container-org22cf300" class="outline-2">
+<h2 id="org22cf300"><span class="section-number-2">13</span> Dominio de una función</h2>
+<div class="outline-text-2" id="text-13">
+<blockquote>
+<p>
+Los valores para los cuales la función está definida. Variable independiente
+</p>
+</blockquote>
+
+<p>
+El dominio son los valores de X que puede tomar una función:
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+\[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
+</p>
+
+</div>
+
+<p>
+La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
+</p>
+
+<p>
+En el denominador no puede haber un número cero, entonces solo basta con resolver la ecuación \( x-1 = 0 \) para encontrar la discontinuidad. \( x = 1 \)
+</p>
+
+<p>
+Como los números negativos no tienen raíces, no hay números reales que multiplicados sean negativos, se puede inferir que la función no existe en ningún punto que donde \( x+y+1 < 0 \).
+</p>
+
+<p>
+Entonces, con la información que ya conocemos podemos decir que la función existe en todos los puntos donde \(x+y+1\) sea mayor a 0 y donde X sea diferente de 0. En notación matemática el dominio se escribiría así:
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+\[ \begin{Bmatrix}
+  \begin{pmatrix} 
+  x \\ y \\ 
+  \end{pmatrix} \in \mathbb R^2: 
+  x + y + 1 \geq 0 \wedge x \not = 1
+\end{Bmatrix}  \]
+</p>
+
+</div>
+
+<p>
+<a href="https://youtu.be/qDr0R7hIjts">Video</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge394720" class="outline-2">
+<h2 id="orge394720"><span class="section-number-2">14</span> Imagen de una función (Rango)</h2>
+<div class="outline-text-2" id="text-14">
+<blockquote>
+<p>
+Conjunto de valores que puede tomar la función.
+Variable dependiente.
+</p>
+</blockquote>
+
+<p>
+El rango o imagen de una función es todo valor de Y que puede tomar nuestra función \( f: \mathbb R^n \to \mathbb R^m \):
+</p>
+
+<ul class="org-ul">
+<li>Sí la función a la cual queremos calcular su rango solo tiene un parámetro, significa que nos encontramos con una función vectorial \(n = 1\).</li>
+
+<li>Por otro lado sí la función acepta dos parámetros y retorna un tercero entonces estamos ante una superficie. \( n = 2 \) y \(m = 3\).</li>
+</ul>
+
+<div class="DEMONSTRATION">
+<p>
+\[ f \begin{pmatrix} x \\ y \end{pmatrix} = \sqrt{9-x^2-y^2} \]
+</p>
+
+</div>
+
+<p>
+Para encontrar el rango es muy recomendable encontrar primero el <a href="#org22cf300">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
+</p>
+
+<p>
+La primera cosa que podemos notar en la función es que es una raíz, eso significa que no puede ser un valor negativo, por lo tanto el valor mas pequeño al que podemos calcular la raíz en el dominio de los reales es el número 0, este sería el valor mínimo de la imagen.
+</p>
+
+<p>
+También podemos notar que los valores están elevados al cuadrado (los valores de X<sup>2</sup> y y<sup>2</sup> siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen. 
+</p>
+
+<p>
+El resultado que obtenemos es que el dominio de la función se extiende continuamente desde \( [0, 3] \).
+</p>
+
+<p>
+<a href="https://youtu.be/qDr0R7hIjts">Video</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d8a968" class="outline-2">
+<h2 id="org7d8a968"><span class="section-number-2">15</span> Curvas de nivel</h2>
+<div class="outline-text-2" id="text-15">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/test.png" alt="test.png" width="256px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/test2.png" alt="test2.png" width="256px" />
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="footnotes">
