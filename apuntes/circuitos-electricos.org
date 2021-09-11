@@ -78,6 +78,7 @@ Usualmente a este [[https://es.wikipedia.org/wiki/C%C3%B3digo_mnemot%C3%A9cnico]
 [[file:./img/4.png]]
 #+END_CENTER
 
+
 * Corriente directa 
 Si la corriente no cambia con el tiempo, sino que permanece constante, se conoce como corriente directa (cd). Por convención, el símbolo I se usa para representar la corriente constante.
 * Corriente alterna
