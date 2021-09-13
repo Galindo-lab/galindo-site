@@ -1,6 +1,6 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
-#+EXPORT_FILE_NAME: ../publish/emacs/tutorial-emacs.org
+#+EXPORT_FILE_NAME: ../publish/programacion/tutorial-emacs.org
 
 #+TITLE: Aprendiendo A Usar Emacs
 #+SUBTITLE: Emacs

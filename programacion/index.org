@@ -7,10 +7,19 @@
 
 Tutórales de programación ó temas relacionados con tecnología y software.
 
+* Python
 - [[https://github.com/Galindo-lab/calculator][Programas y scripts para mi calculadora]]
-- [[./preview-html-externo.html][Preview html desde otro dispositivo conectado a la misma red]]
+- [[./notacion-ingenieria.html][Ingresar notacion de ingenieria en Python]]
+
+* Web
 - [[./google-translate.html][Añadir el plugin de google translate]]
 - [[./tema-obscuro.html][Implementar tema obscuro]]
 - [[./cambiar-theme-color.html][Cambiar el color de las pestañas de chrome]]
-- [[./notacion-ingenieria.html][Ingresar notacion de ingenieria en Python]]
+
+* Linux
+- [[./preview-html-externo.html][Preview html desde otro dispositivo conectado a la misma red]]
 - [[./optimizar-fotos.html][Optimizar fotos para pdfs]]
+
+* Emacs
+- [[./blog-en-org-mode.html][Como hacer un blog con ORG mode]].
+- [[./tutorial-emacs.html][Tutorial de emacs]] (En progreso).

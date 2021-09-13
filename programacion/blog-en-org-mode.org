@@ -1,6 +1,6 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
-#+EXPORT_FILE_NAME: ../publish/emacs/blog-en-org-mode.org
+#+EXPORT_FILE_NAME: ../publish/programacion/blog-en-org-mode.org
 
 
 #+TITLE:    Blog con ORG-mode

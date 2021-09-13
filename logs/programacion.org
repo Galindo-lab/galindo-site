@@ -36,7 +36,7 @@ Durante mi primer año también empecé a hacer juegos en C++, mi primer videoju
 Podría extenderme más sobre como aprendí programación web, php, cobol, assembly, lua etc.. Pero la verdad siento que no aporta nada a este relato que les acabo de contar para cuando entre a mi segundo año yo ya sabia que mi nueva meta era estudiar ingeniería. Siempre me da un poco de nostalgia recordar como empecé con esto, como unos vídeos de YouTube cambiaron por completo mis aspiraciones académicas y todas las cosas que he hecho hasta ahora. Se suponía que esta seria una pequeña entrada de mi blog y ya tengo varias horas escribiendo, hoy me sentía con muchas ganas de escribir y recordar todas las cosas que me llevaron a aquí... quizá me siento así porque hoy es mi último día de vacaciones o quizá simplemente es porque no quiero limpiar mi cuarto, no lo sé, pero hasta entonces me despido.
 
 ** Anexo
+[2021-08-10 mar]
+# mar 10 ago 2021 12:46:43
 
-mar 10 ago 2021 12:46:43
-
-Encontré uno de [[./4-El juego de la vida.txt][primeros códigos]], jajaja está horrible ya no programo así ¡lo juro!.
+Encontré uno de mis [[./4-El juego de la vida.txt][primeros códigos]], jajaja está horrible ya no programo así ¡lo juro!.
