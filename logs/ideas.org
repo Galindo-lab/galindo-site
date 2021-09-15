@@ -5,6 +5,10 @@
 #+TITLE:    Ideas y cosas tontas
 #+SUBTITLE: Logs
 
+* Escuela
+** [2021-09-15 mié]
+Los niños odian la escuela y todos piensan que esta bien. 
+
 * La mejor forma de escuchar musica
 ** [2021-09-08 mié]
 con los comentarios desactivados.

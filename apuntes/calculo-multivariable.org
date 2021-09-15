@@ -281,8 +281,8 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
 
 [[https://youtu.be/qDr0R7hIjts][Video]]
 
-* Curvas de nivel 
-
+* Curvas de nivel
+Las curavs de nivel son proyecciones bidimencionales de funciones en tres dimenciones, estas nos permiten ver los valores de la proyeccion rapidamente sin nececidad de un graficador.
 #+BEGIN_CENTER
 #+attr_latex: :width 7cm
 #+ATTR_HTML: :width 256px
@@ -333,3 +333,49 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
   return superficie
 
 #+END_SRC
+* Derivadas parciales
+La derivada parcial se denota como \( \frac{\partial}{\partial x} \) o tambien como un subindice en el nombre de la funcion \( f_x = \frac{\partial}{\partial x} \). Para calcular la derivada parcial de una funcion debemos calcular la derivada de la variable indicada mientras el otro valor lo tomamos como una constante. Si la es la derivada parcial de x, tendriamos algo así:
+
+#+BEGIN_DEMONSTRATION
+
+\[ \begin{aligned}
+   f   &= x^2 + x^2y^3 + y^2 \\
+   f_x &= \boxed{2x + 2xy^3}
+\end{aligned} \]
+
+#+END_DEMONSTRATION
+
+* Derivadas parciales multiples
+Es comun que un procedimiento requiera mas de una derivada parcial, usualmente se denota como \(f_{xy}\) donde cada subindice es una derivada parcial:
+
+#+BEGIN_DEMONSTRATION
+
+\[ \begin{aligned}
+   f   &= x^2 + x^2y^3 + y^2 \\
+   f_x &= 2x + 2xy^3 \\
+   f_{xy} &= \boxed{6xy^2}
+\end{aligned} \]
+
+#+END_DEMONSTRATION
+
+cabe resaltar que el orden si afecta como derivamos, si nuestra funcion nos pide la derivada \( f_yx \) primero derivamos \(y\) y luego \(x\)[fn:orden].
+
+[fn:orden] Las funciones lineales como en el ejemplo cumplen con la propiedad \( f_{xy} = f_{yx} \), sin embargo si nuestra funcion NO es lineal entonces esta propiedad no se cumple.
+
+* Derivada de orden superior
+Cuando tenemos multiples variables hay varias posibles derivadas, cada una correspondiente a cada variable que podemos tomar:
+
+#+BEGIN_DEMONSTRATION
+
+\[ \begin{aligned}
+   f   &= x^2 + x^2y^3 + y^2 \\
+   f_x &= 2x + 2xy^3 
+\end{aligned} \]
+
+ya que tenemos nuestra derivada parcial determinamos cuales son las posibles derivadas parciales, en este caso todavia tenemos variables \(x\) y \(y\), entonces podemos hacer las derivadas parciales:
+
+\[ \begin{aligned}
+   f_{xx} = 2 + 2y^3 & ~ ~ & f_{xy} = 6xy^2 
+\end{aligned} \]
+
+#+END_DEMONSTRATION
