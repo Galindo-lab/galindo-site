@@ -8,7 +8,6 @@
 #+DATE:     [2021-08-19 jue]
 
 TODO list:
-
 - [ ] Propiedades de transformada de laplace
   
 #+TOC: headlines 1
@@ -97,4 +96,53 @@ Raramente te van a pedir que desarolloes las integrales para llegar a una transf
 
 Como se ve en el ejemplo, simplemente tenemos que desarollar la exprecion y aplicar la [[https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file][formula]] que se nos indica.
 
-# ** Integral Propia 
+* Tranformada de Derivadas de Laplace
+#+BEGIN_DEMONSTRATION
+
+\[
+\frac{dy}{dx} - 3y = e^{2t}; y(0) = 1
+\]
+
+Calculamos la tranformada de Laplace para cada uno de sus elementos y factorizamos[fn:laplace-y]:
+
+\[ \begin{aligned}
+\mathcal{L}\Big\{ \frac{dy}{dx} \Big\} - 3 \mathcal{L}\{y\} &= \mathcal{L}\big\{ e^{t2}\big\} \\
+                                          Sy(S) - 1 - 3y(S) &= \frac{1}{S-2}                  \\
+                                                  y(s)(s-3) &= \frac{1}{s-2} + 1              \\
+                                                  y(s)(s-3) &= \frac{s-1}{s-2}                \\
+                                                       y(s) &= \frac{s-1}{s-2}(s-3)           \\
+                                                       y(s) &= \frac{s-1}{(s-2)(s-3)}
+\end{aligned} \]
+
+Ahora calculamos la inversa de laplace de \(y(s)\), pero para eso tendremos que Resolvemos las fracciones parciales de nuestro resutado +Asumire que ya sabes resolver fracciones parciales así que ire directo al resultado+. 
+
+\[ \begin{aligned}
+\frac{s-1}{(s-2)(s-3)} & \Rightarrow + \\
+                       & = -\frac{1}{s-2} + \frac{2}{s-3}
+\end{aligned} \]
+
+ahora calculamos la inversa de la transformada de laplace:
+
+\[ \begin{aligned}
+\mathcal{L}^{-1}\Big\{ \frac{s-1}{(s-2)(s-3)} \Big\} &= -\mathcal{L}^{-1} \Big\{ \frac{1}{s-2} \Big\} + \mathcal{L}^{-1} \Big\{ \frac{2}{s-3} \Big\}
+\end{aligned} \]
+
+y el resultado final sería:
+
+\[
+\boxed{-e^{2t} + 2e^{3t}}
+\]
+
+
+
+#+END_DEMONSTRATION
+
+
+[fn:laplace-y] La tranformada de laplace de \( y \) es siempre \( y(s) \)
+
+
+# \[ \begin{aligned}
+# \mathcal{L} \{ f'(t) \} &= S \mathcal{L}\{ f \} - f(0) \\
+# \mathcal{L} \{ f''(t) \} &= S^2 \mathcal{L}\{ f \} - Sf(0) } - f'(0) \\
+# \mathcal{L} \{ f''(t) \} &= S^3 \mathcal{L}\{ f \} - S^2f(0) } - Sf'(0) - f''(0) \\
+# \end{aligned} \]
