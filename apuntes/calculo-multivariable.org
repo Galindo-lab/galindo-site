@@ -283,6 +283,7 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
 
 * Curvas de nivel
 Las curavs de nivel son proyecciones bidimencionales de funciones en tres dimenciones, estas nos permiten ver los valores de la proyeccion rapidamente sin nececidad de un graficador.
+
 #+BEGIN_CENTER
 #+attr_latex: :width 7cm
 #+ATTR_HTML: :width 256px
@@ -312,6 +313,7 @@ Las curavs de nivel son proyecciones bidimencionales de funciones en tres dimenc
   return curva
 
 #+END_SRC
+
 #+BEGIN_SRC python :exports none :results file
 
   import numpy as np

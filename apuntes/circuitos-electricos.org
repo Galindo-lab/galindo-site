@@ -53,6 +53,11 @@ flujo de partículas cargadas, como electrones o iones, que se mueven a través 
 
 [fn:definicion-real]  \( Amperio = \frac{Coulombs}{segundos}  \)
 
+* polarisacion de resistencia
+cuando estamos calculando valores la potencia en un circuito tenemos que identificar la polaridad de la resistencias, tenemos dos casos:
+- Corriente entra por polaridad negativa :: La potencia tiene el signo negativo, entonces suministra energía.
+- Corriente entra por polaridad positiva :: La potencia tiene el signo positivo, entonces absorbe energía.
+
 * Resistencia, Tensión y Corriente en Paralelo
 - Tensión o Voltaje :: Es igual para todos los elementos en paralelo.
 - Corriente :: En un circuito paralelo la corriente se reparte entre los elementos. los componentes con mas resistencia resiven menos coriente y los elementos con menos resistencia mas corriente \(\frac{A}{\Omega} = V\).
