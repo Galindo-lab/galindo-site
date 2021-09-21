@@ -431,26 +431,32 @@ P_7 = A^C \cap B^C \cap C^C & ~ & P_8 = A^C \cap B^C \cap C^C \\
 Para representar una relación R sobre un solo conjunto A.
 
 #+BEGIN_DEMONSTRATION
-A={1,2,3,4},
+A={1,2,3,4},  \\
 R={(1,2),(2,2),(2,4),(3,2),(3,4),(4,1),(4,3)}
 #+END_DEMONSTRATION
 
 #+BEGIN_CENTER
+#+attr_latex: :width 7cm
+#+ATTR_HTML: :width 256px
 [[file:img/18.png]]
 #+END_CENTER
 
 ** Diagrama sagital
 
 #+BEGIN_DEMONSTRATION
-A={1,2,3}, B={x,y,z}
+A={1,2,3}, B={x,y,z} \\
 R={(1,y),(1,z),(3,y)}
 #+END_DEMONSTRATION
 
 #+BEGIN_CENTER
+#+attr_latex: :width 7cm
+#+ATTR_HTML: :width 256px
 [[file:img/19.png]]
 #+END_CENTER
 
 ** Matriz de relación
 #+BEGIN_CENTER
+#+attr_latex: :width 7cm
+#+ATTR_HTML: :width 256px
 [[file:img/20.png]]
 #+END_CENTER
