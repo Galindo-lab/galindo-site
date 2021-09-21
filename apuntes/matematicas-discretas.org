@@ -412,3 +412,16 @@ o \\
 #+END_CENTER
 
 [[https://es.wikipedia.org/wiki/Teor%25C3%25ADa_de_conjuntos#%25C3%2581lgebra_de_conjuntos][Mas informacion]]
+* Productos fundamentales
+#+BEGIN_DEMONSTRATION
+\[ \begin{matrix}
+P_1 = A \cap B \cap C       & ~ & P_2 = A \cap B \cap C^C \\
+P_3 = A \cap B^C \cap C     & ~ & P_4 = A \cap B^C \cap C^C \\
+P_5 = A^C \cap B \cap C     & ~ & P_6 = A^C \cap B \cap C^C \\
+P_7 = A^C \cap B^C \cap C^C & ~ & P_8 = A^C \cap B^C \cap C^C \\
+\end{matrix} \]
+#+END_DEMONSTRATION
+
+#+BEGIN_CENTER
+[[file:img/17.png]]
+#+END_CENTER
