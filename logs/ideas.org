@@ -5,6 +5,14 @@
 #+TITLE:    Ideas y cosas tontas
 #+SUBTITLE: Logs
 
+* Quote
+** [2021-09-22 mié]
+#+BEGIN_QUOTE
+...La pandemia de angusita mental que aflige nuestros tiempos no puede ser correctamente entendida, o curada, si es vista como un problema personal padecido por individuos dañados...
+
+-- REALISMO CAPITALISTA: ¿no hay ALTERNATIVA? | Mark Fisher
+#+END_QUOTE
+
 * Games
 ** [2021-09-15 mié]
 deberia hacer un juego sobre peleas de gallos, va a quedar bien vergas.

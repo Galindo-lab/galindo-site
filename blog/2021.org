@@ -8,6 +8,9 @@
 #+DATE:     [2021-06-02 mié]
 
 * Septiembre
+** [2021-09-26 dom]
+Ayer me pusieron la vacuna que me faltaba, ahora si ya estoy en regla para viajar, solo tengo que sacar mi documento para demostrar que ya estoy vacunado. Tambien estoy aprendiendo un nuevo lenguaje Racket, es muy interesante es un lenguaje LISP, estaba buscando un lenguaje así para poder empezar a familiarizarme con este tipo de lenguajes, osea trabajo con elisp pero realmente no lo conozco a detalle solo lo minimo para poder trabajar con emacs.
+
 ** [2021-09-20 lun]
 Finalmente buenas noticias, después de un año entero puedo iniciar mi servicio social, me acaba de llegar el correo de ''Taller de servicio social acreditado'' además saque 100 en mi examen de sociedad. En noticias menos positivas solo pude hacer 6 de los 10 ejercicios en mi examen de circuitos.
 

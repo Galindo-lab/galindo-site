@@ -244,3 +244,12 @@ Esta ley es llamada también Segunda ley de Kirchhoff, ley de lazos de Kirchhoff
 #+BEGIN_QUOTE
 En toda malla la suma de todas las caídas de tensión es igual a la tensión total suministrada. De forma equivalente, En toda malla la suma algebraica de las diferencias de potencial eléctrico es igual a cero.
 #+END_QUOTE
+* Divisor De Corriente
+Un divisor de corriente es un circuito eléctrico que transforma una corriente de entrada en otras 2 corrientes diferentes más pequeñas.
+
+A una de las corrientes o intensidades se le suele llamar de salida.
+
+para dos resistores:
+[[file:img/21.png]]
+
+
