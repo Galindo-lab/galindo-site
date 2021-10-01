@@ -5,10 +5,11 @@
 #+TITLE:    Colecciónes
 #+SUBTITLE: index
 
-Cosas que encuentro en internet que me parecen interesantes:
+* Cosas random que no se donde poner:
 
-- [[./software.html][Software]]
-- [[./libros.html][Libros]]
-- [[./paginas.html][Páginas]]
-- [[./imagenes.html][Imágenes]]
-- [[./musica.html][Música]]
+- [[./software.html][Software]] :: Mis programas favoritos.
+- [[./libros.html][Libros]] :: Los libro que me gustan y que quiero compartir con todos.
+- [[./paginas.html][Páginas]] :: Sitios web que me parecen interesantes
+- [[./imagenes.html][Imágenes]] :: Mis fotografías.
+- [[./musica.html][Música]] :: La musica que me gusta escuchar.
+

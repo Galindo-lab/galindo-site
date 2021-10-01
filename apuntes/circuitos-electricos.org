@@ -253,3 +253,5 @@ para dos resistores:
 [[file:img/21.png]]
 
 
+* divisor de voltage
+https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider

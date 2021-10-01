@@ -7,4 +7,9 @@
 
 Cosas que me pasan día a día, me ayuda a recordar la cosas que me pasan.
 
+* Extras
+- [[./ideas.html][Ideas y cosas tontas]]
+- [[./programacion.html][Mi historia con la programación]]
+
+* Blog
 - [[./2021.html][2021]]

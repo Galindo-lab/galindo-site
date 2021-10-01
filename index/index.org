@@ -45,8 +45,10 @@ transition: 500ms;
 #+CAPTION: I may be ugly, but i'm scared.
 [[file:./status.jpg]]
 
-[[./apuntes/index.html][Apuntes]] | [[./calculadoras/index.html][Calculadoras]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] | [[./logs/index.html][Logs]] | [[./programacion/index.html][Programación]] | [[./blog/friends.html][Amigos]] | [[./objetos/index.html][Objetos]] | [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] | [[./about.html][About me]]
+[[./apuntes/index.html][Apuntes]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] | [[./programacion/index.html][Programación]] | [[./blog/friends.html][Amigos]]
 
+[[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
+[[./about.html][About me]]
 
 @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
 
