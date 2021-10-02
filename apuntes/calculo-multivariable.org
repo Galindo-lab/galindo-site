@@ -397,17 +397,16 @@ dV &= \frac{\partial V}{\partial r}\,dr + \frac{\partial v}{\partial h}\,dh & \\
 #+END_DEMONSTRATION
 
 * Regla de la cadena 
-Para aplicar la regla de la cadena en una funcion multivariable simplemente consiste en sustituir cada variable y luego derivar cada uno de los elementos.
+Para aplicar la regla de la cadena en una funcion multivariable simplemente consiste en sustituir cada variable y luego derivar cada uno de los elementos, Ejemplo: Derivada de \(w = x^2 + y^2 + z^2 \) donde \(x = st\) ; \(y = s\cos t\) ; \(z = s\sin t\).
 
 #+BEGIN_DEMONSTRATION
-
-Derivada de \(w &= x^2 + y^2 + z^2 \) donde \(x = st\) ; \(y = s\cos t\) ; \(z = s\sin t\).
 
 \[ \begin{aligned}
 \frac{\partial w}{\partial s} &= \frac{\partial w}{\partial x} \cdot \frac{\partial x}{\partial s} + \frac{\partial w}{\partial y} \cdot \frac{\partial y}{\partial s} + \frac{\partial w}{\partial z} \cdot \frac{\partial z}{\partial s} \\
 &= 2x \cdot t + 2y \cdot \cos t + 2z \cdot \sin t \\
 &= 2(st) \cdot t + 2(s \cos t) \cdot \cos t + 2(s \sin t) \cdot \sin t \\
-&= 2st^2 + 2s\cos^2(t)+2s\sin^2(t)
+&= 2st^2 + 2s\cos^2 t +2s\sin^2 t \\
+&= s \cdot (2t^2 + 2\cos^2 t + 2\sin^2 t) \\
 \end{aligned} \]
 
 #+END_DEMONSTRATION
