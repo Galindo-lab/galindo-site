@@ -239,8 +239,6 @@ La forma más sencilla de sumar vectores es sin duda aprovecharnos de las propie
 Pasamos nuestros vectores de _polares a rectangulares_ y sumamos sus cordenadas polares:
 
 #+BEGIN_CENTER
-
-#+ATTR_HTML: :align center :rules all :border 1 :frame 1
 | Polar        |  Eje x | Eje  y |
 |--------------+--------+--------|
 | (100,50°)    |  64.28 |  76.60 |
