@@ -307,6 +307,3 @@ V_{sal} =  V_{ent} \left( \frac{ R_2 }{ R_1 + R_2 } \right) & ~ &
 #+END_DEMONSTRATION
 
 [[https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider][Más información]]
-
-
-https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider
