@@ -7,6 +7,8 @@
 #+SUBTITLE: Blog 
 #+DATE:     [2021-06-02 mié]
 
+* Octubre
+
 * Septiembre
 ** [2021-09-26 dom]
 Ayer me pusieron la vacuna que me faltaba, ahora si ya estoy en regla para viajar, solo tengo que sacar mi documento para demostrar que ya estoy vacunado. Tambien estoy aprendiendo un nuevo lenguaje Racket, es muy interesante es un lenguaje LISP, estaba buscando un lenguaje así para poder empezar a familiarizarme con este tipo de lenguajes, osea trabajo con elisp pero realmente no lo conozco a detalle solo lo minimo para poder trabajar con emacs.

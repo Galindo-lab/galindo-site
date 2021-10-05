@@ -406,7 +406,7 @@ Para aplicar la regla de la cadena en una funcion multivariable simplemente cons
 &= 2x \cdot t + 2y \cdot \cos t + 2z \cdot \sin t \\
 &= 2(st) \cdot t + 2(s \cos t) \cdot \cos t + 2(s \sin t) \cdot \sin t \\
 &= 2st^2 + 2s\cos^2 t +2s\sin^2 t \\
-&= s \cdot (2t^2 + 2\cos^2 t + 2\sin^2 t) \\
+&= \boxed{s \cdot (2t^2 + 2\cos^2 t + 2\sin^2 t)} \\
 \end{aligned} \]
 
 #+END_DEMONSTRATION
