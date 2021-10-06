@@ -1,0 +1,89 @@
+#+TITLE:  Parametrizacion de la recta 
+#+SUBTITLE: [[http://galindo-lab.neocities.org][galindo-lab.neocities.org]]
+
+#+OPTIONS: html-style:nil html-scripts:nil num:nil html-postamble:nil toc:nil
+#+LANGUAGE: es
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css" />
+
+# Framework de calculo simbolico
+#+HTML_HEAD: <script src="nerdamer/nerdamer.core.js"></script> 
+#+HTML_HEAD: <script src="nerdamer/Algebra.js"></script>
+
+# Preview latex 
+#+HTML_HEAD: <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+#+BEGIN_EXPORT html
+<style>
+ input { width: 20%; }
+button { margin: 1em; }
+.param { padding: 0.5em; }
+#resultado { 
+background-color: white;
+padding: 0.3em;
+overflow-x: scroll;
+}
+</style>
+#+END_EXPORT
+
+#+BEGIN_nav
+- [[[../index.html][Index]]]
+- [[[../blog/current.html][Journal]]]
+- [[[../about.html][About]]]
+#+END_nav
+
+* Parametrizacion De La Recta
+** Ingrese los datos:
+#+BEGIN_EXPORT html
+<form> <div class=".outline-text-3">
+   <div class="param">\(P_1\):(<input type="text" id="p0x">,<input type="text" id="p0y">,<input type="text" id="p0z">)</div>
+   <div class="param">\(P_2\):(<input type="text" id="p1x">,<input type="text" id="p1y">,<input type="text" id="p1z">)</div>
+   <div class="param">\(T\) :[<input type="text" id="t">]</div> 
+</div> </form>
+
+<button onclick="calcular()">Calcular la parametrizacion de la recta</button>
+#+END_EXPORT
+
+** Resultado:
+#+BEGIN_EXPORT html
+<div id="resultado">
+$${ \text{  } }$$
+</div>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<script>
+function calcular(){
+    p0x = document.getElementById("p0x").value;
+    p0y = document.getElementById("p0y").value;
+    p0z = document.getElementById("p0z").value;
+
+    p1x = document.getElementById("p1x").value;
+    p1y = document.getElementById("p1y").value;
+    p1z = document.getElementById("p1z").value;
+
+    t = document.getElementById("t").value;
+    var div = document.getElementById('resultado');
+
+    nerdamer.setVar('p0', "vector(" + p0x + "," + p0y + "," + p0z + ")" );
+    nerdamer.setVar('p1', "vector(" + p1x + "," + p1y + "," + p1z + ")" );
+
+    nerdamer.setVar('t', ( t === "" ? "t" : t ) );
+    nerdamer.setVar('M', "p0 + t * ( p1 - p0 )" );     
+    var x = nerdamer('M')
+
+    x = nerdamer.convertToLaTeX(x.toString());
+    div.innerHTML = "$${ " + x.toString() + " }$$";
+    MathJax.typeset()
+    nerdamer.clearVars();
+}
+</script>
+#+END_EXPORT
+
+** Explicación 
+La formula para parametrizar la recta es al siguiente 
+#+BEGIN_EXPORT html
+\[P_1 + t \cdot (P_2-P_1)\]
+#+END_EXPORT
+donde "P_1" y "P_2" es un punto en el plano y "t" es un valor entre [0,1] esto para controlar un punto en medio de la recta, por ejemplo: Sí "t" es 0.5 el punto en nuestra recta seria exactamente la mitad.

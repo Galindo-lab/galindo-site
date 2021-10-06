@@ -1,0 +1,9 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/logs/index.org
+
+#+TITLE:    Logs
+#+SUBTITLE: index
+
+Contenido extra que no sé donde poner.
+

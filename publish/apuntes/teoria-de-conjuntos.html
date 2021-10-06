@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-10-06 mié 13:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teoria de conjuntos</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Teoria de conjuntos
+<br />
+<span class="subtitle">Apuntes</span>
+</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org58fa4cc">1. Conjuntos</a></li>
+<li><a href="#org21bd881">2. Subconjunto</a></li>
+<li><a href="#orgdbb9a60">3. Simbolos especiales</a></li>
+<li><a href="#org937fe68">4. Operacion es de conjuntos</a></li>
+<li><a href="#orgafa5aaa">5. Productos fundamentales</a></li>
+<li><a href="#org7dfd139">6. Grafo dirigido</a></li>
+<li><a href="#orga58bd85">7. Diagrama sagital</a></li>
+<li><a href="#org05fa00c">8. Matriz de relación</a></li>
+<li><a href="#org586dca0">9. Composición de relaciones y matrices</a></li>
+<li><a href="#orgd6b7ccb">10. Funciones uno a uno, sobre e invertibles</a></li>
+<li><a href="#orgef4984d">11. Relaciones sobre conjuntos</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org58fa4cc" class="outline-2">
+<h2 id="org58fa4cc"><span class="section-number-2">1</span> Conjuntos</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Un conjunto es una Colección bien definida de objetos, que se denominan elementos o miembros del conjunto. Usualmente las letras mayúsculas denotan a los conjuntos y las letras minúsculas denotan a los elementos del conjunto.
+</p>
+
+<ul class="org-ul">
+<li>\(a \in S\) denota que el elemento a pertenece al conjunto S.</li>
+<li>\(a \not \in S \) denota que el elemento <b>NO</b> pertenece al conjunto S.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org21bd881" class="outline-2">
+<h2 id="org21bd881"><span class="section-number-2">2</span> Subconjunto</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Se dice que A es un subconjunto de B si A está contenido en B o en otras palabras que B contiene a A. \( A \subseteq B \) o \( B \supseteq A \). Dos conjuntos son iguales si ambos tienen los mismos elementos o, equivalentemente, si cada
+uno está contenido en el otro.
+</p>
+
+<div class="org-center">
+<p>
+A = B si y solo si \( A \subseteq B \) y \( B \subseteq A \)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdbb9a60" class="outline-2">
+<h2 id="orgdbb9a60"><span class="section-number-2">3</span> Simbolos especiales</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Los conjuntos numéricos usuales en matemáticas son: 
+</p>
+<ul class="org-ul">
+<li>el conjunto de los números naturales \(\mathbb{N}\).</li>
+<li>números racionales \(\mathbb{Q}\).</li>
+<li>números enteros \(\mathbb{Z}\).</li>
+<li>números reales \(\mathbb{R}\).</li>
+<li>números complejos \(\mathbb{C}\).</li>
+</ul>
+
+<p>
+La relacion entre estos grupos es la siguiente:
+</p>
+
+<p>
+\[
+\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org937fe68" class="outline-2">
+<h2 id="org937fe68"><span class="section-number-2">4</span> Operacion es de conjuntos</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Existen unas operaciones básicas que permiten manipular los conjuntos y sus elementos, similares a las operaciones aritméticas, constituyendo el álgebra de conjuntos:
+</p>
+</div>
+
+<div id="outline-container-org41c2b9f" class="outline-3">
+<h3 id="org41c2b9f"><span class="section-number-3">4.1</span> Union</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+La unión de dos conjuntos A y B, es el conjunto de todos los elementos que pertenecen a A o a B, es decir:
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/12.png" alt="12.png" width="256px" />
+</p>
+<p><span class="figure-number">Figura 1: </span>\(A \cup B = \{x|x \in A~o~x \in B \}\)</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6bf51f2" class="outline-3">
+<h3 id="org6bf51f2"><span class="section-number-3">4.2</span> Intersección</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+La intesección de dos conjuntos A y B, es el conjunto de todos los elementos que pertenecen tanto a A como a B, es decir:
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/13.png" alt="13.png" width="256px" />
+</p>
+<p><span class="figure-number">Figura 2: </span>\( A \cap B \{x|x \in A~y~x \in B \} \)</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1d46b8d" class="outline-3">
+<h3 id="org1d46b8d"><span class="section-number-3">4.3</span> Complemento (Complemento Absoluto)</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+El complemento absoluto o simplemente complemento de un conjunto A es el conjunto de elementos que pertenecen a U pero no pertenencen a A:
+</p>
+
+<blockquote>
+<p>
+Dado un conjunto A, su complementario es el conjunto formado por los elementos que no pertenecen a A.
+</p>
+</blockquote>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/14.png" alt="14.png" width="256px" />
+</p>
+<p><span class="figure-number">Figura 3: </span>\(A^C = \{ x |  x \in U, x \not \in A \} \)</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org17e8165" class="outline-3">
+<h3 id="org17e8165"><span class="section-number-3">4.4</span> Diferencia de conjuntos (Complemento relativo)</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+La diferencia entre A y B también se denomina complemento relativo de B en A, y se denota \(C_AB\), cuando el segundo es un subconjunto del primero. 
+</p>
+
+<blockquote>
+<p>
+El complemento relativo de un conjunto B respecto de un un conjunto B o la diferencia de A y B, es el conjunto de elementos que pertenecen a A pero no pertenecen a B:
+</p>
+</blockquote>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/15.png" alt="15.png" width="256px" />
+</p>
+<p><span class="figure-number">Figura 4: </span>\(A \backslash B = \{ x |  x \in A, x \not\in B \} \)</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc4611ec" class="outline-3">
+<h3 id="orgc4611ec"><span class="section-number-3">4.5</span> Diferencias simétrica</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+Dados dos conjuntos A y B, su diferencia simétrica, A Δ B, es un conjunto que contiene los elementos de A y los de B, excepto los que son comunes a ambos.
+</p>
+
+<blockquote>
+<p>
+La diferencia simétrica de los conjuntos A y B consta de los elementos que pertenecen a A o a B pero no a ambos:
+</p>
+</blockquote>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/16.png" alt="16.png" width="256px" />
+</p>
+</div>
+
+<p>
+\(A \bigoplus B = (A \cup B) \backslash (A \cap B) \) <br />
+o <br />
+\(A \bigoplus B = (A \backslash B) \cup (B \backslash A) \)
+</p>
+</div>
+
+<p>
+<a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_de_conjuntos#%C3%81lgebra_de_conjuntos">Mas informacion</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgafa5aaa" class="outline-2">
+<h2 id="orgafa5aaa"><span class="section-number-2">5</span> Productos fundamentales</h2>
+<div class="outline-text-2" id="text-5">
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/17.png" alt="17.png" />
+</p>
+</div>
+</div>
+
+<p>
+\[ \begin{matrix}
+P_1 = A \cap B \cap C       & ~ & P_2 = A \cap B \cap C^C \\
+P_3 = A \cap B^C \cap C     & ~ & P_4 = A \cap B^C \cap C^C \\
+P_5 = A^C \cap B \cap C     & ~ & P_6 = A^C \cap B \cap C^C \\
+P_7 = A^C \cap B^C \cap C^C & ~ & P_8 = A^C \cap B^C \cap C^C \\
+\end{matrix} \]
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7dfd139" class="outline-2">
+<h2 id="org7dfd139"><span class="section-number-2">6</span> Grafo dirigido</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Para representar una relación R sobre un solo conjunto A.
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/18.png" alt="18.png" width="256px" />
+</p>
+</div>
+</div>
+
+<p>
+\[
+A = {1,2,3,4}
+\]
+</p>
+
+<p>
+\[ \begin{aligned}
+R &= \{(1,2),(2,2), (2,4),(3,2),(3,4),(4,1),(4,3)\}
+\end{aligned} \]
+</p>
+
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga58bd85" class="outline-2">
+<h2 id="orga58bd85"><span class="section-number-2">7</span> Diagrama sagital</h2>
+<div class="outline-text-2" id="text-7">
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/19.png" alt="19.png" width="256px" />
+</p>
+</div>
+</div>
+
+<p>
+\[ \begin{aligned}
+A &= \{1,2,3\} \\
+B &= \{x,y,z\} \\
+R &= \{(1,y),(1,z),(3,y)\}
+\end{aligned} \]
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org05fa00c" class="outline-2">
+<h2 id="org05fa00c"><span class="section-number-2">8</span> Matriz de relación</h2>
+<div class="outline-text-2" id="text-8">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/20.png" alt="20.png" width="256px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org586dca0" class="outline-2">
+<h2 id="org586dca0"><span class="section-number-2">9</span> Composición de relaciones y matrices</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Hay otra forma para encontrar la composición de las relaciones R y S, y consiste en efectuar la multiplicación de sus respectivas matrices de relación
+</p>
+
+<div class="DEMONSTRATION">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="img/25.png" alt="25.png" width="100%" />
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd6b7ccb" class="outline-2">
+<h2 id="orgd6b7ccb"><span class="section-number-2">10</span> Funciones uno a uno, sobre e invertibles</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>Función uno a uno (inyectiva): Si elementos diferentes del dominio A tienen imágenes distintas.</li>
+<li>Función sobre (suprayectiva): Si cada elemento de B es la imagen de algún elemento de A.</li>
+<li>Función invertible (biyectiva): Si y solo sí la función es uno a uno y sobre.</li>
+</ul>
+
+<div class="DEMONSTRATION">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/26.png" alt="26.png" width="100%" />
+</p>
+</div>
+</div>
+
+<p>
+f<sub>1</sub>, es uno a uno, pero no es sobre. <br />
+f<sub>2</sub>, es uno a uno y sobre, por lo tanto es invertible. <br />
+f<sub>3</sub>, no es uno a uno pero sí es sobre. <br />
+f<sub>4</sub>, no es uno a uno y tampoco es sobre. <br />
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgef4984d" class="outline-2">
+<h2 id="orgef4984d"><span class="section-number-2">11</span> Relaciones sobre conjuntos</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org7a75037" class="outline-3">
+<h3 id="org7a75037"><span class="section-number-3">11.1</span> La relación L (menor qué)</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+para números reales define una relación de R a R como sigue: Para todos los números reales x y y:
+</p>
+
+<p>
+\[xLy \leftrightarrow x < y\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org860f0e1" class="outline-3">
+<h3 id="org860f0e1"><span class="section-number-3">11.2</span> La relación E (de congruencia de modulo 2)</h3>
+<div class="outline-text-3" id="text-11-2">
+<p>
+define una relación de 𝒁 a 𝒁 como sigue: Para todo \((m,n) \in Z \times Z\):
+</p>
+
+<p>
+\[mEn \leftrightarrow m-n~es~par\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb520083" class="outline-3">
+<h3 id="orgb520083"><span class="section-number-3">11.3</span> La inversa de una relación de A a B</h3>
+<div class="outline-text-3" id="text-11-3">
+<p>
+Entonces una relación R −1 de B a A puede definirse intercambiando los elementos de todos los pares ordenados de R.
+</p>
+
+<p>
+\[R^{-1} = \{ (y,x) \in B \times A \vert (x,y) \in R \} \]
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

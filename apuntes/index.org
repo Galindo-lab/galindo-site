@@ -10,13 +10,15 @@
 Aquí guardo textos los apuntes he hecho desde que empecé la carrera, los actualizo conforme aprendo cosas nuevas:
 
 - [[./vectores.html][Vectores]] ([[./vectores.pdf][pdf]])
-- [[./calculo-multivariable.html][Cálculo multivariable]] ([[./calculo-multivariable.pdf][pdf]])
+- [[./calculo-multivariable.html][Cálculo multivariable]]xs ([[./calculo-multivariable.pdf][pdf]])
 - [[./matematicas-discretas.html][Matemáticas discretas]] ([[./matematicas-discretas.pdf][pdf]])
+- [[./teoria-de-conjuntos.html][Teoria de conjuntos]]
 - [[./matrices.html][Matrices]]
 - [[./circuitos-electricos.html][Circuitos Eléctricos]] ([[./circuitos-electricos.pdf][pdf]])
 - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
 - [[./notacion-ingenieria.html][Notacion ingenieria]]
 - [[./identidades-trigonometricas.html][Identidades trigonometricas]]
+
 
 - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Formulario de Cálculo Integral y Diferencial]]
 - [[https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file][Formulario de transformada de Laplace]]

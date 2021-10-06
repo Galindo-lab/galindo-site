@@ -1,0 +1,90 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/calculadoras/calculo-recta.org
+
+#+OPTIONS: html-postamble:nil
+
+#+TITLE: Parametrización
+#+SUBTITLE: Recta
+
+#+HTML_HEAD: <script type="text/javascript" src="tools.js"></script>
+#+HTML_HEAD: <script async src="nerdamer/all.min.js"></script> 
+
+# # Preview latex 
+#+HTML_HEAD: <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+#+HTML_HEAD: <script async id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+#+BEGIN_EXPORT html
+
+Resultado <select id="format" form="carform">
+  <option value="decimal">Decimal</option>
+  <option value="fraccion">Fracción</option>
+</select>
+
+<br><br>
+
+<div id="resultado" style="
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 1.2em;" class="example">
+
+</div>
+
+<form>
+<p>
+Primer Punto:<br>
+<input type="text" id="p_1" placeholder="0,0,0...">
+</p>
+
+<p>
+Segundo Punto:<br>
+<input type="text" id="p_2" placeholder="0,0,0...">
+</p>
+
+<p>
+t:
+<br>
+<input type="text" id="t" placeholder="1/10 ó 0.1, añadir 0 al inicio">
+
+</p>
+
+<br>
+<input type="button" class="submit" onclick="calcular()" value="Resultado">
+<input type="reset" onclick="getById('resultado').innerHTML = '' ">
+
+</form>
+
+
+<script>
+
+function calcular() {
+
+t = getById("t").value
+
+resultado = nerdamer( "p1 + t * ( p2 - p1 )" , {
+        p1: "vector(" + getById("p_1").value + ")",
+        p2: "vector(" + getById("p_2").value + ")",
+        t: (t === "" ? "t" : t),
+});
+
+switch( getById("format").value ){
+    case "decimal":
+    getById('resultado').innerHTML = resultado.toDecimal();
+    break;
+
+    case "fraccion":
+    getById('resultado').innerHTML = "$${ "  + resultado.toString() + " }$$" ;
+    break;
+}
+
+MathJax.typeset()
+nerdamer.clearVars();
+
+}
+
+</script>
+
+#+END_EXPORT
+

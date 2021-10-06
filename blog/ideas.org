@@ -1,0 +1,83 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/blog/ideas.org
+
+#+TITLE:    Ideas y cosas tontas
+#+SUBTITLE: Logs
+
+* Quote
+** [2021-09-22 mié]
+#+BEGIN_QUOTE
+...La pandemia de angusita mental que aflige nuestros tiempos no puede ser correctamente entendida, o curada, si es vista como un problema personal padecido por individuos dañados...
+
+-- REALISMO CAPITALISTA: ¿no hay ALTERNATIVA? | Mark Fisher
+#+END_QUOTE
+
+* Games
+** [2021-09-15 mié]
+deberia hacer un juego sobre peleas de gallos, va a quedar bien vergas.
+
+* Escuela
+** [2021-09-15 mié]
+Los niños odian la escuela y todos piensan que esta bien. 
+
+* La mejor forma de escuchar musica
+** [2021-09-08 mié]
+con los comentarios desactivados.
+
+* Space Dandy 
+** [2021-09-07 mar]
+Tengo varios dias escuchando la musica de Space Dandy, realmente es muy buena.
+* Bezos, Besus, be sus ඞ
+** [2021-08-23 lun]
+Una cosa que aparentemente se ha vuelto popular entre los famosos de Silicon Valley es tratar de lazarse al espacio, por supuesto que hablo de Blue Origin y Spacex, ambas tienen razones muy diferentes para ir al espacio, aparentemente la visión de Spacex es ir al espacio por que si algo le pasa a la tierra podríamos mantener a la humanidad en otro lugar (marte quizá?) y por otro lado la empresa de Jeff Bezos Blue Origin que ve la tierra como un lugar único que tenemos que mantener y quiere sacar las operaciones industriales más pesadas de la tierra. \\
+
+Nunca pensé que estaría de acuerdo con Bezos en algo, aun así lo mas probable es que solo ayuden a un grupo de oligarcas a sacar sus operaciones mineras. No dudo ni un segundo en que lo único que se lograra será perpetuar más las fortunas de los grandes grupos mineros.
+
+* Blanco
+# mar 17 ago 2021 10:35:14
+** [2021-08-17 mar]
+El color blanco es uno de los colores que personalmente no me gusta, pero como en estos días he tenido que añadir diagramas para poder explicar algunos temas... Aun así no me doy por vencido, una de las cosas que más me gustan de mi sitio es la capacidad de poder cambiar el color del tema, me aburro muy rápido de un color así que cambiar el tema de color es de las pocas cosas que puedo hacer sin cargarme todo el sitio cada vez que quiera hacer un cambio, entonces he estado pensando que hacer para solucionarlo:
+
+*** El problema con los diagramas
+Mi plan original para el sitio era usar SVG para los diagramas y cambiarlos a voluntad con CSS puro, pero al estar haciendo experimentos con SVG me di cuenta de que es muy tardado hacer los diagramas de la manera que estaba pensando (además no los puedo agregar a LaTeX sin tener que exportar el SVG por separado) entonces no tengo mas alternativas que usar imágenes.
+
+*** -webkit-filter: invert(100%);
+Una solución que pensé es utilizar filtros de CSS esta solución me agrada mucho porque solo tengo modificar un poco mi código actual, sin embargo tiene unas limitaciones, solo puedo cambiar los colores por sus inversos por lo que tendría que limitar la cantidad de temas disponibles...
+
+*** Pantalla de inicio
+El tema del diseño de mi página es lo nuevo y lo viejo, me gustan mucho como los libro antiguos tienes muy pocas imágenes y solo se enfocan en explicar los procedimientos y yo quiero reflejar eso en mi página, aun así no quiero hacer una página que solo esté en blanco y negro, la idea que tengo es hacer una portada con las opciones del sitio que sirva como portada al sitio (sin contar que tiene el beneficio añadido de eliminar la necesidad de la página de "settings" que es un dolor en el trasero de mantener).
+
+* Mi semstre
+# sáb 14 ago 2021 10:31:10
+** [2021-08-14 sáb]
+Es mejor empezar desde cero que empezar de nuevo.
+
+* Quote
+# mar 10 ago 2021 22:21:48
+** [2021-08-10 mar]
+#+BEGIN_QUOTE
+“I love sleep. My life has the tendency to fall apart when I'm awake, you know?”
+
+― Ernest Hemingway
+#+END_QUOTE
+
+* 123guestbook
+# mar 10 ago 2021 12:08:05
+** [2021-08-10 mar]
+- Hago un guestbook.
+- Nadie lo usa por semanas.
+- Finalmente alguien escribe algo bonito.
+- 123guestbook deja de funcionar
+- (ノ｀Д´)ノ彡┻━┻
+
+* Apuntes 2.0
+** [2021-08-05 jue]
+# jue 05 ago 2021 23:10:53
+
+Cuando empecé este sitio tenia en mente una sola idea, unir mis apuntes con los programas que hice durante el semestre, sin embargo en ese entonces no había encontrado ninguna herramienta que pudiera cumplir con mis requerimientos, los cuales eran:
+
+- Javascript
+- Ejecutarse en el frontend
+
+Bueno ya encontré un herramienta que cumple con estas características. Por lo tanto voy a retomar esta idea (de todos modos reprobé calculo así que repasar mis notas no hará ningún daño).
