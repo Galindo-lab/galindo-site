@@ -8,6 +8,8 @@
 #+DATE:     [2021-06-02 mié]
 
 * Octubre
+** [2021-10-10 dom]
+Ya casi vamos a la mitad del mes y yo no he hecho ninguna entrada en el blog, bueno tampoco es que haya pasado nada interesante durante este tiempo, me han estado dejando mucha tarea de circuitos electronicos, tengo que corregir trabajos y poco mas, fuera de eso todo ha estado normal.
 
 * Septiembre
 ** [2021-09-26 dom]
