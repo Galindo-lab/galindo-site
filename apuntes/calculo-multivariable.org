@@ -196,20 +196,16 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 
 * Coordenadas rectangulares, cilíndricas y esféricas
 
-#+BEGIN_OVERFLOW
-#+ATTR_HTML: :align center :rules all :border 1 :frame 1 :mode inline-math
-| Rect.      | Polares    | Esféricas  |
-| <10>       | <10>       | <10>       |
-|------------+------------+------------|
-| \(x\)      | \(r \cos(\theta)\) | \(\rho \sin(\varphi)\cos(\theta)\) |
-| \(y\)      | \(r \sin(\theta)\) | \(\rho \sin(\varphi)\sin(\theta)\) |
-| \(z\)      | \(z\)      | \(\rho \cos(\varphi) \) |
-| \(x^2+y^2\) | \(r^2\)    |            |
-| \(x^2+y^2+z^2\) |            | \(\rho^2\) |
-| \(y/x\)    | \(\tan(\theta)\) | \(\tan(\theta)\) |
-|            | \(r\)      | \(\rho \sin(\varphi)\) |
-|            | \(\theta\) | \(\theta\) |
-#+END_OVERFLOW
+| Rect.           | Polares            | Esféricas                          |
+|-----------------+--------------------+------------------------------------|
+| \(x\)           | \(r \cos(\theta)\) | \(\rho \sin(\varphi)\cos(\theta)\) |
+| \(y\)           | \(r \sin(\theta)\) | \(\rho \sin(\varphi)\sin(\theta)\) |
+| \(z\)           | \(z\)              | \(\rho \cos(\varphi) \)            |
+| \(x^2+y^2\)     | \(r^2\)            |                                    |
+| \(x^2+y^2+z^2\) |                    | \(\rho^2\)                         |
+| \(y/x\)         | \(\tan(\theta)\)   | \(\tan(\theta)\)                   |
+|                 | \(r\)              | \(\rho \sin(\varphi)\)             |
+|                 | \(\theta\)         | \(\theta\)                         |
 
 * Coordenadas rectangulares a esfericas
 Las coordenadas esféricas requieren dos ángulos, por lo que se parecen mucho a las coordenadas polares. \theta funciona exactamente como en coordenadas polares, sí \(x=0\) y \(y > 0\) el ángulo es 90°; sí \(x=0\) y \(y < 0\) el ángulo es 270°.
@@ -452,6 +448,14 @@ D_{\vec{u}} f(\vec{x_0}) &= \begin{bmatrix}
 
 #+END_DEMONSTRATION
 
+* Razón de cambio en un punto
+Para encontrar la razon de cambio simplemente sustituimos x y y con los valores en el punto que queremos verificar:
+
+\[ \begin{aligned}
+D_{\vec{u}} f(\vec{x_0}) &= -\frac{20}{\sqrt{29}} + \frac{4xy^3}{\sqrt{29}} + \frac{15x^2y^2}{\sqrt{29}} \\
+                         &= -\frac{20}{\sqrt{29}} + \frac{4xy^3}{\sqrt{29}} + \frac{15x^2y^2}{\sqrt{29}}
+\end{aligned} \]
+
 * Derivada direccional para todas las funciones
 El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto: 
 \[D_{\vec{u}} f(\vec{x_0}) = \frac{d}{dt} f(x_0 + t\vec{u}) |_{t=0} \]
@@ -495,9 +499,4 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 &= -1.866
 \end{aligned} \]
 
-
-
 #+END_DEMONSTRATION
-
-
-* Razon de cambio en un punto
