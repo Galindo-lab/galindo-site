@@ -361,7 +361,7 @@ Es comun que un procedimiento requiera mas de una derivada parcial, usualmente s
 
 cabe resaltar que el orden si afecta como derivamos, si nuestra funcion nos pide la derivada \( f_yx \) primero derivamos \(y\) y luego \(x\)[fn:orden].
 
-[fn:orden] Las funciones lineales como en el ejemplo cumplen con la propiedad \( f_{xy} = f_{yx} \), sin embargo si nuestra funcion NO es lineal entonces esta propiedad no se cumple.
+[fn:orden] Las funciones lineales como en el ejemplo cumplen con la propiedad f_{xy} = f_{yx}, sin embargo si nuestra funcion NO es lineal entonces esta propiedad no se cumple.
 
 * Derivada de orden superior
 Cuando tenemos multiples variables hay varias posibles derivadas, cada una correspondiente a cada variable que podemos tomar:
@@ -372,8 +372,6 @@ Cuando tenemos multiples variables hay varias posibles derivadas, cada una corre
    f   &= x^2 + x^2y^3 + y^2 \\
    f_x &= 2x + 2xy^3 
 \end{aligned} \]
-
-ya que tenemos nuestra derivada parcial determinamos cuales son las posibles derivadas parciales, en este caso todavia tenemos variables \(x\) y \(y\), entonces podemos hacer las derivadas parciales:
 
 \[ \begin{aligned}
    f_{xx} = 2 + 2y^3 & ~ ~ & f_{xy} = 6xy^2 
@@ -410,3 +408,96 @@ Para aplicar la regla de la cadena en una funcion multivariable simplemente cons
 \end{aligned} \]
 
 #+END_DEMONSTRATION
+
+* Gradiente
+El gradiente es un vector, donde cada elemento representa una derivada parcial de una funcion \(f\), se denota con la \( \triangledown f \).
+
+#+BEGIN_DEMONSTRATION
+
+\[
+f(x,y) = x^2y^3 - 4y
+\]
+
+\[ \begin{aligned}
+\triangledown f(x,y) = \boxed{  \begin{bmatrix}
+2xy^3 \\
+-4 + 3x^2y^2
+\end{bmatrix} } 
+\end{aligned} \]
+#+END_DEMONSTRATION
+
+* Derivada direccional (sí la funcion es derivable en el punto)
+La forma mas rapida de calcular la variable direcciona es dereterminando si nuestra funcion es derivable el punto, en caso de que sea así podemos aprovechar las propiedades del gradiente. El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto:
+
+\[D_{\vec{u}} f(\vec{x_0}) = \triangledown f(\vec{x_0}) \cdot \vec{u}\] 
+
+#+BEGIN_DEMONSTRATION
+
+\[  \begin{aligned}
+f(x,y) &= x^2y^3 - 4y \\
+\vec{u} &= (2,5) \\
+\hat{u} &= \left( \frac{2}{\sqrt{29}} , \frac{5}{\sqrt{29}}   \right)
+\end{aligned}  \]
+
+\[ \begin{aligned}
+D_{\vec{u}} f(\vec{x_0}) &= \begin{bmatrix}
+2xy^3 \\
+-4 + 3x^2y^2
+\end{bmatrix} \begin{bmatrix}
+\frac{2}{\sqrt{29}} \\
+\frac{5}{\sqrt{29}}
+\end{bmatrix} \\
+& = \boxed{-\frac{20}{\sqrt{29}} + \frac{4xy^3}{\sqrt{29}} + \frac{15x^2y^2}{\sqrt{29}}}
+\end{aligned} \]
+
+#+END_DEMONSTRATION
+
+* Derivada direccional para todas las funciones
+El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto: 
+\[D_{\vec{u}} f(\vec{x_0}) = \frac{d}{dt} f(x_0 + t\vec{u}) |_{t=0} \]
+
+#+BEGIN_DEMONSTRATION
+
+\[ \begin{aligned}
+   f(x,y) &= 4-x^2-\frac{1}{4}y^2 \\
+\vec{x_0} &= (1,2) \\
+  \vec{u} &= \left( ~\frac{1}{2}~ , ~\frac{\sqrt{3}}{2}~\right) \\
+\end{aligned} \]
+
+\[ \begin{aligned}
+\frac{d}{dt} f\left[ \begin{pmatrix}
+1 \\ 
+2 \\
+\end{pmatrix} + t \begin{pmatrix}
+\frac{1}{2} \\
+\frac{\sqrt{3}}{2} \\
+\end{pmatrix} \right] \Bigg\rvert _{t=0}
+\\ \frac{d}{dt} f\left[ \begin{pmatrix}
+1 + t\frac{1}{2} \\
+2 + t\frac{\sqrt{3}}{2}
+\end{pmatrix} \right] \Bigg\rvert_{t=0}
+\end{aligned} \]
+
+\[
+\frac{d}{dt} \left[ 4 - \left( 1+t\frac{1}{2} \right)^2 - \frac{1}{4} \left( 2+t\frac{\sqrt{3}}{2} \right)^2 \right] \Bigg\rvert_{t=0}
+\]
+
+\[
+\frac{d}{dt} \left[ -\frac{1}{16}t^2 - \left( 1 + \frac{1}{2} \sqrt{3} \right) t + 4 \right] \Bigg\rvert_{t=0}
+\] 
+
+\[
+\left( -\frac{1}{8} t - 1 + \frac{1}{2} \sqrt{3} \right) \Bigg\rvert_{t=0}  
+\]
+
+\[ \begin{aligned}
+&= -1 - \frac{1}{2} \sqrt{3} \\
+&= -1.866
+\end{aligned} \]
+
+
+
+#+END_DEMONSTRATION
+
+
+* Razon de cambio en un punto
