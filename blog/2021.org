@@ -8,6 +8,9 @@
 #+DATE:     [2021-06-02 mié]
 
 * Octubre
+** [2021-10-19 mar]
+Maldita sea, estoy harto de mi profesora de electricidad, tenemos 3 meses aguantando todas las tonterías que hace explica fatal, si va a explicar tan mal no le cuesta nada enviar el pdf con las notas, yo puedo leer mas rápido de lo que ella explica, su evaluación se siente como si estuviera haciendo las cosas al azar, jamas vuelvo a tomar una clase con ella. 
+
 ** [2021-10-10 dom]
 Ya casi vamos a la mitad del mes y yo no he hecho ninguna entrada en el blog, bueno tampoco es que haya pasado nada interesante durante este tiempo, me han estado dejando mucha tarea de circuitos electronicos, tengo que corregir trabajos y poco mas, fuera de eso todo ha estado normal.
 
