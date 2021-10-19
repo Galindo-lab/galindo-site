@@ -38,6 +38,21 @@ La relacion entre estos grupos es la siguiente:
 \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
 \]
 
+* Conjuntos especiales 
+Algunos conjuntos tienen un nombre:
++ Conjunto vacío o nulo \(\Phi\).
++ Conjunto unitaio, es un conjunto con un solo elemento[fn:unit].
++ Conjunto Universal \(U\), es aquel conjunto fijo del cual se toma otros conjuntos, es decir, contiene todos los conjuntos que podemos mencionar en una materia.
+
+[fn:unit] \( B={1,1} es unitario, se repite pero es uno \)
+
+* Relaciones entre conjuntos
+** Iguales
+Se dice que dos conjuntos son iguales si tienen exactamente los mismos elementos.  Una forma práctica de establecer si dos conjuntos son iguales es determinar si se contienen el uno al otro
+
+** Equivalentes \equiv
+Dos conjuntos A y B son equivalentes o cordinales
+
 * Operacion es de conjuntos
 Existen unas operaciones básicas que permiten manipular los conjuntos y sus elementos, similares a las operaciones aritméticas, constituyendo el álgebra de conjuntos:
 
@@ -226,4 +241,16 @@ Entonces una relación R −1 de B a A puede definirse intercambiando los elemen
 
 \[R^{-1} = \{ (y,x) \in B \times A \vert (x,y) \in R \} \]
                                                             
+
+
+* Relacion reflexiva
+\(R\) es reflexiva si y sólo si para toda \(x \in A, x R x\) o en otras palabras: sí Cada elemento está relacionado consigo mismo.
+
+* Relacion simétrica
+\(R\) es imetrica si y sólo si, para toda \(x, y \in A\) si \(xRy\) entonces \(yRx\), Si cualquier elemento está relacionado con cualquier otro elemento entonces, el segundo elemento está relacionado con el primero.
+
+* Transitiva 
+\(R\) es transitiva si y solo si, para toda \( x, y,z \in A  \) si \(xRy\) y \(yRz\) entonces \(xRz\).
+Si cualquier elemento está relacionado con el segundo y el segundo elemento está relacionado con el tercero entonces, el primer elemento está relacionado con el tercero.
+
 

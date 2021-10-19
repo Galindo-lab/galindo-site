@@ -46,13 +46,15 @@ transition: 500ms;
 [[file:./status.jpg]]
 
 [[./apuntes/index.html][Apuntes]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] 
-[[./programacion/index.html][Programación]] | [[./blog/friends.html][Amigos]]
+[[./programacion/index.html][Programación]] | [[./about.html][About me]]
 
 # [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
-[[./about.html][About me]]
+# [[./blog/friends.html][Amigos]]
 
 @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
 
+#+attr_html: :width 88px
+[[./button.png]]
 
 #+BEGIN_EXPORT html
  <script defer> 
