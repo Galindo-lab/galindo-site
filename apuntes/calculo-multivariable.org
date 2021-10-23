@@ -500,3 +500,55 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 \end{aligned} \]
 
 #+END_DEMONSTRATION
+* Puntos criticos de una funcion 
+Para encontrar los puntos criticos de la funcion tendremos que calcular la derivada parcial de cada variable y resolverla como un sistema de ecuaciones:
+
+#+BEGIN_DEMONSTRATION
+
+\[ f = 9-2x+4y-x^2-4y^2 \] 
+
+\[ \begin{aligned}
+     f_x = -2-2x & & f_y = 4y-8y \\
+\end{aligned} \]
+
+\[ \begin{aligned}
+\boxed{x = \frac{2}{-2}} & & \boxed{ y = \frac{-4}{-8} }\\
+\end{aligned} \]
+
+#+END_DEMONSTRATION
+
+* Clasificar Puntos Criticos (maximos, minimos y sillas)
+Evaluamos los puntos criticos de la funcion en el discriminante, el valor que obtendremos será la variacion de la funcion, entonces solo aplicamos la logica para encontrar el tipo de punto que tenemos.
+
+\[ D =f_{xx}(a,b) f_{yy}(a,b) - \left[ f_{xy}(a,b)  \right]^2 \]
+
+| condiciones        | significado         |
+|--------------------+---------------------|
+| \(D > 0;f_{xx}>0\) | Es un minimo        |
+| \(D > 0;f_{xx}<0\) | Es un maximo        |
+| \(D < 0\)          | Es un punto silla   |
+| \(D = 0\)          | Intentar otro punto |
+
+#+BEGIN_DEMONSTRATION
+
+clasificar los puntos criticos en la función 
+\[f = 9-2x+4y-x^2-4y^2 \]
+
+Sus derivadas parciales 
+
+\[
+f_{xx} = -2 ~ ; ~ f_{yy} = -8 ~ ; ~ f_{xy} = 0
+\]
+
+
+puntos críticos 
+\[ x=-1 ~ ; ~ y = \frac{1}{2} \]
+
+sustituimos los valores de la formula de el diferencial:
+
+\[ \begin{aligned}
+D = (-2)(-8) - [0]^2 = 16 \\
+\end{aligned} \]
+
+Entonces D es mayor a 0 y f_{xx} es menor a 0, por lo tanto el valor _es un maximo_.
+#+END_DEMONSTRATION
