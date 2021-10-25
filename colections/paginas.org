@@ -18,6 +18,12 @@
 - [[https://n9.cl/es/s/tc0uu][Acortador de urls]]
 - [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]]
 - [[https://www.inventable.eu/paginas/ResCalculatorSp/ResCalculatorSp.html][Calculadora de colores de reistencias]]
+- [[https://libgen.is/][Libros gratis]]
+- [[https://12ft.io/][Eliminar paywalls]]
+- [[https://es.forvo.com/][Audio de pronunciaciones nativas en otros idiomas]]
+- [[https://mynoise.net/][Sonido blanco]]
+- [[https://www.mealime.com/][meal planning]]
+- [[https://www.onlineocr.net/es/][Imagen a texto]]
 
 * Paginas Interesantes
 - [[http://www.cmkosemen.com/][Sitio web del creador de "All Tomorrows"]]
