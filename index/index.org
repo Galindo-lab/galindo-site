@@ -3,54 +3,44 @@
 #+EXPORT_FILE_NAME: ../publish/index.html
 
 #+TITLE: Galindosoft HQ
-#+SUBTITLE: Bienvenido
+# #+SUBTITLE: Bienvenido
 
 #+OPTIONS: \n:t 
 
 #+BEGIN_EXPORT html
 <style>
+
+body {
+text-align: center;
+display: flex;
+align-items: center;
+ justify-content: center;
+}
+
 #google_translate_element{
-    display:block;
+   display:block;
 /*    padding-left:14px;*/
 }
 
 .figure-number {
-    display: none;
+   display: none;
 }
-
-/*body {
-transition: 500ms;
-}*/
 
 </style>
 #+END_EXPORT
 
-# https://galindosoft.neocities.org/index.html
-# shorturl.at/zJSY7
-# http://tiny.cc/d66iuz
-# https://n9.cl/tc0uu
 
-# #+ATTR_HTML: :height 150px :align center
-# [[./image.jpg]]
-
-# * ¡Saludos!
-# En esta página pongo todas las cosas que pienso y todas las cosas que voy aprendiendo, +sí tienes algo de tiempo puedes escribir en el nuevo [[https://galindosoft.123guestbook.com/][guestbook]] del sitio, también+ no olvides visitar la pagina de [[./blog/friends.html][amigos].\\
-# Como 123Guestbook aparentemente ha cerrado he añadido un chat para el sitio, puedea acceder desde [[https://galindosoft.neocities.org/chat.html][aquí]].
-
-# Bienvenido a mi HQ, aquí guado todas las cosa que aprendiendo y las cosas en las que estoy trabajando. Puedes encontrar algunos otros neocities interesantes [[./blog/friends.html][aquí]].
-
-#+BEGIN_CENTER
 #+attr_latex: :width 256px
 #+ATTR_HTML: :width 256px
 #+CAPTION: I may be ugly, but i'm scared.
 [[file:./status.jpg]]
 
 
-[[https://soundcloud.com/user-887296634/freestyle-smc?si=dd3c0976568e4defb9eb311fb351549e][🔥🔥 Visiten el proyeto de compa Eddie.cutthroatt000 🔥🔥]]
+ # [[https://soundcloud.com/user-887296634/freestyle-smc?si=dd3c0976568e4defb9eb311fb351549e][🔥🔥 Visiten el proyeto de compa Eddie.cutthroatt000 🔥🔥]]
 
 
-[[./apuntes/index.html][Apuntes]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] 
-[[./programacion/index.html][Programación]] | [[./about.html][About me]]
+[[./apuntes/index.html][Apuntes]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] |
+[[./programacion/index.html][Programación]] | [[./about.html][About me]] 
 
 # [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
 # [[./blog/friends.html][Amigos]]
@@ -74,5 +64,4 @@ transition: 500ms;
  <div id="google_translate_element"></div>
 #+END_EXPORT
 
-#+END_CENTER
 
