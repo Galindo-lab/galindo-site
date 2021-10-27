@@ -8,6 +8,24 @@
 #+DATE:     [2021-06-02 mié]
 
 * Octubre
+** [2021-10-27 mié]
+Estaba pensando en todo lo que quiero hacer, una de las cosas que siempre he querido hacer es tener un amigo de cada parte del mundo, pero luego mi cabeza se puso a divagar y termine pensando ¿cuanto tiempo me llevaria hablar con cada persona en el mundo?, bueno a fecha de hoy y segun la incuestionable verdad de el [[https://www.saberespractico.com/curiosidades/cuantas-personas-hay-en-el-mundo-actualmente/][primer resultado de google]] hay 7700 millones de personas en el mundo, bueno si aplicamos la tecnica de [[https://youtu.be/aQ5R7c2xZuQ][Ned McDodd]] y hablo con cada persona por 12 segundoos eso seria:
+
+#+BEGIN_DEMONSTRATION
+
+\[ \begin{aligned}
+      12 \cdot 7700 \times 10^6 &= 9.24 \times 10^{10} ~s \\
+     (9.24 \times 10^{10}) / 60 &= 1.540 \times 10^{9} ~min \\
+     (1.540 \times 10^{9}) / 60 &= 2.567 \times 10^{7} ~h \\
+     (2.567 \times 10^{7}) / 24 &= 1.069 \times 10^{6} ~d \\
+ (1.069 \times 10^{6}) / 356.25 &= 2927.979 ~y \\
+\end{aligned} \]
+
+#+END_DEMONSTRATION
+
+en resumen, si quiero estar a tiempo deberia empezar ahora.
+
+
 ** [2021-10-25 lun]
 Hoy hice otro examen de circuitos eléctricos, de nuevo me fue muy mal, según mis estimaciones 35/100, me he dado cuenta que en casi el medio año que tengo con este sitio nunca he escrito como me siento, me siento mal, no estoy cómodo haciendo lo que hago, no me interesa paso las materias por pasar pero no siento que aporte nada, tengo casi dos años en mi carera y he pasado mas tiempo estudiando circuitos eléctricos que nada de computación, en 4 semestres solo he llevado 3 materias sobre mi carrera lo demás es circuitos u otra cosa, no me tomen a mal, yo sé que no todo puede ser programación pero no creo que entender circuitos me ayude en algo, estamos tan alejados del hardware que no entiendo que cosa me aporta, me dicen "los ingenieros deben saber un poco de todo" pero no puedo elegir que estudiar, odio física, es de las materias que mas me estresa, 1 hora no es suficiente tiempo para alguien de pensamiento tan lento como yo, sin contar que tengo materia extra que atender (además de servicio social) y materias extra de otras facultades para completar las horas, váyanse al demonio, apenas puedo estudiar lo suficiente para aprobar con 60 y quieren que tenga materas extra, JÓDANSE!.  
 

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-09-15 mié 18:16 -->
+<!-- 2021-10-27 mié 09:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ecuaciones Diferenciales</title>
@@ -38,20 +38,21 @@ TODO list:
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org056ba4d">1. Definicion</a></li>
-<li><a href="#orgd55cdd5">2. Variables dependientes e independientes</a></li>
-<li><a href="#orgb14a748">3. Orden de una ecuacion</a></li>
-<li><a href="#org2c18108">4. Campos de pendientes o direcciones</a></li>
-<li><a href="#org2564c54">5. Transformada de Laplace</a></li>
-<li><a href="#orgf747d6e">6. Propiedades de laplace</a></li>
-<li><a href="#org61d9e6e">7. Aplicaciones de transformada de laplace</a></li>
-<li><a href="#orgadd4c22">8. Tranformada de Derivadas de Laplace</a></li>
+<li><a href="#org06e3fc1">1. Definicion</a></li>
+<li><a href="#org3747b16">2. Variables dependientes e independientes</a></li>
+<li><a href="#org5b2ad31">3. Orden de una ecuacion</a></li>
+<li><a href="#org9d3b702">4. Campos de pendientes o direcciones</a></li>
+<li><a href="#org86cd001">5. Transformada de Laplace</a></li>
+<li><a href="#orgf57707d">6. Propiedades de laplace</a></li>
+<li><a href="#orgdb28c43">7. Aplicaciones de transformada de laplace</a></li>
+<li><a href="#orgb049fc9">8. Tranformada de Derivadas de Laplace</a></li>
+<li><a href="#orgc51ec08">9. Ecuaciones diferenciales homogeneas</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org056ba4d" class="outline-2">
-<h2 id="org056ba4d"><span class="section-number-2">1</span> Definicion</h2>
+<div id="outline-container-org06e3fc1" class="outline-2">
+<h2 id="org06e3fc1"><span class="section-number-2">1</span> Definicion</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y que contiene una derivada de una o mas variables dependientes con respecto a dos o mas variables independientementes.
@@ -59,8 +60,8 @@ Una ecuacion diferencial, es una ecuacion donde la incognita es una funcion y qu
 </div>
 </div>
 
-<div id="outline-container-orgd55cdd5" class="outline-2">
-<h2 id="orgd55cdd5"><span class="section-number-2">2</span> Variables dependientes e independientes</h2>
+<div id="outline-container-org3747b16" class="outline-2">
+<h2 id="org3747b16"><span class="section-number-2">2</span> Variables dependientes e independientes</h2>
 <div class="outline-text-2" id="text-2">
 <dl class="org-dl">
 <dt>Variable dependiente</dt><dd>Es aquella cuyos valores dependen de los que tomen otra variable. Usualmente se suele representar como <b>y</b> en el eje de las ordenadas.</dd>
@@ -85,8 +86,8 @@ En esta ecuacion diferencial podemos saber cual es la variable independiente con
 </div>
 </div>
 
-<div id="outline-container-orgb14a748" class="outline-2">
-<h2 id="orgb14a748"><span class="section-number-2">3</span> Orden de una ecuacion</h2>
+<div id="outline-container-org5b2ad31" class="outline-2">
+<h2 id="org5b2ad31"><span class="section-number-2">3</span> Orden de una ecuacion</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Se dice que una ecuacion es del grado de su derivada mas alta<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
@@ -132,8 +133,8 @@ Ecuaciones de segundo orden:
 </div>
 </div>
 
-<div id="outline-container-org2c18108" class="outline-2">
-<h2 id="org2c18108"><span class="section-number-2">4</span> Campos de pendientes o direcciones</h2>
+<div id="outline-container-org9d3b702" class="outline-2">
+<h2 id="org9d3b702"><span class="section-number-2">4</span> Campos de pendientes o direcciones</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Un campo de pendientes es un tipo de grafico que funciona como una solucion grafica para ecuaciones diferenciales de primer orden. <br />
@@ -146,8 +147,8 @@ Para dibujar un campo de pendientes solo tenemos que evaluar la funcion en cada 
 </div>
 </div>
 
-<div id="outline-container-org2564c54" class="outline-2">
-<h2 id="org2564c54"><span class="section-number-2">5</span> Transformada de Laplace</h2>
+<div id="outline-container-org86cd001" class="outline-2">
+<h2 id="org86cd001"><span class="section-number-2">5</span> Transformada de Laplace</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 En matemáticas, la transformada de Laplace es una transformada integral que convierte una función de variable real {\displaystyle t}t (normalmente el tiempo) a una función de variable compleja {\displaystyle s}s. Tiene muchas aplicaciones en ciencia e ingeniería porque es una herramienta para resolver ecuaciones diferenciales. En particular, transforma ecuaciones diferenciales en ecuaciones algebraicas.
@@ -169,8 +170,8 @@ L \{f(t)\} = \int_0^\infty e^{-s~t} f(t)~dt
 </div>
 </div>
 
-<div id="outline-container-orgf747d6e" class="outline-2">
-<h2 id="orgf747d6e"><span class="section-number-2">6</span> Propiedades de laplace</h2>
+<div id="outline-container-orgf57707d" class="outline-2">
+<h2 id="orgf57707d"><span class="section-number-2">6</span> Propiedades de laplace</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 <a href="https://www.uv.mx/personal/aherrera/files/2014/04/18.-PROPIEDADES-DE-LA-TRANSFORMADA-DE-LAPLACE1.pdf">https://www.uv.mx/personal/aherrera/files/2014/04/18.-PROPIEDADES-DE-LA-TRANSFORMADA-DE-LAPLACE1.pdf</a>
@@ -178,8 +179,8 @@ L \{f(t)\} = \int_0^\infty e^{-s~t} f(t)~dt
 </div>
 </div>
 
-<div id="outline-container-org61d9e6e" class="outline-2">
-<h2 id="org61d9e6e"><span class="section-number-2">7</span> Aplicaciones de transformada de laplace</h2>
+<div id="outline-container-orgdb28c43" class="outline-2">
+<h2 id="orgdb28c43"><span class="section-number-2">7</span> Aplicaciones de transformada de laplace</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 Raramente te van a pedir que desarolloes las integrales para llegar a una transformada, por lo general simplemente usamos sus aplicaciones, las aplicaciones de tranformada de Laplace simplemente son sustituciones de funciones comunes, En el <a href="https://www.mediafire.com/file/p332e66d6vmdic8/laplace.pdf/file">formulario</a> puedes encontrar la mayoria de sustituciones.
@@ -213,8 +214,8 @@ Como se ve en el ejemplo, simplemente tenemos que desarollar la exprecion y apli
 </div>
 </div>
 
-<div id="outline-container-orgadd4c22" class="outline-2">
-<h2 id="orgadd4c22"><span class="section-number-2">8</span> Tranformada de Derivadas de Laplace</h2>
+<div id="outline-container-orgb049fc9" class="outline-2">
+<h2 id="orgb049fc9"><span class="section-number-2">8</span> Tranformada de Derivadas de Laplace</h2>
 <div class="outline-text-2" id="text-8">
 <div class="DEMONSTRATION">
 <p>
@@ -273,6 +274,30 @@ y el resultado final sería:
 \]
 </p>
 
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc51ec08" class="outline-2">
+<h2 id="orgc51ec08"><span class="section-number-2">9</span> Ecuaciones diferenciales homogeneas</h2>
+<div class="outline-text-2" id="text-9">
+<ol class="org-ol">
+<li>escribir la Ecuacion diferencial en forma:</li>
+</ol>
+<p>
+\[
+M(x,y) \,dx + N(x,y) \,dy = 0
+\]
+</p>
+
+<ol class="org-ol">
+<li>comprobar que sea <a href="https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_diferencial_homog%C3%A9nea">homogenea</a>:</li>
+</ol>
+
+<div class="org-center">
+<p>
+\(M(\lambda x,\lambda y) = \lambda^n M(x,y) \) y \(N(\lambda x,\lambda y) = \lambda^n N(x,y) \)
+</p>
 </div>
 </div>
 </div>

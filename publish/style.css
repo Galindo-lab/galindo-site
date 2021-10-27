@@ -105,9 +105,9 @@ dd{
 
 ul  { 
     /* list-style-type: "|> "; */
-    list-style-type: "├ ";
+    /* list-style-type: "├ "; */
     margin: 3px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 } 
 
 li {
@@ -116,7 +116,7 @@ li {
 }
 
 li:last-child {
-    list-style-type: "└ ";    
+    /* list-style-type: "└ ";     */
 }
 
 .subtitle {

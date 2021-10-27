@@ -14,5 +14,4 @@ Galindosoft
 - [[./programacion/index.html][Programación]] 
 - [[./blog/friends.html][Amigos]]
 - [[./about.html][About me]] 
-
-@@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
+- @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@

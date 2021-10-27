@@ -13,22 +13,13 @@
 body {
 padding:0;
 max-width: 400px;
-/*text-align: center;*/
-/*display: flex;
- justify-content: center;
-  align-items: center;*/
-
 }
 
 #content {
 display: flex;
  justify-content: center;
-/*  align-items: center; */
 height: 90vh;
-
-
   flex-direction: column;
-
 }
 
 #google_translate_element{
@@ -44,10 +35,6 @@ list-style-type:none;
 left-padding: 10px ;
 }
 
-li {
-
-}
-
 </style>
 #+END_EXPORT
 
@@ -60,23 +47,10 @@ li {
 
 I may be ugly, but i'm scared.
 
+#+attr_html: :height 31px
+[[file:button.png]]
+
 [[./home.html][Entrar]]
-
-# @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
-
-# #+END_CENTER
-
-#  [[https://soundcloud.com/user-887296634/freestyle-smc?si=dd3c0976568e4defb9eb311fb351549e][🔥🔥 Visiten el proyeto de compa Eddie.cutthroatt000 🔥🔥]]
-# + Sections
-#   - [[./apuntes/index.html][Apuntes]] 
-#   - [[./colections/index.html][Colecciónes]] 
-#   - [[./blog/index.html][Journal]] 
-#   - [[./programacion/index.html][Programación]] 
-#   - [[./blog/friends.html][Amigos]]
-#   - [[./about.html][About me]] 
-
-# #+BEGIN_CENTER
-
 
 #+BEGIN_EXPORT html
  <script defer> 

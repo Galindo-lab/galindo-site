@@ -146,3 +146,15 @@ y el resultado final sería:
 # \mathcal{L} \{ f''(t) \} &= S^2 \mathcal{L}\{ f \} - Sf(0) } - f'(0) \\
 # \mathcal{L} \{ f''(t) \} &= S^3 \mathcal{L}\{ f \} - S^2f(0) } - Sf'(0) - f''(0) \\
 # \end{aligned} \]
+
+* Ecuaciones diferenciales homogeneas
+1. escribir la Ecuacion diferencial en forma:
+\[
+M(x,y) \,dx + N(x,y) \,dy = 0
+\]
+
+2. comprobar que sea [[https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_diferencial_homog%C3%A9nea][homogenea]]:
+
+#+BEGIN_CENTER
+\(M(\lambda x,\lambda y) = \lambda^n M(x,y) \) y \(N(\lambda x,\lambda y) = \lambda^n N(x,y) \)
+#+END_CENTER
