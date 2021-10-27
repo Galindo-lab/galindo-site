@@ -1,0 +1,18 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
+#+EXPORT_FILE_NAME: ../publish/home.html
+
+#+TITLE: Galindosoft
+# #+SUBTITLE: home
+
+#+OPTIONS: \n:t title:nil
+
+Galindosoft
+- [[./apuntes/index.html][Apuntes]]
+- [[./colections/index.html][Colecciónes]] 
+- [[./blog/index.html][Journal]] 
+- [[./programacion/index.html][Programación]] 
+- [[./blog/friends.html][Amigos]]
+- [[./about.html][About me]] 
+
+@@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@

@@ -1,35 +1,30 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/colections/paginas.org
+#+OPTIONS: \n:t title:nil
 
 #+TITLE: Paginas
 #+SUBTITLE: Colección
-
-* Paginas de amigos
-
-- [[https://maogani.blogspot.com/?m=1][Aquí mi amiga Itzel sube sus escritos, revisen su sitio!!! ♡]]
-
-* Herramientas
-- [[https://regex-generator.olafneumann.org/][Generador de expresiones regex]]
-- [[http://hyperphysics.phy-astr.gsu.edu/hbasees/magnetic/solenoid.html][Hyperhysics es uno de las paginas que me inspiro a hacer este blog]]
-- [[https://app.contrast-finder.org/?lang=es][calcular el contraste entre dos colores]]
-- [[https://www.cemetech.net/forum/viewtopic.php?t=14888][Sistema de algebra simbolico para Casio CG-50]]
-- [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][Simbolos matematicos en latex]]
-- [[https://n9.cl/es/s/tc0uu][Acortador de urls]]
-- [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]]
-- [[https://www.inventable.eu/paginas/ResCalculatorSp/ResCalculatorSp.html][Calculadora de colores de reistencias]]
-- [[https://libgen.is/][Libros gratis]]
-- [[https://12ft.io/][Eliminar paywalls]]
-- [[https://es.forvo.com/][Audio de pronunciaciones nativas en otros idiomas]]
-- [[https://mynoise.net/][Sonido blanco]]
-- [[https://www.mealime.com/][meal planning]]
-- [[https://www.onlineocr.net/es/][Imagen a texto]]
-
-* Paginas Interesantes
-- [[http://www.cmkosemen.com/][Sitio web del creador de "All Tomorrows"]]
-- [[https://bellard.org/][Bellard es el autor de TinyEMU, tiene un montón de proyectos en su sitio]].
-- [[https://gigamonkeys.com/book/][Pagina oficial de "Practical Common Lisp"]]
-- [[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Canal de programación ATS]]
-- [[https://learnxinyminutes.com/][Guías rápidas para cualquier tema]]
-- [[https://infolibros.org/libros-para-aprender-chino-mandarin-gratis-pdf/][Libros de chino mandarin]]
-- [[http://old.marcofolio.net/css/8_different_ways_to_beautifully_style_your_lists.html][Marcofolio]]
+* Enlaces que me parecen útiles
+[[https://12ft.io/][12ft.io]]: Eliminar paywalls.
+[[https://bellard.org/][bellard.org]]: Bellard es el autor de TinyEMU.
+[[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][calculadorasonline.com]]: Generador de tablas de verdad
+[[http://www.cmkosemen.com/][cmkosemen.com]]: Sitio web del creador de /All Tomorrows/.
+[[https://app.contrast-finder.org/?lang=es][contrast-finder.org]]: calcular el contraste entre dos colores.
+[[https://es.forvo.com/][forvo.com]]: Audio de pronunciaciones nativas en otros idiomas.
+[[https://gigamonkeys.com/book/][gigamonkeys.com]]: Pagina oficial de /Practical Common Lisp/.
+[[http://hyperphysics.phy-astr.gsu.edu/hbasees/magnetic/solenoid.html][hyperphysics.edu]]: Temas de física.
+[[https://infolibros.org/libros-para-aprender-chino-mandarin-gratis-pdf/][infolibros.org]]: Libros de chino mandarin.
+[[https://www.inventable.eu/paginas/ResCalculatorSp/ResCalculatorSp.html][inventable.eu]]: Calculadora de colores de resistencias.
+[[https://www.cemetech.net/forum/viewtopic.php?t=14888][khicasio.net]]: Sistema de álgebra simbólico.
+[[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][LATEX Symbols]]: PDF con todos los símbolos matemáticos en LaTeX.
+[[https://learnxinyminutes.com/][learnxinyminutes.com]]: Guías rápidas para cualquier tema.
+[[https://libgen.is/][libgen.is]]: Libros gratis.
+[[https://maogani.blogspot.com/?m=1][maogani.blogspot ♡]]: Aquí mi amiga Itzel sube sus escritos.
+[[http://old.marcofolio.net/css/8_different_ways_to_beautifully_style_your_lists.html][Marcofolio]]: Portafolio de alguien.
+[[https://www.mealime.com/][mealime.com]]: Meal planning.
+[[https://mynoise.net/][mynoise.net]]: Sonido blanco.
+[[https://n9.cl/es/s/tc0uu][n9.cl]]: Acortador de urls.
+[[https://www.onlineocr.net/es/][onlineocr.net]]: Imagen a texto.
+[[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Programación ATS]]: Canal de programación ATS.
+[[https://regex-generator.olafneumann.org/][regex-generator.org]]: Generador de expresiones regex.

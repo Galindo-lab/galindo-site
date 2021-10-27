@@ -1,7 +1,7 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/apuntes/calculo-multivariable.html
-#+OPTIONS: num:t
+#+OPTIONS: num:t toc:nil
 #+HTML_CONTAINER: div
 
 
@@ -21,17 +21,18 @@
 
 * Funciones discontinuas más comunes
 Funciones Discontinuas Más Comunes:
-- Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.
 
-- A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.
+Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.
 
-- Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.
 
-- Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).
 
-- Cosecante, en los puntos \(\pi k\).
+Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).
 
-- logaritmo de 10 en \( x \leq 0  \)
+Cosecante, en los puntos \(\pi k\).
+
+logaritmo de 10 en \( x \leq 0  \)
 
 * Representación del plano 
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:

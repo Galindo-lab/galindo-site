@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-10-23 sáb 16:11 -->
+<!-- 2021-10-26 mar 18:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cálculo Multivariable</title>
@@ -31,61 +31,72 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6d8a179">1. Funciones discontinuas más comunes</a></li>
-<li><a href="#orgfa5d164">2. Representación del plano</a></li>
-<li><a href="#org1946f9e">3. Ecuación vectorial del plano</a></li>
-<li><a href="#org9b6f0dc">4. Ecuación escalar</a></li>
-<li><a href="#org565c6cd">5. Plano Entre Tres Puntos</a></li>
-<li><a href="#org68b236b">6. Ángulo Entre Planos</a></li>
-<li><a href="#org7097ed4">7. Plano que pasa por un punto y es perpendicular a otro plano</a></li>
-<li><a href="#orgb63ad13">8. Vector de una recta o función</a></li>
-<li><a href="#orgdea4178">9. Parametrizacion de una recta con dos puntos</a></li>
-<li><a href="#org5553668">10. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
-<li><a href="#orgaf152d7">11. Coordenadas rectangulares, cilíndricas y esféricas</a></li>
-<li><a href="#org62889e1">12. Coordenadas rectangulares a esfericas</a></li>
-<li><a href="#org952602d">13. Dominio de una función</a></li>
-<li><a href="#orgcd21c8c">14. Imagen de una función (Rango)</a></li>
-<li><a href="#org1f0a67f">15. Curvas de nivel</a></li>
-<li><a href="#org9b5dde9">16. Derivadas parciales</a></li>
-<li><a href="#org7addb38">17. Derivadas parciales multiples</a></li>
-<li><a href="#org9e1e8b1">18. Derivada de orden superior</a></li>
-<li><a href="#org80d4696">19. Error maximo</a></li>
-<li><a href="#orgad29878">20. Regla de la cadena</a></li>
-<li><a href="#orge3abf13">21. Gradiente</a></li>
-<li><a href="#org75ae2b5">22. Derivada direccional (sí la funcion es derivable en el punto)</a></li>
-<li><a href="#org51e3349">23. Razón de cambio en un punto</a></li>
-<li><a href="#org9e3fb5f">24. Derivada direccional para todas las funciones</a></li>
-<li><a href="#org0c2f6d5">25. Puntos criticos de una funcion</a></li>
-<li><a href="#org76b73ea">26. Clasificar Puntos Criticos (maximos, minimos y sillas)</a></li>
-<li><a href="#orgf57a833">27. multiplicadores de lagrange</a></li>
+<li><a href="#org5858f44">1. Funciones discontinuas más comunes</a></li>
+<li><a href="#orga5e36f7">2. Representación del plano</a></li>
+<li><a href="#orge74ead6">3. Ecuación vectorial del plano</a></li>
+<li><a href="#org761a947">4. Ecuación escalar</a></li>
+<li><a href="#org661efba">5. Plano Entre Tres Puntos</a></li>
+<li><a href="#org39b20d8">6. Ángulo Entre Planos</a></li>
+<li><a href="#org9198644">7. Plano que pasa por un punto y es perpendicular a otro plano</a></li>
+<li><a href="#org481978d">8. Vector de una recta o función</a></li>
+<li><a href="#org8478ce9">9. Parametrizacion de una recta con dos puntos</a></li>
+<li><a href="#org511cca4">10. Ecuación paramétrica de la recta a una ecuación simétrica</a></li>
+<li><a href="#org5b94c02">11. Coordenadas rectangulares, cilíndricas y esféricas</a></li>
+<li><a href="#org3699227">12. Coordenadas rectangulares a esfericas</a></li>
+<li><a href="#orgdd3f644">13. Dominio de una función</a></li>
+<li><a href="#org159a753">14. Imagen de una función (Rango)</a></li>
+<li><a href="#orgc03e61f">15. Curvas de nivel</a></li>
+<li><a href="#org1e3759e">16. Derivadas parciales</a></li>
+<li><a href="#org34df0fc">17. Derivadas parciales multiples</a></li>
+<li><a href="#org923ec9e">18. Derivada de orden superior</a></li>
+<li><a href="#org1284a0c">19. Error maximo</a></li>
+<li><a href="#org7e77a60">20. Regla de la cadena</a></li>
+<li><a href="#org0d22215">21. Gradiente</a></li>
+<li><a href="#orgc5da1cf">22. Derivada direccional (sí la funcion es derivable en el punto)</a></li>
+<li><a href="#orgf551106">23. Razón de cambio en un punto</a></li>
+<li><a href="#orgf161f0c">24. Derivada direccional para todas las funciones</a></li>
+<li><a href="#org805750d">25. Puntos criticos de una funcion</a></li>
+<li><a href="#orgc55c20c">26. Clasificar Puntos Criticos (maximos, minimos y sillas)</a></li>
+<li><a href="#org78bbda8">27. multiplicadores de lagrange</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6d8a179" class="outline-2">
-<h2 id="org6d8a179"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
+<div id="outline-container-org5858f44" class="outline-2">
+<h2 id="org5858f44"><span class="section-number-2">1</span> Funciones discontinuas más comunes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Funciones Discontinuas Más Comunes:
 </p>
-<ul class="org-ul">
-<li>Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.</li>
 
-<li>A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.</li>
+<p>
+Un numero dividido entre 0 es indefinido, por lo tanto una función dividida entre 0 también es indefinida y por lo tanto discontinua.
+</p>
 
-<li>Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).</li>
+<p>
+A los números negativos no le podemos sacar raíz cuadrada en el dominio de los números reales.
+</p>
 
-<li>Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).</li>
+<p>
+Tangente, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+</p>
 
-<li>Cosecante, en los puntos \(\pi k\).</li>
+<p>
+Secante, en los puntos \( \frac{(2k + 1)\pi}{2} \).
+</p>
 
-<li>logaritmo de 10 en \( x \leq 0  \)</li>
-</ul>
+<p>
+Cosecante, en los puntos \(\pi k\).
+</p>
+
+<p>
+logaritmo de 10 en \( x \leq 0  \)
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgfa5d164" class="outline-2">
-<h2 id="orgfa5d164"><span class="section-number-2">2</span> Representación del plano</h2>
+<div id="outline-container-orga5e36f7" class="outline-2">
+<h2 id="orga5e36f7"><span class="section-number-2">2</span> Representación del plano</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:
@@ -106,8 +117,8 @@ otras formas de representar el plano también podrían ser las siguiente:
 </div>
 </div>
 
-<div id="outline-container-org1946f9e" class="outline-2">
-<h2 id="org1946f9e"><span class="section-number-2">3</span> Ecuación vectorial del plano</h2>
+<div id="outline-container-orge74ead6" class="outline-2">
+<h2 id="orge74ead6"><span class="section-number-2">3</span> Ecuación vectorial del plano</h2>
 <div class="outline-text-2" id="text-3">
 <div class="DEMONSTRATION">
 <p>
@@ -120,8 +131,8 @@ otras formas de representar el plano también podrían ser las siguiente:
 </div>
 </div>
 
-<div id="outline-container-org9b6f0dc" class="outline-2">
-<h2 id="org9b6f0dc"><span class="section-number-2">4</span> Ecuación escalar</h2>
+<div id="outline-container-org761a947" class="outline-2">
+<h2 id="org761a947"><span class="section-number-2">4</span> Ecuación escalar</h2>
 <div class="outline-text-2" id="text-4">
 <div class="DEMONSTRATION">
 <p>
@@ -134,8 +145,8 @@ a (x-x_0) + b (y - y_0) + c (z - z_0) = 0
 </div>
 </div>
 
-<div id="outline-container-org565c6cd" class="outline-2">
-<h2 id="org565c6cd"><span class="section-number-2">5</span> Plano Entre Tres Puntos</h2>
+<div id="outline-container-org661efba" class="outline-2">
+<h2 id="org661efba"><span class="section-number-2">5</span> Plano Entre Tres Puntos</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Para determinar la funcion que se forma con tres puntos en el espacio, sustituimos los valores y calculamos el determinante de la matriz resultante:
@@ -158,8 +169,8 @@ Para determinar la funcion que se forma con tres puntos en el espacio, sustituim
 </div>
 </div>
 
-<div id="outline-container-org68b236b" class="outline-2">
-<h2 id="org68b236b"><span class="section-number-2">6</span> Ángulo Entre Planos</h2>
+<div id="outline-container-org39b20d8" class="outline-2">
+<h2 id="org39b20d8"><span class="section-number-2">6</span> Ángulo Entre Planos</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 para calcular el angulo entre dos planos usamos la siguiente ecuación:
@@ -184,11 +195,11 @@ donde n es un punto en \( \mathbb{R}^3 \), primero determinamos el valor absolut
 </div>
 </div>
 
-<div id="outline-container-org7097ed4" class="outline-2">
-<h2 id="org7097ed4"><span class="section-number-2">7</span> Plano que pasa por un punto y es perpendicular a otro plano</h2>
+<div id="outline-container-org9198644" class="outline-2">
+<h2 id="org9198644"><span class="section-number-2">7</span> Plano que pasa por un punto y es perpendicular a otro plano</h2>
 <div class="outline-text-2" id="text-7">
 <p>
-Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#orgb63ad13">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación <a href="#org9b6f0dc">escalar del plano</a>:
+Para encontrar un plano perpendicular podemos aplicar una de las operaciones de vectores el producto cruz, pero primero tendremos que encontrar el <a href="#org481978d">vector de la función</a>. Y ya con el vector solo tenemos que encontrar el vector perpendicular (producto cruz) y pasamos los valores a la ecuación <a href="#org761a947">escalar del plano</a>:
 </p>
 
 <div class="DEMONSTRATION">
@@ -244,8 +255,8 @@ por ultimo sustituimos en la ecuación del plano:
 </div>
 </div>
 
-<div id="outline-container-orgb63ad13" class="outline-2">
-<h2 id="orgb63ad13"><span class="section-number-2">8</span> Vector de una recta o función</h2>
+<div id="outline-container-org481978d" class="outline-2">
+<h2 id="org481978d"><span class="section-number-2">8</span> Vector de una recta o función</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
@@ -266,8 +277,8 @@ su vector:
 </div>
 </div>
 
-<div id="outline-container-orgdea4178" class="outline-2">
-<h2 id="orgdea4178"><span class="section-number-2">9</span> Parametrizacion de una recta con dos puntos</h2>
+<div id="outline-container-org8478ce9" class="outline-2">
+<h2 id="org8478ce9"><span class="section-number-2">9</span> Parametrizacion de una recta con dos puntos</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Sustituimos los valores en la siguiente formula, P<sub>1</sub> es el punto de origen, P<sub>2</sub> punto final y t es un valor entre 0 y 1
@@ -288,8 +299,8 @@ P_1 + t \cdot (P_2 - P_1)
 </div>
 </div>
 
-<div id="outline-container-org5553668" class="outline-2">
-<h2 id="org5553668"><span class="section-number-2">10</span> Ecuación paramétrica de la recta a una ecuación simétrica</h2>
+<div id="outline-container-org511cca4" class="outline-2">
+<h2 id="org511cca4"><span class="section-number-2">10</span> Ecuación paramétrica de la recta a una ecuación simétrica</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> simplemente resolviendo la ecuacion en los términos que necesitemos. 
@@ -357,8 +368,8 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 </div>
 
 
-<div id="outline-container-orgaf152d7" class="outline-2">
-<h2 id="orgaf152d7"><span class="section-number-2">11</span> Coordenadas rectangulares, cilíndricas y esféricas</h2>
+<div id="outline-container-org5b94c02" class="outline-2">
+<h2 id="org5b94c02"><span class="section-number-2">11</span> Coordenadas rectangulares, cilíndricas y esféricas</h2>
 <div class="outline-text-2" id="text-11">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -430,8 +441,8 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 </div>
 </div>
 
-<div id="outline-container-org62889e1" class="outline-2">
-<h2 id="org62889e1"><span class="section-number-2">12</span> Coordenadas rectangulares a esfericas</h2>
+<div id="outline-container-org3699227" class="outline-2">
+<h2 id="org3699227"><span class="section-number-2">12</span> Coordenadas rectangulares a esfericas</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 Las coordenadas esféricas requieren dos ángulos, por lo que se parecen mucho a las coordenadas polares. &theta; funciona exactamente como en coordenadas polares, sí \(x=0\) y \(y > 0\) el ángulo es 90°; sí \(x=0\) y \(y < 0\) el ángulo es 270°.
@@ -457,8 +468,8 @@ r &= \sqrt{x^2+y^2+z^2} & \varphi &= cos^{-1}\left( \frac{z}{r} \right) \\
 </div>
 
 
-<div id="outline-container-org952602d" class="outline-2">
-<h2 id="org952602d"><span class="section-number-2">13</span> Dominio de una función</h2>
+<div id="outline-container-orgdd3f644" class="outline-2">
+<h2 id="orgdd3f644"><span class="section-number-2">13</span> Dominio de una función</h2>
 <div class="outline-text-2" id="text-13">
 <blockquote>
 <p>
@@ -511,8 +522,8 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 </div>
 </div>
 
-<div id="outline-container-orgcd21c8c" class="outline-2">
-<h2 id="orgcd21c8c"><span class="section-number-2">14</span> Imagen de una función (Rango)</h2>
+<div id="outline-container-org159a753" class="outline-2">
+<h2 id="org159a753"><span class="section-number-2">14</span> Imagen de una función (Rango)</h2>
 <div class="outline-text-2" id="text-14">
 <blockquote>
 <p>
@@ -539,7 +550,7 @@ El rango o imagen de una función es todo valor de Y que puede tomar nuestra fun
 </div>
 
 <p>
-Para encontrar el rango es muy recomendable encontrar primero el <a href="#org952602d">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
+Para encontrar el rango es muy recomendable encontrar primero el <a href="#orgdd3f644">dominio</a> de la función, así podemos saber donde debemos empezar a evaluar, para nuestro ejemplo el dominio de la función es \( { (^x_y) \in \mathbb R^2: x^2 + y^2 \leq 9 } \).
 </p>
 
 <p>
@@ -560,8 +571,8 @@ El resultado que obtenemos es que el dominio de la función se extiende continua
 </div>
 </div>
 
-<div id="outline-container-org1f0a67f" class="outline-2">
-<h2 id="org1f0a67f"><span class="section-number-2">15</span> Curvas de nivel</h2>
+<div id="outline-container-orgc03e61f" class="outline-2">
+<h2 id="orgc03e61f"><span class="section-number-2">15</span> Curvas de nivel</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 Las curavs de nivel son proyecciones bidimencionales de funciones en tres dimenciones, estas nos permiten ver los valores de la proyeccion rapidamente sin nececidad de un graficador.
@@ -583,8 +594,8 @@ Las curavs de nivel son proyecciones bidimencionales de funciones en tres dimenc
 </div>
 </div>
 
-<div id="outline-container-org9b5dde9" class="outline-2">
-<h2 id="org9b5dde9"><span class="section-number-2">16</span> Derivadas parciales</h2>
+<div id="outline-container-org1e3759e" class="outline-2">
+<h2 id="org1e3759e"><span class="section-number-2">16</span> Derivadas parciales</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 La derivada parcial se denota como \( \frac{\partial}{\partial x} \) o tambien como un subindice en el nombre de la funcion \( f_x = \frac{\partial}{\partial x} \). Para calcular la derivada parcial de una funcion debemos calcular la derivada de la variable indicada mientras el otro valor lo tomamos como una constante. Si la es la derivada parcial de x, tendriamos algo así:
@@ -605,8 +616,8 @@ La derivada parcial se denota como \( \frac{\partial}{\partial x} \) o tambien c
 </div>
 </div>
 </div>
-<div id="outline-container-org7addb38" class="outline-2">
-<h2 id="org7addb38"><span class="section-number-2">17</span> Derivadas parciales multiples</h2>
+<div id="outline-container-org34df0fc" class="outline-2">
+<h2 id="org34df0fc"><span class="section-number-2">17</span> Derivadas parciales multiples</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 Es comun que un procedimiento requiera mas de una derivada parcial, usualmente se denota como \(f_{xy}\) donde cada subindice es una derivada parcial:
@@ -633,8 +644,8 @@ cabe resaltar que el orden si afecta como derivamos, si nuestra funcion nos pide
 </div>
 </div>
 
-<div id="outline-container-org9e1e8b1" class="outline-2">
-<h2 id="org9e1e8b1"><span class="section-number-2">18</span> Derivada de orden superior</h2>
+<div id="outline-container-org923ec9e" class="outline-2">
+<h2 id="org923ec9e"><span class="section-number-2">18</span> Derivada de orden superior</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 Cuando tenemos multiples variables hay varias posibles derivadas, cada una correspondiente a cada variable que podemos tomar:
@@ -662,8 +673,8 @@ Cuando tenemos multiples variables hay varias posibles derivadas, cada una corre
 </div>
 </div>
 
-<div id="outline-container-org80d4696" class="outline-2">
-<h2 id="org80d4696"><span class="section-number-2">19</span> Error maximo</h2>
+<div id="outline-container-org1284a0c" class="outline-2">
+<h2 id="org1284a0c"><span class="section-number-2">19</span> Error maximo</h2>
 <div class="outline-text-2" id="text-19">
 <p>
 para encontrar el error en una funcion primero derivamos la funcion y multiplicamos por la razon de cambio de cada variable. Ejemplo:
@@ -690,8 +701,8 @@ dV &= \frac{\partial V}{\partial r}\,dr + \frac{\partial v}{\partial h}\,dh & \\
 </div>
 </div>
 
-<div id="outline-container-orgad29878" class="outline-2">
-<h2 id="orgad29878"><span class="section-number-2">20</span> Regla de la cadena</h2>
+<div id="outline-container-org7e77a60" class="outline-2">
+<h2 id="org7e77a60"><span class="section-number-2">20</span> Regla de la cadena</h2>
 <div class="outline-text-2" id="text-20">
 <p>
 Para aplicar la regla de la cadena en una funcion multivariable simplemente consiste en sustituir cada variable y luego derivar cada uno de los elementos, Ejemplo: Derivada de \(w = x^2 + y^2 + z^2 \) donde \(x = st\) ; \(y = s\cos t\) ; \(z = s\sin t\).
@@ -716,8 +727,8 @@ Para aplicar la regla de la cadena en una funcion multivariable simplemente cons
 </div>
 </div>
 
-<div id="outline-container-orge3abf13" class="outline-2">
-<h2 id="orge3abf13"><span class="section-number-2">21</span> Gradiente</h2>
+<div id="outline-container-org0d22215" class="outline-2">
+<h2 id="org0d22215"><span class="section-number-2">21</span> Gradiente</h2>
 <div class="outline-text-2" id="text-21">
 <p>
 El gradiente es un vector, donde cada elemento representa una derivada parcial de una funcion \(f\), se denota con la \( \triangledown f \).
@@ -747,8 +758,8 @@ f(x,y) = x^2y^3 - 4y
 </div>
 </div>
 
-<div id="outline-container-org75ae2b5" class="outline-2">
-<h2 id="org75ae2b5"><span class="section-number-2">22</span> Derivada direccional (sí la funcion es derivable en el punto)</h2>
+<div id="outline-container-orgc5da1cf" class="outline-2">
+<h2 id="orgc5da1cf"><span class="section-number-2">22</span> Derivada direccional (sí la funcion es derivable en el punto)</h2>
 <div class="outline-text-2" id="text-22">
 <p>
 La forma mas rapida de calcular la variable direcciona es dereterminando si nuestra funcion es derivable el punto, en caso de que sea así podemos aprovechar las propiedades del gradiente. El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto:
@@ -788,8 +799,8 @@ D_{\vec{u}} f(\vec{x_0}) &= \begin{bmatrix}
 </div>
 </div>
 
-<div id="outline-container-org51e3349" class="outline-2">
-<h2 id="org51e3349"><span class="section-number-2">23</span> Razón de cambio en un punto</h2>
+<div id="outline-container-orgf551106" class="outline-2">
+<h2 id="orgf551106"><span class="section-number-2">23</span> Razón de cambio en un punto</h2>
 <div class="outline-text-2" id="text-23">
 <p>
 Para encontrar la razon de cambio simplemente sustituimos x y y con los valores en el punto que queremos verificar:
@@ -804,8 +815,8 @@ D_{\vec{u}} f(\vec{x_0}) &= -\frac{20}{\sqrt{29}} + \frac{4xy^3}{\sqrt{29}} + \f
 </div>
 </div>
 
-<div id="outline-container-org9e3fb5f" class="outline-2">
-<h2 id="org9e3fb5f"><span class="section-number-2">24</span> Derivada direccional para todas las funciones</h2>
+<div id="outline-container-orgf161f0c" class="outline-2">
+<h2 id="orgf161f0c"><span class="section-number-2">24</span> Derivada direccional para todas las funciones</h2>
 <div class="outline-text-2" id="text-24">
 <p>
 El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto: 
@@ -869,8 +880,8 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 </div>
 </div>
 </div>
-<div id="outline-container-org0c2f6d5" class="outline-2">
-<h2 id="org0c2f6d5"><span class="section-number-2">25</span> Puntos criticos de una funcion</h2>
+<div id="outline-container-org805750d" class="outline-2">
+<h2 id="org805750d"><span class="section-number-2">25</span> Puntos criticos de una funcion</h2>
 <div class="outline-text-2" id="text-25">
 <p>
 Para encontrar los puntos criticos de la funcion tendremos que calcular la derivada parcial de cada variable y resolverla como un sistema de ecuaciones:
@@ -901,8 +912,8 @@ Para encontrar los puntos criticos de la funcion tendremos que calcular la deriv
 </div>
 </div>
 
-<div id="outline-container-org76b73ea" class="outline-2">
-<h2 id="org76b73ea"><span class="section-number-2">26</span> Clasificar Puntos Criticos (maximos, minimos y sillas)</h2>
+<div id="outline-container-orgc55c20c" class="outline-2">
+<h2 id="orgc55c20c"><span class="section-number-2">26</span> Clasificar Puntos Criticos (maximos, minimos y sillas)</h2>
 <div class="outline-text-2" id="text-26">
 <p>
 Evaluamos los puntos criticos de la funcion en el discriminante, el valor que obtendremos será la variacion de la funcion, entonces solo aplicamos la logica para encontrar el tipo de punto que tenemos.
@@ -993,8 +1004,8 @@ Entonces D es mayor a 0 y f<sub>xx</sub> es menor a 0, por lo tanto el valor <sp
 </div>
 </div>
 
-<div id="outline-container-orgf57a833" class="outline-2">
-<h2 id="orgf57a833"><span class="section-number-2">27</span> multiplicadores de lagrange</h2>
+<div id="outline-container-org78bbda8" class="outline-2">
+<h2 id="org78bbda8"><span class="section-number-2">27</span> multiplicadores de lagrange</h2>
 <div class="outline-text-2" id="text-27">
 <p>
 Los multiplicadores de lagrange nos permiten encontrar valores maximos y minimos de f(x,y) sujeta a una restriccion g(x,y,z) = k, suponiendo que \(\triangledown g \not = 0\) se encuentre en la superficie g(x,y,z) = k, 

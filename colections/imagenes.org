@@ -1,6 +1,7 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/colections/imagenes.org
+#+OPTIONS: \n:t title:nil
 
 #+TITLE: Fotografias
 #+SUBTITLE: Colección

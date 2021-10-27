@@ -1,0 +1,48 @@
+\input texinfo    @c -*- texinfo -*-
+@c %**start of header
+@setfilename ../publish/index.info
+@settitle Galindosoft HQ
+@documentencoding UTF-8
+@documentlanguage es
+@c %**end of header
+
+@finalout
+@titlepage
+@author Galindo
+@end titlepage
+
+@ifnottex
+@node Top
+@top Galindosoft HQ
+
+@image{./status,,,,jpg} @*
+
+@strong{Galindosoft HQ} @*
+
+I may be ugly, but i'm scared. @*
+
+@itemize
+@item
+Sections @*
+@itemize
+@item
+@uref{./apuntes/index.html, Apuntes}  @*
+@item
+@uref{./colections/index.html, Colecciónes}  @*
+@item
+@uref{./blog/index.html, Journal}  @*
+@item
+@uref{./programacion/index.html, Programación}  @*
+@item
+@uref{./blog/friends.html, Amigos} @*
+@end itemize
+@end itemize
+
+@uref{./about.html, About me}  @*
+
+
+@end ifnottex
+
+
+
+@bye

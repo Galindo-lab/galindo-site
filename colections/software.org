@@ -1,10 +1,13 @@
 
 #+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
 #+EXPORT_FILE_NAME: ../publish/colections/software.org
+#+OPTIONS: \n:t title:nil
 
 #+TITLE: Software
-#+SUBTITLE: Colección
 
-* Sistemas algebraicos computacionales
+Matemáticas
 - [[https://www.mediafire.com/file/ll7t6wf0l53ntcl/Eigenmath137.exe/file][Eigenmath 137]] 
 - [[https://www-fourier.ujf-grenoble.fr/~parisse/casio/khicasioen.html][Xcas]] 
+
+Juegos
+- [[https://www.mediafire.com/file/8vnrgzb7e2hz34z/flashplayer.exe/file][Flashplayer]]

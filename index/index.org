@@ -5,50 +5,78 @@
 #+TITLE: Galindosoft HQ
 # #+SUBTITLE: Bienvenido
 
-#+OPTIONS: \n:t 
+#+OPTIONS: \n:t title:nil
 
 #+BEGIN_EXPORT html
 <style>
 
 body {
-text-align: center;
-display: flex;
-align-items: center;
+padding:0;
+max-width: 400px;
+/*text-align: center;*/
+/*display: flex;
  justify-content: center;
+  align-items: center;*/
+
+}
+
+#content {
+display: flex;
+ justify-content: center;
+/*  align-items: center; */
+height: 90vh;
+
+
+  flex-direction: column;
+
 }
 
 #google_translate_element{
    display:block;
-/*    padding-left:14px;*/
 }
 
 .figure-number {
    display: none;
 }
 
+ul {
+list-style-type:none;
+left-padding: 10px ;
+}
+
+li {
+
+}
+
 </style>
 #+END_EXPORT
 
-
-#+attr_latex: :width 256px
-#+ATTR_HTML: :width 256px
-#+CAPTION: I may be ugly, but i'm scared.
+#+BEGIN_CENTER
+#+attr_latex: :width 224px
+#+ATTR_HTML: :width 224px
 [[file:./status.jpg]]
 
+*{{{title}}}*
 
- # [[https://soundcloud.com/user-887296634/freestyle-smc?si=dd3c0976568e4defb9eb311fb351549e][🔥🔥 Visiten el proyeto de compa Eddie.cutthroatt000 🔥🔥]]
+I may be ugly, but i'm scared.
 
+[[./home.html][Entrar]]
 
-[[./apuntes/index.html][Apuntes]] | [[./colections/index.html][Colecciónes]] | [[./blog/index.html][Journal]] |
-[[./programacion/index.html][Programación]] | [[./about.html][About me]] 
+# @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
 
-# [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
-# [[./blog/friends.html][Amigos]]
+# #+END_CENTER
 
-@@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
+#  [[https://soundcloud.com/user-887296634/freestyle-smc?si=dd3c0976568e4defb9eb311fb351549e][🔥🔥 Visiten el proyeto de compa Eddie.cutthroatt000 🔥🔥]]
+# + Sections
+#   - [[./apuntes/index.html][Apuntes]] 
+#   - [[./colections/index.html][Colecciónes]] 
+#   - [[./blog/index.html][Journal]] 
+#   - [[./programacion/index.html][Programación]] 
+#   - [[./blog/friends.html][Amigos]]
+#   - [[./about.html][About me]] 
 
-#+attr_html: :width 88px
-[[./button.png]]
+# #+BEGIN_CENTER
+
 
 #+BEGIN_EXPORT html
  <script defer> 
@@ -64,4 +92,13 @@ align-items: center;
  <div id="google_translate_element"></div>
 #+END_EXPORT
 
+#+END_CENTER
 
+
+# [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
+# 
+
+# @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
+
+# #+attr_html: :width 88px
+# [[./button.png]]
