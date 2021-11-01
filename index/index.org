@@ -48,7 +48,7 @@ left-padding: 10px ;
 I may be ugly, but i'm scared.
 
 #+attr_html: :height 31px
-[[file:button.png]]
+# [[file:button.png]]
 
 [[./home.html][Entrar]]
 
