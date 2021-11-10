@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-11-09 mar 21:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teoría de grafos</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Teoría de grafos
+<br />
+<span class="subtitle">Apuntes</span>
+</h1>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc5ca321">1. Grafos y Multigrafos</a></li>
+<li><a href="#org6830be9">2. Grado de un véritce</a></li>
+<li><a href="#orgf1e9352">3. Grafos isomorfos</a></li>
+<li><a href="#org252d3a2">4. Grafos homeomorfos</a></li>
+<li><a href="#org486441b">5. Caminos y conectividad</a></li>
+<li><a href="#orgfa14a94">6. Distancia y diámetro</a></li>
+<li><a href="#orgc87075d">7. Grafos completos</a></li>
+<li><a href="#orgb62e458">8. Grafos Hamiltonianos en grafos completos</a></li>
+<li><a href="#org3953de6">9. Representación de grafos ponderados con matrices de adyadencia</a></li>
+<li><a href="#org4229646">10. Ejecución del algoritmo del vecino más próximo</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc5ca321" class="outline-2">
+<h2 id="orgc5ca321"><span class="section-number-2">1</span> Grafos y Multigrafos</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Un grafo G consta de dos partes: Un conjunto V cuyos elementos se denominan vértices y un conjunto E de pares no ordenados de vértices distintos llamados aristas de G. 
+</p>
+
+<p>
+La definición formal de un grafo no permite aristas multiples ni lazos, por lo tanto un grafo se define como un multigrafo sin aristas multiples ni lazos. Ejemplos: <br />
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+Si G1(V,E) es el grafo del inciso a), entonces: <br />
+V={A,B,C,D} y E={{A,B},{B,C},{C,D},{A,C},{B,D}}
+</p>
+
+<p>
+Si G2(V,E) es el multigrafo del inciso b), entonces: <br />
+V={A,B,C,D} y E={{A,C},{B,D},{A,D},{B,C},{B,C} ,{D,D}}
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/28.png" alt="28.png" />
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org6830be9" class="outline-2">
+<h2 id="org6830be9"><span class="section-number-2">2</span> Grado de un véritce</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+El grado de un vértice v en un grafo G, se escribe grd(v), es igual al número de aristas en G que contienen a v.
+Teorema: La suma de los grados de los vertices de un graf G es igual el doble del número de aristas n en G. Ejemplos:
+</p>
+
+
+<div class="DEMONSTRATION">
+<p>
+Si G1(V,E) es el grafo del inciso a),  n=5: <br />
+V={A,B,C,D} y E={{A,B},{B,C},{C,D},{A,C},{B,D}} <br />
+grd(A)=2, grd(B)=3, grd(C)=3, grd(D)=2 <br />
+2+3+3+2=10 <br />
+</p>
+
+<p>
+Si G2(V,E) es el multigrafo del inciso b), n=6: <br />
+V={A,B,C,D} y E={{A,C},{B,D},{A,D},{B,C},{B,C} ,{D,D}} <br />
+grd(A)=2, grd(B)=3, grd(C)=3, grd(D)=4 <br />
+2+3+3+4=12 <br />
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/28.png" alt="28.png" /> 
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf1e9352" class="outline-2">
+<h2 id="orgf1e9352"><span class="section-number-2">3</span> Grafos isomorfos</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Los grafos G y G* son isomorfos si existe una correspondencia f:V-&gt;V* tal que {u,v} es una arista de G si y solo si {f(u),f(v)} es una arista de G*.
+</p>
+
+<p>
+Ejemplos: Si llamamos a cada uno de los grafos siguientes A, F, K, &#x2026; podemos encontrar varios pares de grados isomorfos.
+</p>
+
+<div class="DEMONSTRATION">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/29.png" alt="29.png" />
+</p>
+</div>
+</div>
+
+<ul class="org-ul">
+<li>A y R son isomorfos</li>
+<li>K y X son isomorfos</li>
+<li>M, V, S y Z son isomorfos</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org252d3a2" class="outline-2">
+<h2 id="org252d3a2"><span class="section-number-2">4</span> Grafos homeomorfos</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Dado cualquier grafo G, es posible obtener un Nuevo grafo al dividir una arista de G con vertices adicionales. Dos grafos son homeomorfos si es possible obtenerlos a partir del mismo grafo o grafos isomorfos al aplicar este método.
+</p>
+
+<p>
+Ejemplos: Los grafos de los incisos a) y b) son homeomorfos puesto que pueden obtenerse a partir del grafo c) al agregar vertices adicionales
+</p>
+
+<div class="DEMONSTRATION">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/30.png" alt="30.png" />
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org486441b" class="outline-2">
+<h2 id="org486441b"><span class="section-number-2">5</span> Caminos y conectividad</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Un camino en un mutigrafo G consta de una secuencia alternada de vertices y aristas de la forma:
+</p>
+
+<div class="DEMONSTRATION">
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/31.png" alt="31.png" />
+</p>
+</div>
+</div>
+
+
+<dl class="org-dl">
+<dt>Recorrido</dt><dd>es un camino sin aristas repetidas.</dd>
+<dt>Cerrado</dt><dd>es un camino cuyo vértice inicial y final coinciden.</dd>
+<dt>Abierto</dt><dd>es un camino cuyo vértice inicial y final no coinciden.</dd>
+<dt>Ciclo</dt><dd>es un camino simple que además es un camino cerrado.</dd>
+<dt>Simple</dt><dd>es un camino sin vértices repetidos, salvo quizás el primero y el último.</dd>
+<dt>ciclo hamiltoniano</dt><dd>es un ciclo que pasa por todos los vértices del grafo una única vez (en caso que el vértice inicial y final no coinciden, se suele hablar también de camino hamiltoniano).</dd>
+<dt>Ciclo Euleriano</dt><dd>es un ciclo que pasa por todas las aristas del grafo una única vez.</dd>
+</dl>
+
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa14a94" class="outline-2">
+<h2 id="orgfa14a94"><span class="section-number-2">6</span> Distancia y diámetro</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Considere un grafo conexo G, la distancia entre los vertices u y v en G, que se es escribe d(u,v), es la longitude de la ruta más corta entre u y v.
+</p>
+
+<p>
+El diámetro de G diam(G) es la distancia máxima entre dos puntos cualesquiera de G.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc87075d" class="outline-2">
+<h2 id="orgc87075d"><span class="section-number-2">7</span> Grafos completos</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Un grafo G es completo si cualquier vértice G está unido a todos los demás vértices en G. Por tanto, un grafo completo G debe ser conexo. El grafo completo con n vértices se denomina K<sub>n</sub>.
+</p>
+
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+
+<div class="figure">
+<p><img src="./img/32.png" alt="32.png" />
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb62e458" class="outline-2">
+<h2 id="orgb62e458"><span class="section-number-2">8</span> Grafos Hamiltonianos en grafos completos</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Si un grafo G admite un circuito hamiltoniano, entonces G se denomina grafo hamiltoniano. Un circuito hamiltoniano en un grafo G es un camino cerrado que visita todos los vértices en G exactamente una vez
+aunque puede repetir aristas.
+</p>
+</div>
+
+<div id="outline-container-org3807990" class="outline-3">
+<h3 id="org3807990"><span class="section-number-3">8.1</span> Teorema:</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamiltonianos, donde n es el número de vértices del grafo K y no se distingue entre un circuito y su opuesto (es decir, si se invierte el sentido del circuito es el mismo).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3953de6" class="outline-2">
+<h2 id="org3953de6"><span class="section-number-2">9</span> Representación de grafos ponderados con matrices de adyadencia</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Las matrices de adyacencia representan las conexiones entre nodos de un grafo G.</li>
+
+<li>Si un grafo es no ponderado, cada elemento de la matriz tendrá un 1 si la conexión entre nodos existe y un 0 en caso contrario.</li>
+
+<li>Si un grafo es ponderado, cada elemento de la matriz tendrá el peso de la arista si la conexión existe, y se deja vacío si la conexión no existe. Ejemplo:</li>
+</ul>
+
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/33.png" alt="33.png" />
+</p>
+</div>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">#</th>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+<th scope="col" class="org-right">D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-right">∞</td>
+<td class="org-right">3</td>
+<td class="org-right">2</td>
+<td class="org-right">7</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-right">3</td>
+<td class="org-right">∞</td>
+<td class="org-right">5</td>
+<td class="org-right">9</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-right">2</td>
+<td class="org-right">5</td>
+<td class="org-right">∞</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-right">7</td>
+<td class="org-right">9</td>
+<td class="org-right">6</td>
+<td class="org-right">∞</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4229646" class="outline-2">
+<h2 id="org4229646"><span class="section-number-2">10</span> Ejecución del algoritmo del vecino más próximo</h2>
+<div class="outline-text-2" id="text-10">
+<ol class="org-ol">
+<li>elección de un vértice arbitrario respecto al vértice actual.</li>
+<li>descubra la arista de menor peso que ya este conectada al vértice actual y a un vértice no visitado V.</li>
+<li>convierta el vértice actual en V.</li>
+<li>marque V como visitado.</li>
+<li>si todos los vértices del dominio estuvieran visitados, cierre el algoritmo.</li>
+<li>vaya al paso 2.</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

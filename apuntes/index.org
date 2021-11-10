@@ -14,11 +14,13 @@ Apuntes
   - [[./calculo-multivariable.html][Cálculo multivariable]] 
   - [[./matematicas-discretas.html][Matemáticas discretas]] 
   - [[./teoria-de-conjuntos.html][Teoria de conjuntos]]
+  - [[./teoria-de-grafos.org][Teoría de grafos]]
   - [[./matrices.html][Matrices]]
   - [[./circuitos-electricos.html][Circuitos Eléctricos]]
   - [[./ecuaciones-diferenciales.html][Ecuaciones diferenciales]]
   - [[./notacion-ingenieria.html][Notacion ingenieria]]
   - [[./identidades-trigonometricas.html][Identidades trigonometricas]]
+
 
 Formularios
   - [[https://www.mediafire.com/file/ev3jzfvgc5on7uf/Formulario-calculo.pdf/file][Cálculo Integral y Diferencial]]
