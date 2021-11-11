@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2021-11-09 mar 21:36 -->
+<!-- 2021-11-10 mié 22:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Teoría de grafos</title>
@@ -31,22 +31,29 @@
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc5ca321">1. Grafos y Multigrafos</a></li>
-<li><a href="#org6830be9">2. Grado de un véritce</a></li>
-<li><a href="#orgf1e9352">3. Grafos isomorfos</a></li>
-<li><a href="#org252d3a2">4. Grafos homeomorfos</a></li>
-<li><a href="#org486441b">5. Caminos y conectividad</a></li>
-<li><a href="#orgfa14a94">6. Distancia y diámetro</a></li>
-<li><a href="#orgc87075d">7. Grafos completos</a></li>
-<li><a href="#orgb62e458">8. Grafos Hamiltonianos en grafos completos</a></li>
-<li><a href="#org3953de6">9. Representación de grafos ponderados con matrices de adyadencia</a></li>
-<li><a href="#org4229646">10. Ejecución del algoritmo del vecino más próximo</a></li>
+<li><a href="#org2e43a54">1. Grafos y Multigrafos</a></li>
+<li><a href="#orgf22d1c1">2. Grado de un véritce</a></li>
+<li><a href="#orgdc7c510">3. Grafos isomorfos</a></li>
+<li><a href="#org99068ec">4. Grafos homeomorfos</a></li>
+<li><a href="#org95fc4be">5. Caminos y conectividad</a></li>
+<li><a href="#org5445a3b">6. Distancia y diámetro</a></li>
+<li><a href="#org4f95631">7. Grafos completos</a></li>
+<li><a href="#orgfcdddfd">8. Grafos Hamiltonianos en grafos completos</a></li>
+<li><a href="#org5b55bb1">9. Representación de grafos ponderados con matrices de adyadencia</a></li>
+<li><a href="#orga68aea1">10. Ejecución del algoritmo del vecino más próximo</a></li>
+<li><a href="#org40254b1">11. Árboles</a></li>
+<li><a href="#org88a007c">12. Bosques</a></li>
+<li><a href="#org6f31911">13. Árbol de expansión</a></li>
+<li><a href="#org4bdffd5">14. Algoritmo de expancion minima (Kruskal)</a></li>
+<li><a href="#orgec43ba3">15. Algoritmo de Kurskal inverso</a></li>
+<li><a href="#org267adff">16. Ejemplo de la ejecución del algoritmo Kurskal inverso</a></li>
+<li><a href="#org5733ec0">17. Ejemplo de la ejecución del algoritmo Kurskal</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc5ca321" class="outline-2">
-<h2 id="orgc5ca321"><span class="section-number-2">1</span> Grafos y Multigrafos</h2>
+<div id="outline-container-org2e43a54" class="outline-2">
+<h2 id="org2e43a54"><span class="section-number-2">1</span> Grafos y Multigrafos</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Un grafo G consta de dos partes: Un conjunto V cuyos elementos se denominan vértices y un conjunto E de pares no ordenados de vértices distintos llamados aristas de G. 
@@ -80,8 +87,8 @@ V={A,B,C,D} y E={{A,C},{B,D},{A,D},{B,C},{B,C} ,{D,D}}
 </div>
 
 
-<div id="outline-container-org6830be9" class="outline-2">
-<h2 id="org6830be9"><span class="section-number-2">2</span> Grado de un véritce</h2>
+<div id="outline-container-orgf22d1c1" class="outline-2">
+<h2 id="orgf22d1c1"><span class="section-number-2">2</span> Grado de un véritce</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 El grado de un vértice v en un grafo G, se escribe grd(v), es igual al número de aristas en G que contienen a v.
@@ -116,8 +123,8 @@ grd(A)=2, grd(B)=3, grd(C)=3, grd(D)=4 <br />
 </div>
 </div>
 
-<div id="outline-container-orgf1e9352" class="outline-2">
-<h2 id="orgf1e9352"><span class="section-number-2">3</span> Grafos isomorfos</h2>
+<div id="outline-container-orgdc7c510" class="outline-2">
+<h2 id="orgdc7c510"><span class="section-number-2">3</span> Grafos isomorfos</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Los grafos G y G* son isomorfos si existe una correspondencia f:V-&gt;V* tal que {u,v} es una arista de G si y solo si {f(u),f(v)} es una arista de G*.
@@ -146,8 +153,8 @@ Ejemplos: Si llamamos a cada uno de los grafos siguientes A, F, K, &#x2026; pode
 </div>
 </div>
 
-<div id="outline-container-org252d3a2" class="outline-2">
-<h2 id="org252d3a2"><span class="section-number-2">4</span> Grafos homeomorfos</h2>
+<div id="outline-container-org99068ec" class="outline-2">
+<h2 id="org99068ec"><span class="section-number-2">4</span> Grafos homeomorfos</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Dado cualquier grafo G, es posible obtener un Nuevo grafo al dividir una arista de G con vertices adicionales. Dos grafos son homeomorfos si es possible obtenerlos a partir del mismo grafo o grafos isomorfos al aplicar este método.
@@ -170,8 +177,8 @@ Ejemplos: Los grafos de los incisos a) y b) son homeomorfos puesto que pueden ob
 </div>
 </div>
 
-<div id="outline-container-org486441b" class="outline-2">
-<h2 id="org486441b"><span class="section-number-2">5</span> Caminos y conectividad</h2>
+<div id="outline-container-org95fc4be" class="outline-2">
+<h2 id="org95fc4be"><span class="section-number-2">5</span> Caminos y conectividad</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Un camino en un mutigrafo G consta de una secuencia alternada de vertices y aristas de la forma:
@@ -202,8 +209,8 @@ Un camino en un mutigrafo G consta de una secuencia alternada de vertices y aris
 </div>
 
 
-<div id="outline-container-orgfa14a94" class="outline-2">
-<h2 id="orgfa14a94"><span class="section-number-2">6</span> Distancia y diámetro</h2>
+<div id="outline-container-org5445a3b" class="outline-2">
+<h2 id="org5445a3b"><span class="section-number-2">6</span> Distancia y diámetro</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Considere un grafo conexo G, la distancia entre los vertices u y v en G, que se es escribe d(u,v), es la longitude de la ruta más corta entre u y v.
@@ -216,8 +223,8 @@ El diámetro de G diam(G) es la distancia máxima entre dos puntos cualesquiera 
 </div>
 
 
-<div id="outline-container-orgc87075d" class="outline-2">
-<h2 id="orgc87075d"><span class="section-number-2">7</span> Grafos completos</h2>
+<div id="outline-container-org4f95631" class="outline-2">
+<h2 id="org4f95631"><span class="section-number-2">7</span> Grafos completos</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 Un grafo G es completo si cualquier vértice G está unido a todos los demás vértices en G. Por tanto, un grafo completo G debe ser conexo. El grafo completo con n vértices se denomina K<sub>n</sub>.
@@ -238,8 +245,8 @@ Un grafo G es completo si cualquier vértice G está unido a todos los demás v�
 </div>
 </div>
 
-<div id="outline-container-orgb62e458" class="outline-2">
-<h2 id="orgb62e458"><span class="section-number-2">8</span> Grafos Hamiltonianos en grafos completos</h2>
+<div id="outline-container-orgfcdddfd" class="outline-2">
+<h2 id="orgfcdddfd"><span class="section-number-2">8</span> Grafos Hamiltonianos en grafos completos</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Si un grafo G admite un circuito hamiltoniano, entonces G se denomina grafo hamiltoniano. Un circuito hamiltoniano en un grafo G es un camino cerrado que visita todos los vértices en G exactamente una vez
@@ -247,8 +254,8 @@ aunque puede repetir aristas.
 </p>
 </div>
 
-<div id="outline-container-org3807990" class="outline-3">
-<h3 id="org3807990"><span class="section-number-3">8.1</span> Teorema:</h3>
+<div id="outline-container-orga40854a" class="outline-3">
+<h3 id="orga40854a"><span class="section-number-3">8.1</span> Teorema:</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamiltonianos, donde n es el número de vértices del grafo K y no se distingue entre un circuito y su opuesto (es decir, si se invierte el sentido del circuito es el mismo).
@@ -257,15 +264,15 @@ Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamil
 </div>
 </div>
 
-<div id="outline-container-org3953de6" class="outline-2">
-<h2 id="org3953de6"><span class="section-number-2">9</span> Representación de grafos ponderados con matrices de adyadencia</h2>
+<div id="outline-container-org5b55bb1" class="outline-2">
+<h2 id="org5b55bb1"><span class="section-number-2">9</span> Representación de grafos ponderados con matrices de adyadencia</h2>
 <div class="outline-text-2" id="text-9">
 <ul class="org-ul">
 <li>Las matrices de adyacencia representan las conexiones entre nodos de un grafo G.</li>
 
-<li>Si un grafo es no ponderado, cada elemento de la matriz tendrá un 1 si la conexión entre nodos existe y un 0 en caso contrario.</li>
+<li>Si un grafo es <b>no ponderado</b>, cada elemento de la matriz tendrá un 1 si la conexión entre nodos existe y un 0 en caso contrario.</li>
 
-<li>Si un grafo es ponderado, cada elemento de la matriz tendrá el peso de la arista si la conexión existe, y se deja vacío si la conexión no existe. Ejemplo:</li>
+<li>Si un grafo es <b>ponderado</b>, cada elemento de la matriz tendrá el peso de la arista si la conexión existe, y se deja vacío si la conexión no existe. Ejemplo:</li>
 </ul>
 
 <div class="DEMONSTRATION">
@@ -276,7 +283,7 @@ Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamil
 <div class="org-center">
 
 <div class="figure">
-<p><img src="./img/33.png" alt="33.png" />
+<p><img src="./img/33.png" alt="33.png" width="384px" align="center" />
 </p>
 </div>
 </div>
@@ -343,9 +350,13 @@ Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamil
 </div>
 </div>
 
-<div id="outline-container-org4229646" class="outline-2">
-<h2 id="org4229646"><span class="section-number-2">10</span> Ejecución del algoritmo del vecino más próximo</h2>
+<div id="outline-container-orga68aea1" class="outline-2">
+<h2 id="orga68aea1"><span class="section-number-2">10</span> Ejecución del algoritmo del vecino más próximo</h2>
 <div class="outline-text-2" id="text-10">
+<p>
+Este método genera rápidamente un camino Hamiltoniano de peso minimo pero no ideal.
+</p>
+
 <ol class="org-ol">
 <li>elección de un vértice arbitrario respecto al vértice actual.</li>
 <li>descubra la arista de menor peso que ya este conectada al vértice actual y a un vértice no visitado V.</li>
@@ -354,6 +365,291 @@ Un grafo completo K n con n&gt;=3 vértices tiene \(H=(n-1)!/2\) circuitos hamil
 <li>si todos los vértices del dominio estuvieran visitados, cierre el algoritmo.</li>
 <li>vaya al paso 2.</li>
 </ol>
+</div>
+</div>
+
+<div id="outline-container-org40254b1" class="outline-2">
+<h2 id="org40254b1"><span class="section-number-2">11</span> Árboles</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+El árbol es un grafo no dirigido conectado con circuitos no simples; además, no contiene arcos múltiples, con la propiedad de que hay un único camino simple entre cada par de vértices, teniendo el siguiente teorema:
+</p>
+
+<blockquote>
+<p>
+“Un grafo no dirigido es un árbol si y solo si hay un camino simple único entre cualesquiera dos de sus vértices”.
+</p>
+</blockquote>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/34.png" alt="34.png" width="384px" align="center" />
+</p>
+<p><span class="figure-number">Figura 8: </span>Grafo 1, 2 y 3.</p>
+</div>
+</div>
+
+<p>
+Si se observan los siguientes grafos, se concluye que el grafo G<sub>1</sub> no es un árbol porque se observa un circuito simple, pero los grafos G<sub>2</sub> Y G<sub>3</sub>  son de árboles, porque están conectados con circuitos no simples.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org88a007c" class="outline-2">
+<h2 id="org88a007c"><span class="section-number-2">12</span> Bosques</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+existen grafos que no tienen conexión y podría existir confusión el pensar que un árbol es un grafo conectado que tiene circuitos no simples, pero es importante mencionar que existen árboles del tipo que contienen circuitos no simples que no necesariamente están conectados, y esos árboles reciben el nombre de bosques, cuya característica es que cada uno de sus componentes conectados es un árbol.
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/35.png" alt="35.png" width="384px" align="center" />
+</p>
+<p><span class="figure-number">Figura 9: </span>Bosques 1 y 2.</p>
+</div>
+</div>
+
+<p>
+<a href="https://sites.google.com/site/discretas27/unidad-6-arboles">Más informacion sobre arboles</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6f31911" class="outline-2">
+<h2 id="org6f31911"><span class="section-number-2">13</span> Árbol de expansión</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+un subgrafo se le concidera un arbol de expancion (T) de un grafo (G) si T incluye todos los vertices de G.
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/36.png" alt="36.png" width="384px" align="center" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4bdffd5" class="outline-2">
+<h2 id="org4bdffd5"><span class="section-number-2">14</span> Algoritmo de expancion minima (Kruskal)</h2>
+<div class="outline-text-2" id="text-14">
+<ol class="org-ol">
+<li>Las aristas de G se disponen en orden creciente de peso.</li>
+<li>Se empieza sślo como los vértices de G y en forma secuencial se agrega cada artista que no origine un ciclo hasta que se haya agregado n-1.</li>
+<li>Salir.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgec43ba3" class="outline-2">
+<h2 id="orgec43ba3"><span class="section-number-2">15</span> Algoritmo de Kurskal inverso</h2>
+<div class="outline-text-2" id="text-15">
+<ol class="org-ol">
+<li>Las aristas de G se disponen en orden decreciente de peso.</li>
+<li>Se procede secuecialmente para eliminar cada arista que no haga inconexo al grafo, hasta que queden n-1 aristas.</li>
+<li>Salir.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org267adff" class="outline-2">
+<h2 id="org267adff"><span class="section-number-2">16</span> Ejemplo de la ejecución del algoritmo Kurskal inverso</h2>
+<div class="outline-text-2" id="text-16">
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/37.png" alt="37.png" width="220px" align="center" />
+</p>
+</div>
+</div>
+
+<p>
+Aquí se aplica el algoritmo 82. Primero se ordenen las aristas en orden decreciente de peso y luego en forma consecutiva se eliminan las aristas sin hacer inco-nexo a Q hasta que queden cinco aristas. Así se obtienen los datos siguientes:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Aristas</td>
+<td class="org-left">BC</td>
+<td class="org-left">AF</td>
+<td class="org-left">AC</td>
+<td class="org-left">BE</td>
+<td class="org-left">CE</td>
+<td class="org-left">BF</td>
+<td class="org-left">AE</td>
+<td class="org-left">DF</td>
+<td class="org-left">BD</td>
+</tr>
+
+<tr>
+<td class="org-left">Peso</td>
+<td class="org-left">8</td>
+<td class="org-left">7</td>
+<td class="org-left">7</td>
+<td class="org-left">7</td>
+<td class="org-left">6</td>
+<td class="org-left">5</td>
+<td class="org-left">4</td>
+<td class="org-left">4</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliminar</td>
+<td class="org-left">si</td>
+<td class="org-left">si</td>
+<td class="org-left">si</td>
+<td class="org-left">no</td>
+<td class="org-left">no</td>
+<td class="org-left">si</td>
+<td class="org-left">nil</td>
+<td class="org-left">nil</td>
+<td class="org-left">nil</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/39.png" alt="39.png" width="220px" align="center" />
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5733ec0" class="outline-2">
+<h2 id="org5733ec0"><span class="section-number-2">17</span> Ejemplo de la ejecución del algoritmo Kurskal</h2>
+<div class="outline-text-2" id="text-17">
+<div class="DEMONSTRATION">
+<p>
+
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/37.png" alt="37.png" width="220px" align="center" />
+</p>
+</div>
+</div>
+
+<p>
+Aquí se aplica el algoritmo 8.3. Primero se ordenan las aristas en orden creciente de peso y enseguida se agregan las aristas sin formar ningún ciclo hasta que se incluyen cinco aristas. Asi se obtienen los datos siguientes.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Aristas</td>
+<td class="org-left">BD</td>
+<td class="org-left">AE</td>
+<td class="org-left">DF</td>
+<td class="org-left">BF</td>
+<td class="org-left">CE</td>
+<td class="org-left">AC</td>
+<td class="org-left">Af</td>
+<td class="org-left">BE</td>
+<td class="org-left">BC</td>
+</tr>
+
+<tr>
+<td class="org-left">Peso</td>
+<td class="org-left">3</td>
+<td class="org-left">4</td>
+<td class="org-left">4</td>
+<td class="org-left">5</td>
+<td class="org-left">6</td>
+<td class="org-left">7</td>
+<td class="org-left">7</td>
+<td class="org-left">7</td>
+<td class="org-left">8</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliminar</td>
+<td class="org-left">si</td>
+<td class="org-left">si</td>
+<td class="org-left">si</td>
+<td class="org-left">no</td>
+<td class="org-left">si</td>
+<td class="org-left">no</td>
+<td class="org-left">si</td>
+<td class="org-left">nil</td>
+<td class="org-left">nil</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/40.png" alt="40.png" width="220px" align="center" />
+</p>
+</div>
+</div>
+
+</div>
 </div>
 </div>
 </div>

@@ -120,13 +120,14 @@ Un grafo completo K n con n>=3 vértices tiene \(H=(n-1)!/2\) circuitos hamilton
 * Representación de grafos ponderados con matrices de adyadencia
 - Las matrices de adyacencia representan las conexiones entre nodos de un grafo G.
 
-- Si un grafo es no ponderado, cada elemento de la matriz tendrá un 1 si la conexión entre nodos existe y un 0 en caso contrario.
+- Si un grafo es *no ponderado*, cada elemento de la matriz tendrá un 1 si la conexión entre nodos existe y un 0 en caso contrario.
 
-- Si un grafo es ponderado, cada elemento de la matriz tendrá el peso de la arista si la conexión existe, y se deja vacío si la conexión no existe. Ejemplo:
+- Si un grafo es *ponderado*, cada elemento de la matriz tendrá el peso de la arista si la conexión existe, y se deja vacío si la conexión no existe. Ejemplo:
 
 #+BEGIN_DEMONSTRATION
 
 #+BEGIN_CENTER
+#+ATTR_HTML: :width 384px :align center
 [[./img/33.png]]
 #+END_CENTER
 
@@ -140,9 +141,99 @@ Un grafo completo K n con n>=3 vértices tiene \(H=(n-1)!/2\) circuitos hamilton
 #+END_DEMONSTRATION
 
 * Ejecución del algoritmo del vecino más próximo
+Este método genera rápidamente un camino Hamiltoniano de peso minimo pero no ideal.
+
 1. elección de un vértice arbitrario respecto al vértice actual.
 2. descubra la arista de menor peso que ya este conectada al vértice actual y a un vértice no visitado V.
 3. convierta el vértice actual en V.
 4. marque V como visitado.
 5. si todos los vértices del dominio estuvieran visitados, cierre el algoritmo.
 6. vaya al paso 2.
+
+* Árboles
+El árbol es un grafo no dirigido conectado con circuitos no simples; además, no contiene arcos múltiples, con la propiedad de que hay un único camino simple entre cada par de vértices, teniendo el siguiente teorema:
+
+#+BEGIN_QUOTE
+“Un grafo no dirigido es un árbol si y solo si hay un camino simple único entre cualesquiera dos de sus vértices”.
+#+END_QUOTE
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 384px :align center
+#+caption: Grafo 1, 2 y 3.
+[[./img/34.png]]
+#+END_CENTER
+
+Si se observan los siguientes grafos, se concluye que el grafo G_1 no es un árbol porque se observa un circuito simple, pero los grafos G_2 Y G_3  son de árboles, porque están conectados con circuitos no simples.
+
+* Bosques
+existen grafos que no tienen conexión y podría existir confusión el pensar que un árbol es un grafo conectado que tiene circuitos no simples, pero es importante mencionar que existen árboles del tipo que contienen circuitos no simples que no necesariamente están conectados, y esos árboles reciben el nombre de bosques, cuya característica es que cada uno de sus componentes conectados es un árbol.
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 384px :align center
+#+caption: Bosques 1 y 2.
+[[./img/35.png]]
+#+END_CENTER
+
+[[https://sites.google.com/site/discretas27/unidad-6-arboles][Más informacion sobre arboles]]
+
+* Árbol de expansión
+un subgrafo se le concidera un arbol de expancion (T) de un grafo (G) si T incluye todos los vertices de G.
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 384px :align center
+[[./img/36.png]]
+#+END_CENTER
+
+* Algoritmo de expancion minima (Kruskal)
+1. Las aristas de G se disponen en orden creciente de peso.
+2. Se empieza sślo como los vértices de G y en forma secuencial se agrega cada artista que no origine un ciclo hasta que se haya agregado n-1.
+3. Salir.
+
+* Algoritmo de Kurskal inverso 
+1. Las aristas de G se disponen en orden decreciente de peso.
+2. Se procede secuecialmente para eliminar cada arista que no haga inconexo al grafo, hasta que queden n-1 aristas.
+3. Salir.
+
+* Ejemplo de la ejecución del algoritmo Kurskal inverso 
+
+#+BEGIN_DEMONSTRATION
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 220px :align center
+[[./img/37.png]]
+#+END_CENTER
+
+Aquí se aplica el algoritmo 82. Primero se ordenen las aristas en orden decreciente de peso y luego en forma consecutiva se eliminan las aristas sin hacer inco-nexo a Q hasta que queden cinco aristas. Así se obtienen los datos siguientes:
+
+| Aristas  | BC | AF | AC | BE | CE | BF | AE  | DF  | BD  |
+| Peso     | 8  | 7  | 7  | 7  | 6  | 5  | 4   | 4   | 3   |
+| Eliminar | si | si | si | no | no | si | nil | nil | nil |
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 220px :align center
+[[./img/39.png]]
+#+END_CENTER
+
+#+END_DEMONSTRATION
+
+* Ejemplo de la ejecución del algoritmo Kurskal
+
+#+BEGIN_DEMONSTRATION
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 220px :align center
+[[./img/37.png]]
+#+END_CENTER
+
+Aquí se aplica el algoritmo de kurskal Primero se ordenan las aristas en orden creciente de peso y enseguida se agregan las aristas sin formar ningún ciclo hasta que se incluyen cinco aristas. Asi se obtienen los datos siguientes.
+
+| Aristas  | BD | AE | DF | BF | CE | AC | Af | BE  | BC  |
+| Peso     | 3  | 4  | 4  | 5  | 6  | 7  | 7  | 7   | 8   |
+| Eliminar | si | si | si | no | si | no | si | nil | nil |
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 220px :align center
+[[./img/40.png]]
+#+END_CENTER
+
+#+END_DEMONSTRATION
