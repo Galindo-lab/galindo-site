@@ -7,6 +7,12 @@
 #+SUBTITLE: Blog 
 #+DATE:     [2021-06-02 mié]
 
+* Noviembre
+** [2021-11-11 jue]
+La ultima semana ha sido un poco complicada, he estado estudiando para matematicas discretas por que hoy es el examen esta materia me pone muy nerviso por que la profesora no entrega calificaciones. Tambien he estado programando un poco, hice la interfaz grafica para eigenmath y tambien una aplicacion movil. 
+
+Ya paso el examen tengo 43.5% eso es preocupante, esta es la primera calificacion en el semestre en esta materia Me desespera mucho no poder saber mis calificaciones. 
+
 * Octubre
 ** [2021-10-27 mié]
 Estaba pensando en todo lo que quiero hacer, una de las cosas que siempre he querido hacer es tener un amigo de cada parte del mundo, pero luego mi cabeza se puso a divagar y termine pensando ¿cuanto tiempo me llevaria hablar con cada persona en el mundo?, bueno a fecha de hoy y segun la incuestionable verdad de el [[https://www.saberespractico.com/curiosidades/cuantas-personas-hay-en-el-mundo-actualmente/][primer resultado de google]] hay 7700 millones de personas en el mundo, bueno si aplicamos la tecnica de [[https://youtu.be/aQ5R7c2xZuQ][Ned McDodd]] y hablo con cada persona por 12 segundoos eso seria:
