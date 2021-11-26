@@ -8,12 +8,22 @@
 #+DATE:     [2021-06-02 mié]
 
 * Noviembre
+** [2021-11-26 vie]
+Esta sera una entrada muy rapida, no tengo mucho tiempo y si no la hago hoy no la voy a hacer nunca, de nuevo como en entradas anteriores he estado teniendo problemas con mis trabajos en circuitos electronicos he podido hacer correcciones pero aun asi no sera suficiente para pasar el semestre.
+
 ** [2021-11-11 jue]
 La ultima semana ha sido un poco complicada, he estado estudiando para matematicas discretas por que hoy es el examen esta materia me pone muy nerviso por que la profesora no entrega calificaciones. Tambien he estado programando un poco, hice la interfaz grafica para eigenmath y tambien una aplicacion movil. 
 
 Ya paso el examen tengo 43.5% eso es preocupante, esta es la primera calificacion en el semestre en esta materia Me desespera mucho no poder saber mis calificaciones. 
 
 * Octubre
+** [2021-10-28 jue]
+Hay días que realmente me hacen sentir como si me hubieran maldecido parece que no tenga ni un dia de suerte desde hace meses, me siento afortunado si un dia simplemente no pasa nada y no me dan alguna mala noticia o algún trabajo atrasado decide asomar su fea cabeza. 
+
+Hoy teníamos que entregar la práctica de circuitos eléctricos pero uno de mis compañeros se quedo sin internet por lo que tuvimos que enviar la práctica con 6 horas de atraso, luego pasé toda la tarde adelantando trabajo de la próxima semana pero hace un par de minutos me avisen que tenemos examen mañana, ya es mas de las 23:00 y no he estudiado nada.  Poner esta clase de cosas por escrito me ayuda un poco a controlarme quizás me ayuda a ordenar mis pensamientos. 
+
+Acabo de morder mi mano y me ha invadido un sentimiento de nostalgia, siempre he sido una persona muy nerviosa y cuando era niño yo solía morder mi mano cuando estaba muy nervioso, según yo eso no lo hacía desde que tenía 8 años, bueno supongo que algunas cosas simplemente no las dejas atrás. Un recuerdo muy vívido que tengo es cuando iba a la primaria y madres me regaño mientras estábamos en el carro en el estacionamiento de una tienda, me había estado mordiendo la parte que une el pulgar con la palma de la mano, no recuerdo a detalle que me dijo mi madre pero todavía de pensar en eso me pongo nervioso como si me fueran a regañar en este momento. 
+
 ** [2021-10-27 mié]
 Estaba pensando en todo lo que quiero hacer, una de las cosas que siempre he querido hacer es tener un amigo de cada parte del mundo, pero luego mi cabeza se puso a divagar y termine pensando ¿cuanto tiempo me llevaria hablar con cada persona en el mundo?, bueno a fecha de hoy y segun la incuestionable verdad de el [[https://www.saberespractico.com/curiosidades/cuantas-personas-hay-en-el-mundo-actualmente/][primer resultado de google]] hay 7700 millones de personas en el mundo, bueno si aplicamos la tecnica de [[https://youtu.be/aQ5R7c2xZuQ][Ned McDodd]] y hablo con cada persona por 12 segundoos eso seria:
 
@@ -42,6 +52,11 @@ Maldita sea, estoy harto de mi profesora de electricidad, tenemos 3 meses aguant
 Ya casi vamos a la mitad del mes y yo no he hecho ninguna entrada en el blog, bueno tampoco es que haya pasado nada interesante durante este tiempo, me han estado dejando mucha tarea de circuitos electronicos, tengo que corregir trabajos y poco mas, fuera de eso todo ha estado normal.
 
 * Septiembre
+** [2021-09-07 mar]
+Seguimos hacia abajo al menos pude tomar la video conferencia para iniciar mi servicio social. Pero olvide hacer mi examen de "Tecnología y sociedad"  tengo 35.5, no se si pueda pasar, me siento completamente fuera de mi. 
+
+Pienso que quizá pasar tanto tiempo bajo presión ya me ha pasado factura, desde segundo semestre me he dado cuenta que ya no puedo manejar mi temperamento, paso de estar tranquilo a querer romperlo todo en menos de un segundo. Mi cabeza esta dando vueltas otra vez.
+
 ** [2021-09-26 dom]
 Ayer me pusieron la vacuna que me faltaba, ahora si ya estoy en regla para viajar, solo tengo que sacar mi documento para demostrar que ya estoy vacunado. Tambien estoy aprendiendo un nuevo lenguaje Racket, es muy interesante es un lenguaje LISP, estaba buscando un lenguaje así para poder empezar a familiarizarme con este tipo de lenguajes, osea trabajo con elisp pero realmente no lo conozco a detalle solo lo minimo para poder trabajar con emacs.
 
