@@ -2,54 +2,40 @@
 #+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
 #+EXPORT_FILE_NAME: ../publish/index.html
 
-#+TITLE: Galindosoft HQ
-# #+SUBTITLE: Bienvenido
+#+TITLE: Galindosoft
+#+options: title:nil \n:t
 
-#+OPTIONS: \n:t title:nil
 
 #+BEGIN_EXPORT html
 <style>
-
-body {
-padding:0;
-max-width: 400px;
+#content {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  flex-direction: column;
+  text-align: center;
 }
 
 #content {
-display: flex;
- justify-content: center;
-height: 90vh;
-  flex-direction: column;
+  border: 0px solid white;
+}
+
+#content:after {
+    content: "";
+    margin: 0;
 }
 
 #google_translate_element{
-   display:block;
+    display:block;
 }
-
-.figure-number {
-   display: none;
-}
-
-ul {
-list-style-type:none;
-left-padding: 10px ;
-}
-
 </style>
 #+END_EXPORT
 
-#+BEGIN_CENTER
-#+attr_latex: :width 224px
+
 #+ATTR_HTML: :width 224px
-[[file:./status.jpg]]
+[[./img/status.png]]
 
 *{{{title}}}*
-
-I may be ugly, but i'm scared.
-
-#+attr_html: :height 31px
-# [[file:button.png]]
-
 [[./home.html][Entrar]]
 
 #+BEGIN_EXPORT html
@@ -65,14 +51,3 @@ I may be ugly, but i'm scared.
 
  <div id="google_translate_element"></div>
 #+END_EXPORT
-
-#+END_CENTER
-
-
-# [[http://users3.smartgb.com/g/g.php?a=s&i=g36-32497-09][guestbook]] 
-# 
-
-# @@html:<a href="#" onclick="switchTheme()"> Invert colors </a>@@
-
-# #+attr_html: :width 88px
-# [[./button.png]]

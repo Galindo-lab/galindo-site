@@ -1,129 +1,83 @@
 
-@import "themes.css";
+:root {
+    --background: #F7F7F7;
+    --color: #2A2A2A;
+    --url:#0068E0;    
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap'); 
+.light {
+    --background: #F7F7F7;
+    --color: #2A2A2A;
+    --url:#0068E0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.dark {
+    --background: #2A2A2A;
+    --color: #F7F7F7;
+    --url:#A0A0A0;
+}
+
 
 body {
-    background-color: var(--bg) ;
-    color: var(--font);
+    background-color: var(--background);
     margin: 0em auto;
-    margin-bottom: 0;
-    max-width: 40rem;
-    padding: 16px;
-    font-size: 15px;
-    line-height: 1.4;
-    font-family:'Fira Code';
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.todo, .TODO {
-    color: var(--todo);
-}
-
-
-
-.done, .DONE {
-    color: var(--done);
-}
-
-p {
-    display: block;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.footpara {
-    display: inline;
-    margin: 0;
-}
-
-.footdef {
-    margin-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Roboto Slab';
-    font-weight: 400;
-}
-
-.outline-2 {
-    margin-top: 3em;
-}
-
-#org-div-home-and-up {
-    text-align: right;
-    display: none;
-}
-
-.src, .DEMONSTRATION, .example {
-    border: 1px solid var(--color0);
-    margin-top: 16px ;
-    margin-bottom: 16px ;
-    padding: 8px;
-    overflow: auto;
-    box-shadow: 3px 3px 3px var(--color1);
-}
-
-.org-center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-
-table, tr, td {
-
-    border: 1px inset var(--color0);
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-table {
-    /* width: 100%; */
-   display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-    /* border: 0 solid var(--font); */
-        border: 0;
-}
-
-dt{
-    font-weight: bold;
-}
-
-dd{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-ul  { 
-    /* list-style-type: "|> "; */
-    /* list-style-type: "├ "; */
-    margin: 3px;
-    /* padding-left: 20px; */
-} 
-
-li {
-    /* margin-top: 0.5em ; */
-    margin-top: -2px;
-}
-
-li:last-child {
-    /* list-style-type: "└ ";     */
+    width: 100vw;
+    max-width: 45em;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: var(--color);
 }
 
 .subtitle {
-    display:none;
-    font-size: medium;
+  font-size: 0.7em;
+  background-color: var(--color);
+  color: var(--background);
+}
+
+.subtitle:before, .subtitle:after {
+    content: " ❁ ";
+    margin: 6px;
+}
+
+#org-div-home-and-up {
+    margin: 10px;
+    display: none;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#content:after {
+    content: "꧁꧂";
+    margin: 30px;
+}
+
+.outline-2, #table-of-contents {
+    width: 100%;
+    margin: 10px;
+}
+
+.org-center {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+  width: 100%; 
+  text-align: center;
+  margin: 40px;
+  font-weight: normal;
+}
+
+
+h2, h3, h4, h5 {
     font-weight: bold;
-    margin-top: 0;
+    font-size: 16px ;
 }
 
 a {
@@ -135,37 +89,34 @@ a:hover {
     text-decoration: underline;    
 }
 
-/* blockquote::first-letter { */
-/*     font-size: 3em; */
-/* } */
-
-blockquote:before {
-    content: open-quote;
-    float: left;
-    font-size: 2em;
+mjx-container {
+    margin-top: 10em ;
 }
 
-blockquote {
-margin: 0;
-}
-
-blockquote > p {
-    font-family: Times New Roman,Times,Arial;
-    margin-inline-start: 2em;
-    margin-inline-end: 2em;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 1em;
-}
-
+/* Google Translate Overrides */
 #google_translate_element{
     display:none;
 }
 
-/* Google Translate Overrides */
 html, body{
     min-height: 0!important;
     height: auto!important;
     position: inherit!important;
 }
 
+
+
+
+hr {
+    border-top: solid var(--color) 1px;
+    background-color: var(--color);
+    margin: 50px 0;
+}
+hr:after {
+    content: "oOo";
+    left: 50%;
+    position: absolute;
+    transform: translateY(-60%) translateX(-50%);
+    background: var(--background);
+    padding: 0 10px 0 10px;
+}
