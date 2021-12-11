@@ -7,6 +7,21 @@
 #+SUBTITLE: Blog 
 #+DATE:     [2021-06-02 mié]
 
+* Diciembre
+** [2021-12-11 sáb]
+El semestre termino, pase todas mis materias mis calificaciones fueron:
+
+| Materia                       | Calificación |
+|-------------------------------+--------------|
+| Ecuaciones diferenciales (78) |           80 |
+| Calculo multivariable         |           88 |
+| Circuitos Electricos          |         70.8 |
+| Matematicas Discretas         |           84 |
+| Sociedad y Valores            |           86 |
+
+Quizá estas vacaciones hago un intersemestral, así que no creo que pueda descansar todo lo que me gustaría también contesegui una ayudantía docente, simplificando tengo que hacer textos para ayudar a mis compañeros a entender los temas de calculo multivariable, también puedo hacer programas para ayudar a mis compañeros. 
+Eso es lo que ha estado pasando conmigo estos días, la verdad es que me siento muy contento con mis resultados pero aun así creo que algo no esta bien este semestre he tenido mucho tiempo para pensar varias cosas sobre mi carrera, quizá luego escriba algo al respecto ahora mismo no me siento con ganas para hacerlo.
+
 * Noviembre
 ** [2021-11-26 vie]
 Esta sera una entrada muy rapida, no tengo mucho tiempo y si no la hago hoy no la voy a hacer nunca, de nuevo como en entradas anteriores he estado teniendo problemas con mis trabajos en circuitos electronicos he podido hacer correcciones pero aun asi no sera suficiente para pasar el semestre.
