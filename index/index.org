@@ -34,20 +34,19 @@
 
 #+ATTR_HTML: :width 224px
 [[./img/status.png]]
-
 *{{{title}}}*
 [[./home.html][Entrar]]
 
-#+BEGIN_EXPORT html
- <script defer> 
- function googleTranslateElementInit() {
- new google.translate.TranslateElement({
- pageLanguage: 'es'
- }, 'google_translate_element');
- }
- </script>
- <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
- </script>
+# #+BEGIN_EXPORT html
+#  <script defer> 
+#  function googleTranslateElementInit() {
+#  new google.translate.TranslateElement({
+#  pageLanguage: 'es'
+#  }, 'google_translate_element');
+#  }
+#  </script>
+#  <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+#  </script>
 
- <div id="google_translate_element"></div>
-#+END_EXPORT
+#  <div id="google_translate_element"></div>
+# #+END_EXPORT
