@@ -6,8 +6,31 @@
 #+SUBTITLE: Apuntes
 #+DATE:     [2021-08-24 mar]
 
-#+OPTIONS: author:nil date:nil title:nil
+#+OPTIONS: author:nil date:nil title:nil toc:nil
 
+| Prefijo | Símbolo      | Factor   |
+|         |              |          |
+|         | Múltiplos    |          |
+|         |              |          |
+| Exa     | E            | 10^{18}  |
+| Peta    | P            | 10^{15}  |
+| Tera    | T            | 10^{12}  |
+| Giga    | G            | 10^{9}   |
+| Mega    | M            | 10^{6}   |
+| Kilo    | k            | 10^{3}   |
+| Hecto   | h            | 10^{2}   |
+| Deca    | da           | 10^{1}   |
+|         |              |          |
+|         | Submúltiplos |          |
+|         |              |          |
+| Deci    | d            | 10^{-1}  |
+| Centi   | c            | 10^{-2}  |
+| Mili    | m            | 10^{-3}  |
+| Micro   | \mu          | 10^{-6}  |
+| Nano    | n            | 10^{-9}  |
+| Pico    | p            | 10^{-12} |
+| Femto   | f            | 10^{-15} |
+| Atto    | a            | 10^{-18} |
 
 \\
 

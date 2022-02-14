@@ -64,7 +64,7 @@ Para dibujar un campo de pendientes solo tenemos que evaluar la funcion en cada 
 [[https://youtu.be/xu_HLUShvws][Video]] | [[https://www.geogebra.org/m/R36YDrma][Graficador]]
 
 * Transformada de Laplace
-En matemáticas, la transformada de Laplace es una transformada integral que convierte una función de variable real {\displaystyle t}t (normalmente el tiempo) a una función de variable compleja {\displaystyle s}s. Tiene muchas aplicaciones en ciencia e ingeniería porque es una herramienta para resolver ecuaciones diferenciales. En particular, transforma ecuaciones diferenciales en ecuaciones algebraicas.
+En matemáticas, la transformada de Laplace es una transformada integral que convierte una función de variable real 't' (normalmente el tiempo) a una función de variable compleja 's'. Tiene muchas aplicaciones en ciencia e ingeniería porque es una herramienta para resolver ecuaciones diferenciales. En particular, transforma ecuaciones diferenciales en ecuaciones algebraicas.
 
 Para resolver una transformada de laplace susituimos \(f(t)\) con nuestra funcion en base a t:
 

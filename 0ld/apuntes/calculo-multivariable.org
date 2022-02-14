@@ -11,7 +11,7 @@
 
 #+TOC: headlines 1
 
-# En progreso 
+# En progreso
 # https://youtu.be/8bhelXiPWew
 # https://youtu.be/KrPYYW_504U
 # https://app.diagrams.net
@@ -34,7 +34,7 @@ Cosecante, en los puntos \(\pi k\).
 
 logaritmo de 10 en \( x \leq 0  \)
 
-* Representación del plano 
+* Representación del plano
 un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas; es un concepto fundamental de la geometría junto con el punto y la recta. Su ecuación es la siguiente:
 
 #+BEGIN_DEMONSTRATION
@@ -70,7 +70,7 @@ Para determinar la funcion que se forma con tres puntos en el espacio, sustituim
 \end{pmatrix} \]
 #+END_DEMONSTRATION
 
-[[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos][eigenmath]] | [[https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas][KhiCas]] 
+[[https://github.com/Galindo-lab/calculator/blob/main/eigenmath/plano-entre-3-puntos][eigenmath]] | [[https://github.com/Galindo-lab/calculator/blob/main/xcas/plano.cas][KhiCas]]
 
 * Ángulo Entre Planos
 para calcular el angulo entre dos planos usamos la siguiente ecuación:
@@ -97,7 +97,7 @@ A = (2,3,4)
 \]
 
 Función y su forma de vector:
-\[ 
+\[
 3x+2y+z-6=0 \rightarrow B = (3,2,1)
 \]
 
@@ -116,7 +116,7 @@ por ultimo sustituimos en la ecuación del plano:
 \]
 
 \[
-5x-10y+5z = 20+10-30 
+5x-10y+5z = 20+10-30
 \]
 
 \[
@@ -125,7 +125,7 @@ por ultimo sustituimos en la ecuación del plano:
 
 #+END_DEMONSTRATION
 
-[[https://www.youtube.com/watch?v=RkMxfogdWJ0][Video]] 
+[[https://www.youtube.com/watch?v=RkMxfogdWJ0][Video]]
 
 * Vector de una recta o función
 Para obtener el vector de una función simplemente extraemos los valores escalares que están multiplicando a nuestros valores coordenados:
@@ -151,7 +151,7 @@ P_1 + t \cdot (P_2 - P_1)
 [[../calculadoras/calculo-recta.html][Calculadora]]
 
 * Ecuación paramétrica de la recta a una ecuación simétrica
-La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los términos que necesitemos. 
+La ecuación simétrica de la recta nos permite encontrar la ecuación continua de la recta[fn:ecuacion-continua-recta] simplemente resolviendo la ecuacion en los términos que necesitemos.
 
 #+BEGIN_DEMONSTRATION
 \[
@@ -169,7 +169,7 @@ Identificamos nuestro punto de paso y nuestro vector de dirección:
      x &= -4 + 2t\\
      y &= -2  \\
      z &= -2 +5t
-\end{aligned} 
+\end{aligned}
 \]
 
 punto de paso \( P_0 = (-4,-2,-2) \).
@@ -191,7 +191,7 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 
 [[https://youtu.be/JMVEYTqdh6c][Video]]
 
-[fn:ecuacion-continua-recta] 
+[fn:ecuacion-continua-recta]
 \[ \frac{x-x_1}{v_1} = \frac{y-y_1}{v_2} \]
 
 
@@ -212,9 +212,9 @@ L: \frac{x-4}{2} = \frac{z-2}{5} \land y = -2
 Las coordenadas esféricas requieren dos ángulos, por lo que se parecen mucho a las coordenadas polares. \theta funciona exactamente como en coordenadas polares, sí \(x=0\) y \(y > 0\) el ángulo es 90°; sí \(x=0\) y \(y < 0\) el ángulo es 270°.
 
 #+BEGIN_DEMONSTRATION
-\[ \begin{aligned} 
+\[ \begin{aligned}
 r &= \sqrt{x^2+y^2+z^2} & \varphi &= cos^{-1}\left( \frac{z}{r} \right) \\
-\end{aligned} 
+\end{aligned}
 \]
 
 \[\theta = tan^{-1}\left( \frac{y}{x} \right)\]
@@ -233,7 +233,7 @@ El dominio son los valores de X que puede tomar una función:
 \[ f \begin{pmatrix} x \\ y \end{pmatrix} \ = \frac{ \sqrt{x+y+1} }{x - 1} \]
 #+END_DEMONSTRATION
 
- La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador. 
+ La primera cosa que debemos tomar en cuenta en que puntos la función es discontinua, en este caso la función tiene dos discontinuidades, en el numerador y en el denominador.
 
 En el denominador no puede haber un número cero, entonces solo basta con resolver la ecuación \( x-1 = 0 \) para encontrar la discontinuidad. \( x = 1 \)
 
@@ -243,9 +243,9 @@ Entonces, con la información que ya conocemos podemos decir que la función exi
 
 #+BEGIN_DEMONSTRATION
 \[ \begin{Bmatrix}
-  \begin{pmatrix} 
-  x \\ y \\ 
-  \end{pmatrix} \in \mathbb R^2: 
+  \begin{pmatrix}
+  x \\ y \\
+  \end{pmatrix} \in \mathbb R^2:
   x + y + 1 \geq 0 \wedge x \not = 1
 \end{Bmatrix}  \]
 #+END_DEMONSTRATION
@@ -272,7 +272,7 @@ Para encontrar el rango es muy recomendable encontrar primero el [[Dominio de un
 
 La primera cosa que podemos notar en la función es que es una raíz, eso significa que no puede ser un valor negativo, por lo tanto el valor mas pequeño al que podemos calcular la raíz en el dominio de los reales es el número 0, este sería el valor mínimo de la imagen.
 
-También podemos notar que los valores están elevados al cuadrado (los valores de X^2 y y^2 siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen. 
+También podemos notar que los valores están elevados al cuadrado (los valores de X^2 y y^2 siempre son positivos) entonces sus valores siempre se le restan a 9 y entonces como siempre se van a restar los valores, podemos inferir que el valor más alto que puede retornar esta función es \(\sqrt{9} \), este sería el valor máximo de la imagen.
 
 El resultado que obtenemos es que el dominio de la función se extiende continuamente desde \( [0, 3] \).
 
@@ -367,11 +367,11 @@ Cuando tenemos multiples variables hay varias posibles derivadas, cada una corre
 
 \[ \begin{aligned}
    f   &= x^2 + x^2y^3 + y^2 \\
-   f_x &= 2x + 2xy^3 
+   f_x &= 2x + 2xy^3
 \end{aligned} \]
 
 \[ \begin{aligned}
-   f_{xx} = 2 + 2y^3 & ~ ~ & f_{xy} = 6xy^2 
+   f_{xx} = 2 + 2y^3 & ~ ~ & f_{xy} = 6xy^2
 \end{aligned} \]
 
 #+END_DEMONSTRATION
@@ -391,7 +391,7 @@ dV &= \frac{\partial V}{\partial r}\,dr + \frac{\partial v}{\partial h}\,dh & \\
 
 #+END_DEMONSTRATION
 
-* Regla de la cadena 
+* Regla de la cadena
 Para aplicar la regla de la cadena en una funcion multivariable simplemente consiste en sustituir cada variable y luego derivar cada uno de los elementos, Ejemplo: Derivada de \(w = x^2 + y^2 + z^2 \) donde \(x = st\) ; \(y = s\cos t\) ; \(z = s\sin t\).
 
 #+BEGIN_DEMONSTRATION
@@ -419,14 +419,14 @@ f(x,y) = x^2y^3 - 4y
 \triangledown f(x,y) = \boxed{  \begin{bmatrix}
 2xy^3 \\
 -4 + 3x^2y^2
-\end{bmatrix} } 
+\end{bmatrix} }
 \end{aligned} \]
 #+END_DEMONSTRATION
 
 * Derivada direccional (sí la funcion es derivable en el punto)
 La forma mas rapida de calcular la variable direcciona es dereterminando si nuestra funcion es derivable el punto, en caso de que sea así podemos aprovechar las propiedades del gradiente. El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto:
 
-\[D_{\vec{u}} f(\vec{x_0}) = \triangledown f(\vec{x_0}) \cdot \vec{u}\] 
+\[D_{\vec{u}} f(\vec{x_0}) = \triangledown f(\vec{x_0}) \cdot \vec{u}\]
 
 #+BEGIN_DEMONSTRATION
 
@@ -458,7 +458,7 @@ D_{\vec{u}} f(\vec{x_0}) &= -\frac{20}{\sqrt{29}} + \frac{4xy^3}{\sqrt{29}} + \f
 \end{aligned} \]
 
 * Derivada direccional para todas las funciones
-El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto: 
+El vector gradiente marcará la dirección de máxima variación de la función en cualquier punto:
 \[D_{\vec{u}} f(\vec{x_0}) = \frac{d}{dt} f(x_0 + t\vec{u}) |_{t=0} \]
 
 #+BEGIN_DEMONSTRATION
@@ -471,7 +471,7 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 
 \[ \begin{aligned}
 \frac{d}{dt} f\left[ \begin{pmatrix}
-1 \\ 
+1 \\
 2 \\
 \end{pmatrix} + t \begin{pmatrix}
 \frac{1}{2} \\
@@ -489,10 +489,10 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 
 \[
 \frac{d}{dt} \left[ -\frac{1}{16}t^2 - \left( 1 + \frac{1}{2} \sqrt{3} \right) t + 4 \right] \Bigg\rvert_{t=0}
-\] 
+\]
 
 \[
-\left( -\frac{1}{8} t - 1 + \frac{1}{2} \sqrt{3} \right) \Bigg\rvert_{t=0}  
+\left( -\frac{1}{8} t - 1 + \frac{1}{2} \sqrt{3} \right) \Bigg\rvert_{t=0}
 \]
 
 \[ \begin{aligned}
@@ -501,12 +501,12 @@ El vector gradiente marcará la dirección de máxima variación de la función 
 \end{aligned} \]
 
 #+END_DEMONSTRATION
-* Puntos criticos de una funcion 
+* Puntos criticos de una funcion
 Para encontrar los puntos criticos de la funcion tendremos que calcular la derivada parcial de cada variable y resolverla como un sistema de ecuaciones:
 
 #+BEGIN_DEMONSTRATION
 
-\[ f = 9-2x+4y-x^2-4y^2 \] 
+\[ f = 9-2x+4y-x^2-4y^2 \]
 
 \[ \begin{aligned}
      f_x = -2-2x & & f_y = 4y-8y \\
@@ -532,17 +532,17 @@ Evaluamos los puntos criticos de la funcion en el discriminante, el valor que ob
 
 #+BEGIN_DEMONSTRATION
 
-clasificar los puntos criticos en la función 
+clasificar los puntos criticos en la función
 \[f = 9-2x+4y-x^2-4y^2 \]
 
-Sus derivadas parciales 
+Sus derivadas parciales
 
 \[
 f_{xx} = -2 ~ ; ~ f_{yy} = -8 ~ ; ~ f_{xy} = 0
 \]
 
 
-puntos críticos 
+puntos críticos
 \[ x=-1 ~ ; ~ y = \frac{1}{2} \]
 
 sustituimos los valores de la formula de el diferencial:
@@ -555,7 +555,7 @@ Entonces D es mayor a 0 y f_{xx} es menor a 0, por lo tanto el valor _es un maxi
 #+END_DEMONSTRATION
 
 * multiplicadores de lagrange
-Los multiplicadores de lagrange nos permiten encontrar valores maximos y minimos de f(x,y) sujeta a una restriccion g(x,y,z) = k, suponiendo que \(\triangledown g \not = 0\) se encuentre en la superficie g(x,y,z) = k, 
+Los multiplicadores de lagrange nos permiten encontrar valores maximos y minimos de f(x,y) sujeta a una restriccion g(x,y,z) = k, suponiendo que \(\triangledown g \not = 0\) se encuentre en la superficie g(x,y,z) = k,
 
 \[
 \triangledown f(x_0,y_0,z_0) = \lambda \triangledown g (x_0, y_0, z_0)
@@ -571,7 +571,7 @@ Determianr los extremos de la funcion \(f(x,y) = x^3 + 3xy^2\) restringida por l
 \end{bmatrix}
 \]
 
-\[ 
+\[
 \triangledown g = \begin{bmatrix}
   2x \\
   2y \\
