@@ -1,0 +1,14 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/colections/index.org
+#+OPTIONS: \n:t title:nil
+
+#+TITLE:    Colecciónes
+
+Colecciónes
+- [[./software.html][Software]]
+- [[./libros.html][Libros]]
+- [[./paginas.html][Páginas]] 
+- [[./imagenes.html][Imágenes]]
+- [[./musica.html][Música]]
+

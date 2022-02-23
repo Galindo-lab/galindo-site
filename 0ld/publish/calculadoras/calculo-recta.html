@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-23 lun 00:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Parametrización</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<script type="text/javascript" src="tools.js"></script>
+<script async src="nerdamer/all.min.js"></script>
+<script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Parametrización
+<br />
+<span class="subtitle">Recta</span>
+</h1>
+
+Resultado <select id="format" form="carform">
+  <option value="decimal">Decimal</option>
+  <option value="fraccion">Fracción</option>
+</select>
+
+<br><br>
+
+<div id="resultado" style="
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 1.2em;" class="example">
+
+</div>
+
+<form>
+<p>
+Primer Punto:<br>
+<input type="text" id="p_1" placeholder="0,0,0...">
+</p>
+
+<p>
+Segundo Punto:<br>
+<input type="text" id="p_2" placeholder="0,0,0...">
+</p>
+
+<p>
+t:
+<br>
+<input type="text" id="t" placeholder="1/10 ó 0.1, añadir 0 al inicio">
+
+</p>
+
+<br>
+<input type="button" class="submit" onclick="calcular()" value="Resultado">
+<input type="reset" onclick="getById('resultado').innerHTML = '' ">
+
+</form>
+
+
+<script>
+
+function calcular() {
+
+t = getById("t").value
+
+resultado = nerdamer( "p1 + t * ( p2 - p1 )" , {
+        p1: "vector(" + getById("p_1").value + ")",
+        p2: "vector(" + getById("p_2").value + ")",
+        t: (t === "" ? "t" : t),
+});
+
+switch( getById("format").value ){
+    case "decimal":
+    getById('resultado').innerHTML = resultado.toDecimal();
+    break;
+
+    case "fraccion":
+    getById('resultado').innerHTML = "$${ "  + resultado.toString() + " }$$" ;
+    break;
+}
+
+MathJax.typeset()
+nerdamer.clearVars();
+
+}
+
+</script>
+</div>
+</body>
+</html>

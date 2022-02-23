@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-23 lun 00:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Campo Magnético</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="tools.js"></script>
+<script async src="nerdamer/all.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Campo Magnético
+<br />
+<span class="subtitle">Solenóide</span>
+</h1>
+<div id="google_translate_element"></div><script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');}</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+img{display:block;margin-left:auto;margin-right:auto}
+legend{margin-left:0;margin-right:0}
+.param{padding:.5em 0 .5em 0; }
+
+label{ font-family:  'Montserrat';}
+label > input { width: auto; }
+
+fieldset{margin:1em 0 1em 0}
+#resultado{
+background-color:#fff;
+padding:.3em;
+overflow-x:scroll;
+}
+
+@media (max-width:500px){input{width:100%}}   
+</style>
+
+<div id="outline-container-org786c3dc" class="outline-2">
+<h2 id="org786c3dc">Campo Magnético</h2>
+<div class="outline-text-2" id="text-org786c3dc">
+
+
+<fieldset>
+<legend>Variables</legend> 
+
+\[ B = \frac{ \mu_r \cdot \mu_0 \cdot I \cdot N }{ L } \]
+
+<form>
+
+<div class="param">
+<label>Longitud [L:metros]:</label>
+<input type="text" id="longitud">
+</div>
+
+<div class="param">
+<label>Numero de espiras [N]:</label>
+<input type="text" id="espiras">
+</div>
+
+<div class="param" >
+<label>Corriente [I:Amperios]:</label>
+<input type="text" id="corriente">
+</div>
+
+<div class="param" >
+<label>Permeabilidad Magnética [\(\mu_0\)]:</label> 
+<input id="magnetica" value="(pi*4)*10^(-7)">
+</div>
+
+<div class="param" >
+<label>Permeabilidad Relativa [\(\mu_r\)]:</label> 
+<input id="relativa" value="1">
+</div>
+
+<div class="param" >
+<label>
+  <input type="radio" name="format" value="decimal" checked> Decimal
+</label> 
+<br>
+<label>
+  <input type="radio" name="format" value="fraccion"> Fracción
+</label> 
+</div>
+
+<div class="param" >
+<input type="button" onclick="calcular()" value="Campo Magnético de un Solenóide">
+<input type="reset" value="Limpiar los datos"> 
+</div>
+
+</form>
+</fieldset>
+</div>
+
+<div id="outline-container-org351fb56" class="outline-3">
+<h3 id="org351fb56">Resultado (Tesla):</h3>
+<div class="outline-text-3" id="text-org351fb56">
+<div id="resultado">
+$${ \text{  } }$$
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function calcular(){
+    l = document.getElementById("longitud").value;
+    n = document.getElementById("espiras").value;
+    i = document.getElementById("corriente").value;
+    mu0 = document.getElementById("magnetica").value;
+    mur = document.getElementById("relativa").value;
+
+    formato = document.querySelector('input[name="format"]:checked').value;
+
+switch(formato){
+  case 'decimal':
+    resultado = nerdamer(' (muo*mur*i*n)/(l) ', {
+        muo: mu0,
+        mur: mur,
+        i: i,
+        n: n,
+        l: l,
+       pi: Math.PI
+      });
+    document.getElementById('resultado').innerHTML = resultado.toDecimal();
+  break;
+
+  case 'fraccion':
+    resultado = nerdamer(' (muo*mur*i*n)/(l) ', {
+        muo: mu0,
+        mur: mur,
+        i: i,
+        n: n,
+        l: l
+      });
+    document.getElementById('resultado').innerHTML = "$${ " + resultado.toString() + "}$$ ";
+  break;
+}
+
+    MathJax.typeset()
+    nerdamer.clearVars();
+}
+
+</script>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

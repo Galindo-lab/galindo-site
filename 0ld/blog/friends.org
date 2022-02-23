@@ -1,0 +1,45 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/blog/friends.html
+
+
+#+TITLE:    Amigos
+#+SUBTITLE: Blog
+#+DATE: [2021-08-05 jue]
+
+#+BEGIN_EXPORT html
+<style>
+img{
+width:100%;
+}
+</style>
+#+END_EXPORT
+
+* misswannabe
+[[https://misswannabe.neocities.org/][file:https://neocities.org/site_screenshots/39/74/misswannabe/index.html.540x405.jpg]]
+
+* vinizinho
+[[https://vinizinho.neocities.org/][file:https://neocities.org/site_screenshots/25/71/vinizinho/index.html.540x405.jpg]]
+
+* jorgepinto
+[[https://jorgepinto.neocities.org/][file:https://neocities.org/site_screenshots/89/15/jorgepinto/index.html.540x405.jpg]]
+
+* utsushimi
+[[https://utsushimi.neocities.org/][file:https://neocities.org/site_screenshots/29/48/utsushimi/index.html.540x405.jpg]]
+
+* indieflowerdeveloper
+[[https://neocities.org/site/indieflowerdeveloper][file:https://neocities.org/site_screenshots/19/75/indieflowerdeveloper/index.html.540x405.jpg]]
+
+* jamep-site
+[[https://jamep-site.neocities.org/][file:https://neocities.org/site_screenshots/22/52/jamep-site/index.html.540x405.jpg]]
+
+* Kenome
+[[https://neocities.org/site/kenome][file:https://neocities.org/site_screenshots/41/58/kenome/index.html.540x405.jpg]]
+
+* Niicha's Website
+[[https://niichawebsite.neocities.org/][file:https://neocities.org/site_screenshots/21/16/niichawebsite/index.html.540x405.jpg]]
+
+* the everlasting contrast
+[[https://theeverlastingcontrast.neocities.org/][https://neocities.org/site_screenshots/10/20/theeverlastingcontrast/index.html.540x405.jpg]]
+* kaidouswh0re
+[[https://kaidouswh0re.neocities.org/][https://neocities.org/site_screenshots/34/84/kaidouswh0re/index.html.540x405.jpg]]

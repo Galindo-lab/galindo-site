@@ -1,0 +1,34 @@
+#+LANGUAGE: es
+
+#+Options: html-style:nil html-scripts:nil num:nil toc:nil html-postamble:nil
+
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+# #+HTML_HEAD: <script defer type="text/javascript" src="script.js"></script>
+
+#+BEGIN_EXPORT html
+
+<style>
+body {
+    background-color: #000;
+    margin:0;
+
+}
+
+iframe {
+    height: 90vh;
+    width: 100%;
+    magin: 0;
+    border: 0;
+}
+
+
+</style>
+
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+
+<iframe src="https://minnit.chat/galindosoft?embed&&nickname=" allowTransparency="true"></iframe>
+
+#+END_EXPORT

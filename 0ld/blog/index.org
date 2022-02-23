@@ -1,0 +1,13 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/blog/index.org
+#+OPTIONS: \n:t title:nil
+
+#+TITLE:    Journal
+
+Blog
+- [[./2021.html][2021]]
+
+Extras
+- [[./ideas.html][Ideas y cosas tontas]]
+- [[./programacion.html][Mi historia con la programación]]

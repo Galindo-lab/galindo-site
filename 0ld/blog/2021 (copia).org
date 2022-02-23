@@ -1,0 +1,31 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/blog/2022.html
+
+
+#+TITLE:    Journal
+#+SUBTITLE: Blog 
+#+DATE:     [2022-01-06 jue]
+
+* Enero
+** [2022-01-06 jue]
+Primer entrada del año, apenas van 6 días del 2022 y siento que me estoy haciendo pedazos, estoy muy cansado y tengo todavía mucho trabajo.
+
+# Mi madre me ha dicho que deber ver a un psicólogo
+
+Estuve trabajando con un amigo y ya me han pagado, pensé que no podría sacarlos en menos de un día pero aparentemente todavía tengo el talento para hacerlo.
+
+También hace unos días me entregaron las fotos que pedí de mi perrita Frida. se ve muy bien.
+
+** [2022-01-27 jue]
+A la Frida se le volteo un ojo, tuve que llamar a mi madre del trabajo para poderla llevar a el veterinario, nos dijeron que tiene infección y temperatura, mas tarde su ojo regreso a la normalidad pero de todos modos estoy preocupado.
+
+** [2022-01-28 vie]
+Esta entrada es para recapitular que paso el ultimo mes así que la mayoría de estas cosas pasaron ya hace varios días.
+
+Hace un par de semanas volví a hacer ejercicio, me siento bien hace mucho tiempo que no estaba tan delgado, también termine con mis ayudantias ahora mismo el profesor esta revisando mi trabajo.
+
+Esta parte me voy a poner a recapitular lo que ha pasado durante este mes. Siempre me he considerado una persona sana pero desde diciembre he tenido dolor de espalda, hace unas semanas descubrimos que era un quiste pilonidal', no es nada grave pero ocupo una operación para evitar que vuelva a salir sin embargo por culpa de la pandemia no pude terminar el tramite así que tengo que como solucionar este problema.
+
+# Mary se consiguio un novio, realmente no entiendo porque pero estoy ¿molesto? no sé mi cabeza no me deja entender bien que pasa conmigo, nunca habia pensado en Mary de esa manera...
+

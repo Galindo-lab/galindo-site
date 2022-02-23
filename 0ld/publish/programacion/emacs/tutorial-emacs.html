@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2021-08-23 lun 00:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aprendiendo A Usar Emacs</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+<script defer type="text/javascript" src="../script.js"></script>
+<meta name="theme-color" content="#fff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<div id="google_translate_element"></div> <script defer> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element'); } </script> <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Aprendiendo A Usar Emacs
+<br />
+<span class="subtitle">Emacs</span>
+</h1>
+
+<div id="outline-container-orgcf1b431" class="outline-2">
+<h2 id="orgcf1b431">Introduccion</h2>
+<div class="outline-text-2" id="text-orgcf1b431">
+<p>
+No me voy a molestar contando otra vez la historia y dando los detalles técnicos de Emacs, sí deseas conocer la historia de emacs recomiendo leer el articulo de <a href="https://es.wikipedia.org/wiki/Emacs">wikipedia</a> es lo suficientemente bueno para que poder entender que hace tan especial este editor. Mi objetivo con este tutorial es que cualquier persona que este interesada en aprender a usar emacs no se quede completamente atorada con las cosas básicas, este tutorial <b>NO</b> abarca a profundidad sobre todo sobre emacs, es solo una introducción para poder utilizar esta herramienta y modificarla a tu gusto.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b13f50" class="outline-2">
+<h2 id="org2b13f50">Glosario (Lectura obligada)</h2>
+<div class="outline-text-2" id="text-org2b13f50">
+<p>
+Al ser un editor con tanta historia Emacs tiene algunos términos que ya son muy anticuados y muchas personas encuentran problemas al no entender a que se refieren, así que me voy a tomar un tempo para explicarlas con mis palabras, sí quieres aprender mas terminología de emacs puedes encontrarla <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Glossary.html">aquí</a>.
+</p>
+
+<dl class="org-dl">
+<dt>meta-key (M)</dt><dd>La tecla meta, por lo general esta mapeada a la tecla ALT esta tecla nos permitirá hacer algunos comandos dentro del editor.</dd>
+
+<dt>ctrl-key (C)</dt><dd>Tecla ctrl, algunos usuarios de emacs (yo incluido) recomiendan cambiar la tecla CAPS-LOCK por otro ctrl extra, esto es debido a que en emacs la tecla ctrl cumple un rol indispensable para ingresar comandos y al estar en un lugar tan incomodo te puedes lastimar (sí gente el <a href="https://www.emacswiki.org/emacs/RepeatedStrainInjury">RSI</a> es algo que la que los nerds tenemos que preocuparnos).</dd>
+
+<dt>Hook</dt><dd>es una lista de funciones que se llamarán en ocasiones específicas, como guardar un búfer en un archivo, activación del modo principal, etc.</dd>
+
+<dt>Buffer</dt><dd>Un buffer corresponde a cada archivo que se encuentra siendo editado en el momento, luego se extenderá más en el tema.</dd>
+
+<dt>Frame</dt><dd>una ventana de emacs, emacs puede comunicarse entre varias ventanas esto es muy útil por si tenemos múltiples pantallas, así podemos controlarlas todas sin tener que usar el mouse.</dd>
+
+<dt>window</dt><dd>Un Frame de emacs se puede dividir para ver el contenido de múltiples Buffers al mismo tiempo.</dd>
+
+<dt>Killing</dt><dd>Corta (para fines prácticos lo dejaremos así).</dd>
+
+<dt>Yanking</dt><dd>Pegar (Igual, para fines prácticos lo dejaremos así).</dd>
+
+<dt>Lisp</dt><dd>Es un lenguaje de programación, elisp es una variante de lisp sobre la cual se extiende emacs.</dd>
+
+<dt>Init file</dt><dd>Archivo de inicio, aquí escribes todas tus configuraciones de emacs.</dd>
+
+<dt>Key Binding</dt><dd>Atajo de teclado.</dd>
+
+<dt>Macro</dt><dd>Secuencias de comandos, se pueden usar para definir nuevas funcionalidades.</dd>
+
+<dt>Minibuffer (M-x)</dt><dd>Es el buffer de la zona inferior, allí podemos ingresar nuestros comandos.</dd>
+
+<dt>Layout de emacs</dt><dd>diagrama extraído de la pagina de <a href="https://sachachua.com/blog/book-thinking-with-emacs/">Sacha Chua</a>, sin duda sus infografías son algo que debes leer para entender mejor.</dd>
+</dl>
+
+<div class="figure">
+<p><img src="./img/layout.jpg" alt="layout.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org63da760" class="outline-2">
+<h2 id="org63da760">Nemotécnicos de emacs (Lectura obligada)</h2>
+<div class="outline-text-2" id="text-org63da760">
+<p>
+Emacs para describir sus keybinds, tiene un sistema de abreviaturas 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nemotécnico</th>
+<th scope="col" class="org-left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">M</td>
+<td class="org-left">Tecla meta, esta mapeada en el botón ALT.</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">Tecla ctrl, esta mapeada en el botón CTRL.</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x</td>
+<td class="org-left">Presionar las teclas &lt;CTRL + x&gt;, esta es una combinación muy común.</td>
+</tr>
+
+<tr>
+<td class="org-left">M-x</td>
+<td class="org-left">Presionar las teclas &lt;ALT + x&gt;, este es el comando para abrir el minibuffer.</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x s</td>
+<td class="org-left">Primero presionamos &lt;CTRL + x&gt; y luego &lt;s&gt;.</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x C-f</td>
+<td class="org-left">Primero presionamos &lt;CTRL + x&gt; y despues &lt;CTRL + f&gt;.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org1a96c50" class="outline-2">
+<h2 id="org1a96c50">Key Binding indispensables</h2>
+<div class="outline-text-2" id="text-org1a96c50">
+<p>
+No me voy a detener tanto en este apartado, muchos de los tutoriales que he leído siempre cometen el error de bombardear a los nuevos usuarios con un montón de combos de teclas, los cuales realmente nadie usa por que son para casos muy específicos, solo me voy a enfocar en los que yo uso diario, osea los más comunes e indispensables.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key Bind</th>
+<th scope="col" class="org-left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">M-x</td>
+<td class="org-left">Abrir minibuffer</td>
+</tr>
+
+<tr>
+<td class="org-left">M-w</td>
+<td class="org-left">Copiar</td>
+</tr>
+
+<tr>
+<td class="org-left">C-y</td>
+<td class="org-left">Pegar</td>
+</tr>
+
+<tr>
+<td class="org-left">C-w</td>
+<td class="org-left">Cortar</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x b</td>
+<td class="org-left">Lista De &lt;Buffers&gt;</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x o</td>
+<td class="org-left">Cambiar De &lt;Buffer&gt;</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x 1</td>
+<td class="org-left">Maximizar &lt;Buffer&gt;</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x 0</td>
+<td class="org-left">Minimizar &lt;Buffer&gt;</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x 2</td>
+<td class="org-left">Dividir &lt;Frame&gt; Verticalmente</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x 3</td>
+<td class="org-left">Dividir &lt;Frame&gt; Horizontalmente</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x c</td>
+<td class="org-left">Salir de Emacs</td>
+</tr>
+
+<tr>
+<td class="org-left">C-x s</td>
+<td class="org-left">Guardar Buffer</td>
+</tr>
+
+<tr>
+<td class="org-left">C-u</td>
+<td class="org-left">Undo</td>
+</tr>
+
+<tr>
+<td class="org-left">C-_</td>
+<td class="org-left">Redo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org5fdd0d2" class="outline-2">
+<h2 id="org5fdd0d2">Tutorial Básico De Elisp</h2>
+<div class="outline-text-2" id="text-org5fdd0d2">
+<p>
+Quería escribir un tutorial muy basico de elisp, pero la verdad ya existe un mejor tutorial por parte de los chicos de <a href="https://learnxinyminutes.com/docs/es-es/elisp-es/">learnxinyminutes</a>, así que sí deseas extender tu conocimiento en Elisp, ese es un buen lugar para empezar, recomiendo leer los ejemplos para poder entender como funciona superficialmente el lenguaje.
+Sí el sitio no esta disponible dejo una copia <a href="./backups/learn-emacs-lisp-es.txt">aquí.</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

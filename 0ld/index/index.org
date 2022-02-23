@@ -1,0 +1,52 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-0.org
+#+EXPORT_FILE_NAME: ../publish/index.html
+
+#+TITLE: Galindosoft
+#+options: title:nil \n:t
+
+
+#+BEGIN_EXPORT html
+<style>
+#content {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+#content {
+  border: 0px solid white;
+}
+
+#content:after {
+    content: "";
+    margin: 0;
+}
+
+#google_translate_element{
+    display:block;
+}
+</style>
+#+END_EXPORT
+
+
+#+ATTR_HTML: :width 224px
+[[./img/status.png]]
+*{{{title}}}*
+[[./home.html][Entrar]]
+
+# #+BEGIN_EXPORT html
+#  <script defer> 
+#  function googleTranslateElementInit() {
+#  new google.translate.TranslateElement({
+#  pageLanguage: 'es'
+#  }, 'google_translate_element');
+#  }
+#  </script>
+#  <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+#  </script>
+
+#  <div id="google_translate_element"></div>
+# #+END_EXPORT

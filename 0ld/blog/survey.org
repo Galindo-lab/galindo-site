@@ -1,0 +1,72 @@
+
+#+SETUPFILE: ~/.emacs.d/templates/html-level-1.org
+#+EXPORT_FILE_NAME: ../publish/blog/survey.html
+
+#+TITLE: Survey
+#+SUBTITLE: Blog
+
+* Encuesta
+Le robé la idea a [[https://misswannabe.neocities.org][misswannabe]], se ve divertido así que quiero intentarlo:
+
+- Nombre :: Galindo.
+- Nicknames :: Galindo, Galinsex, Gaindosoft, Galin.org, GaCute, Galindo, Gali, Galindo-lindo, GaQt y creó que me faltaron varios.
+- Birthplace :: México.
+- Birthday :: Agosto 30
+- Where Do You Live Now? :: Meméxico. 
+- Looks :: 1.77m (la ultima vez que me medí), pelo largo lacio y negro, ojos negros, ni gordo ni flaco.
+- Favorite Animal(s) :: Perros, Gatos, Ñus y pingüinos.
+- Favorite TV Show(s) :: Neon Genesis Evangelion. 
+- Favorite Kind(s) Of Music :: Mi gusto en musica depende mucho de mi estado de animo, pero en general me gusta toda (si, también banda y regguetón).
+- Favorite Movie(s) :: Ninguna en particular.
+- School :: Universidad Autónoma de Baja California.
+- Future Job :: quiero trabajar como ingeniero en alguna empresa.
+- Boyfriend/Girlfriend :: Nope, Nope, Nope.
+- Favorite Candy :: Mazapanes, chocolates, duces con picante, dulce de leche con mantequilla de maní.
+- Hobbies :: Programar (desde herramientas hasta videojuegos), Álgebra, Jugar videojuegos (Me encanta minecraft desde que me entere de que existe en 2009, se veía [[https://classic.minecraft.net][así]] cuando empeze a jugar), ahora mismo uno de mis hobbies es actualizar mi sitio en neocities.
+- Things You Collect :: Tengo una colección de monedas bastante grande, tengo casi todas las monedas colección especial del bicentenario de la independencia y centenario de la revolución de mi país.
+- Any Tattoos And Where Of What? :: No me gustan los tatuajes.
+- Piercing(s) And Where? :: No me gustan tampoco los piercings. 
+- What Do You Sleep in? :: En una cama muy cómoda, casi tan cómoda como la cama de JuanSGuarnizo. 
+- Best Advice :: Aprende a calcular vectores y después aprende trigonometría, mas específicamente que es el seno y coseno, te ahorrara muchos rompederos de cabeza después.
+- Favorite Quotes :: "yehaaw" - Hatsune Miku (2019), "La ciencia es una ecuación diferencial. La religión es una condición de frontera." - Alan Turing.
+- Non-sport Activity You Enjoy :: Programar cosas tontas ó editar fotos.
+- Dream Car :: No me gustan los autos, me duermo al manejar.
+- Favorite Thing To Do In Spring :: Programar.
+- What’s Your Bedtime? :: 1-3am.
+- Where Do You Shop? :: Cualquier lugar que tenga lo que nesecito.
+- Coke or Pepsi :: Un efecto secundario del covid es que las sodas tienen un mal sabor, imagina que alguien pone un poco de jabón en bebida así saben las cosas para mí, espero que solo sea temporal.
+- Favorite Thing(s) To Wear? :: en mi casa shorts, hace mucho calor donde vivo, en la calle uso camisetas de colores solidos (negro y colores obscuros por lo general).
+- Favorite Subject(s) In School :: Historia y programación son mis dos materias favoritas, con el tiempo también me gustó álgebra.
+- Favorite Color(s) :: Morados muy claros ó muy obscuros.
+- Do You Shave? :: a veces.
+- Favorite CD you own :: No es un disco físico pero me encanta "CHUNK".
+- The ONE Person Who You Hate The Most :: Ceniceros.
+- Favorite Food(s) :: Tacos, Frijoles, Carne, comida cantonesa, Pizza mexicana y pizza sinaloense.
+- Who Is The Hottest Guy or Girl In The World? :: Soushi Miketsukami (Sou-tan pq no eres real? quiero tomarte de la mano muy fuerte). 
+- What Is Your Favorite Salad Dressing? :: Italiana.
+- When You Die, Do You Wanna Be Buried or Burned Into Ashes? :: Los niños no mueren.
+- Do You Believe In Aliens? :: si.
+- If You Had The Chance To Professionally Do Something, What would You Do? :: Retirarme antes de los 30.
+- Things You Obsess Over :: Emacs, programación, círculos, triángulos y colores.
+- Favorite Day of the Week :: Cualquier dia que no tenga que trabajar.
+- A Teacher You Hate :: Silvia Ceniceros.
+- Favorite Disney Movie :: El jorobado de notredam. 
+- What Is Your Favorite Season? :: Invierno en mi ciudad, Verano en Tijuana.
+- Do You Like Your School Food Itself? (As In The District Food) :: No, esta cara y esta mala. 
+- If You Could Live Anywhere, Where Would You Live? :: Amsterdam, ó cualquier lugar donde no necesite un auto para moverme.
+- Favorite Thing(s) To Do On Weekends :: Programar.
+- Favorite Thing(s) To Get Clean up :: no me gusta trabajar, Limpiar es trabajar por lo tanto no me gusta limpiar.
+- Favorite Flower(s) :: flor de Jacaranda, es como un cerezo pero violeta, por lo tanto eso lo hace 100 veces mejor.
+- Favorite Number(s) :: 0, 1, 2.59807 (hexagon bestagon), 2.71828, 90, 255, 6174, 2147483647, 9223372036854775807.
+- Favorite Ice Cream flavor(s) :: Chocomenta, vainilla, ó arroz con leche.
+- Do You Eat Breakfast First Then Brush Your Teeth or Brush first ten eat breakfast :: comer primero, cepillarse despues.
+- Favorite Time of Day :: 8 p.m - 10 p.m.
+- Can A Guy and Girl Be Just “Best Friends?” :: si.
+- Do You Ask The Girl / Guy Out Or Do You Wait For Them To Come To You? :: Depende la persona.
+- What’s The Most Important thing In Someone’s Personality :: Esto es muy complicado. 
+- Do you have a pager or cell phone? :: Si, tengo un celular.
+- Favorite Sport :: Caminar cuenta como deporte?.
+- What Was the Best Gift You Ever Received? :: Casí siempre me regalan dinero, casí no me gustan los regalos.
+- What Did You Listen To While Completing It? :: [[https://youtu.be/ktpr-HxGJ0E][My Chemical Romance - Thank you for the Venom]], estoy sufriendo una regresion emo. 
+- Are you or would you like to be married in the near future (next 5 years)? :: nah, quiero terminar mi carrera primero y tener algun lugar para vivir, aparte de la casa de mi madre.
+ - Don’t u just hate how psychics never win the lottery? :: Eeeehhhh?!!!, nunca lo habia notado y tienes razón!
