@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2022-02-09 mié 10:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Implementar un tema obscuro</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+<link rel="shortcut icon" type="image/jpg" href="./favicon.png"/>
+<script defer type="text/javascript" src="./scripts/script.js"></script>
+<meta name="theme-color" content="">
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-orgfb671c1" class="outline-2">
+<h2 id="orgfb671c1">Introducción</h2>
+<div class="outline-text-2" id="text-orgfb671c1">
+<p>
+Durante esta semana estuve implementando un tema obscuro y quiero compartir con ustedes los metodos que descubrí para hacerlo de la manera mas sencilla posible, para implementar un tema obscuro descubrí que hay dos maneras de hacerlo: con Javascript y sin Javascript,<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef3797f" class="outline-2">
+<h2 id="orgef3797f">Variables css</h2>
+<div class="outline-text-2" id="text-orgef3797f">
+<p>
+Para las siguientes implementaciones es indispensable tener entendimiento de las variables en css<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c18dd7" class="outline-2">
+<h2 id="org2c18dd7">La forma facil, Sin javascript</h2>
+<div class="outline-text-2" id="text-org2c18dd7">
+<p>
+Es posible hacer un tema obscuro 100% en css gracias a el media query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> el cual permite detectar sí el tema obscuro esta activado en el dispositivo, aquí un ejemplo:<br />
+</p>
+
+<pre class="example">
+
+@media (prefers-color-scheme: dark) {
+    /* ... */
+}
+
+@media (prefers-color-scheme: light) {
+    /* ... */
+}
+
+</pre>
+
+<p>
+Con este query y variables de css podemos cambiar los colores <b>Sin tener que usar nada de javascript</b>, sin embargo el usuario no puede activarlo sín tener que activar el modo obscuro en su dispositivo.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdebb09f" class="outline-2">
+<h2 id="orgdebb09f">La forma un poco más complicada</h2>
+<div class="outline-text-2" id="text-orgdebb09f">
+<p>
+Hay varias maneras de usar Javascript para implementar un tema obscuro, una de mis preferidas es la que explican en <a href="https://youtu.be/rXuHGLzSmSE">Fireship</a>, aun así pienso que es posible hacer algunas mejoras:<br />
+</p>
+
+<pre class="example">
+
+// script.js
+
+const body = document.body
+const theme = localStorage.getItem("theme")
+
+if( theme ) {
+    body.classList.add( theme )
+} else {
+    localStorage.setItem('theme', 'light');
+    body.classList.add( 'light' )
+}
+
+</pre>
+
+<p class="verse">
+<b>NOTA:</b> localStorage nos permite guardar valores en el navegador y conservarlos por todo el sitio.<br />
+</p>
+
+<p>
+Este script lo tenemos que poner en todos los archivos para poder cambiar el tema y tambien tenemos que añadrir "defer" al importar este script para poder aplicar el tema mientras carga la pagina.<br />
+</p>
+
+<pre class="example">
+
+/* style.css */
+
+.light {
+    --background: white;
+    --color: black;
+}
+
+.dark {
+    --background: black;
+    --color: white;
+}
+
+/* esta parte es solo un ejemplo */
+
+body{
+  background-color: var(--background);
+  color: var(--white) ;
+}
+
+</pre>
+
+<p>
+Este metodo a pesar de ser un poco más complejo de implementar tiene algunas ventajas, por ejemplo podemos tener todos los temas que queramos simplemente añadiendo una clase, mientras que usando css solo podemos usar dos (dark y light), tambien podemos cambiar el tema mientras se usa la pagina.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

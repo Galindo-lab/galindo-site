@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2022-02-09 mié 10:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog con ORG-mode</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+<link rel="shortcut icon" type="image/jpg" href="./favicon.png"/>
+<script defer type="text/javascript" src="./scripts/script.js"></script>
+<meta name="theme-color" content="">
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-org2b71f30" class="outline-2">
+<h2 id="org2b71f30">Blog con ORG-mode</h2>
+<div class="outline-text-2" id="text-org2b71f30">
+<p>
+Org mode es sin ninguna duda una de las "killer features" de emacs, permite hacer básicamente todas mis labores relacionadas con hacer notas, pero hoy no estoy aquí para hablar de las bondades de ORG-mode, Voy a explicarte como hacer tu propio blog con paginas estáticas con org mode.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd28a349" class="outline-2">
+<h2 id="orgd28a349">Opciones Para Org</h2>
+<div class="outline-text-2" id="text-orgd28a349">
+<p>
+Mi configuración para mis archivos de org es muy breve:<br />
+</p>
+
+<pre class="example">
+#+OPTIONS: html-style:nil html-scripts:nil num:nil html-postamble:nil
+</pre>
+
+<dl class="org-dl">
+<dt>html-style</dt><dd>desactiva todo el css generado por org mode, de todos modos prefiero hacer mis propias hojas de estilo.<br /></dd>
+
+<dt>html-scripts</dt><dd>con esta opción desactivo el javascript generado por ORG-mode.<br /></dd>
+
+<dt>num</dt><dd>los números en los títulos.<br /></dd>
+
+<dt>html-postamble</dt><dd>el postamble es texto que se añade al final de cada documento yo prefiero desactivarlo.<br /></dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org47e7d84" class="outline-2">
+<h2 id="org47e7d84">HTML HEAD</h2>
+<div class="outline-text-2" id="text-org47e7d84">
+<p>
+HTML HEAD nos permite insertar html en la sección head del css generado por ORG:<br />
+</p>
+
+<pre class="example">
+#+HTML_HEAD: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /&gt;
+#+HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="../style.css" /&gt;
+</pre>
+
+<p>
+siempre ajusto el viewport de la pagina para que sea mas fácil de ver en los móviles, en la segunda linea estamos incluyendo el css personalizado de nuestro sitio.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc5f01b2" class="outline-2">
+<h2 id="orgc5f01b2">Insertar seccion en html</h2>
+<div class="outline-text-2" id="text-orgc5f01b2">
+<p>
+Para insertar un div con un nombre de clase personalizado simplemente tenemos que insertar un bloque de código con el nombre que deseamos poner a nuestro bloque:<br />
+</p>
+
+<pre class="example">
+#+BEGIN_juan
+
+#+END_juan
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9cea662" class="outline-2">
+<h2 id="org9cea662">Conclusión</h2>
+<div class="outline-text-2" id="text-org9cea662">
+<p>
+Como vez es muy fácil hace sitios web en Org-mode, en esta entrada yo no explique ni la mitad de las cosas que puede hacer ORG-mode, pero con la información anterior ya deberías poder hacer un sitio a tu gusto sin tener que preocuparte por los defaults de ORG.<br />
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

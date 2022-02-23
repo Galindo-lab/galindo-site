@@ -1,0 +1,79 @@
+
+#+TITLE:    Implementar un tema obscuro
+#+DATE:     [2021-08-07 sáb]
+
+#+SETUPFILE: ~/.emacs.d/template/html.org
+#+EXPORT_FILE_NAME: ../tmp/tema-obscuro.org
+
+* Introducción
+Durante esta semana estuve implementando un tema obscuro y quiero compartir con ustedes los metodos que descubrí para hacerlo de la manera mas sencilla posible, para implementar un tema obscuro descubrí que hay dos maneras de hacerlo: con Javascript y sin Javascript, 
+
+* Variables css
+Para las siguientes implementaciones es indispensable tener entendimiento de las variables en css
+
+* La forma facil, Sin javascript
+Es posible hacer un tema obscuro 100% en css gracias a el media query [[https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme][prefers-color-scheme]] el cual permite detectar sí el tema obscuro esta activado en el dispositivo, aquí un ejemplo:
+
+#+BEGIN_SRC 
+
+  @media (prefers-color-scheme: dark) {
+      /* ... */
+  }
+
+  @media (prefers-color-scheme: light) {
+      /* ... */
+  }
+
+#+END_SRC
+
+Con este query y variables de css podemos cambiar los colores *Sin tener que usar nada de javascript*, sin embargo el usuario no puede activarlo sín tener que activar el modo obscuro en su dispositivo.
+
+* La forma un poco más complicada
+Hay varias maneras de usar Javascript para implementar un tema obscuro, una de mis preferidas es la que explican en [[https://youtu.be/rXuHGLzSmSE][Fireship]], aun así pienso que es posible hacer algunas mejoras:
+
+#+BEGIN_SRC 
+
+  // script.js
+
+  const body = document.body
+  const theme = localStorage.getItem("theme")
+
+  if( theme ) {
+      body.classList.add( theme )
+  } else {
+      localStorage.setItem('theme', 'light');
+      body.classList.add( 'light' )
+  }
+
+#+END_SRC
+
+#+BEGIN_VERSE
+*NOTA:* localStorage nos permite guardar valores en el navegador y conservarlos por todo el sitio.
+#+END_VERSE
+
+Este script lo tenemos que poner en todos los archivos para poder cambiar el tema y tambien tenemos que añadrir "defer" al importar este script para poder aplicar el tema mientras carga la pagina.
+
+#+BEGIN_SRC
+
+  /* style.css */
+
+  .light {
+      --background: white;
+      --color: black;
+  }
+
+  .dark {
+      --background: black;
+      --color: white;
+  }
+
+  /* esta parte es solo un ejemplo */
+
+  body{
+    background-color: var(--background);
+    color: var(--white) ;
+  }
+
+#+END_SRC
+
+Este metodo a pesar de ser un poco más complejo de implementar tiene algunas ventajas, por ejemplo podemos tener todos los temas que queramos simplemente añadiendo una clase, mientras que usando css solo podemos usar dos (dark y light), tambien podemos cambiar el tema mientras se usa la pagina.

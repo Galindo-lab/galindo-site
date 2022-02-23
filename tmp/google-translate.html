@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2022-02-09 mié 10:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Plugin de Google translate</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+<link rel="shortcut icon" type="image/jpg" href="./favicon.png"/>
+<script defer type="text/javascript" src="./scripts/script.js"></script>
+<meta name="theme-color" content="">
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-orgb14e0ef" class="outline-2">
+<h2 id="orgb14e0ef">Añadir el plugin traduccion</h2>
+<div class="outline-text-2" id="text-orgb14e0ef">
+<p>
+Añadir el plugin es muy sencillo de installar, simplemente tenmos que añadir el siguiente código en nuestra pagina.<br />
+NOTA: tenemos que añadir este script en <b>todas las paginas en las que queramos traducir</b>.<br />
+</p>
+
+<pre class="example">
+
+&lt;div id="google_translate_element"&gt;&lt;/div&gt;
+&lt;script defer&gt; 
+function googleTranslateElementInit() {
+
+new google.translate.TranslateElement({
+
+pageLanguage: 'es' // &lt;- idioma default, aquí esta en español
+
+}, 'google_translate_element');
+
+}
+&lt;/script&gt;
+
+&lt;script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"&gt;
+&lt;/script&gt;
+
+</pre>
+</div>
+</div>
+
+
+
+<div id="outline-container-org573e050" class="outline-2">
+<h2 id="org573e050">Ajustes personales</h2>
+<div class="outline-text-2" id="text-org573e050">
+</div>
+<div id="outline-container-org838643b" class="outline-3">
+<h3 id="org838643b">añadir "defer" en el tag script</h3>
+<div class="outline-text-3" id="text-org838643b">
+<p>
+Esto para hacer la carga del plugin sea asincrona y poder cargar nuestros propios scripts sin preocuparnos de que el plugin haya terminado de cargar.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72c8674" class="outline-3">
+<h3 id="org72c8674">ocultar la lista de idiomas</h3>
+<div class="outline-text-3" id="text-org72c8674">
+<p>
+Para traducir todas las paginas de nuestro sitio tenemos que agregar este script en todas las paginas, podemos integrar este componente con nuestro diseño ó podemos ocultarlo con css:<br />
+</p>
+
+<pre class="example">
+
+#google_translate_element{
+    display:none;
+}
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

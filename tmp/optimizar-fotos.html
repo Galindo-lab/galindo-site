@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2022-02-09 mié 10:48 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Optimizar fotos desde la terminal en Linux</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+<link rel="shortcut icon" type="image/jpg" href="./favicon.png"/>
+<script defer type="text/javascript" src="./scripts/script.js"></script>
+<meta name="theme-color" content="">
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-orgc2e1384" class="outline-2">
+<h2 id="orgc2e1384">Optimizar Fotos</h2>
+<div class="outline-text-2" id="text-orgc2e1384">
+<p>
+desde que empezó la pandemia me he visto en la necesidad de crear cientos de pdf que solo contienen fotos de mis trabajos. Pero una cosa que he notado en todo este tiempo es lo pesado que son los archivos que genera mi celular, rondando por internet me encontré con el siguiente comando para optimizar las fotos:<br />
+</p>
+
+<pre class="example">
+
+jpegoptim --size=500k *.jpg 
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc56f6d8" class="outline-2">
+<h2 id="orgc56f6d8">Extra, convertir fotos en pdfs</h2>
+<div class="outline-text-2" id="text-orgc56f6d8">
+<p>
+Sí juntamos el comando anterior con el siguiente comando podemos generar pdf optimizados muy rápidamente (adiós www.ilovepdf.com).<br />
+</p>
+
+<pre class="example">
+
+convert *.jpg a.pdf
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org8295acd" class="outline-2">
+<h2 id="org8295acd">Final</h2>
+<div class="outline-text-2" id="text-org8295acd">
+<pre class="example">
+
+jpegoptim --size=500k *.jpg 
+convert *.jpg a.pdf
+
+</pre>
+</div>
+</div>
+</div>
+</body>
+</html>

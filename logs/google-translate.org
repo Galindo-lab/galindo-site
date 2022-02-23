@@ -1,0 +1,48 @@
+
+#+TITLE: Plugin de Google translate
+#+DATE: [2021-08-05 jue]
+
+#+SETUPFILE: ~/.emacs.d/template/html.org
+#+EXPORT_FILE_NAME: ../tmp/google-translate.org
+
+* Añadir el plugin traduccion
+Añadir el plugin es muy sencillo de installar, simplemente tenmos que añadir el siguiente código en nuestra pagina.
+NOTA: tenemos que añadir este script en *todas las paginas en las que queramos traducir*.
+
+#+BEGIN_SRC 
+
+<div id="google_translate_element"></div>
+<script defer> 
+function googleTranslateElementInit() {
+
+new google.translate.TranslateElement({
+
+pageLanguage: 'es' // <- idioma default, aquí esta en español
+
+}, 'google_translate_element');
+
+}
+</script>
+
+<script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+#+END_SRC
+
+
+
+* Ajustes personales
+** añadir "defer" en el tag script
+Esto para hacer la carga del plugin sea asincrona y poder cargar nuestros propios scripts sin preocuparnos de que el plugin haya terminado de cargar.
+
+** ocultar la lista de idiomas
+Para traducir todas las paginas de nuestro sitio tenemos que agregar este script en todas las paginas, podemos integrar este componente con nuestro diseño ó podemos ocultarlo con css:
+
+#+BEGIN_SRC 
+
+#google_translate_element{
+    display:none;
+}
+
+#+END_SRC
+

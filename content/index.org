@@ -1,0 +1,32 @@
+
+#+TITLE: Galindosoft
+#+date:  [2021-04-20 mar]
+
+#+EXPORT_FILE_NAME: ../tmp/index.html
+#+SETUPFILE: ~/.emacs.d/template/html.org
+
+# extilo extra para el titulo
+#+OPTIONS: title:t
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="title.css" />
+#+HTML_HEAD: <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+#+BEGIN_CENTER
+{{{date}}}
+\\
+#+attr_html: :width 168px
+[[file:./img/status.png]]
+\\
+[[./links.org][Links]] · [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · [[./logs.html][Logs]] · [[./blog.org][Blog]]
+[[https://galindosoft.neocities.org/eigen/][Eigen]] · [[https://galindosoft.123guestbook.com/][Guestbook]]
+\\
+#+END_CENTER
+
+#+BEGIN_CENTER
+#+attr_html: :width 20px :title Github
+[[https://github.com/Galindo-lab][https://cdn-icons-png.flaticon.com/512/25/25231.png]]
+#+END_CENTER
+
+# #+begin_card
+# Soundcloud de Edgar 🔥
+# [[https://soundcloud.com/user-887296634]]
+# #+end_card

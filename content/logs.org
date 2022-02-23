@@ -1,0 +1,25 @@
+
+#+TITLE: Logs
+#+date: [2022-02-02 mié]
+
+#+SETUPFILE: ~/.emacs.d/template/html.org
+#+EXPORT_FILE_NAME: ../tmp/logs.html
+#+INCLUDE: "../includes/nav.org" 
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 88ṕx
+[[./img/button.png]]
+#+END_CENTER
+
+* Logs
+- [[./notacion-ingenieria-python.html][Ingresar notacion de ingenieria en Python]]
+- [[./google-translate.html][Añadir el plugin de google translate]]
+- [[./tema-obscuro.html][Implementar tema obscuro]]
+- [[./theme-color.html][Cambiar el color de las pestañas de chrome]]
+- [[./preview-html-externo.html][Preview html desde otro dispositivo]]
+- [[./optimizar-fotos.html][Optimizar fotos para pdfs]]
+- [[./blog-org-mode.html][Como hacer un blog con ORG mode]].
+- [[./notacion-ingenieria.html][Notacion de ingenieria]]
+
+* Extra
+- [[./programacion.html][Programación]]
