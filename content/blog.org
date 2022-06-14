@@ -7,6 +7,14 @@
 #+INCLUDE: "../includes/nav.org" 
 
 * 2022
+
+** [2022-06-14 mar]
+Finalmente termine mi semestre, fue muy pesado pero ya estoy fuera tratare de hacer un resumen rápido de lo que paso en estos días, primero el día del estudiante el grupo de lectura [[https://www.elsoldetijuana.com.mx/local/video-festejan-el-dia-del-estudiante-exigiendo-mejores-condiciones-en-la-uabc-8327671.html][organizo una protesta]] por la falta de transporte y de opciones de comida accesible, la participación fue bastante buena y logramos organizar un pequeño grupo estudiantil, estamos tratando de organizarnos.
+
+También estuve entregando mis proyectos finales de [[https://github.com/Galindo-lab/proyecto-final-ihc][Interacción humano computadora]] y de [[https://github.com/Galindo-lab/POO-2022/tree/main/Proyecto_final][Programación a objetos]], es bastante molesto que los profesores no respeten el calendario de ordinarios y tengo que hacer Exámenes de la nada.
+
+También termine las ayudantías de calculo y mande los documentos para transferirme de carrera.
+
 ** [2022-05-07 sáb]
 Otra vez olvide escribir en todo un mes, tratare de recapitular mas o menos que paso, empecé a ir al psicólogo eso es lo mas notable que ha pasado en este mes mi cita es los lunes a las 4 p.m. Sinceramente no siento ninguna mejora hasta ahora, trato de no ser desesperado mi hermana me habías dicho que esto tomaría tiempo entonces tratare de continuar, ojala pueda mejorar.
 
