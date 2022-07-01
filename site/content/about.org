@@ -2,8 +2,7 @@
 #+TITLE: About
 #+date: [2022-02-09 mié]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/about.html
+#+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
 Hola soy Galindo, bienvenido a mi blog.

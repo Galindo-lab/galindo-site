@@ -9,3 +9,6 @@
 #+OPTIONS: html-postamble:nil
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/styles/style.css" />
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+#+HTML_HEAD: <meta name="theme-color" content="#000000" />
+#+HTML_HEAD: <link rel="icon" type="image/x-icon" href="https://galindosoft.neocities.org/logo.png" />

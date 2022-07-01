@@ -11,6 +11,7 @@
 #+attr_html: :width 168px
 [[file:./img/status.png]]
 \\
+\\
 [[./content/links.org][Links]] ·
 [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · 
 [[./content/logs.org][Logs]] · 

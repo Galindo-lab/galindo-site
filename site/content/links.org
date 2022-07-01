@@ -2,8 +2,7 @@
 #+TITLE: Links
 
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/links.html
+#+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
 * Otros Neocities
