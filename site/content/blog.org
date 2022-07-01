@@ -2,8 +2,10 @@
 #+TITLE: Journal
 #+date: [2021-06-02 mié]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/blog.html
+# #+SETUPFILE: ~/.emacs.d/template/html.org
+# #+EXPORT_FILE_NAME: ../tmp/blog.html
+
+#+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
 * 2022
