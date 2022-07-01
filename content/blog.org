@@ -7,6 +7,41 @@
 #+INCLUDE: "../includes/nav.org" 
 
 * 2022
+** [2022-06-29 mié]
+Había olvidado por completo la lentitud con la que pasan los días en mi ciudad
+natal, apenas tengo 4 dias y siento como si hubiera pasado una eternidad, no 
+diría que extraño Tijuana pero tampoco desearía estar aquí, realmente no siento
+ni el más mínimo entusiasmo por nada nisiquiera por descansar. 
+
+A veces siento que tengo que tocar las cosas solo para darme cuenta si son
+reales, todo parece tan irreal.
+
+No recordaba porque tenía tanta urgencia por regresar a Tijuana hace meses 
+estar aquí se siente como una prisión, no porque me traten mal pero mi cabeza
+no me deja en paz sinceramente ya quisiera no pensar nunca más.
+
+** [2022-06-25 sáb]
+8:00 am, Anoche intenté hacer check-in en la aplicación de Volaris pero para 
+sorpresa de nadie el servidor estaba caído, así que tuve que venir 
+personalmente al aeropuerto a hacer mi check-in estoy aquí desde las 7 de la
+mañana pero al menos ya tengo mi pase de abordar.
+
+Con el internet del aeropuerto instale un par de aplicaciones, una para leer 
+ebooks y otra para escribir notas en .md, me gusta mas ORG para escribir 
+notas, pero hasta que no exista un buen port de emacs a Android no creo que 
+pueda usar ORG de manera sencilla en mi teléfono.
+
+9:00 am, Ya entré a la zona de abordaje, todavía falta una hora para entrar al 
+avión, el aeropuerto esta lleno de gente se nota que que las vacaciones estan 
+por llegar.
+
+11:36 am, Mi vuelo se retrasó y apenas nos asignaron una puerta.
+
+5:06 pm, Finalmente el vuelo salió a las 12 y algo, aterrizamos en Loreto a 
+las 3 pm y estoy en el camión de regreso a mi pueblo.
+
+6:00 pm, Llegué muy cansado del viaje, pero aún así llegué a verlos en su 
+guerra de bandas.
 
 ** [2022-06-14 mar]
 Finalmente termine mi semestre, fue muy pesado pero ya estoy fuera tratare de hacer un resumen rápido de lo que paso en estos días, primero el día del estudiante el grupo de lectura [[https://www.elsoldetijuana.com.mx/local/video-festejan-el-dia-del-estudiante-exigiendo-mejores-condiciones-en-la-uabc-8327671.html][organizo una protesta]] por la falta de transporte y de opciones de comida accesible, la participación fue bastante buena y logramos organizar un pequeño grupo estudiantil, estamos tratando de organizarnos.
