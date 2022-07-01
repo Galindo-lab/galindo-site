@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-01 vie 14:00 -->
+<!-- 2022-07-01 vie 14:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notación de Ingenieria</title>
@@ -234,13 +234,13 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8fab113">1. Notación de Ingenieria</a></li>
+<li><a href="#orgec8ceaf">1. Notación de Ingenieria</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8fab113" class="outline-2">
-<h2 id="org8fab113"><span class="section-number-2">1</span> Notación de Ingenieria</h2>
+<div id="outline-container-orgec8ceaf" class="outline-2">
+<h2 id="orgec8ceaf"><span class="section-number-2">1</span> Notación de Ingenieria</h2>
 <div class="outline-text-2" id="text-1">
 <table cellspacing="0" cellpadding="6" rules="groups" frame="border">
 
@@ -382,7 +382,7 @@ for the JavaScript code in this tag.
 <div id="postamble" class="status">
 <p class="date">Date: 2021-08-24 mar 00:00</p>
 <p class="author">Author: Galindo</p>
-<p class="date">Created: 2022-07-01 vie 14:00</p>
+<p class="date">Created: 2022-07-01 vie 14:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

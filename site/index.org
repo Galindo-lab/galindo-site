@@ -16,7 +16,7 @@
 #+attr_html: :width 168px
 [[file:./img/status.png]]
 \\
-[[./links.org][Links]] · [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · [[./logs.html][Logs]] · [[./blog.org][Blog]]
+[[./links.org][Links]] · [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · [[./logs.html][Logs]] · [[./blog.org][Blog]] \\
 [[https://galindosoft.neocities.org/eigen/][Eigen]] · [[https://galindosoft.123guestbook.com/][Guestbook]]
 \\
 #+END_CENTER

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-01 vie 14:00 -->
+<!-- 2022-07-01 vie 14:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Plugin de Google translate</title>
@@ -234,19 +234,19 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org916be4d">1. Añadir el plugin traduccion</a></li>
-<li><a href="#orgefc45c3">2. Ajustes personales</a>
+<li><a href="#orga15821c">1. Añadir el plugin traduccion</a></li>
+<li><a href="#org830c6c7">2. Ajustes personales</a>
 <ul>
-<li><a href="#orgb2f2d87">2.1. añadir "defer" en el tag script</a></li>
-<li><a href="#orgbe3713d">2.2. ocultar la lista de idiomas</a></li>
+<li><a href="#orgff208e5">2.1. añadir "defer" en el tag script</a></li>
+<li><a href="#org69a8979">2.2. ocultar la lista de idiomas</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org916be4d" class="outline-2">
-<h2 id="org916be4d"><span class="section-number-2">1</span> Añadir el plugin traduccion</h2>
+<div id="outline-container-orga15821c" class="outline-2">
+<h2 id="orga15821c"><span class="section-number-2">1</span> Añadir el plugin traduccion</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Añadir el plugin es muy sencillo de installar, simplemente tenmos que añadir el siguiente código en nuestra pagina.
@@ -277,12 +277,12 @@ pageLanguage: 'es' // &lt;- idioma default, aquí esta en español
 
 
 
-<div id="outline-container-orgefc45c3" class="outline-2">
-<h2 id="orgefc45c3"><span class="section-number-2">2</span> Ajustes personales</h2>
+<div id="outline-container-org830c6c7" class="outline-2">
+<h2 id="org830c6c7"><span class="section-number-2">2</span> Ajustes personales</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb2f2d87" class="outline-3">
-<h3 id="orgb2f2d87"><span class="section-number-3">2.1</span> añadir "defer" en el tag script</h3>
+<div id="outline-container-orgff208e5" class="outline-3">
+<h3 id="orgff208e5"><span class="section-number-3">2.1</span> añadir "defer" en el tag script</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Esto para hacer la carga del plugin sea asincrona y poder cargar nuestros propios scripts sin preocuparnos de que el plugin haya terminado de cargar.
@@ -290,8 +290,8 @@ Esto para hacer la carga del plugin sea asincrona y poder cargar nuestros propio
 </div>
 </div>
 
-<div id="outline-container-orgbe3713d" class="outline-3">
-<h3 id="orgbe3713d"><span class="section-number-3">2.2</span> ocultar la lista de idiomas</h3>
+<div id="outline-container-org69a8979" class="outline-3">
+<h3 id="org69a8979"><span class="section-number-3">2.2</span> ocultar la lista de idiomas</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Para traducir todas las paginas de nuestro sitio tenemos que agregar este script en todas las paginas, podemos integrar este componente con nuestro diseño ó podemos ocultarlo con css:
@@ -311,7 +311,7 @@ Para traducir todas las paginas de nuestro sitio tenemos que agregar este script
 <div id="postamble" class="status">
 <p class="date">Date: 2021-08-05 jue 00:00</p>
 <p class="author">Author: Galindo</p>
-<p class="date">Created: 2022-07-01 vie 14:00</p>
+<p class="date">Created: 2022-07-01 vie 14:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

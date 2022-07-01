@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-01 vie 14:00 -->
+<!-- 2022-07-01 vie 14:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Programación</title>
@@ -234,19 +234,19 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc97d3ed">1. Introducción</a></li>
-<li><a href="#orgea6c9b6">2. Minecraft, mod scripts y mi primer bug</a></li>
-<li><a href="#orgf1d81f3">3. Eligiendo una carrera técnica</a></li>
-<li><a href="#org5e521a3">4. Mi primera laptop, BATCH y C++</a></li>
-<li><a href="#orgb977788">5. Mis primeros juegos</a></li>
-<li><a href="#orgf858181">6. Final</a></li>
-<li><a href="#orge813af5">7. Anexo</a></li>
+<li><a href="#org6367e31">1. Introducción</a></li>
+<li><a href="#org9188099">2. Minecraft, mod scripts y mi primer bug</a></li>
+<li><a href="#org50276d0">3. Eligiendo una carrera técnica</a></li>
+<li><a href="#org1e13344">4. Mi primera laptop, BATCH y C++</a></li>
+<li><a href="#org772d1dc">5. Mis primeros juegos</a></li>
+<li><a href="#org3190034">6. Final</a></li>
+<li><a href="#orgc9ce9cd">7. Anexo</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc97d3ed" class="outline-2">
-<h2 id="orgc97d3ed"><span class="section-number-2">1</span> Introducción</h2>
+<div id="outline-container-org6367e31" class="outline-2">
+<h2 id="org6367e31"><span class="section-number-2">1</span> Introducción</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sí ya tienes suficiente tiempo leyendo mis post deberías saber que mi pasatiempo número uno es programar, para estas fechas ya debería tener casi 5-6 años dedicándole mi vida a escribir código, siempre cuento esta historia cada vez que consocio a alguien nuevo así que voy a aprovechar el tiempo libre que me queda y voy a poner en código la historia de como empecé a programar.
@@ -254,8 +254,8 @@ Sí ya tienes suficiente tiempo leyendo mis post deberías saber que mi pasatiem
 </div>
 </div>
 
-<div id="outline-container-orgea6c9b6" class="outline-2">
-<h2 id="orgea6c9b6"><span class="section-number-2">2</span> Minecraft, mod scripts y mi primer bug</h2>
+<div id="outline-container-org9188099" class="outline-2">
+<h2 id="org9188099"><span class="section-number-2">2</span> Minecraft, mod scripts y mi primer bug</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Todo empezó con mi otro gran hobby&#x2026; Minecraft (PE) En el año de 2012 ( o 2013? ) con la versión 0.7.x , en ese entonces existían algo llamado modscrips, eran pequeños programas en JavaScript que se podían utilizar para añadir cosas al juego cosas como: comida, crafteos, herramientas y los más ambiciosos añadían hasta mobs, un día por casualidad se me ocurrió la idea de hacer click en uno de esos misteriosos modscripts (sí mi memoria no me falla creo que era el mod de "elemental swords"), solo eran un montón de líneas de código repetido varias veces y yo con todo el intelecto y nivel de ingles que un niño de 11-12 años puede tener procedí a crear mi primer "mod" (básicamente un clon de elemental swords), todo bien por los primeros minutos todo estuvo bien, pero después mi "mod" dejo de funcionar, en ese entonces no lo sabía, pero me había topado con mi primer bug, mi sospecha es que puse alguna minúscula en donde no debía (típico, camelCase arruinando mi vida desde siempre).
@@ -263,8 +263,8 @@ Todo empezó con mi otro gran hobby&#x2026; Minecraft (PE) En el año de 2012 ( 
 </div>
 </div>
 
-<div id="outline-container-orgf1d81f3" class="outline-2">
-<h2 id="orgf1d81f3"><span class="section-number-2">3</span> Eligiendo una carrera técnica</h2>
+<div id="outline-container-org50276d0" class="outline-2">
+<h2 id="org50276d0"><span class="section-number-2">3</span> Eligiendo una carrera técnica</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Después de ese primer desencanto con la programación seguí con mi vida viviendo todas las aventuras que un mocoso de 11-12 años puede tener. Pase la primaria, la secundaria, y había llegado ese momento tenía que elegir cuál carrera técnica cursaría (ya tenía como 14 años) iba a tomar, mi hermana había ido en programación y pues como a mí me interesaban las computadoras se me ocurrió la idea de hacer exactamente lo mismo, así que eso hice. Cabe destacar que para cuando yo termine la secundaria mi sueño era ser historiador (más adelante explico como termine en ingeniería)
@@ -272,8 +272,8 @@ Después de ese primer desencanto con la programación seguí con mi vida vivien
 </div>
 </div>
 
-<div id="outline-container-org5e521a3" class="outline-2">
-<h2 id="org5e521a3"><span class="section-number-2">4</span> Mi primera laptop, BATCH y C++</h2>
+<div id="outline-container-org1e13344" class="outline-2">
+<h2 id="org1e13344"><span class="section-number-2">4</span> Mi primera laptop, BATCH y C++</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Bueno como regalo para mi cumpleaños número 15 mi mamá me regalo el dinero que me hacía falta para comprar mi primera laptop (la cual por cierto es la que sigo usando a diario) y mi viaje empezó&#x2026; 
@@ -294,8 +294,8 @@ Y así concluye mi primer semestre en preparatoria.
 </div>
 </div>
 
-<div id="outline-container-orgb977788" class="outline-2">
-<h2 id="orgb977788"><span class="section-number-2">5</span> Mis primeros juegos</h2>
+<div id="outline-container-org772d1dc" class="outline-2">
+<h2 id="org772d1dc"><span class="section-number-2">5</span> Mis primeros juegos</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Durante mi primer año también empecé a hacer juegos en C++, mi primer videojuego lo titulé "keywar". Básicamente una palabra iba cayendo desde la parte superior de la pantalla hasta la parte de abajo y tenías que escribirlas lo más rápido posible, el juego terminaba si varias palabras tocaban la parte inferior de la pantalla. Todo un éxito durante la feria de ciencias de ese año, todavía tengo las fotos.
@@ -303,8 +303,8 @@ Durante mi primer año también empecé a hacer juegos en C++, mi primer videoju
 </div>
 </div>
 
-<div id="outline-container-orgf858181" class="outline-2">
-<h2 id="orgf858181"><span class="section-number-2">6</span> Final</h2>
+<div id="outline-container-org3190034" class="outline-2">
+<h2 id="org3190034"><span class="section-number-2">6</span> Final</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Podría extenderme más sobre como aprendí programación web, php, cobol, assembly, lua etc.. Pero la verdad siento que no aporta nada a este relato que les acabo de contar para cuando entre a mi segundo año yo ya sabia que mi nueva meta era estudiar ingeniería. Siempre me da un poco de nostalgia recordar como empecé con esto, como unos vídeos de YouTube cambiaron por completo mis aspiraciones académicas y todas las cosas que he hecho hasta ahora. Se suponía que esta seria una pequeña entrada de mi blog y ya tengo varias horas escribiendo, hoy me sentía con muchas ganas de escribir y recordar todas las cosas que me llevaron a aquí&#x2026; quizá me siento así porque hoy es mi último día de vacaciones o quizá simplemente es porque no quiero limpiar mi cuarto, no lo sé, pero hasta entonces me despido.
@@ -312,8 +312,8 @@ Podría extenderme más sobre como aprendí programación web, php, cobol, assem
 </div>
 </div>
 
-<div id="outline-container-orge813af5" class="outline-2">
-<h2 id="orge813af5"><span class="section-number-2">7</span> Anexo</h2>
+<div id="outline-container-orgc9ce9cd" class="outline-2">
+<h2 id="orgc9ce9cd"><span class="section-number-2">7</span> Anexo</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2021-08-10 mar]</span></span>
@@ -328,7 +328,7 @@ Encontré uno de mis <a href="./resources/4-El juego de la vida.txt">primeros c�
 <div id="postamble" class="status">
 <p class="date">Date: 2021-08-08 dom 00:00</p>
 <p class="author">Author: Galindo</p>
-<p class="date">Created: 2022-07-01 vie 14:00</p>
+<p class="date">Created: 2022-07-01 vie 14:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
