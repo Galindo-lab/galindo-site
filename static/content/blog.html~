@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-07-01 vie 14:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Journal</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Journal</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org88a1191">1. 2022</a>
+<ul>
+<li><a href="#org0687ace">1.1. <span class="timestamp-wrapper"><span class="timestamp">[2022-06-29 mié]</span></span></a></li>
+<li><a href="#orge5feb00">1.2. <span class="timestamp-wrapper"><span class="timestamp">[2022-06-25 sáb]</span></span></a></li>
+<li><a href="#org5a762ad">1.3. <span class="timestamp-wrapper"><span class="timestamp">[2022-06-14 mar]</span></span></a></li>
+<li><a href="#org7373f67">1.4. <span class="timestamp-wrapper"><span class="timestamp">[2022-05-07 sáb]</span></span></a></li>
+<li><a href="#orga4abe59">1.5. <span class="timestamp-wrapper"><span class="timestamp">[2022-03-31 jue]</span></span></a></li>
+<li><a href="#orgbabb7fc">1.6. <span class="timestamp-wrapper"><span class="timestamp">[2022-02-23 mié]</span></span></a></li>
+<li><a href="#org4692fc2">1.7. <span class="timestamp-wrapper"><span class="timestamp">[2022-01-28 vie]</span></span></a></li>
+<li><a href="#org6bb95e9">1.8. <span class="timestamp-wrapper"><span class="timestamp">[2022-01-27 jue]</span></span></a></li>
+<li><a href="#org5a3797f">1.9. <span class="timestamp-wrapper"><span class="timestamp">[2022-01-06 jue]</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org6cd07b9">2. 2021</a>
+<ul>
+<li><a href="#org325c50f">2.1. <span class="timestamp-wrapper"><span class="timestamp">[2021-12-13 lun]</span></span></a></li>
+<li><a href="#org34b8038">2.2. <span class="timestamp-wrapper"><span class="timestamp">[2021-12-11 sáb]</span></span></a></li>
+<li><a href="#orgd33e58d">2.3. <span class="timestamp-wrapper"><span class="timestamp">[2021-11-26 vie]</span></span></a></li>
+<li><a href="#org53113be">2.4. <span class="timestamp-wrapper"><span class="timestamp">[2021-11-11 jue]</span></span></a></li>
+<li><a href="#orgecf7c4f">2.5. <span class="timestamp-wrapper"><span class="timestamp">[2021-10-28 jue]</span></span></a></li>
+<li><a href="#org3efabd2">2.6. <span class="timestamp-wrapper"><span class="timestamp">[2021-10-27 mié]</span></span></a></li>
+<li><a href="#org1684162">2.7. <span class="timestamp-wrapper"><span class="timestamp">[2021-10-25 lun]</span></span></a></li>
+<li><a href="#orgafe3b8e">2.8. <span class="timestamp-wrapper"><span class="timestamp">[2021-10-19 mar]</span></span></a></li>
+<li><a href="#org660a1ad">2.9. <span class="timestamp-wrapper"><span class="timestamp">[2021-10-10 dom]</span></span></a></li>
+<li><a href="#org037901f">2.10. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-07 mar]</span></span></a></li>
+<li><a href="#org0e08177">2.11. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-26 dom]</span></span></a></li>
+<li><a href="#org14776d2">2.12. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-20 lun]</span></span></a></li>
+<li><a href="#orgaadc9c1">2.13. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-15 mié]</span></span></a></li>
+<li><a href="#orgf0b4e5b">2.14. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-07 mar]</span></span></a></li>
+<li><a href="#org99a8acc">2.15. <span class="timestamp-wrapper"><span class="timestamp">[2021-09-03 vie]</span></span></a></li>
+<li><a href="#org98cc73b">2.16. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-29 dom]</span></span></a></li>
+<li><a href="#org6ad7a8f">2.17. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-26 jue]</span></span></a></li>
+<li><a href="#orgae996fb">2.18. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-19 jue]</span></span></a></li>
+<li><a href="#org5965344">2.19. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-13 vie]</span></span></a></li>
+<li><a href="#org0ae5330">2.20. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-09 lun]</span></span></a></li>
+<li><a href="#org45caaea">2.21. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-06 vie]</span></span></a></li>
+<li><a href="#orgec984f7">2.22. <span class="timestamp-wrapper"><span class="timestamp">[2021-08-05 jue]</span></span></a></li>
+<li><a href="#org62ec77c">2.23. <span class="timestamp-wrapper"><span class="timestamp">[2021-07-29 jue]</span></span></a></li>
+<li><a href="#orgd7b4ad2">2.24. <span class="timestamp-wrapper"><span class="timestamp">[2021-07-22 jue]</span></span></a></li>
+<li><a href="#orgd4e0c73">2.25. <span class="timestamp-wrapper"><span class="timestamp">[2021-07-21 mié]</span></span></a></li>
+<li><a href="#org01196bf">2.26. <span class="timestamp-wrapper"><span class="timestamp">[2021-07-21 mié]</span></span></a></li>
+<li><a href="#org3bf18cc">2.27. <span class="timestamp-wrapper"><span class="timestamp">[2021-07-20 mar]</span></span></a></li>
+<li><a href="#org8ba0f57">2.28. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-24 jue]</span></span></a></li>
+<li><a href="#orgb24be2e">2.29. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-19 sáb]</span></span></a></li>
+<li><a href="#orgfe6b1f3">2.30. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-18 vie]</span></span></a></li>
+<li><a href="#orgaf7bac8">2.31. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-17 jue]</span></span></a></li>
+<li><a href="#orgb37b0bb">2.32. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-16 mié]</span></span></a></li>
+<li><a href="#orgfbaf32a">2.33. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-14 lun]</span></span></a></li>
+<li><a href="#orgaf881a7">2.34. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-12 sáb]</span></span></a></li>
+<li><a href="#org8318d60">2.35. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-09 mié]</span></span></a></li>
+<li><a href="#org3332ff5">2.36. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-08 mar]</span></span></a></li>
+<li><a href="#orgd77893e">2.37. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-07 lun]</span></span></a></li>
+<li><a href="#org18205fe">2.38. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-06 dom]</span></span></a></li>
+<li><a href="#org05e5862">2.39. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-05 sáb]</span></span></a></li>
+<li><a href="#org765a90c">2.40. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-04 vie]</span></span></a></li>
+<li><a href="#org80223b8">2.41. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-03 jue]</span></span></a></li>
+<li><a href="#orgb5e601e">2.42. <span class="timestamp-wrapper"><span class="timestamp">[2021-06-02 mié]</span></span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div style="text-align:center;">
+<p><b>Galindosoft</b></p>
+<hr />
+  <a href="./index.html">Home</a>&nbsp;&nbsp;
+  <a href="./links.html">Links</a>&nbsp;&nbsp;
+  <a href="./logs.html">Logs</a>&nbsp;&nbsp;
+  <a href="./about.html">About</a>&nbsp;&nbsp;
+<hr />
+</div>
+
+<div id="outline-container-org88a1191" class="outline-2">
+<h2 id="org88a1191"><span class="section-number-2">1</span> 2022</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org0687ace" class="outline-3">
+<h3 id="org0687ace"><span class="section-number-3">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-06-29 mié]</span></span></h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Había olvidado por completo la lentitud con la que pasan los días en mi ciudad
+natal, apenas tengo 4 dias y siento como si hubiera pasado una eternidad, no 
+diría que extraño Tijuana pero tampoco desearía estar aquí, realmente no siento
+ni el más mínimo entusiasmo por nada nisiquiera por descansar. 
+</p>
+
+<p>
+A veces siento que tengo que tocar las cosas solo para darme cuenta si son
+reales, todo parece tan irreal.
+</p>
+
+<p>
+No recordaba porque tenía tanta urgencia por regresar a Tijuana hace meses 
+estar aquí se siente como una prisión, no porque me traten mal pero mi cabeza
+no me deja en paz sinceramente ya quisiera no pensar nunca más.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5feb00" class="outline-3">
+<h3 id="orge5feb00"><span class="section-number-3">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-06-25 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+8:00 am, Anoche intenté hacer check-in en la aplicación de Volaris pero para 
+sorpresa de nadie el servidor estaba caído, así que tuve que venir 
+personalmente al aeropuerto a hacer mi check-in estoy aquí desde las 7 de la
+mañana pero al menos ya tengo mi pase de abordar.
+</p>
+
+<p>
+Con el internet del aeropuerto instale un par de aplicaciones, una para leer 
+ebooks y otra para escribir notas en .md, me gusta mas ORG para escribir 
+notas, pero hasta que no exista un buen port de emacs a Android no creo que 
+pueda usar ORG de manera sencilla en mi teléfono.
+</p>
+
+<p>
+9:00 am, Ya entré a la zona de abordaje, todavía falta una hora para entrar al 
+avión, el aeropuerto esta lleno de gente se nota que que las vacaciones estan 
+por llegar.
+</p>
+
+<p>
+11:36 am, Mi vuelo se retrasó y apenas nos asignaron una puerta.
+</p>
+
+<p>
+5:06 pm, Finalmente el vuelo salió a las 12 y algo, aterrizamos en Loreto a 
+las 3 pm y estoy en el camión de regreso a mi pueblo.
+</p>
+
+<p>
+6:00 pm, Llegué muy cansado del viaje, pero aún así llegué a verlos en su 
+guerra de bandas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a762ad" class="outline-3">
+<h3 id="org5a762ad"><span class="section-number-3">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-06-14 mar]</span></span></h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Finalmente termine mi semestre, fue muy pesado pero ya estoy fuera tratare de hacer un resumen rápido de lo que paso en estos días, primero el día del estudiante el grupo de lectura <a href="https://www.elsoldetijuana.com.mx/local/video-festejan-el-dia-del-estudiante-exigiendo-mejores-condiciones-en-la-uabc-8327671.html">organizo una protesta</a> por la falta de transporte y de opciones de comida accesible, la participación fue bastante buena y logramos organizar un pequeño grupo estudiantil, estamos tratando de organizarnos.
+</p>
+
+<p>
+También estuve entregando mis proyectos finales de <a href="https://github.com/Galindo-lab/proyecto-final-ihc">Interacción humano computadora</a> y de <a href="https://github.com/Galindo-lab/POO-2022/tree/main/Proyecto_final">Programación a objetos</a>, es bastante molesto que los profesores no respeten el calendario de ordinarios y tengo que hacer Exámenes de la nada.
+</p>
+
+<p>
+También termine las ayudantías de calculo y mande los documentos para transferirme de carrera.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7373f67" class="outline-3">
+<h3 id="org7373f67"><span class="section-number-3">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-05-07 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Otra vez olvide escribir en todo un mes, tratare de recapitular mas o menos que paso, empecé a ir al psicólogo eso es lo mas notable que ha pasado en este mes mi cita es los lunes a las 4 p.m. Sinceramente no siento ninguna mejora hasta ahora, trato de no ser desesperado mi hermana me habías dicho que esto tomaría tiempo entonces tratare de continuar, ojala pueda mejorar.
+</p>
+
+<p>
+Empecé a ir con el psicólogo porque ya siento que no puedo mas, siempre estoy enojado y cansado, y cuando trato de descansar mi cabeza no me deja en paz, todos los días siento quiero que sean el ultimo y me he dado cuenta que así ha sido por los últimos seis años, tomando decisiones casi por inercia y no por que realmente sintiera nada, el peor consejo que pude seguir en mi vida fue 'estudia lo que te gusta hacer' porque ahora odio lo que me gustaba, cambiaría todo por solo un segundo de no tener este peso encima.
+</p>
+
+<p>
+También estuve pensando sobre mi carrero y me voy a cambiar, me estoy desgastando demasiado física y mentalmente, cada vez batallo mas para hacer mi trabajo solo tengo que esperar la convocatoria el final del semestre y ver que va a pasar con mi reajuste.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga4abe59" class="outline-3">
+<h3 id="orga4abe59"><span class="section-number-3">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-31 jue]</span></span></h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Antes de que se acabe el mes me gustaría poner una entrada, realmente necesito poner mis pensamientos en orden, ha sido un poco complicado volverme a ajustar a mi vida de foráneo. Había olvidado lo complicado que es cuidar las cosas que te rodea como a su vez las cosas de la universidad, La universidad ha estado bien trato de mantenerme al día con los trabajos pero aun así no puedo evitar que se me pase alguna entrega ocasional. 
+</p>
+
+<p>
+Este mes también me uní un circulo de lectura, Estudiantes y revolución, ya tenemos 3 semanas reuniéndonos, es muy genial ver que hay gente con un poco de motivación de intentar cambiar su situación.
+</p>
+
+<p>
+Siempre me ha parecido muy alarmante la poca representación estudiantil que tiene mi universidad, ojala podamos cerrar un poco esa brecha de alguna manera. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbabb7fc" class="outline-3">
+<h3 id="orgbabb7fc"><span class="section-number-3">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-02-23 mié]</span></span></h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+Bueno ya casi se acaba febrero y yo todavía no hago otra entrada. El semestre empiezo como de costumbre, tengo fe en que sera tranquilo, el semestre anterior adelante lo mas pesado en teoría.
+</p>
+
+<p>
+Finalmente regrese a tijuana, antes de la pandemia solo estuve un mes estudiando en presencial, han tenido que pasar casi dos años para que yo pueda regresar aquí. 
+</p>
+
+<p>
+Esta vez vine en camión, las veces anteriores había tomado el avión pero como el equipaje esta muy caro tuve que hacerlo así, fueron aproximadamente 24 horas de viaje salí a las 10:30 am el viernes 18 y llegue a las 6-7 am del sábado 19. pase casi todo el sábado y el domingo durmiendo. 
+</p>
+
+<p>
+La tarde del domingo salí con mi hermana a comprar las cosas que me faltaban y puse un poco de orden en mi cuarto.
+</p>
+
+<p>
+El martes y miércoles ha estado lloviendo, pero nada importante ha pasado, las clases presenciales inician hasta el 7 de marzo por lo que todavía tengo tiempo de relajarme.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4692fc2" class="outline-3">
+<h3 id="org4692fc2"><span class="section-number-3">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-28 vie]</span></span></h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+Esta entrada es para recapitular que paso el ultimo mes así que la mayoría de estas cosas pasaron ya hace varios días.
+</p>
+
+<p>
+Hace un par de semanas volví a hacer ejercicio, me siento bien hace mucho tiempo que no estaba tan delgado, también termine con mis ayudantias ahora mismo el profesor esta revisando mi trabajo.
+</p>
+
+<p>
+Esta parte me voy a poner a recapitular lo que ha pasado durante este mes. Siempre me he considerado una persona sana pero desde diciembre he tenido dolor de espalda, hace unas semanas descubrimos que era un quiste pilonidal', no es nada grave pero ocupo una operación para evitar que vuelva a salir sin embargo por culpa de la pandemia no pude terminar el tramite así que tengo que como solucionar este problema.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6bb95e9" class="outline-3">
+<h3 id="org6bb95e9"><span class="section-number-3">1.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-27 jue]</span></span></h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+A la Frida se le volteo un ojo, tuve que llamar a mi madre del trabajo para poderla llevar a el veterinario, nos dijeron que tiene infección y temperatura, mas tarde su ojo regreso a la normalidad pero de todos modos estoy preocupado.
+</p>
+</div>
+</div>
+<div id="outline-container-org5a3797f" class="outline-3">
+<h3 id="org5a3797f"><span class="section-number-3">1.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-06 jue]</span></span></h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+Primer entrada del año, apenas van 6 días del 2022 y siento que me estoy haciendo pedazos, estoy muy cansado y tengo todavía mucho trabajo.
+</p>
+
+<p>
+Estuve trabajando con un amigo y ya me han pagado, pensé que no podría sacarlos en menos de un día pero aparentemente todavía tengo el talento para hacerlo.
+</p>
+
+<p>
+También hace unos días me entregaron las fotos que pedí de mi perrita Frida. se ve muy bien.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6cd07b9" class="outline-2">
+<h2 id="org6cd07b9"><span class="section-number-2">2</span> 2021</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org325c50f" class="outline-3">
+<h3 id="org325c50f"><span class="section-number-3">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-12-13 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+ya tengo dos semanas de vacaciones y todavia me siento cansado, siento que todavia no me puedo recuperar, trato de respirar pero no puedo conseguir ganas de hacer nada, tantas cosas que queria hacer pero no puedo conseguir las ganas de seguir. Voy a seguir trabajando en mis apuntes todavia falta mucho y no he avamzado casi nada.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34b8038" class="outline-3">
+<h3 id="org34b8038"><span class="section-number-3">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-12-11 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+El semestre termino, pase todas mis materias mis calificaciones fueron:
+</p>
+
+<table cellspacing="0" cellpadding="6" rules="groups" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Materia</th>
+<th scope="col" class="org-right">Calificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ecuaciones diferenciales (78)</td>
+<td class="org-right">80</td>
+</tr>
+
+<tr>
+<td class="org-left">Calculo multivariable</td>
+<td class="org-right">88</td>
+</tr>
+
+<tr>
+<td class="org-left">Circuitos Electricos</td>
+<td class="org-right">70.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Matematicas Discretas</td>
+<td class="org-right">84</td>
+</tr>
+
+<tr>
+<td class="org-left">Sociedad y Valores</td>
+<td class="org-right">86</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Quizá estas vacaciones hago un intersemestral, así que no creo que pueda descansar todo lo que me gustaría también contesegui una ayudantía docente, simplificando tengo que hacer textos para ayudar a mis compañeros a entender los temas de calculo multivariable, también puedo hacer programas para ayudar a mis compañeros. 
+Eso es lo que ha estado pasando conmigo estos días, la verdad es que me siento muy contento con mis resultados pero aun así creo que algo no esta bien este semestre he tenido mucho tiempo para pensar varias cosas sobre mi carrera, quizá luego escriba algo al respecto ahora mismo no me siento con ganas para hacerlo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd33e58d" class="outline-3">
+<h3 id="orgd33e58d"><span class="section-number-3">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-11-26 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Esta sera una entrada muy rapida, no tengo mucho tiempo y si no la hago hoy no la voy a hacer nunca, de nuevo como en entradas anteriores he estado teniendo problemas con mis trabajos en circuitos electronicos he podido hacer correcciones pero aun asi no sera suficiente para pasar el semestre.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org53113be" class="outline-3">
+<h3 id="org53113be"><span class="section-number-3">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-11-11 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+La ultima semana ha sido un poco complicada, he estado estudiando para matematicas discretas por que hoy es el examen esta materia me pone muy nerviso por que la profesora no entrega calificaciones. Tambien he estado programando un poco, hice la interfaz grafica para eigenmath y tambien una aplicacion movil. 
+</p>
+
+<p>
+Ya paso el examen tengo 43.5% eso es preocupante, esta es la primera calificacion en el semestre en esta materia Me desespera mucho no poder saber mis calificaciones. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgecf7c4f" class="outline-3">
+<h3 id="orgecf7c4f"><span class="section-number-3">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-10-28 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Hay días que realmente me hacen sentir como si me hubieran maldecido parece que no tenga ni un dia de suerte desde hace meses, me siento afortunado si un dia simplemente no pasa nada y no me dan alguna mala noticia o algún trabajo atrasado decide asomar su fea cabeza. 
+</p>
+
+<p>
+Hoy teníamos que entregar la práctica de circuitos eléctricos pero uno de mis compañeros se quedo sin internet por lo que tuvimos que enviar la práctica con 6 horas de atraso, luego pasé toda la tarde adelantando trabajo de la próxima semana pero hace un par de minutos me avisen que tenemos examen mañana, ya es mas de las 23:00 y no he estudiado nada.  Poner esta clase de cosas por escrito me ayuda un poco a controlarme quizás me ayuda a ordenar mis pensamientos. 
+</p>
+
+<p>
+Acabo de morder mi mano y me ha invadido un sentimiento de nostalgia, siempre he sido una persona muy nerviosa y cuando era niño yo solía morder mi mano cuando estaba muy nervioso, según yo eso no lo hacía desde que tenía 8 años, bueno supongo que algunas cosas simplemente no las dejas atrás. Un recuerdo muy vívido que tengo es cuando iba a la primaria y madres me regaño mientras estábamos en el carro en el estacionamiento de una tienda, me había estado mordiendo la parte que une el pulgar con la palma de la mano, no recuerdo a detalle que me dijo mi madre pero todavía de pensar en eso me pongo nervioso como si me fueran a regañar en este momento. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3efabd2" class="outline-3">
+<h3 id="org3efabd2"><span class="section-number-3">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-10-27 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Estaba pensando en todo lo que quiero hacer, una de las cosas que siempre he querido hacer es tener un amigo de cada parte del mundo, pero luego mi cabeza se puso a divagar y termine pensando ¿cuanto tiempo me llevaria hablar con cada persona en el mundo?, bueno a fecha de hoy y segun la incuestionable verdad de el <a href="https://www.saberespractico.com/curiosidades/cuantas-personas-hay-en-el-mundo-actualmente/">primer resultado de google</a> hay 7700 millones de personas en el mundo, bueno si aplicamos la tecnica de <a href="https://youtu.be/aQ5R7c2xZuQ">Ned McDodd</a> y hablo con cada persona por 12 segundoos eso seria:
+</p>
+
+<pre class="example">
+     12 * 7700E6 =  9.24E10 s
+    9.24E10 / 60 =  1.54E9  min
+     1.54E9 / 60 = 2.567E7  h
+    2.567E7 / 24 = 1.069E6  d
+1.069E6 / 365.25 = 2927.979 y
+</pre>
+
+<p>
+en resumen, si quiero estar a tiempo deberia empezar ahora.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1684162" class="outline-3">
+<h3 id="org1684162"><span class="section-number-3">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-10-25 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Hoy hice otro examen de circuitos eléctricos, de nuevo me fue muy mal, según mis estimaciones 35/100, me he dado cuenta que en casi el medio año que tengo con este sitio nunca he escrito como me siento, me siento mal, no estoy cómodo haciendo lo que hago, no me interesa paso las materias por pasar pero no siento que aporte nada, tengo casi dos años en mi carera y he pasado mas tiempo estudiando circuitos eléctricos que nada de computación, en 4 semestres solo he llevado 3 materias sobre mi carrera lo demás es circuitos u otra cosa, no me tomen a mal, yo sé que no todo puede ser programación pero no creo que entender circuitos me ayude en algo, estamos tan alejados del hardware que no entiendo que cosa me aporta, me dicen "los ingenieros deben saber un poco de todo" pero no puedo elegir que estudiar, odio física, es de las materias que mas me estresa, 1 hora no es suficiente tiempo para alguien de pensamiento tan lento como yo, sin contar que tengo materia extra que atender (además de servicio social) y materias extra de otras facultades para completar las horas, váyanse al demonio, apenas puedo estudiar lo suficiente para aprobar con 60 y quieren que tenga materas extra, JÓDANSE!.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgafe3b8e" class="outline-3">
+<h3 id="orgafe3b8e"><span class="section-number-3">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-10-19 mar]</span></span></h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+Maldita sea, estoy harto de mi profesora de electricidad, tenemos 3 meses aguantando todas las tonterías que hace explica fatal, si va a explicar tan mal no le cuesta nada enviar el pdf con las notas, yo puedo leer mas rápido de lo que ella explica, su evaluación se siente como si estuviera haciendo las cosas al azar, jamas vuelvo a tomar una clase con ella. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org660a1ad" class="outline-3">
+<h3 id="org660a1ad"><span class="section-number-3">2.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-10-10 dom]</span></span></h3>
+<div class="outline-text-3" id="text-2-9">
+<p>
+Ya casi vamos a la mitad del mes y yo no he hecho ninguna entrada en el blog, bueno tampoco es que haya pasado nada interesante durante este tiempo, me han estado dejando mucha tarea de circuitos electronicos, tengo que corregir trabajos y poco mas, fuera de eso todo ha estado normal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org037901f" class="outline-3">
+<h3 id="org037901f"><span class="section-number-3">2.10</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-07 mar]</span></span></h3>
+<div class="outline-text-3" id="text-2-10">
+<p>
+Seguimos hacia abajo al menos pude tomar la video conferencia para iniciar mi servicio social. Pero olvide hacer mi examen de "Tecnología y sociedad"  tengo 35.5, no se si pueda pasar, me siento completamente fuera de mi. 
+</p>
+
+<p>
+Pienso que quizá pasar tanto tiempo bajo presión ya me ha pasado factura, desde segundo semestre me he dado cuenta que ya no puedo manejar mi temperamento, paso de estar tranquilo a querer romperlo todo en menos de un segundo. Mi cabeza esta dando vueltas otra vez.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e08177" class="outline-3">
+<h3 id="org0e08177"><span class="section-number-3">2.11</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-26 dom]</span></span></h3>
+<div class="outline-text-3" id="text-2-11">
+<p>
+Ayer me pusieron la vacuna que me faltaba, ahora si ya estoy en regla para viajar, solo tengo que sacar mi documento para demostrar que ya estoy vacunado. Tambien estoy aprendiendo un nuevo lenguaje Racket, es muy interesante es un lenguaje LISP, estaba buscando un lenguaje así para poder empezar a familiarizarme con este tipo de lenguajes, osea trabajo con elisp pero realmente no lo conozco a detalle solo lo minimo para poder trabajar con emacs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org14776d2" class="outline-3">
+<h3 id="org14776d2"><span class="section-number-3">2.12</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-20 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-12">
+<p>
+Finalmente buenas noticias, después de un año entero puedo iniciar mi servicio social, me acaba de llegar el correo de ''Taller de servicio social acreditado'' además saque 100 en mi examen de sociedad. En noticias menos positivas solo pude hacer 6 de los 10 ejercicios en mi examen de circuitos.
+</p>
+
+<p>
+Está lloviendo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaadc9c1" class="outline-3">
+<h3 id="orgaadc9c1"><span class="section-number-3">2.13</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-15 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-13">
+<p>
+Estos días he tratado de poner un poco de orden en mi trabajo, eso me ha ayudado a concentrarme un poco. Hoy se suponía que tendría que hacer examen de circuitos electrónicos pero la profesora lo pospuso para el lunes, entonces tengo más tiempo para corregir mis trabajos anteriores.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf0b4e5b" class="outline-3">
+<h3 id="orgf0b4e5b"><span class="section-number-3">2.14</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-07 mar]</span></span></h3>
+<div class="outline-text-3" id="text-2-14">
+<p>
+Seguimos hacia abajo al menos pude tomar la video conferencia para iniciar mi servicio social. Pero olvide hacer mi examen de "Tecnología y sociedad"  tengo 35.5, no se si pueda pasar, me siento completamente fuera de mi. Quizá pasar tanto tiempo bajo presión ya me ha pasado factura.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99a8acc" class="outline-3">
+<h3 id="org99a8acc"><span class="section-number-3">2.15</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-09-03 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-15">
+<p>
+Me siento muy cansado, esta semana solo ha estado lleno de malas noticias, no puedo iniciar mi servicio social por que mi universidad agrego un tramite extra que no me avisaron, están amenazando que volveremos a presenciales siento que mi cabeza no deja de dar vueltas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98cc73b" class="outline-3">
+<h3 id="org98cc73b"><span class="section-number-3">2.16</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-29 dom]</span></span></h3>
+<div class="outline-text-3" id="text-2-16">
+<p>
+Mañana es mi veinteavo cumpleaños, mi familia vino a mi casa hoy para comer tamales y pastel,  fue muy divertido. Mi hermana le envió un mensaje a Andy para que me hiciera un <a href="https://i.ibb.co/SyqXbG3/IMG-20210829-WA0008.jpg">pastel</a> con galletas en forma de mis <a href="https://i.ibb.co/D41sQN3/IMG-20210729-WA0003.jpg">perritas</a>, también mi tía y mi tío me han regalado 800 pesos y ropa para hacer ejercicio. Nos la hemos pasado bastante bien.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6ad7a8f" class="outline-3">
+<h3 id="org6ad7a8f"><span class="section-number-3">2.17</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-26 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-17">
+<p>
+Esta semana he tenido mucho trabajo y no había tenido tiempo de escribir, tampoco es que haya pasado nada interesante quizá el cumpleaños de mi madre,  todo transcurrió sin incidentes y nos la pasamos bien, mi hermana pago todo el precio pastel en esta ocasión, pero el día de las madres yo pagué el pastel así que creo que es justo (aunque este pastel fue más caro supongo que me toca pagar el próximo).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae996fb" class="outline-3">
+<h3 id="orgae996fb"><span class="section-number-3">2.18</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-19 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-18">
+<p>
+Antier se metió un gato a mi casa y mis perra casi lo matan, tiene suerte de que no salí a hacer ejercicio, esta es la segunda vez que pasa y me preocupa que cuando regrese a Tijuana vuelva a caer otro gato y no este yo para salvarlo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5965344" class="outline-3">
+<h3 id="org5965344"><span class="section-number-3">2.19</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-13 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-19">
+<p>
+Ayer estuvo lloviendo muy fuerte, el agua se metió hasta la cocina y pase mucho tiempo en la tarde sacando el agua, los truenos eran muy fuertes y aparentemente una casa rodante se incendió. Tenía miedo de que se fuera a ir la luz porque tenía tarea pendiente, pero como a eso de las 8:00 pm dejo de llover y hoy por fin la temperatura es menor a los 37 grados. Según el pronóstico del clima ya no va a llover esta semana, eso es una lástima porque me gusta mucho la lluvia. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ae5330" class="outline-3">
+<h3 id="org0ae5330"><span class="section-number-3">2.20</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-09 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-20">
+<p>
+Bueno hoy es mi primer día de clases, siento que los profesores que me darán clase este semestre son bastante buenos, el profesor de ecuaciones diferenciales nos ha preguntado que porcentaje de la calificación debería ser trabajo y la calificación se repartirá 50% trabajo y 50% tarea. Después de la clase ha empezado a llover, hace casi 2 meses que no llovía ni una gota de agua, espero que esto ayude a mantener el polvo en el suelo ya me estoy enfadando de tener que limpiar el polvo de mi escritorio todos los días.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://i.ibb.co/5k54Yqw/IMG-20210809-170322652.jpg">Foto #1</a></li>
+<li><a href="https://i.ibb.co/8jvmBXF/IMG-20210809-170341615.jpg">Foto #2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45caaea" class="outline-3">
+<h3 id="org45caaea"><span class="section-number-3">2.21</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-06 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-21">
+<p>
+Hoy descrubrí que existe un procedimiento medico llamado <a href="https://youtu.be/zuMH3u0OLhA">Rotoplastía</a>, ahora mi día esta arruinado.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec984f7" class="outline-3">
+<h3 id="orgec984f7"><span class="section-number-3">2.22</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-08-05 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-22">
+<p>
+Estos son mis últimos 4 días de vacaciones, pffff&#x2026; No quiero regresar a la universidad pero no tengo otra opción. Estuve ajustando mi horario y solo tomare 5 materias para poder enfocarme en las que reprobé el semestre pasado, sí tuviera que buscarle algo positivo a reprobar es que al menos puedo elegir los profesores que me darán clases, en fin supongo que tengo que prepararme mentalmente para lo que se viene. Lista de materias:
+</p>
+
+<ul class="org-ul">
+<li>Calculo multivariable</li>
+<li>Ecuaciones diferenciales</li>
+<li>Matemáticas discretas</li>
+<li>Circuitos eléctricos</li>
+<li>Tecnología y valores</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org62ec77c" class="outline-3">
+<h3 id="org62ec77c"><span class="section-number-3">2.23</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-07-29 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-23">
+<p>
+Hoy hubo una tormenta de tierra en mi ciudad, esta es la <a href="https://youtu.be/VicvgfJOAk8">segunda vez que pasa</a>, el municipio en el que vivo es uno de los más secos (<a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0188-88972017000100013">apoximadamente 170mm de lluvia anuales</a>) anexo algunas fotos del evento:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://i.ibb.co/nsGJwRw/IMG-20210729-161117281.jpg">Foto #1</a></li>
+<li><a href="https://i.ibb.co/mBtHZgp/IMG-20210729-155613545.jpg">Foto #2</a></li>
+<li><a href="https://i.ibb.co/nsGJwRw/IMG-20210729-161117281.jpg">Foto #3</a></li>
+<li><a href="https://i.ibb.co/db5XMtC/IMG-20210729-155534412.jpg">Foto #4</a></li>
+<li><a href="https://i.ibb.co/b6CRjqL/IMG-20210729-155402070.jpg">Foto #5</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd7b4ad2" class="outline-3">
+<h3 id="orgd7b4ad2"><span class="section-number-3">2.24</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-07-22 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-24">
+<p>
+Bueno hoy me duele la cabeza y estoy bastate mareado, los efectos secundarios de la vacuna si son bastante intensos, no senti ningun malestar en todo el día pero a las 11pm me dieron muchas ganas de dormir y me dio algo de fiebre.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd4e0c73" class="outline-3">
+<h3 id="orgd4e0c73"><span class="section-number-3">2.25</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-07-21 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-25">
+<p>
+Ya me puse la vacuna, había demacradas personas en la fila pasé casi 4 horas en la fila esperando que me la aplicaran, no me he sentido mal solo me duele un poco el brazo izquierdo pero yo creo que mañana estaré mejor, ninguno de mis familiares tuvo ningún efecto secundario con la vacuna entonces dudo mucho que me pase algo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org01196bf" class="outline-3">
+<h3 id="org01196bf"><span class="section-number-3">2.26</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-07-21 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-26">
+<p>
+Hoy me toca ponerme mi primera vacuna para el covid-19, tengo que irme a dormir temprano por que mi cita es a las 10 am pero no quería irme a dormir sin antes de ponerlo en el blog, hoy también la universidad aviso que no vamos a regresar a clases durante agosto, que darían instrucciones al respecto cuando se tuviera mas información así que puedo relajarme por ahora.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3bf18cc" class="outline-3">
+<h3 id="org3bf18cc"><span class="section-number-3">2.27</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-07-20 mar]</span></span></h3>
+<div class="outline-text-3" id="text-2-27">
+<p>
+Bueno hace casi un mes que no hago una entrada en mi blog, so creo que tengo que actualizar un poco que ha pasado conmigo estas dos semanas: el 5 de julio salí con Mary le fui a dejar hojas que ya no estaba usando, ella estaba haciendo papel reciclado. el 15 de julio salí con Antze, estuvimos viendo "Kyojinzoku no hanayome" y comiendo sabritas. El resto de los días he estado retomando un viejo <a href="https://tic80.com/play?cart=821">proyecto</a> que tenia abandonado, es bastante interesante ver como he mejorado en estos años ahora mis código es mas sencillo de leer que antes y mas fácil de mantener. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ba0f57" class="outline-3">
+<h3 id="org8ba0f57"><span class="section-number-3">2.28</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-24 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-28">
+<p>
+Hola!! hola!!, me extrañaron?. Me encantaría tener alguna anécdota interesante, pero realmente estos días han sido un poco aburridos, retomé hacer ejercicio también estuve jugando videojuegos con mis amigos, casi en eso se me fueron estos cuatro días enteros.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb24be2e" class="outline-3">
+<h3 id="orgb24be2e"><span class="section-number-3">2.29</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-19 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-2-29">
+<p>
+Hoy estuve tratando de añadir más idiomas a mi sitio, no quiero traducir todo al ingles así que mejor hice más accesible "google translate" en algunas paginas del sitio.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe6b1f3" class="outline-3">
+<h3 id="orgfe6b1f3"><span class="section-number-3">2.30</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-18 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-30">
+<p>
+Ayer en noche (ú hoy en la madrugada, depende como lo quieras ver) estuve trabajando en la parte principal de este sitio, la idea original era crear un lugar para guardar mis apuntes y mi Journal ademas de compartir las cosas que voy aprendiendo por el camino pero otra de las cosas que queria hacer era guardar mis scrips (por lo general Eigenmath scripts) en algun lugar pero ayer me tope con una herramienta genial <a href="https://nerdamer.com/">Nerdamer</a> que es un lenguaje CAS (calculo simbolico) completemente client-side en javascript, realmente estoy soprendido por la cantidad de cosas que se puede hacer con client-side javscript hoy en dia, así que me puse a trabajar y logre hacer esta pequeña <a href="https://galindo-lab.neocities.org/calculadoras/parametrizacion-de-la-recta.html">calculadora</a> para parametrizar una recta con dos puntos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf7bac8" class="outline-3">
+<h3 id="orgaf7bac8"><span class="section-number-3">2.31</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-17 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-31">
+<p>
+Hoy hice muchas modificaciones al sitio, añadí una pequeña nav-bar para hacer mas amena la navegación por el sitio, también limpie mi habitación realmente ya le hacia falta este lugar estaba hecho un asco. Otra cosa interesante que note es que hoy hace 2 años me aceptaron en la universidad ya ha pasado mucho más tiempo del que yo pensaba, el tiempo se va volando.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb37b0bb" class="outline-3">
+<h3 id="orgb37b0bb"><span class="section-number-3">2.32</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-16 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-32">
+<p>
+Ayer no escribí nada, me sentia muy mal durante el examen, durante el examen me detuve solamente para ir a vomitar. Despues del el examen dormí todo el día, saqué una muy mala nota y tendre que recursar dos materias, pero realemente estoy muy feliz por que ya termino el semestre, mis calificaciones fueron:
+</p>
+
+<table cellspacing="0" cellpadding="6" rules="groups" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Materia</th>
+<th scope="col" class="org-right">Calificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Programación Estructurada</td>
+<td class="org-right">96</td>
+</tr>
+
+<tr>
+<td class="org-left">Metodologia de la investigación</td>
+<td class="org-right">91</td>
+</tr>
+
+<tr>
+<td class="org-left">Elaboración de documentacion tecnica</td>
+<td class="org-right">87</td>
+</tr>
+
+<tr>
+<td class="org-left">Lenguaje de programacion Python</td>
+<td class="org-right">87</td>
+</tr>
+
+<tr>
+<td class="org-left">Electricidad y magnetismo</td>
+<td class="org-right">81</td>
+</tr>
+
+<tr>
+<td class="org-left">Ecuaciones diferenciales (50)</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">Calculo multivariable (59)</td>
+<td class="org-right">36</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Hoy estuve escuchando la clase de Robert Sapolsky sobre <a href="https://youtu.be/NNnIGh9g6fA">biología del comportamiento humano</a> 100% recomendado. Hoy tambien estuve escuchando la lectura de <a href="https://www.youtube.com/watch?v=imNtSPM3-r4&amp;t=30s">"All Tomorrows"</a> me gustó mucho porque me parece una versión más actualizada del mundo que propone H.G. Wells en "La Maquina del Tiempo" que es uno de mis libros favoritos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfbaf32a" class="outline-3">
+<h3 id="orgfbaf32a"><span class="section-number-3">2.33</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-14 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-33">
+<p>
+Hoy fue el examen de Ceniceros solo hice 40/100 puntos, no voy a aprobar tendre que repetir el curso, espero que hagan intersemestral de esta materia, reprobar significa pasar 6 meses mas en la universidad y no quiero estar mas timpo allí.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf881a7" class="outline-3">
+<h3 id="orgaf881a7"><span class="section-number-3">2.34</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-12 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-2-34">
+<p>
+Estos dias no ha pasado nada importante, hice los pagos de los extraordinarios antier, y he hecho algunos ejercicios de calculo pero poco más, he estado pensando en poner mis apuntes en mi pagina web, siento que me han quedado muy bien, y si repruebo minimo que mis apuntes le sirvan a alguien mas.
+Mi madre hoy hizo milanesas, mientras comía me dieron ganas de estornudar me dolio mucho pero no le di mas importancia, hace unos pocos minutos volví a estornudar y salio un pedazo de milancesa de aproximadamente 1 cm² &lt;("). Fotos de la milanesa.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8318d60" class="outline-3">
+<h3 id="org8318d60"><span class="section-number-3">2.35</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-09 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-35">
+<p>
+Ayer estudie un cálculo con Xu aparentemente mis programas funcionan, hoy voy a estudiar ecuaciones, quiero reescribir mi guía de ecuaciones diferenciales.
+Mañana ire a pagar el examen extraordinario, son $109 por examen, me tengo que despertar temprano.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3332ff5" class="outline-3">
+<h3 id="org3332ff5"><span class="section-number-3">2.36</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-08 mar]</span></span></h3>
+<div class="outline-text-3" id="text-2-36">
+<p>
+Ayer pude reescribir una parte de mis programas para calculo, no han dicho fechas para los exámenes, pero tengo que estar preparado no sé cuanto falta pero lo mas probable es que sea pronto.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd77893e" class="outline-3">
+<h3 id="orgd77893e"><span class="section-number-3">2.37</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-07 lun]</span></span></h3>
+<div class="outline-text-3" id="text-2-37">
+<p>
+hoy es el examen de calculo multivariable, estoy muy preocupado no estudie lo suficiente, prepare algunos programas pero no se sí serán suficientes, tengo 72.56 de calificación antes de el ordinario (72.56 * 0.7 = 50.79) necesito 10 puntos el examen para pasar, mis compañeros dicen que el examen de Ruvalcaba es difícil.
+Reprobé el examen saque 28/100, Ruvalcaba no me quizo dar un punto tengo dos exámenes Extraordinarios, no sé que voy a hacer, estoy tratando de tranquilizarme pero todavía no puedo poner mi cabeza en su lugar.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org18205fe" class="outline-3">
+<h3 id="org18205fe"><span class="section-number-3">2.38</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-06 dom]</span></span></h3>
+<div class="outline-text-3" id="text-2-38">
+<p>
+Hoy es el día de las elecciones no me gusta ningún candidato, voy a votar nulo, aparentemente el partido verde esta siendo controlado por los narcos y dicen que van a ganar. Ya veremos que pasa.
+Mañana es el examen de cálculo multivariable.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org05e5862" class="outline-3">
+<h3 id="org05e5862"><span class="section-number-3">2.39</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-05 sáb]</span></span></h3>
+<div class="outline-text-3" id="text-2-39">
+<p>
+Hoy me levante tarde tengo que estudiar calculo, hice una guía bastante larga, pero no se si tenga tiempo de revisarla toda.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org765a90c" class="outline-3">
+<h3 id="org765a90c"><span class="section-number-3">2.40</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-04 vie]</span></span></h3>
+<div class="outline-text-3" id="text-2-40">
+<p>
+Hoy es el día, estoy muy nervioso. 
+Saque 50/100 en el examen, debo prepararme para el extra.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80223b8" class="outline-3">
+<h3 id="org80223b8"><span class="section-number-3">2.41</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-03 jue]</span></span></h3>
+<div class="outline-text-3" id="text-2-41">
+<p>
+Mismo que ayer, pero hoy estoy más estresado.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb5e601e" class="outline-3">
+<h3 id="orgb5e601e"><span class="section-number-3">2.42</span> <span class="timestamp-wrapper"><span class="timestamp">[2021-06-02 mié]</span></span></h3>
+<div class="outline-text-3" id="text-2-42">
+<p>
+Hoy creé mi primer init.el de emacs lo llamé sharkemacs por que mi imagen en github es gura, el nombre es temporal ya se me ocurrirá un nombre mejor, estuve estudiando todo el día de hoy porque el día 4 es el examen de ceniceros de ecuaciones diferenciales pero, no me siento muy preparado.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-06-02 mié 00:00</p>
+<p class="author">Author: Galindo</p>
+<p class="date">Created: 2022-07-01 vie 14:00</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

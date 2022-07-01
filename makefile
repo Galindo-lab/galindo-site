@@ -1,4 +1,8 @@
 
+publish:
+	emacs -Q --script publish.el
+
+
 # upload:
 # 	find . -type f -iname \*.tex -delete
 # 	find . -type f -iname \*.log -delete
