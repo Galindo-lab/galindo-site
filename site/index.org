@@ -16,7 +16,7 @@
 [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · 
 [[./content/logs.org][Logs]] · 
 [[./content/blog.org][Blog]] \\
-[[https://galindosoft.neocities.org/eigen/][Eigen]] · 
+[[https://galindosoft.neocities.org/eigenmath-web/][Eigen]] · 
 [[https://galindosoft.123guestbook.com/][Guestbook]]
 \\
 #+END_CENTER

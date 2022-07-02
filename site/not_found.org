@@ -1,5 +1,10 @@
 
-#+INCLUDE: "./includes/settings.org" 
-#+INCLUDE: "./includes/nav.org"
+#+TITLE: Not found
 
-Aquí nada que ver
+#+INCLUDE: "./includes/settings.org" 
+#+OPTIONS: title:t
+
+#+BEGIN_CENTER
+El archivo que buscas no existe. \\
+[[https://galindosoft.neocities.org][home]]
+#+END_CENTER

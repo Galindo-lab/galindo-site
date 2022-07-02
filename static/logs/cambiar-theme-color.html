@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2022-07-01 vie 18:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cambiar Theme-color via javascript</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Galindo" />
+<link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/styles/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" type="image/x-icon" href="https://galindosoft.neocities.org/logo.png" />
+</head>
+<body>
+<div id="content">
+
+<div id="outline-container-org8ff5a35" class="outline-2">
+<h2 id="org8ff5a35">theme-color meta tag</h2>
+<div class="outline-text-2" id="text-org8ff5a35">
+<p>
+Sí tienes una android y usas chrome, sabras que la barra que contiene la direccion cambia de color en algunos sitios esto se puede lograr mediante el meta <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color">theme-color</a>, Sin embargo sí eres como yo y nunca puedes terminar de decidir como se va a ver tu pagina estaras deacuerdo que editar individualmente cada pagina en html es algo tardado, entonces hare un pequeño tutorial de como cambiar el valor de el meta theme color
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6ce193" class="outline-2">
+<h2 id="orga6ce193">Ajustes previos</h2>
+<div class="outline-text-2" id="text-orga6ce193">
+<p>
+Primero es necesario que nuestra pagina cuente con el meta theme-color, ya que solo lo podemos modificar, pero no lo podemos agregar con javascript:
+</p>
+
+<pre class="example">
+&lt;meta name="theme-color" content="#fff"&gt;
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgabbaf9e" class="outline-2">
+<h2 id="orgabbaf9e">Código</h2>
+<div class="outline-text-2" id="text-orgabbaf9e">
+<p>
+Ahora, para modificar el color simplemente añadimos este script a nuestro <code>script.js</code> y cualquier pagina que contenta el meta theme-color y el el titulo deberia cambiar de color 
+</p>
+
+<pre class="example">
+document.querySelector("meta[name=theme-color]").setAttribute("content", "#ff0000"); &lt;- aquí va tu color
+</pre>
+
+<p>
+<a href="https://gordonlesti.com/change-theme-color-via-javascript/">Más informacion</a> 
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
