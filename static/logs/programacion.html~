@@ -1,280 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2022-07-01 vie 14:01 -->
+<!-- 2022-07-01 vie 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Programación</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Galindo" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/styles/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" type="image/x-icon" href="https://galindosoft.neocities.org/logo.png" />
 </head>
 <body>
 <div id="content">
-<h1 class="title">Programación</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org6367e31">1. Introducción</a></li>
-<li><a href="#org9188099">2. Minecraft, mod scripts y mi primer bug</a></li>
-<li><a href="#org50276d0">3. Eligiendo una carrera técnica</a></li>
-<li><a href="#org1e13344">4. Mi primera laptop, BATCH y C++</a></li>
-<li><a href="#org772d1dc">5. Mis primeros juegos</a></li>
-<li><a href="#org3190034">6. Final</a></li>
-<li><a href="#orgc9ce9cd">7. Anexo</a></li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-org6367e31" class="outline-2">
-<h2 id="org6367e31"><span class="section-number-2">1</span> Introducción</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org07ed4d2" class="outline-2">
+<h2 id="org07ed4d2">Introducción</h2>
+<div class="outline-text-2" id="text-org07ed4d2">
 <p>
 Sí ya tienes suficiente tiempo leyendo mis post deberías saber que mi pasatiempo número uno es programar, para estas fechas ya debería tener casi 5-6 años dedicándole mi vida a escribir código, siempre cuento esta historia cada vez que consocio a alguien nuevo así que voy a aprovechar el tiempo libre que me queda y voy a poner en código la historia de como empecé a programar.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org9188099" class="outline-2">
-<h2 id="org9188099"><span class="section-number-2">2</span> Minecraft, mod scripts y mi primer bug</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgf6c9d93" class="outline-2">
+<h2 id="orgf6c9d93">Minecraft, mod scripts y mi primer bug</h2>
+<div class="outline-text-2" id="text-orgf6c9d93">
 <p>
 Todo empezó con mi otro gran hobby&#x2026; Minecraft (PE) En el año de 2012 ( o 2013? ) con la versión 0.7.x , en ese entonces existían algo llamado modscrips, eran pequeños programas en JavaScript que se podían utilizar para añadir cosas al juego cosas como: comida, crafteos, herramientas y los más ambiciosos añadían hasta mobs, un día por casualidad se me ocurrió la idea de hacer click en uno de esos misteriosos modscripts (sí mi memoria no me falla creo que era el mod de "elemental swords"), solo eran un montón de líneas de código repetido varias veces y yo con todo el intelecto y nivel de ingles que un niño de 11-12 años puede tener procedí a crear mi primer "mod" (básicamente un clon de elemental swords), todo bien por los primeros minutos todo estuvo bien, pero después mi "mod" dejo de funcionar, en ese entonces no lo sabía, pero me había topado con mi primer bug, mi sospecha es que puse alguna minúscula en donde no debía (típico, camelCase arruinando mi vida desde siempre).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org50276d0" class="outline-2">
-<h2 id="org50276d0"><span class="section-number-2">3</span> Eligiendo una carrera técnica</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orge614440" class="outline-2">
+<h2 id="orge614440">Eligiendo una carrera técnica</h2>
+<div class="outline-text-2" id="text-orge614440">
 <p>
 Después de ese primer desencanto con la programación seguí con mi vida viviendo todas las aventuras que un mocoso de 11-12 años puede tener. Pase la primaria, la secundaria, y había llegado ese momento tenía que elegir cuál carrera técnica cursaría (ya tenía como 14 años) iba a tomar, mi hermana había ido en programación y pues como a mí me interesaban las computadoras se me ocurrió la idea de hacer exactamente lo mismo, así que eso hice. Cabe destacar que para cuando yo termine la secundaria mi sueño era ser historiador (más adelante explico como termine en ingeniería)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1e13344" class="outline-2">
-<h2 id="org1e13344"><span class="section-number-2">4</span> Mi primera laptop, BATCH y C++</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org51ec846" class="outline-2">
+<h2 id="org51ec846">Mi primera laptop, BATCH y C++</h2>
+<div class="outline-text-2" id="text-org51ec846">
 <p>
 Bueno como regalo para mi cumpleaños número 15 mi mamá me regalo el dinero que me hacía falta para comprar mi primera laptop (la cual por cierto es la que sigo usando a diario) y mi viaje empezó&#x2026; 
 Durante mis primeros meses en la preparatoria nos enseñaron de la existencia del CMD, solo nos lo comentaron brevemente, pero yo por curiosidad empecé a jugar con los comandos y me volví bastante bueno programando en bash, incluso hice un programa que eliminaba un virus que ocultaba carpetas, tiempo después mi hermana me platico de una herramienta que habían usado "app-inventor", también aprendí a usarla. Los últimos meses de mi primer semestre pensando cual sería mi primer lenguaje, pensé en java y Python, pero por casualidades de la vida me encontré con los vídeos de programación en C++ de "Programación ATS". 
@@ -294,27 +66,27 @@ Y así concluye mi primer semestre en preparatoria.
 </div>
 </div>
 
-<div id="outline-container-org772d1dc" class="outline-2">
-<h2 id="org772d1dc"><span class="section-number-2">5</span> Mis primeros juegos</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org5d74b48" class="outline-2">
+<h2 id="org5d74b48">Mis primeros juegos</h2>
+<div class="outline-text-2" id="text-org5d74b48">
 <p>
 Durante mi primer año también empecé a hacer juegos en C++, mi primer videojuego lo titulé "keywar". Básicamente una palabra iba cayendo desde la parte superior de la pantalla hasta la parte de abajo y tenías que escribirlas lo más rápido posible, el juego terminaba si varias palabras tocaban la parte inferior de la pantalla. Todo un éxito durante la feria de ciencias de ese año, todavía tengo las fotos.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3190034" class="outline-2">
-<h2 id="org3190034"><span class="section-number-2">6</span> Final</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org878899c" class="outline-2">
+<h2 id="org878899c">Final</h2>
+<div class="outline-text-2" id="text-org878899c">
 <p>
 Podría extenderme más sobre como aprendí programación web, php, cobol, assembly, lua etc.. Pero la verdad siento que no aporta nada a este relato que les acabo de contar para cuando entre a mi segundo año yo ya sabia que mi nueva meta era estudiar ingeniería. Siempre me da un poco de nostalgia recordar como empecé con esto, como unos vídeos de YouTube cambiaron por completo mis aspiraciones académicas y todas las cosas que he hecho hasta ahora. Se suponía que esta seria una pequeña entrada de mi blog y ya tengo varias horas escribiendo, hoy me sentía con muchas ganas de escribir y recordar todas las cosas que me llevaron a aquí&#x2026; quizá me siento así porque hoy es mi último día de vacaciones o quizá simplemente es porque no quiero limpiar mi cuarto, no lo sé, pero hasta entonces me despido.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc9ce9cd" class="outline-2">
-<h2 id="orgc9ce9cd"><span class="section-number-2">7</span> Anexo</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org1bf23b6" class="outline-2">
+<h2 id="org1bf23b6">Anexo</h2>
+<div class="outline-text-2" id="text-org1bf23b6">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2021-08-10 mar]</span></span>
 </p>
@@ -324,12 +96,6 @@ Encontré uno de mis <a href="./resources/4-El juego de la vida.txt">primeros c�
 </p>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Date: 2021-08-08 dom 00:00</p>
-<p class="author">Author: Galindo</p>
-<p class="date">Created: 2022-07-01 vie 14:01</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

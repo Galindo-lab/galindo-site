@@ -2,8 +2,7 @@
 #+TITLE: Programación
 #+DATE: [2021-08-08 dom]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/programacion.html
+#+INCLUDE: "../includes/settings.org" 
 # dom 08 ago 2021 02:43:35
 
 * Introducción

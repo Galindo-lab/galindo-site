@@ -2,8 +2,7 @@
 #+TITLE: Blog con ORG-mode
 #+DATE: [2021-08-04 mié]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/blog-org-mode.html
+#+INCLUDE: "../includes/settings.org" 
 
 * Blog con ORG-mode 
 Org mode es sin ninguna duda una de las "killer features" de emacs, permite hacer básicamente todas mis labores relacionadas con hacer notas, pero hoy no estoy aquí para hablar de las bondades de ORG-mode, Voy a explicarte como hacer tu propio blog con paginas estáticas con org mode. 

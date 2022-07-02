@@ -2,8 +2,7 @@
 #+TITLE: Notación de Ingenieria
 #+DATE:[2021-08-24 mar]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/notacion-ingenieria.html
+#+INCLUDE: "../includes/settings.org" 
 
 * Notación de Ingenieria
 

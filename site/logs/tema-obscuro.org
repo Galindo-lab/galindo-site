@@ -2,8 +2,7 @@
 #+TITLE:    Implementar un tema obscuro
 #+DATE:     [2021-08-07 sáb]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/tema-obscuro.org
+#+INCLUDE: "../includes/settings.org" 
 
 * Introducción
 Durante esta semana estuve implementando un tema obscuro y quiero compartir con ustedes los metodos que descubrí para hacerlo de la manera mas sencilla posible, para implementar un tema obscuro descubrí que hay dos maneras de hacerlo: con Javascript y sin Javascript, 

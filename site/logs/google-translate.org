@@ -2,8 +2,7 @@
 #+TITLE: Plugin de Google translate
 #+DATE: [2021-08-05 jue]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/google-translate.org
+#+INCLUDE: "../includes/settings.org"
 
 * Añadir el plugin traduccion
 Añadir el plugin es muy sencillo de installar, simplemente tenmos que añadir el siguiente código en nuestra pagina.

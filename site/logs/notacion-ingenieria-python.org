@@ -2,8 +2,7 @@
 #+TITLE:    Notación de ingeniería en python
 #+DATE:     [2021-08-24 mar]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/notacion-ingenieria-python.html
+#+INCLUDE: "../includes/settings.org" 
 
 *  Notación De Ingeniería En Python
 Sí has estado leyendo mi blog sabrás que actualmente me encuentro estudiando ingeniería y que me gustan las calculadoras mi favorita la [[https://www.casio-intl.com/latin/es/calc/products/fx-CG50/][CASIO fx-CG50]], esta calculadora cuenta con un intérprete de micro-python bastante limitado, pero con un poco de cabeza podemos explotar su máximo potencial.

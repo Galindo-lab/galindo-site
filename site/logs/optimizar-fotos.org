@@ -2,8 +2,7 @@
 #+TITLE: Optimizar fotos desde la terminal en Linux
 #+DATE: [2021-08-30 lun]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/optimizar-fotos.org
+#+INCLUDE: "../includes/settings.org" 
 
 * Optimizar Fotos
 desde que empezó la pandemia me he visto en la necesidad de crear cientos de pdf que solo contienen fotos de mis trabajos. Pero una cosa que he notado en todo este tiempo es lo pesado que son los archivos que genera mi celular, rondando por internet me encontré con el siguiente comando para optimizar las fotos:
@@ -24,7 +23,6 @@ convert *.jpg a.pdf
 #+END_SRC
 
 * Final 
-
 #+BEGIN_SRC 
 
 jpegoptim --size=500k *.jpg 

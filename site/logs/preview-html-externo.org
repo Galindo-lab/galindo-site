@@ -2,8 +2,7 @@
 #+TITLE: Preview html desde otro dispositivo
 #+DATE: [2021-08-05 vie]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/preview-html-externo.org
+#+INCLUDE: "../includes/settings.org" 
 
 * Como crear un servidor de prueba 
 python3 viene con un servidor http para hacer pruebas en localhost, así puedes probar tus paginas sin el problema de que no carguen los recursos nuevos. Para inicializarlo solo navegamos hasta el directorio en el que se encuentre nuestro dispositivo y escribimos el siguiente comando en la terminal, ojo que yo estoy trabajando desde linux:

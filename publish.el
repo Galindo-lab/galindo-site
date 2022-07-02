@@ -8,8 +8,10 @@
              :recursive t
              :base-directory "./site"
              :publishing-directory "./static"
-             :publishing-function 'org-html-publish-to-html)
-       ))
+             :publishing-function 'org-html-publish-to-html
+
+             )))
+
 
 (org-publish-all t)
 

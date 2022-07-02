@@ -2,8 +2,7 @@
 #+TITLE: Cambiar Theme-color via javascript
 #+DATE: [2021-08-23 lun]
 
-#+SETUPFILE: ~/.emacs.d/template/html.org
-#+EXPORT_FILE_NAME: ../tmp/theme-color.html
+#+INCLUDE: "../includes/settings.org" 
 
 * theme-color meta tag
 Sí tienes una android y usas chrome, sabras que la barra que contiene la direccion cambia de color en algunos sitios esto se puede lograr mediante el meta [[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color][theme-color]], Sin embargo sí eres como yo y nunca puedes terminar de decidir como se va a ver tu pagina estaras deacuerdo que editar individualmente cada pagina en html es algo tardado, entonces hare un pequeño tutorial de como cambiar el valor de el meta theme color
