@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2022-07-01 vie 18:38 -->
+<!-- 2022-07-20 mié 00:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notación de ingeniería en python</title>
@@ -17,9 +17,9 @@
 <body>
 <div id="content">
 
-<div id="outline-container-org67bb0be" class="outline-2">
-<h2 id="org67bb0be">Notación De Ingeniería En Python</h2>
-<div class="outline-text-2" id="text-org67bb0be">
+<div id="outline-container-orgdcd4792" class="outline-2">
+<h2 id="orgdcd4792">Notación De Ingeniería En Python</h2>
+<div class="outline-text-2" id="text-orgdcd4792">
 <p>
 Sí has estado leyendo mi blog sabrás que actualmente me encuentro estudiando ingeniería y que me gustan las calculadoras mi favorita la <a href="https://www.casio-intl.com/latin/es/calc/products/fx-CG50/">CASIO fx-CG50</a>, esta calculadora cuenta con un intérprete de micro-python bastante limitado, pero con un poco de cabeza podemos explotar su máximo potencial.
 </p>
@@ -30,22 +30,22 @@ Sí has estado leyendo mi blog sabrás que actualmente me encuentro estudiando i
 </div>
 </div>
 
-<div id="outline-container-org4d6c132" class="outline-2">
-<h2 id="org4d6c132">Antecedente</h2>
-<div class="outline-text-2" id="text-org4d6c132">
+<div id="outline-container-org5fdd1b9" class="outline-2">
+<h2 id="org5fdd1b9">Antecedente</h2>
+<div class="outline-text-2" id="text-org5fdd1b9">
 <p>
 La <a href="../apuntes/notacion-ingenieria.html">notación de ingeniería</a> es una forma de abreviar números muy grandes, es parecida a la notación científica, pero su característica más notable es que usa letras para representar valores.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc99ad2a" class="outline-2">
-<h2 id="orgc99ad2a">Mi solucion</h2>
-<div class="outline-text-2" id="text-orgc99ad2a">
+<div id="outline-container-org1015ed4" class="outline-2">
+<h2 id="org1015ed4">Mi solucion</h2>
+<div class="outline-text-2" id="text-org1015ed4">
 </div>
-<div id="outline-container-org19ed111" class="outline-3">
-<h3 id="org19ed111">Lookup table</h3>
-<div class="outline-text-3" id="text-org19ed111">
+<div id="outline-container-orgde1b1ef" class="outline-3">
+<h3 id="orgde1b1ef">Lookup table</h3>
+<div class="outline-text-3" id="text-orgde1b1ef">
 <p>
 La solucion más sencilla para los problemas es por lo general la mejor solucion y en este caso no fue la exepcion, una lookup-table para almacenar los exponentes es mas que suficiente:
 </p>
@@ -68,17 +68,17 @@ _suffix_lookup = {
 </div>
 </div>
 
-<div id="outline-container-orga7676e6" class="outline-3">
-<h3 id="orga7676e6">Captura del numero</h3>
-<div class="outline-text-3" id="text-orga7676e6">
+<div id="outline-container-org7317b3c" class="outline-3">
+<h3 id="org7317b3c">Captura del numero</h3>
+<div class="outline-text-3" id="text-org7317b3c">
 <p>
 La solución más sencilla para los problemas es por lo general la mejor solución y en este caso no fue la excepción, una lookup-table para almacenar los exponentes es más que suficiente:
 </p>
 </div>
 
-<div id="outline-container-orgb2f4f67" class="outline-4">
-<h4 id="orgb2f4f67">Sencilla</h4>
-<div class="outline-text-4" id="text-orgb2f4f67">
+<div id="outline-container-orgf8e4ab0" class="outline-4">
+<h4 id="orgf8e4ab0">Sencilla</h4>
+<div class="outline-text-4" id="text-orgf8e4ab0">
 <p>
 Solución con redundancia mínima, es más sencilla pero menos robusta:
 </p>
@@ -99,9 +99,9 @@ def input_ing2():
 </div>
 </div>
 
-<div id="outline-container-orgdb49a81" class="outline-4">
-<h4 id="orgdb49a81">óptima</h4>
-<div class="outline-text-4" id="text-orgdb49a81">
+<div id="outline-container-org5ddee31" class="outline-4">
+<h4 id="org5ddee31">óptima</h4>
+<div class="outline-text-4" id="text-org5ddee31">
 <p>
 Solución óptima (en mi opinión), más compleja pero es más robusta
 </p>
