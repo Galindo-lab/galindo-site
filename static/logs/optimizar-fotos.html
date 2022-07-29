@@ -3,61 +3,36 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2022-07-20 mié 00:15 -->
+<!-- 2022-07-29 vie 14:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Optimizar fotos desde la terminal en Linux</title>
+<title>Optimizar fotos y crear un PDF</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Galindo" />
-<link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/styles/style.css" />
+<link rel="stylesheet" type="text/css" href="../style/style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#000000" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/x-icon" href="https://galindosoft.neocities.org/logo.png" />
 </head>
 <body>
 <div id="content">
-
-<div id="outline-container-orgae11140" class="outline-2">
-<h2 id="orgae11140">Optimizar Fotos</h2>
-<div class="outline-text-2" id="text-orgae11140">
+<h1 class="title">Optimizar fotos y crear un PDF</h1>
 <p>
-desde que empezó la pandemia me he visto en la necesidad de crear cientos de pdf que solo contienen fotos de mis trabajos. Pero una cosa que he notado en todo este tiempo es lo pesado que son los archivos que genera mi celular, rondando por internet me encontré con el siguiente comando para optimizar las fotos:
+Reduce la imagen a 500kb y crea un pdf, es importante
+recordar que las imágenes originales serán eliminadas
+así que mejor sacar una copia de las imágenes que
+queramos conservar.
 </p>
 
 <pre class="example">
 
-jpegoptim --size=500k *.jpg 
-
-</pre>
-</div>
-</div>
-
-<div id="outline-container-orge4387d8" class="outline-2">
-<h2 id="orge4387d8">Extra, convertir fotos en pdfs</h2>
-<div class="outline-text-2" id="text-orge4387d8">
-<p>
-Sí juntamos el comando anterior con el siguiente comando podemos generar pdf optimizados muy rápidamente (adiós www.ilovepdf.com).
-</p>
-
-<pre class="example">
-
-convert *.jpg a.pdf
-
-</pre>
-</div>
-</div>
-
-<div id="outline-container-org8bde7da" class="outline-2">
-<h2 id="org8bde7da">Final</h2>
-<div class="outline-text-2" id="text-org8bde7da">
-<pre class="example">
+# Este escript es para linux unicamente
 
 jpegoptim --size=500k *.jpg 
 convert *.jpg a.pdf
 
 </pre>
-</div>
-</div>
 </div>
 </body>
 </html>

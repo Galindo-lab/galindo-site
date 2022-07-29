@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --pr-color: #B34AC1;
+        --text-color: white;
+        --bg-color: #1C1B22;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --pr-color: #B34AC1;
+        --text-color: #111111;
+        --bg-color: white;
+    }
+}
+
+body {
+    margin-inline: auto;
+    margin-top: 72px;
+    max-width: 550px;
+    padding: 1em;
+
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    background-color: var(--bg-color);
+}
+
+p, li {
+    line-height: 1.6em;
+    margin-top: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+hr {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: "· "; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--pr-color);
+    transition: background-color 0.1s ease-out;
+}
+
+table {
+    width: 100%;
+}
+
+.qr {
+     background: rgb(20,206,255);
+     background: linear-gradient(135deg, rgba(20,206,255,1) 0%, rgba(254,109,195,1) 100%);
+     padding: 5px;
+}
+
+.org-center {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.org-center > p {
+    margin: 0
+}
+
+.nav > a {
+    padding-inline: 10px;
+    color: var(--text-color);
+}
+
+.example {
+    border-left: 3px solid var(--pr-color);
+    font-family: 'Fira Code', monospace;
+    overflow: auto;
+    padding: 10px;
+    background-color: var(--bg-color);
+    filter: brightness(0.90);
+}

@@ -3,31 +3,38 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <meta name="color-scheme" content="dark light">
+    <title>Bin a Decima</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
     <style>
-      body {
-          max-width: fit-content;
-          margin: auto;
-          padding: 72px;
-          margin-top: 10px;
+      input {
+          font-size: 16px;
+          padding-block: 10px;
+          margin-block: 5px; 
+          font-family: 'Fira Code', monospace;
+          width: 100%;
+          border: 0;
+          
       }
-
-      h1 { text-align: center; }
-      input { margin: 2px; }
+      
+      button {
+          font-size: 16px;
+          font-family: 'Fira Sans', sans-serif;
+      }
     </style>
 
   </head>
   <body>
     <h1>Bin a Decimal</h1>
-    <span class="text">Complemento dos a Decimal</span>
-    <br><br>
-    <input id="input" type="number" placeholder="Binario"/> <br/>
-    <input id="output-dec" type="text" readonly="readonly" placeholder="Decimal"/> <br/>
-    <br/>
-    <a href="./dec-bin-c2.html">decimal a binario</a>
-    <br/>
-    <hr>
+    <p>
+      Complemento dos a Decimal
+    </p>
+    <input id="input" type="number" placeholder="Binario"/>
+    <input id="output-dec" type="text" readonly="readonly" placeholder="Decimal"/> 
+    <p>
+      <hr/>
+      <a href="./dec-bin-c2.html">decimal a binario</a>
+    </p>
     <button id="convertir">Convertir</button> <button id="clear" >Reset</button> 
   </body>
 

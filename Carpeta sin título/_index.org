@@ -1,0 +1,32 @@
+
+#+TITLE: Galindosoft
+#+date:  [2021-04-20 mar]
+
+#+INCLUDE: "./includes/settings.org" 
+#+OPTIONS: title:t
+
+#+BEGIN_CENTER
+{{{date}}}
+\\
+#+attr_html: :width 100px
+[[file:./img/logo.svg]]
+\\
+\\
+[[./content/links.org][Links]] ·
+[[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · 
+[[./content/logs.org][Logs]] · 
+[[./content/blog.org][Blog]] \\
+[[https://galindosoft.neocities.org/eigenmath-web/][Eigen]] · 
+[[https://galindosoft.123guestbook.com/][Guestbook]]
+\\
+#+END_CENTER
+
+#+BEGIN_CENTER
+#+attr_html: :width 20px :title Github
+[[https://github.com/Galindo-lab][https://cdn-icons-png.flaticon.com/512/25/25231.png]]
+#+END_CENTER
+
+# #+begin_card
+# Soundcloud de Edgar 🔥 \\
+# [[https://soundcloud.com/user-887296634]]
+# #+end_card

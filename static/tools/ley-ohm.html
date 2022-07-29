@@ -3,39 +3,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
     
     <title>Calculadora de Ley de Ohm </title>
     
     <script src="./all.min.js"></script>
 
     <style>
-      body {
-          max-width: fit-content;
-          margin: auto;
-          padding: 72px;
-          margin-top: 10px;
-      }
-
-      h1 {
-          text-align: center;
-      }
-      
       input {
-          margin: 2px;
+          font-size: 16px;
+          padding-block: 10px;
+          margin-block: 5px; 
+          font-family: 'Fira Code', monospace;
+          width: calc(100% - 2em);
+          border: 0;
+          border-left: 3px solid var(--pr-color);
+          background-color: var(--bg-color);
+          filter: brightness(0.90);
       }
       
-      
+      button {
+          font-size: 16px;
+          font-family: 'Fira Sans', sans-serif;
+      }
     </style>
 
 
   </head>
   <body>
     <h1>Ley de Ohm</h1>
-    <span class="text">Resolver la ecuación 'V=IR'.</span>
-    <br><br>
+    <p class="text">Resolver la ecuación 'V=IR'.</p>
 
-    <div class="mono">
       <input id="V" type="text" placeholder="Voltaje"/>&nbsp;V
       <br>
       <input id="I" type="text" placeholder="Corriente"/>&nbsp;A
@@ -43,11 +43,10 @@
       <input id="R" type="text" placeholder="Resistencia"/>&nbsp;Ω
       <br>
       <input id="P" type="text" placeholder="Potencia"/>&nbsp;w
-    </div>
     
     <hr>
     <button id="solve">Resolver</button>
-    <button id="clear" >Reset</button> &nbsp;
+    <button id="clear" >Reset</button>
     <!-- <a href="https://galindosoft.neocities.org/"></a> -->
   </body>
 
@@ -84,7 +83,7 @@
 
             sol.forEach(a => $(a[0]).value = a[1].toString());
         } catch (error) {
-            alert("La Ecuación no puede solucionarse");
+            alert("La ecuación no puede solucionarse");
         }
         
     });

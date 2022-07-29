@@ -3,30 +3,38 @@
 #+date:  [2021-04-20 mar]
 
 #+INCLUDE: "./includes/settings.org" 
-#+OPTIONS: title:t
+#+OPTIONS: title:nil
 
-#+BEGIN_CENTER
-{{{date}}}
-\\
-#+attr_html: :width 168px
-[[file:./img/status.png]]
-\\
-\\
-[[./content/links.org][Links]] ·
-[[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] · 
-[[./content/logs.org][Logs]] · 
-[[./content/blog.org][Blog]] \\
-[[https://galindosoft.neocities.org/eigenmath-web/][Eigen]] · 
-[[https://galindosoft.123guestbook.com/][Guestbook]]
-\\
-#+END_CENTER
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./style/style.css" />
 
-#+BEGIN_CENTER
-#+attr_html: :width 20px :title Github
-[[https://github.com/Galindo-lab][https://cdn-icons-png.flaticon.com/512/25/25231.png]]
-#+END_CENTER
 
-# #+begin_card
-# Soundcloud de Edgar 🔥 \\
-# [[https://soundcloud.com/user-887296634]]
-# #+end_card
+#+BEGIN_EXPORT html
+<!-- <img width="100px"  src="./img/no-border.svg"/> -->
+
+<img 
+  class="qr"
+  src="./img/no-border.svg"
+  height="100px"
+  width="100px"/>
+
+<hr>
+
+<h1> 
+Algoritmos, Calculadoras y Kalacas <a alt="about" href="./content/about.html">-></a>
+</h1>
+
+#+END_EXPORT
+
+#+ATTR_HTML: :border 0 :rules none :frame none
+| [[./content/links.org][Links]]     |   |
+| [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]] |   |
+| [[./content/logs.org][Logs]]      |   |
+| [[https://galindosoft.neocities.org/eigenmath-web/][Eigen]]     |   |
+| [[https://galindosoft.123guestbook.com/][Guestbook]] |   |
+
+# - [[./content/links.org][Links]]
+# - [[https://www.mediafire.com/folder/kb0e4nxxuhuvb/site][Mediafire]]
+# - [[./content/logs.org][Logs]]
+# - [[https://galindosoft.neocities.org/eigenmath-web/][Eigen]]
+# - [[https://galindosoft.123guestbook.com/][Guestbook]]
+

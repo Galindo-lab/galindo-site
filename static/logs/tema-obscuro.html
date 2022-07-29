@@ -3,41 +3,43 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2022-07-20 mié 00:15 -->
+<!-- 2022-07-29 vie 14:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Implementar un tema obscuro</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Galindo" />
-<link rel="stylesheet" type="text/css" href="https://galindosoft.neocities.org/styles/style.css" />
+<link rel="stylesheet" type="text/css" href="../style/style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#000000" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/x-icon" href="https://galindosoft.neocities.org/logo.png" />
 </head>
 <body>
 <div id="content">
+<h1 class="title">Implementar un tema obscuro</h1>
 
-<div id="outline-container-org91c72e6" class="outline-2">
-<h2 id="org91c72e6">Introducción</h2>
-<div class="outline-text-2" id="text-org91c72e6">
+<div id="outline-container-org1d79400" class="outline-2">
+<h2 id="org1d79400">Introducción</h2>
+<div class="outline-text-2" id="text-org1d79400">
 <p>
 Durante esta semana estuve implementando un tema obscuro y quiero compartir con ustedes los metodos que descubrí para hacerlo de la manera mas sencilla posible, para implementar un tema obscuro descubrí que hay dos maneras de hacerlo: con Javascript y sin Javascript, 
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0c6aac6" class="outline-2">
-<h2 id="org0c6aac6">Variables css</h2>
-<div class="outline-text-2" id="text-org0c6aac6">
+<div id="outline-container-org8603d12" class="outline-2">
+<h2 id="org8603d12">Variables css</h2>
+<div class="outline-text-2" id="text-org8603d12">
 <p>
 Para las siguientes implementaciones es indispensable tener entendimiento de las variables en css
 </p>
 </div>
 </div>
 
-<div id="outline-container-org364df89" class="outline-2">
-<h2 id="org364df89">La forma facil, Sin javascript</h2>
-<div class="outline-text-2" id="text-org364df89">
+<div id="outline-container-org5a6516f" class="outline-2">
+<h2 id="org5a6516f">La forma facil, Sin javascript</h2>
+<div class="outline-text-2" id="text-org5a6516f">
 <p>
 Es posible hacer un tema obscuro 100% en css gracias a el media query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> el cual permite detectar sí el tema obscuro esta activado en el dispositivo, aquí un ejemplo:
 </p>
@@ -60,9 +62,9 @@ Con este query y variables de css podemos cambiar los colores <b>Sin tener que u
 </div>
 </div>
 
-<div id="outline-container-org77ca648" class="outline-2">
-<h2 id="org77ca648">La forma un poco más complicada</h2>
-<div class="outline-text-2" id="text-org77ca648">
+<div id="outline-container-orgfba410b" class="outline-2">
+<h2 id="orgfba410b">La forma un poco más complicada</h2>
+<div class="outline-text-2" id="text-orgfba410b">
 <p>
 Hay varias maneras de usar Javascript para implementar un tema obscuro, una de mis preferidas es la que explican en <a href="https://youtu.be/rXuHGLzSmSE">Fireship</a>, aun así pienso que es posible hacer algunas mejoras:
 </p>

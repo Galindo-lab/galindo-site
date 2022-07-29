@@ -1,12 +1,13 @@
 
 #+BEGIN_EXPORT html
-<div style="text-align:center;">
-<p><b>Galindosoft</b></p>
-<hr />
-  <a href="../index.html">Home</a>&nbsp;&nbsp;
-  <a href="./links.html">Links</a>&nbsp;&nbsp;
-  <a href="./logs.html">Logs</a>&nbsp;&nbsp;
-  <a href="./about.html">About</a>&nbsp;&nbsp;
-<hr />
+<div class="nav">
+<a href="../index.html">::</a>
+<a href="./links.html">Links</a>
+<a href="./logs.html">Logs</a>
+<a href="./about.html">About</a>
 </div>
+<hr/>
 #+END_EXPORT
+
+
+

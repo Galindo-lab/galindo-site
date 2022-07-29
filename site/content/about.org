@@ -5,4 +5,20 @@
 #+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
-Hola soy Galindo, bienvenido a mi blog.
+#+attr_html: :width 16px
+[[file:../img/logo.png]]
+Hola mi nombre es Galindo, soy un estudiante de quinto semestre 
+de ingeniería y aquí escribo sobre las cosas que me gustan, mis 
+apuntes y algunos programas que hago. 
+
+#+attr_html: :width 88px
+[[https://galindosoft.neocities.org/img/button.png]]
+
+\\
+
+#+BEGIN_CENTER
+
+Pudes seguirme en: \\
+https://github.com/Galindo-lab
+
+#+END_CENTER

@@ -8,6 +8,7 @@
              :recursive t
              :base-directory "./site"
              :publishing-directory "./static"
+             :exclude "./site/includes/*.org"
              :publishing-function 'org-html-publish-to-html
 
              )))

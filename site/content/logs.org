@@ -5,20 +5,29 @@
 #+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
-#+BEGIN_CENTER
-#+ATTR_HTML: :width 88px
-[[../img/button.png]]
-#+END_CENTER
+# #+BEGIN_CENTER
+# #+ATTR_HTML: :width 88px
+# [[../img/button.png]]
+# #+END_CENTER
 
-* Logs
-- [[../logs/notacion-ingenieria-python.html][Ingresar notacion de ingenieria en Python]]
-- [[../logs/google-translate.html][Añadir el plugin de google translate]]
-- [[../logs/tema-obscuro.html][Implementar tema obscuro]]
-- [[../logs/cambiar-theme-color.org][Cambiar el color de las pestañas de chrome]]
-- [[../logs/preview-html-externo.html][Preview html desde otro dispositivo]]
-- [[../logs/optimizar-fotos.html][Optimizar fotos para pdfs]]
-- [[../logs/blog-en-org-mode.org][Como hacer un blog con ORG mode]].
-- [[../logs/notacion-ingenieria.html][Notacion de ingenieria]]
+# - [[../logs/notacion-ingenieria-python.html][Ingresar notacion de ingenieria en Python]]
+# - [[../logs/google-translate.html][Añadir el plugin de google translate]]
+# - [[../logs/tema-obscuro.html][Implementar tema obscuro]]
+# - [[../logs/cambiar-theme-color.org][Cambiar el color de las pestañas de chrome]]
+# - [[../logs/preview-html-externo.html][Preview html desde otro dispositivo]]
+# - [[../logs/optimizar-fotos.html][Optimizar fotos para pdfs]]
+# - [[../logs/blog-en-org-mode.org][Como hacer un blog con ORG mode]].
+# - [[../logs/notacion-ingenieria.html][Notacion de ingenieria]]
+# [Artículo] - [[../logs/programacion.html][Programación]]
+# [calculadora] - [[../tools/ley-ohm.html][Ley de ohm]]
 
-* Extra
-- [[../logs/programacion.html][Programación]]
+Cosas random que no sé donde poner, algunos articulos
+no estan disponibles hasta nuevo aviso, si encuentras
+algun error puedes enviarlos [[https://neocities.org/site/galindosoft][aquí]].
+
+
+#+ATTR_HTML: :border 0 :rules none :frame none
+| *Programa*    | [[../logs/optimizar-fotos.org][Optimizar imagenes para pdf]]         |
+| *Programa*    | [[../logs/preview-html-externo.org][Preview html desde otro dispositivo]] |
+| *Artículo*    | [[../logs/programacion.html][Mis inicios con la programación]]     |
+| *Calculadora* | [[../tools/ley-ohm.html][Ley de ohm]]                          |

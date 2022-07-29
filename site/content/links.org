@@ -1,49 +1,66 @@
 
 #+TITLE: Links
 
-
 #+INCLUDE: "../includes/settings.org" 
 #+INCLUDE: "../includes/nav.org" 
 
-* Otros Neocities
-- [[https://misswannabe.neocities.org/][misswannabe]]
-- [[https://vinizinho.neocities.org/][vinizinho]]
-- [[https://jorgepinto.neocities.org/][jorgepinto]]
-- [[https://utsushimi.neocities.org/][utsushimi]]
-- [[https://neocities.org/site/indieflowerdeveloper][indieflowerdeveloper]]
-- [[https://jamep-site.neocities.org/][jamep-site]]
-- [[https://neocities.org/site/kenome][Kenome]]
-- [[https://niichawebsite.neocities.org/][Niicha's Website]]
-- [[https://theeverlastingcontrast.neocities.org/][the everlasting contrast]]
-- [[https://kaidouswh0re.neocities.org/][kaidouswh0re]]
-- [[https://arandomsite.neocities.org/][arandomsite]]
-- [[https://noa-s.org/][noa-s]]
-- [[https://incertaesedis.neocities.org/][incertaesedis]]
-- [[https://lhfm.neocities.org/][lhfm]]
+#+MACRO: imglnk @@html:<a href="https://$1.neocities.org/"><img alt="$1" src="../img/buttons/$1.gif" width="88px"/></a>@@
 
-* Tools
-- [[./tools/ley-ohm.html][Ley de Ohm]]
+\\
 
-* Páginas
-- [[https://12ft.io/][12ft.io]] - Eliminar paywalls.
-- [[https://bellard.org/][bellard.org]] - Bellard es el autor de TinyEMU.
-- [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][calculadorasonline.com]] - Generador de tablas de verdad
-- [[http://www.cmkosemen.com/][cmkosemen.com]] - Sitio web del creador de /All Tomorrows/.
-- [[https://app.contrast-finder.org/?lang=es][contrast-finder.org]] - calcular el contraste entre dos colores.
-- [[https://es.forvo.com/][forvo.com]] - Audio de pronunciaciones nativas en otros idiomas.
-- [[https://gigamonkeys.com/book/][gigamonkeys.com]] - Pagina oficial de /Practical Common Lisp/.
-- [[http://hyperphysics.phy-astr.gsu.edu/hbasees/magnetic/solenoid.html][hyperphysics.edu]] - Temas de física.
-- [[https://infolibros.org/libros-para-aprender-chino-mandarin-gratis-pdf/][infolibros.org]] - Libros de chino mandarin.
-- [[https://www.inventable.eu/paginas/ResCalculatorSp/ResCalculatorSp.html][inventable.eu]] - Calculadora de colores de resistencias.
-- [[https://www.cemetech.net/forum/viewtopic.php?t=14888][khicasio.net]] - Sistema de álgebra simbólico.
-- [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][LATEX Symbols]] - PDF con todos los símbolos matemáticos en LaTeX.
-- [[https://learnxinyminutes.com/][learnxinyminutes.com]] - Guías rápidas para cualquier tema.
-- [[https://libgen.is/][libgen.is]] - Libros gratis.
-- [[https://maogani.blogspot.com/?m=1][maogani.blogspot ♡]] - Aquí mi amiga Itzel sube sus escritos.
-- [[http://old.marcofolio.net/css/8_different_ways_to_beautifully_style_your_lists.html][Marcofolio]] - Portafolio de alguien.
-- [[https://www.mealime.com/][mealime.com]] - Meal planning.
-- [[https://mynoise.net/][mynoise.net]] - Sonido blanco.
-- [[https://n9.cl/es/s/tc0uu][n9.cl]] - Acortador de urls.
-- [[https://www.onlineocr.net/es/][onlineocr.net]] - Imagen a texto.
-- [[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Programación ATS]] - Canal de programación ATS.
-- [[https://regex-generator.olafneumann.org/][regex-generator.org]] - Generador de expresiones regex.
+[[file:https://neocities.org/img/cat.png]]
+{{{imglnk(misswannabe)}}}
+{{{imglnk(vinizinho)}}}
+{{{imglnk(utsushimi)}}}
+{{{imglnk(kenome)}}}
+{{{imglnk(theeverlastingcontrast)}}}
+{{{imglnk(arandomsite)}}}
+{{{imglnk(lhfm)}}}
+  
+\\
+
+#+ATTR_HTML: :border 0 :rules none :frame none
+| *Sitios sin botón*                                                        | *Memorial*                                                   |
+| [[https://jorgepinto.neocities.org/][jorgepinto]]                         | +[[https://niichawebsite.neocities.org/][Niicha's Website]]+ |
+| [[https://neocities.org/site/indieflowerdeveloper][indieflowerdeveloper]] | +[[https://kaidouswh0re.neocities.org/][kaidouswh0re]]+      |
+| [[https://jamep-site.neocities.org/][jamep-site]]                         | +[[https://noa-s.org/][noa-s]]+                              |
+| [[https://incertaesedis.neocities.org/][incertaesedis]]                   |                                                              |
+| [[https://automatic-llama.neocities.org/contact.html][automatic-llama]]   |                                                              |
+|                                                                           |                                                              |
+
+
+#+ATTR_HTML: :border 0 :rules none :frame none
+| *Tools*                                                                                                                                |
+| [[https://12ft.io/][Eliminar paywalls de paginas]]                                                                                     |
+| [[https://calculadorasonline.com/generador-de-tablas-de-verdad-logica-proposicional-algebra-booleana/][Generador de tablas de verdad]] |
+| [[https://app.contrast-finder.org/?lang=es][Calcular el contraste entre dos colores.]]                                                 |
+| [[https://es.forvo.com/][Audio de pronunciaciones nativas en otros idiomas]]                                                           |
+| [[https://www.inventable.eu/paginas/ResCalculatorSp/ResCalculatorSp.html][Calculadora de colores de resistencias.]]                    |
+| [[https://www.cemetech.net/forum/viewtopic.php?t=14888][Sistema de álgebra simbólico para casio CG50.]]                                |
+| [[https://www.onlineocr.net/es/][Imagen a texto.]]                                                                                     |
+| [[https://regex-generator.olafneumann.org/][Generador de expresiones regex.]]                                                          |
+|                                                                                                                                        |
+
+#+ATTR_HTML: :border 0 :rules none :frame none
+| *Extras*                                                                                                                 |
+| [[https://gigamonkeys.com/book/][Pagina oficial de /Practical Common Lisp/]]                                             |
+| [[https://bellard.org/][Bellard es el autor de TinyEMU.]]                                                                |
+| [[http://www.cmkosemen.com/][Sitio web del creador de /All Tomorrows/.]]                                                 |
+| [[https://es.forvo.com/][Audio de pronunciaciones nativas en otros idiomas.]]                                            |
+| [[http://hyperphysics.phy-astr.gsu.edu/hbasees/magnetic/solenoid.html][Temas de física.]]                                |
+| [[https://infolibros.org/libros-para-aprender-chino-mandarin-gratis-pdf/][Libros de chino mandarin.]]                    |
+| [[https://www.caam.rice.edu/~heinken/latex/symbols.pdf][PDF con todos los símbolos matemáticos en LaTeX.]]               |
+| [[https://learnxinyminutes.com/][Guías rápidas para cualquier tema.]]                                                    |
+| [[https://libgen.is/][Libros gratis.]]                                                                                   |
+| [[https://maogani.blogspot.com/?m=1][maogani.blogspot ♡]]                                                                |
+| [[http://old.marcofolio.net/css/8_different_ways_to_beautifully_style_your_lists.html][Portafolio de alguien de marco.]] |
+|                                                                                                                          |
+
+
+
+# - [[https://www.mealime.com/][mealime.com]] - Meal planning.
+# - [[https://mynoise.net/][mynoise.net]] - Sonido blanco.
+# - [[https://n9.cl/es/s/tc0uu][n9.cl]] - Acortador de urls.
+
+# - [[https://www.youtube.com/c/Programaci%C3%B3nATS/videos][Programación ATS]] - Canal de programación ATS.
+# - 

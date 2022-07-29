@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="199.99994mm"
+   height="199.99994mm"
+   viewBox="0 0 199.99994 199.99994"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-145.76893"
+     inkscape:cy="542.07987"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2e-7,-97.000056)">
+    <g
+       id="g834"
+       transform="matrix(0.00494071,0,0,-0.00494071,-18.181813,315.18181)"
+       style="fill:#000000;stroke:none">
+      <path
+         id="path828"
+         d="M 11040,42320 V 40480 H 9200 7360 V 38640 36800 H 5520 3680 V 23920 11040 H 5520 7360 V 7360 3680 h 14720 14720 v 1840 1840 h 1840 1840 v 1840 1840 h 1840 1840 v 12880 12880 h -1840 -1840 v 1840 1840 h -1840 -1840 v 1840 1840 H 23920 11040 Z m 22080,-3680 v -1840 h 1840 1840 v -1840 -1840 h 1840 1840 V 25760 18400 H 38640 36800 V 16560 14720 H 33120 29440 V 11040 7360 h -1840 -1840 v 1840 1840 H 23920 22080 V 9200 7360 h -1840 -1840 v 1840 1840 H 16560 14720 V 9200 7360 h -1840 -1840 v 3680 3680 H 9200 7360 v 1840 1840 h 3680 3680 v 3680 3680 H 11040 7360 v 3680 3680 h 1840 1840 v 1840 1840 h 1840 1840 v 1840 1840 h 9200 9200 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path830"
+         d="m 25760,22080 v -3680 h 3680 3680 v 3680 3680 h -3680 -3680 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path832"
+         d="m 18400,20240 v -1840 h 1840 1840 v 1840 1840 h -1840 -1840 z"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
